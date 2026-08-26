@@ -67,29 +67,6 @@
         "sharedTurn": false,
         "turnOrder": "default"
       },
-      "beforeGameStart": {
-        "boardCategoriesInSideboard": [
-          "Leader"
-        ],
-        "initialBoardSetup": [
-          {
-            "drawFromTop": "Deck",
-            "count": 8,
-            "destination": "Mana_Storage",
-            "overrideState": {
-              "isHidden": "yes"
-            }
-          },
-          {
-            "drawFromTop": "Deck",
-            "count": 6,
-            "destination": "Life_Zone",
-            "overrideState": {
-              "isHidden": "yes"
-            }
-          }
-        ]
-      },
       "sections": {
         "layout": {
           "direction": "row",
@@ -231,25 +208,97 @@
             "displayedTitle": "Banished",
             "noQuickActions": false,
             "noAutoPayTo": true
+          },
+          "Phase_Control": {
+            "type": "custom",
+            "isShared": true,
+            "defaultValue": {
+              "phase": "Draw Phase",
+              "activePlayer": 0,
+              "firstTurn": true
+            },
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "gap": "8px",
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "children": [
+                {
+                  "type": "button",
+                  "props": {
+                    "disabled": "{{ !game.turn.isMyTurn }}",
+                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}"
+                  },
+                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '\u25cf ' : '' }}Draw Phase",
+                  "onClick": "await selectPhase('Draw Phase')"
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "disabled": "{{ !game.turn.isMyTurn }}",
+                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}"
+                  },
+                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '\u25cf ' : '' }}Main Phase",
+                  "onClick": "await selectPhase('Main Phase')"
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "disabled": "{{ !game.turn.isMyTurn }}",
+                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}"
+                  },
+                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '\u25cf ' : '' }}Combat Phase",
+                  "onClick": "await selectPhase('Combat Phase')"
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "disabled": "{{ !game.turn.isMyTurn }}",
+                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}"
+                  },
+                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '\u25cf ' : '' }}End Phase",
+                  "onClick": "await selectPhase('End Phase')"
+                }
+              ]
+            },
+            "events": {
+              "onPlayersMulligan": "await afterMulliganSetup()",
+              "onNewTurn": "await handleNewTurn()"
+            }
           }
         },
         "categoriesAlreadyOnBoard": [
           "Leader"
-        ]
+        ],
+        "sharedZone": {
+          "height": 7,
+          "layout": {
+            "direction": "row",
+            "content": [
+              {
+                "section": "Phase_Control"
+              }
+            ]
+          }
+        }
       },
       "autoPlayFromHand": {
-        "Unit": "Unit_Zone",
-        "Spell": "Stack",
-        "Enchantment": "Stack"
-      },
-      "autoPlayFromStack": {
-        "Spell": "Discard",
-        "Enchantment": "Discard"
+        "Unit": "Unit_Zone"
       }
     }
   },
   "cards": {
     "dataUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/cards.json",
     "cardBack": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/00_back.webp"
-  }
+  },
+  "scriptsUrls": [
+    "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/essence-realms-gameplay.js"
+  ]
 }
