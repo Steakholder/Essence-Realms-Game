@@ -92,80 +92,61 @@
       },
       "sections": {
         "layout": {
-          "direction": "column",
+          "direction": "row",
           "content": [
             {
-              "direction": "row",
+              "direction": "column",
               "style": {
-                "height": "14vh"
+                "width": "10vh"
               },
               "content": [
                 {
-                  "direction": "column",
-                  "style": {
-                    "width": "14vh"
-                  },
-                  "content": [
-                    {
-                      "section": "Active_Leader"
-                    },
-                    {
-                      "section": "Leader_Deck"
-                    }
-                  ]
+                  "section": "Active_Leader"
                 },
                 {
-                  "direction": "column",
-                  "style": {
-                    "width": "55%"
-                  },
-                  "content": [
-                    {
-                      "section": "Unit_Zone"
-                    },
-                    {
-                      "section": "Mana_Pool"
-                    }
-                  ]
+                  "section": "Leader_Deck"
                 },
                 {
-                  "direction": "column",
-                  "style": {
-                    "width": "14vh"
-                  },
-                  "content": [
-                    {
-                      "section": "Remove"
-                    },
-                    {
-                      "section": "Discard"
-                    },
-                    {
-                      "section": "Deck"
-                    }
-                  ]
-                },
-                {
-                  "section": "Life_Zone",
-                  "style": {
-                    "width": "18vh"
-                  }
+                  "section": "Mana_Storage"
                 }
               ]
             },
             {
-              "direction": "row",
+              "direction": "column",
               "style": {
-                "height": "14vh"
+                "width": "1fr"
               },
               "content": [
                 {
-                  "section": "Mana_Storage",
-                  "style": {
-                    "width": "14vh"
-                  }
+                  "section": "Unit_Zone"
+                },
+                {
+                  "section": "Mana_Pool"
                 }
               ]
+            },
+            {
+              "direction": "column",
+              "style": {
+                "width": "10vh"
+              },
+              "content": [
+                {
+                  "section": "Remove"
+                },
+                {
+                  "section": "Discard"
+                },
+                {
+                  "section": "Deck"
+                }
+              ]
+            },
+            {
+              "section": "Life_Zone",
+              "style": {
+                "width": "18vh"
+              }
             }
           ]
         },
@@ -197,22 +178,26 @@
             "noAutoPayTo": true
           },
           "Mana_Pool": {
-            "isHidden": "no",
+            "isHidden": "yes",
             "height": 14,
             "alignment": "CENTER",
             "displayedTitle": "Mana Pool",
             "noQuickActions": false,
             "noAutoPayTo": true,
-            "isGroupForbidden": false
+            "isGroupForbidden": true
           },
           "Life_Zone": {
             "isHidden": "yes",
-            "height": 28,
+            "height": 42,
             "alignment": "CENTER",
             "displayedTitle": "Life",
             "noQuickActions": false,
             "noAutoPayTo": true,
-            "isGroupForbidden": true
+            "isGroupForbidden": true,
+            "heightReference": "horizontal",
+            "isHorizontalAllowed": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true
           },
           "Unit_Zone": {
             "isHidden": "no",
@@ -234,7 +219,7 @@
           "Discard": {
             "isHidden": "no",
             "height": 14,
-            "alignment": "DECK",
+            "alignment": "CENTER",
             "displayedTitle": "Grave",
             "noQuickActions": false,
             "noAutoPayTo": true
@@ -242,7 +227,7 @@
           "Remove": {
             "isHidden": "yes",
             "height": 14,
-            "alignment": "DECK",
+            "alignment": "CENTER",
             "displayedTitle": "Banished",
             "noQuickActions": false,
             "noAutoPayTo": true
