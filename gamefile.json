@@ -1,0 +1,72 @@
+{
+  "name": "Essence Realms - Deckbuilding Test 01",
+  "deckBuilding": {
+    "mainFilters": [
+      "type",
+      "cost",
+      "level",
+      "essence"
+    ],
+    "formats": [
+      {
+        "title": "Standard Test",
+        "customCategories": [
+          "Leader_Deck"
+        ],
+        "legalityCode": "TEST",
+        "gameplay": "Standard",
+        "deckRuleset": "Standard"
+      }
+    ],
+    "deckRulesets": {
+      "Standard": {
+        "checkCardLegality": true,
+        "general": {
+          "min": 60,
+          "max": 60,
+          "maxPerCard": 4
+        },
+        "categories": [
+          {
+            "category": "Leader_Deck",
+            "min": 6,
+            "max": 6
+          }
+        ]
+      }
+    }
+  },
+  "gameplay": {
+    "Standard": {
+      "mulligan": {
+        "startingHandSize": 6
+      },
+      "newTurn": {
+        "drawOnStart": false,
+        "drawPerTurn": 1
+      },
+      "countersStartingValues": [],
+      "sections": {
+        "layout": {
+          "direction": "column",
+          "content": [
+            {
+              "section": "Board"
+            }
+          ]
+        },
+        "sectionsDict": {
+          "Board": {
+            "isHidden": "no",
+            "height": "MEDIUM",
+            "alignment": "CENTER"
+          }
+        }
+      }
+    }
+  },
+  "cards": {
+    "dataUrl": "REPLACE_WITH_PUBLIC_CARDS_JSON_URL",
+    "cardBack": "REPLACE_WITH_PUBLIC_CARD_BACK_IMAGE_URL"
+  }
+}
