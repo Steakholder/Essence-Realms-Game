@@ -23,9 +23,10 @@
     "battlePower": 1000,
     "limited": true,
     "_legal": {
-      "TEST": 1
+      "ER_STD": 1
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "isLimited": true
   },
   "er-01": {
     "id": "er-01",
@@ -51,9 +52,10 @@
     "battlePower": 3000,
     "limited": true,
     "_legal": {
-      "TEST": 1
+      "ER_STD": 1
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "isLimited": true
   },
   "er-02": {
     "id": "er-02",
@@ -79,9 +81,10 @@
     "battlePower": 5000,
     "limited": true,
     "_legal": {
-      "TEST": 1
+      "ER_STD": 1
     },
-    "manaValue": 2
+    "manaValue": 2,
+    "isLimited": true
   },
   "er-03": {
     "id": "er-03",
@@ -107,9 +110,10 @@
     "battlePower": 10000,
     "limited": true,
     "_legal": {
-      "TEST": 1
+      "ER_STD": 1
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "isLimited": true
   },
   "er-04": {
     "id": "er-04",
@@ -135,9 +139,10 @@
     "battlePower": 15000,
     "limited": true,
     "_legal": {
-      "TEST": 1
+      "ER_STD": 1
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "isLimited": true
   },
   "er-05": {
     "id": "er-05",
@@ -163,9 +168,10 @@
     "battlePower": 25000,
     "limited": true,
     "_legal": {
-      "TEST": 1
+      "ER_STD": 1
     },
-    "manaValue": 4
+    "manaValue": 4,
+    "isLimited": true
   },
   "er-06": {
     "id": "er-06",
@@ -187,8 +193,9 @@
     "battlePower": 1500,
     "limited": true,
     "_legal": {
-      "TEST": 1
-    }
+      "ER_STD": 1
+    },
+    "isLimited": true
   },
   "er-07": {
     "id": "er-07",
@@ -212,9 +219,10 @@
     "battlePower": 1000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "isLimited": false
   },
   "er-08": {
     "id": "er-08",
@@ -238,9 +246,10 @@
     "battlePower": 1000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "isLimited": false
   },
   "er-09": {
     "id": "er-09",
@@ -264,9 +273,10 @@
     "battlePower": 3000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "isLimited": false
   },
   "er-10": {
     "id": "er-10",
@@ -290,9 +300,10 @@
     "battlePower": 3000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "isLimited": false
   },
   "er-11": {
     "id": "er-11",
@@ -317,9 +328,10 @@
     "battlePower": 1000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "isLimited": false
   },
   "er-12": {
     "id": "er-12",
@@ -341,8 +353,9 @@
     "battlePower": 1500,
     "limited": false,
     "_legal": {
-      "TEST": true
-    }
+      "ER_STD": true
+    },
+    "isLimited": false
   },
   "er-13": {
     "id": "er-13",
@@ -364,8 +377,9 @@
     "battlePower": 1500,
     "limited": false,
     "_legal": {
-      "TEST": true
-    }
+      "ER_STD": true
+    },
+    "isLimited": false
   },
   "er-14": {
     "id": "er-14",
@@ -387,8 +401,9 @@
     "battlePower": 1500,
     "limited": false,
     "_legal": {
-      "TEST": true
-    }
+      "ER_STD": true
+    },
+    "isLimited": false
   },
   "er-15": {
     "id": "er-15",
@@ -413,9 +428,10 @@
     "battlePower": 3000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 2
+    "manaValue": 2,
+    "isLimited": false
   },
   "er-16": {
     "id": "er-16",
@@ -440,9 +456,10 @@
     "battlePower": 4000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "isLimited": false
   },
   "er-17": {
     "id": "er-17",
@@ -467,9 +484,10 @@
     "battlePower": 3000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "isLimited": false
   },
   "er-18": {
     "id": "er-18",
@@ -494,9 +512,10 @@
     "battlePower": 5000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "isLimited": false
   },
   "er-19": {
     "id": "er-19",
@@ -520,9 +539,10 @@
     "battlePower": 7000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "isLimited": false
   },
   "er-20": {
     "id": "er-20",
@@ -547,9 +567,10 @@
     "battlePower": 14000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 2
+    "manaValue": 2,
+    "isLimited": false
   },
   "er-21": {
     "id": "er-21",
@@ -573,9 +594,10 @@
     "battlePower": 4000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "isLimited": false
   },
   "er-22": {
     "id": "er-22",
@@ -599,9 +621,10 @@
     "battlePower": 10000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "isLimited": false
   },
   "er-23": {
     "id": "er-23",
@@ -625,9 +648,10 @@
     "battlePower": 15000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 2
+    "manaValue": 2,
+    "isLimited": false
   },
   "er-24": {
     "id": "er-24",
@@ -651,9 +675,10 @@
     "battlePower": 20000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 2
+    "manaValue": 2,
+    "isLimited": false
   },
   "er-25": {
     "id": "er-25",
@@ -677,8 +702,9 @@
     "battlePower": 30000,
     "limited": false,
     "_legal": {
-      "TEST": true
+      "ER_STD": true
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "isLimited": false
   }
 }
