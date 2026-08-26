@@ -13,7 +13,7 @@
       {
         "title": "Standard",
         "customCategories": [
-          "Leader_Deck"
+          "Leader"
         ],
         "legalityCode": "ER_STD",
         "gameplay": "Standard",
@@ -30,7 +30,7 @@
         },
         "categories": [
           {
-            "category": "Leader_Deck",
+            "category": "Leader",
             "min": 6,
             "max": 6
           }
@@ -69,7 +69,7 @@
       },
       "beforeGameStart": {
         "boardCategoriesInSideboard": [
-          "Leader_Deck"
+          "Leader"
         ],
         "initialBoardSetup": [
           {
@@ -249,7 +249,7 @@
           }
         },
         "categoriesAlreadyOnBoard": [
-          "Leader_Deck"
+          "Leader"
         ]
       },
       "autoPlayFromHand": {
