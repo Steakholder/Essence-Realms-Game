@@ -1,7 +1,7 @@
 {
   "name": "Essence Realms",
   "cardRotation": 90,
-  "customHelp": "Essence Realms prototype.\nMain Deck: exactly 66 cards. Leader Deck: exactly 6 Leaders, including exactly one Level 0 Leader.\nUnits must share at least one Essence with your Level 0 Leader. Spells and Enchantments are unrestricted by Essence.",
+  "customHelp": "Essence Realms prototype.\nMain Deck: exactly 60 cards. Leader Deck: exactly 6 Leaders, including exactly one Level 0 Leader.\nUnits must share at least one Essence with your Level 0 Leader. Spells and Enchantments are unrestricted by Essence.",
   "deckBuilding": {
     "mainFilters": [
       "type",
