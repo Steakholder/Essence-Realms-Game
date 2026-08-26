@@ -1,5 +1,7 @@
 {
-  "name": "Essence Realms - Deckbuilding Test 01",
+  "name": "Essence Realms",
+  "cardRotation": 90,
+  "customHelp": "Essence Realms prototype.\nMain Deck: exactly 60 cards. Leader Deck: exactly 6 Leaders, including exactly one Level 0 Leader.\nUnits must share at least one Essence with your Level 0 Leader. Spells and Enchantments are unrestricted by Essence.",
   "deckBuilding": {
     "mainFilters": [
       "type",
@@ -9,11 +11,11 @@
     ],
     "formats": [
       {
-        "title": "Standard Test",
+        "title": "Standard",
         "customCategories": [
           "Leader_Deck"
         ],
-        "legalityCode": "TEST",
+        "legalityCode": "ER_STD",
         "gameplay": "Standard",
         "deckRuleset": "Standard"
       }
@@ -38,30 +40,226 @@
   },
   "gameplay": {
     "Standard": {
+      "defaultNotes": "",
+      "countersStartingValues": [],
+      "hideFacedDownCards": false,
       "mulligan": {
-        "startingHandSize": 6
+        "startingHandSize": 6,
+        "mulliganCount": {
+          "min": 0,
+          "max": 1
+        },
+        "mulliganCycle": {
+          "steps": [
+            "toBottom",
+            "draw"
+          ],
+          "selectionRange": {
+            "min": 6,
+            "max": 6
+          },
+          "keepCardsOrder": false
+        }
       },
       "newTurn": {
         "drawOnStart": false,
-        "drawPerTurn": 1
+        "drawPerTurn": 1,
+        "sharedTurn": false,
+        "turnOrder": "default"
       },
-      "countersStartingValues": [],
+      "beforeGameStart": {
+        "boardCategoriesInSideboard": [
+          "Leader_Deck"
+        ],
+        "initialBoardSetup": [
+          {
+            "drawFromTop": "Deck",
+            "count": 8,
+            "destination": "Mana_Storage",
+            "overrideState": {
+              "isHidden": "yes"
+            }
+          },
+          {
+            "drawFromTop": "Deck",
+            "count": 6,
+            "destination": "Life_Zone",
+            "overrideState": {
+              "isHidden": "yes"
+            }
+          }
+        ]
+      },
       "sections": {
         "layout": {
           "direction": "column",
           "content": [
             {
-              "section": "Board"
+              "direction": "row",
+              "style": {
+                "height": "14vh"
+              },
+              "content": [
+                {
+                  "direction": "column",
+                  "style": {
+                    "width": "14vh"
+                  },
+                  "content": [
+                    {
+                      "section": "Active_Leader"
+                    },
+                    {
+                      "section": "Leader_Deck"
+                    }
+                  ]
+                },
+                {
+                  "direction": "column",
+                  "style": {
+                    "width": "55%"
+                  },
+                  "content": [
+                    {
+                      "section": "Unit_Zone"
+                    },
+                    {
+                      "section": "Mana_Pool"
+                    }
+                  ]
+                },
+                {
+                  "direction": "column",
+                  "style": {
+                    "width": "14vh"
+                  },
+                  "content": [
+                    {
+                      "section": "Remove"
+                    },
+                    {
+                      "section": "Discard"
+                    },
+                    {
+                      "section": "Deck"
+                    }
+                  ]
+                },
+                {
+                  "section": "Life_Zone",
+                  "style": {
+                    "width": "18vh"
+                  }
+                }
+              ]
+            },
+            {
+              "direction": "row",
+              "style": {
+                "height": "14vh"
+              },
+              "content": [
+                {
+                  "section": "Mana_Storage",
+                  "style": {
+                    "width": "14vh"
+                  }
+                }
+              ]
             }
           ]
         },
         "sectionsDict": {
-          "Board": {
+          "Active_Leader": {
             "isHidden": "no",
-            "height": "MEDIUM",
-            "alignment": "CENTER"
+            "height": 14,
+            "alignment": "CENTER",
+            "displayedTitle": "Active Leader",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true
+          },
+          "Leader_Deck": {
+            "isHidden": "yes",
+            "height": 14,
+            "alignment": "DECK",
+            "displayedTitle": "Leader Deck",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
+          },
+          "Mana_Storage": {
+            "isHidden": "yes",
+            "height": 14,
+            "alignment": "DECK",
+            "displayedTitle": "Mana Storage",
+            "noQuickActions": false,
+            "noAutoPayTo": true
+          },
+          "Mana_Pool": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "CENTER",
+            "displayedTitle": "Mana Pool",
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
+          },
+          "Life_Zone": {
+            "isHidden": "yes",
+            "height": 28,
+            "alignment": "CENTER",
+            "displayedTitle": "Life",
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true
+          },
+          "Unit_Zone": {
+            "isHidden": "no",
+            "height": 21,
+            "alignment": "CENTER",
+            "displayedTitle": "Unit Zone",
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
+          },
+          "Deck": {
+            "isHidden": "yes",
+            "height": 14,
+            "alignment": "DECK",
+            "displayedTitle": "Main Deck",
+            "noQuickActions": true,
+            "noAutoPayTo": true
+          },
+          "Discard": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "DECK",
+            "displayedTitle": "Grave",
+            "noQuickActions": false,
+            "noAutoPayTo": true
+          },
+          "Remove": {
+            "isHidden": "yes",
+            "height": 14,
+            "alignment": "DECK",
+            "displayedTitle": "Banished",
+            "noQuickActions": false,
+            "noAutoPayTo": true
           }
-        }
+        },
+        "categoriesAlreadyOnBoard": [
+          "Leader_Deck"
+        ]
+      },
+      "autoPlayFromHand": {
+        "Unit": "Unit_Zone",
+        "Spell": "Stack",
+        "Enchantment": "Stack"
+      },
+      "autoPlayFromStack": {
+        "Spell": "Discard",
+        "Enchantment": "Discard"
       }
     }
   },
