@@ -349,7 +349,7 @@
             "noQuickActions": true,
             "noAutoPayTo": true,
             "drawDestinations": {
-              "Leader": "Level_0_Leader"
+              "Leader": "Stack"
             }
           },
           "Game_Logic": {
