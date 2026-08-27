@@ -482,7 +482,7 @@
             "keepTappedNewTurn": true,
             "isHorizontalAllowed": true
           },
-          "Level_0_Leader": {
+          "Level 0 Leader": {
             "isHidden": "yes",
             "height": 11,
             "alignment": "DECK",
@@ -514,7 +514,7 @@
       "beforeGameStart": {
         "initialBoardSetup": [
           {
-            "drawFromTop": "Level_0_Leader",
+            "drawFromTop": "Level 0 Leader",
             "count": 1,
             "destination": "Active_Leader",
             "overrideState": {
@@ -593,9 +593,6 @@
               "isTapped": false
             }
           }
-        ],
-        "boardCategoriesInSideboard": [
-          "Level 0 Leader"
         ]
       }
     }
