@@ -16,7 +16,6 @@
         "gameplay": "Standard",
         "deckRuleset": "Standard",
         "customCategories": [
-          "Level 0 Leader",
           "Leader",
           "Level_0_Leader"
         ]
@@ -31,11 +30,6 @@
           "maxPerCard": 4
         },
         "categories": [
-          {
-            "category": "Level 0 Leader",
-            "min": 1,
-            "max": 1
-          },
           {
             "category": "Leader",
             "min": 5,
