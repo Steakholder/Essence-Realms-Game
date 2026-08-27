@@ -478,7 +478,8 @@
           }
         },
         "categoriesAlreadyOnBoard": [
-          "Leader"
+          "Leader",
+          "Active Leader"
         ],
         "sharedZone": {
           "height": 5,
@@ -579,7 +580,8 @@
           }
         ],
         "boardCategoriesInSideboard": [
-          "Leader"
+          "Leader",
+          "Level 0 Leader"
         ]
       }
     }
