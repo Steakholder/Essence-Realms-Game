@@ -1,7 +1,7 @@
 {
   "name": "Essence Realms",
   "cardRotation": 90,
-  "customHelp": "Essence Realms gameplay prototype. Main Deck: exactly 66 cards. Leader Deck: exactly 6 Leaders. Level_0_Leader uses the same native Leader category/deck mechanism as the other Leaders; the opening setup draws the top Leader directly into Active Leader face-up and untapped.",
+  "customHelp": "Essence Realms gameplay prototype. Main Deck: exactly 66 cards. Leader Deck: exactly 6 Leaders. Level 0 Leader uses the same native Leader category/deck mechanism as the other Leaders; the opening setup draws the top Leader directly into Active Leader face-up and untapped.",
   "deckBuilding": {
     "mainFilters": [
       "type",
@@ -16,7 +16,7 @@
         "gameplay": "Standard",
         "deckRuleset": "Standard",
         "customCategories": [
-          "Level_0_Leader",
+          "Level 0 Leader",
           "Leader"
         ]
       }
@@ -31,7 +31,7 @@
         },
         "categories": [
           {
-            "category": "Level_0_Leader",
+            "category": "Level 0 Leader",
             "min": 1,
             "max": 1
           },
@@ -484,7 +484,7 @@
           }
         },
         "categoriesAlreadyOnBoard": [
-          "Level_0_Leader",
+          "Level 0 Leader",
           "Leader"
         ],
         "sharedZone": {
@@ -577,7 +577,7 @@
           }
         ],
         "boardCategoriesInSideboard": [
-          "Level_0_Leader",
+          "Level 0 Leader",
           "Leader"
         ]
       }

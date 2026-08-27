@@ -6,13 +6,13 @@
         "name": {
           "name": "Mara, the Sinister Cherub"
         },
-        "type": "Level_0_Leader",
+        "type": "Level 0 Leader",
         "cost": 0,
         "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/00.webp"
       }
     },
     "name": "Mara, the Sinister Cherub",
-    "type": "Level_0_Leader",
+    "type": "Level 0 Leader",
     "cost": 0,
     "level": 0,
     "essence": [
