@@ -14,7 +14,10 @@
         "title": "Standard",
         "legalityCode": "ER_STD",
         "gameplay": "Standard",
-        "deckRuleset": "Standard"
+        "deckRuleset": "Standard",
+        "customCategories": [
+          "Level 0 Leader"
+        ]
       }
     ],
     "deckRulesets": {
@@ -490,7 +493,8 @@
           }
         },
         "categoriesAlreadyOnBoard": [
-          "Leader"
+          "Leader",
+          "Level 0 Leader"
         ],
         "sharedZone": {
           "height": 5,
