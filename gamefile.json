@@ -331,7 +331,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '\u25cf ' : '' }}Draw Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '● ' : '' }}Draw Phase",
                   "onClick": "await selectPhase('Draw Phase')"
                 },
                 {
@@ -344,7 +344,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '\u25cf ' : '' }}Main Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '● ' : '' }}Main Phase",
                   "onClick": "await selectPhase('Main Phase')"
                 },
                 {
@@ -357,7 +357,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '\u25cf ' : '' }}Combat Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '● ' : '' }}Combat Phase",
                   "onClick": "await selectPhase('Combat Phase')"
                 },
                 {
@@ -370,7 +370,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '\u25cf ' : '' }}End Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '● ' : '' }}End Phase",
                   "onClick": "await selectPhase('End Phase')"
                 }
               ]
@@ -417,20 +417,22 @@
           "Leader_Deck": {
             "isHidden": "yes",
             "height": 7,
-            "alignment": "CENTER",
+            "alignment": "DECK",
             "displayedTitle": "Leader Deck",
             "noQuickActions": false,
             "noAutoPayTo": true,
-            "isGroupForbidden": false
+            "isGroupForbidden": false,
+            "opponentAlignment": "DECK"
           },
           "Mana_Storage_Pile": {
             "isHidden": "yes",
             "height": 7,
-            "alignment": "CENTER",
+            "alignment": "DECK",
             "displayedTitle": "Mana Storage",
             "noQuickActions": false,
             "noAutoPayTo": true,
-            "isGroupForbidden": false
+            "isGroupForbidden": false,
+            "opponentAlignment": "DECK"
           },
           "Life_1": {
             "isHidden": "yes",
