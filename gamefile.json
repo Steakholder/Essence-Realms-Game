@@ -1,0 +1,552 @@
+{
+  "name": "Essence Realms",
+  "cardRotation": 90,
+  "customHelp": "Essence Realms gameplay prototype. Main Deck: exactly 66 cards. Leader Deck: exactly 6 Leaders. Gameplay systems are under development.",
+  "deckBuilding": {
+    "mainFilters": [
+      "type",
+      "cost",
+      "level",
+      "essence"
+    ],
+    "formats": [
+      {
+        "title": "Standard",
+        "customCategories": [
+          "Leader"
+        ],
+        "legalityCode": "ER_STD",
+        "gameplay": "Standard",
+        "deckRuleset": "Standard"
+      }
+    ],
+    "deckRulesets": {
+      "Standard": {
+        "checkCardLegality": true,
+        "general": {
+          "min": 66,
+          "max": 66,
+          "maxPerCard": 4
+        },
+        "categories": [
+          {
+            "category": "Leader",
+            "min": 6,
+            "max": 6
+          }
+        ]
+      }
+    }
+  },
+  "gameplay": {
+    "Standard": {
+      "defaultNotes": "",
+      "countersStartingValues": [],
+      "hideFacedDownCards": true,
+      "mulligan": {
+        "startingHandSize": 6,
+        "mulliganCount": {
+          "min": 0,
+          "max": 1
+        },
+        "mulliganCycle": {
+          "steps": [
+            "toBottom",
+            "draw"
+          ],
+          "selectionRange": {
+            "min": 6,
+            "max": 6
+          },
+          "keepCardsOrder": false
+        }
+      },
+      "newTurn": {
+        "drawOnStart": false,
+        "drawPerTurn": 1,
+        "sharedTurn": false,
+        "turnOrder": "default"
+      },
+      "sections": {
+        "layout": {
+          "direction": "row",
+          "style": {
+            "width": "100%",
+            "height": "100%",
+            "boxSizing": "border-box",
+            "justifyContent": "flex-start",
+            "alignItems": "flex-start",
+            "overflow": "hidden"
+          },
+          "content": [
+            {
+              "direction": "column",
+              "style": {
+                "width": "9%",
+                "height": "100%",
+                "boxSizing": "border-box",
+                "justifyContent": "flex-start",
+                "alignItems": "stretch",
+                "margin": "0.2vh"
+              },
+              "content": [
+                {
+                  "section": "Active_Leader",
+                  "style": {
+                    "width": "100%",
+                    "height": "11vh"
+                  }
+                },
+                {
+                  "section": "Leader",
+                  "style": {
+                    "width": "100%",
+                    "height": "11vh"
+                  }
+                },
+                {
+                  "section": "Mana_Storage",
+                  "style": {
+                    "width": "100%",
+                    "height": "7vh"
+                  }
+                }
+              ]
+            },
+            {
+              "direction": "column",
+              "style": {
+                "width": "57%",
+                "height": "100%",
+                "boxSizing": "border-box",
+                "justifyContent": "flex-start",
+                "alignItems": "stretch",
+                "margin": "0.2vh"
+              },
+              "content": [
+                {
+                  "section": "Unit_Zone",
+                  "style": {
+                    "width": "100%",
+                    "height": "14vh"
+                  }
+                },
+                {
+                  "section": "Mana_Pool",
+                  "style": {
+                    "width": "100%",
+                    "height": "10vh",
+                    "marginTop": "0.2vh"
+                  }
+                }
+              ]
+            },
+            {
+              "direction": "column",
+              "style": {
+                "width": "10%",
+                "height": "100%",
+                "boxSizing": "border-box",
+                "justifyContent": "flex-start",
+                "alignItems": "stretch",
+                "margin": "0.2vh"
+              },
+              "content": [
+                {
+                  "section": "Remove",
+                  "style": {
+                    "width": "11vh",
+                    "height": "7vh"
+                  }
+                },
+                {
+                  "section": "Discard",
+                  "style": {
+                    "width": "11vh",
+                    "height": "7vh"
+                  }
+                }
+              ]
+            },
+            {
+              "direction": "column",
+              "style": {
+                "width": "12vh",
+                "height": "42vh",
+                "boxSizing": "border-box",
+                "justifyContent": "flex-start",
+                "alignItems": "center"
+              },
+              "content": [
+                {
+                  "section": "Life_6",
+                  "style": {
+                    "width": "12vh",
+                    "height": "7vh"
+                  }
+                },
+                {
+                  "section": "Life_5",
+                  "style": {
+                    "width": "12vh",
+                    "height": "7vh"
+                  }
+                },
+                {
+                  "section": "Life_4",
+                  "style": {
+                    "width": "12vh",
+                    "height": "7vh"
+                  }
+                },
+                {
+                  "section": "Life_3",
+                  "style": {
+                    "width": "12vh",
+                    "height": "7vh"
+                  }
+                },
+                {
+                  "section": "Life_2",
+                  "style": {
+                    "width": "12vh",
+                    "height": "7vh"
+                  }
+                },
+                {
+                  "section": "Life_1",
+                  "style": {
+                    "width": "12vh",
+                    "height": "7vh"
+                  }
+                }
+              ]
+            },
+            {
+              "section": "Game_Logic",
+              "style": {
+                "width": "0px",
+                "height": "0px",
+                "overflow": "hidden",
+                "pointerEvents": "none"
+              }
+            }
+          ]
+        },
+        "sectionsDict": {
+          "Active_Leader": {
+            "isHidden": "no",
+            "height": 11,
+            "alignment": "CENTER",
+            "displayedTitle": "Active Leader",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true
+          },
+          "Mana_Storage": {
+            "isHidden": "no",
+            "height": "7",
+            "alignment": "DECK",
+            "displayedTitle": "Mana Storage",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
+          },
+          "Mana_Pool": {
+            "isHidden": "yes",
+            "height": 10,
+            "alignment": "CENTER",
+            "displayedTitle": "Mana Pool",
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "isHorizontalAllowed": false
+          },
+          "Life_Zone": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "END",
+            "displayedTitle": "Life",
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true,
+            "opponentAlignment": "START"
+          },
+          "Unit_Zone": {
+            "isHidden": "no",
+            "height": 14,
+            "alignment": "CENTER",
+            "displayedTitle": "Unit Zone",
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
+          },
+          "Discard": {
+            "isHidden": "no",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "Grave",
+            "noQuickActions": false,
+            "noAutoPayTo": true
+          },
+          "Remove": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "Banished",
+            "noQuickActions": false,
+            "noAutoPayTo": true
+          },
+          "Phase_Control": {
+            "type": "custom",
+            "isShared": true,
+            "defaultValue": {
+              "phase": "Draw Phase",
+              "activePlayer": 0,
+              "firstTurn": true
+            },
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "gap": "8px",
+                  "width": "100%",
+                  "height": "100%"
+                }
+              },
+              "children": [
+                {
+                  "type": "button",
+                  "props": {
+                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}",
+                    "style": {
+                      "minWidth": "85px",
+                      "padding": "4px 8px",
+                      "fontSize": "12px"
+                    }
+                  },
+                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '● ' : '' }}Draw Phase",
+                  "onClick": "await selectPhase('Draw Phase')"
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}",
+                    "style": {
+                      "minWidth": "85px",
+                      "padding": "4px 8px",
+                      "fontSize": "12px"
+                    }
+                  },
+                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '● ' : '' }}Main Phase",
+                  "onClick": "await selectPhase('Main Phase')"
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}",
+                    "style": {
+                      "minWidth": "85px",
+                      "padding": "4px 8px",
+                      "fontSize": "12px"
+                    }
+                  },
+                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '● ' : '' }}Combat Phase",
+                  "onClick": "await selectPhase('Combat Phase')"
+                },
+                {
+                  "type": "button",
+                  "props": {
+                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}",
+                    "style": {
+                      "minWidth": "85px",
+                      "padding": "4px 8px",
+                      "fontSize": "12px"
+                    }
+                  },
+                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '● ' : '' }}End Phase",
+                  "onClick": "await selectPhase('End Phase')"
+                }
+              ]
+            }
+          },
+          "Leader": {
+            "isHidden": "no",
+            "height": "7",
+            "alignment": "DECK",
+            "displayedTitle": "Leader Deck",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
+          },
+          "Game_Logic": {
+            "type": "custom",
+            "defaultValue": {
+              "setupComplete": false,
+              "setupRunning": false
+            },
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "none",
+                  "width": "0px",
+                  "height": "0px",
+                  "overflow": "hidden",
+                  "pointerEvents": "none"
+                }
+              }
+            },
+            "events": {
+              "onPlayersReady": "await setupDuelStart()",
+              "onOpponentUpdate": "await setupDuelStart()",
+              "onCardsUpdate": "await setupDuelStart()",
+              "onNewTurn": "await handleNewTurn()"
+            }
+          },
+          "Life_1": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_2": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_3": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_4": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_5": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_6": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "Life",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Leader_Order_Temp": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "DECK",
+            "displayedTitle": "Leader Order Temp",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
+          }
+        },
+        "categoriesAlreadyOnBoard": [
+          "Leader"
+        ],
+        "sharedZone": {
+          "height": 5,
+          "layout": {
+            "direction": "row",
+            "content": [
+              {
+                "section": "Phase_Control"
+              }
+            ]
+          }
+        }
+      },
+      "autoPlayFromHand": {
+        "Unit": "Unit_Zone"
+      },
+      "beforeGameStart": {
+        "initialBoardSetup": [
+          {
+            "drawFromTop": "Deck",
+            "count": 8,
+            "destination": "Mana_Storage",
+            "overrideState": {
+              "isHidden": "yes"
+            }
+          },
+          {
+            "drawFromTop": "Deck",
+            "count": 6,
+            "destination": "Life_Zone",
+            "overrideState": {
+              "isHidden": "yes",
+              "isTapped": true
+            }
+          },
+          {
+            "drawFromTop": "Mana_Storage",
+            "count": 2,
+            "destination": "Mana_Pool",
+            "overrideState": {
+              "isHidden": "yes",
+              "isTapped": false
+            }
+          }
+        ]
+      }
+    }
+  },
+  "cards": {
+    "dataUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/cards.json",
+    "cardBack": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/00_back.webp"
+  },
+  "scriptsUrls": [
+    "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/essence-realms-gameplay.js"
+  ]
+}
