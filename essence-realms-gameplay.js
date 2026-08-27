@@ -1,64 +1,65 @@
-/* Essence Realms gameplay foundation v1.9 */
+/* Essence Realms gameplay foundation v2.0 */
 function cardDef(card) {
   return card ? functions.getCardData(card) : null;
 }
 
 async function setupDuelStart() {
-  const state = game.data.Game_Logic;
-  if (!state || state.setupComplete || state.setupRunning) return;
+  if (game.data.Game_Logic?.setupComplete) return;
 
+  const leaders = cards?.Leader ?? [];
+  const active = cards?.Active_Leader ?? [];
+
+  // Native initialBoardSetup must have dealt the starting resources first.
   const life = cards?.Life_Zone ?? [];
   const storage = cards?.Mana_Storage ?? [];
-
-  // Wait until the native opening deal has completed.
   if (life.length < 6 || storage.length < 8) return;
 
-  state.setupRunning = true;
-  try {
-    // Put exactly 2 of the 8 starting Mana Storage cards into Mana Pool.
-    let pool = cards?.Mana_Pool ?? [];
-    if (pool.length < 2) {
-      const needed = 2 - pool.length;
-      const available = cards?.Mana_Storage ?? [];
-      const toPool = available.slice(Math.max(0, available.length - needed));
+  // Put Level 0 Leader into Active Leader.
+  if (!active.length) {
+    const levelZero = leaders.find(card => {
+      const d = cardDef(card);
+      return d?.type === "Leader" && Number(d?.level) === 0;
+    });
 
-      if (toPool.length) {
-        await functions.moveCards(toPool, "Mana_Pool");
-        pool = cards?.Mana_Pool ?? [];
-        if (pool.length) {
-          await functions.updateCards(pool, { isTapped: false });
-        }
+    if (levelZero) {
+      await functions.moveCard(levelZero, "Active_Leader");
+      const moved = cards?.Active_Leader ?? [];
+      if (moved.length) {
+        await functions.updateCards(
+          [moved[moved.length - 1]],
+          { isTapped: false }
+        );
       }
     }
+  }
 
-    // Put the Level 0 Leader into Active Leader.
-    let active = cards?.Active_Leader ?? [];
-    if (!active.length) {
-      const leaders = cards?.Leader ?? [];
-      const levelZero = leaders.find(card => {
-        const d = cardDef(card);
-        return d?.type === "Leader" && Number(d?.level) === 0;
-      });
+  // Move exactly two cards from Mana Storage to Mana Pool.
+  const pool = cards?.Mana_Pool ?? [];
+  const needMana = Math.max(0, 2 - pool.length);
 
-      if (levelZero) {
-        await functions.moveCard(levelZero, "Active_Leader");
-        active = cards?.Active_Leader ?? [];
-        if (active.length) {
-          await functions.updateCards([active[active.length - 1]], {
-            isTapped: false
-          });
-        }
+  if (needMana > 0) {
+    const currentStorage = cards?.Mana_Storage ?? [];
+    const mana = currentStorage.slice(
+      -Math.min(needMana, currentStorage.length)
+    );
+
+    if (mana.length) {
+      await functions.moveCards(mana, "Mana_Pool");
+
+      const newPool = cards?.Mana_Pool ?? [];
+      const moved = newPool.slice(-mana.length);
+
+      if (moved.length) {
+        await functions.updateCards(moved, { isTapped: false });
       }
     }
+  }
 
-    pool = cards?.Mana_Pool ?? [];
-    active = cards?.Active_Leader ?? [];
-
-    if (pool.length >= 2 && active.length >= 1) {
-      state.setupComplete = true;
-    }
-  } finally {
-    state.setupRunning = false;
+  if (
+    (cards?.Active_Leader ?? []).length >= 1 &&
+    (cards?.Mana_Pool ?? []).length >= 2
+  ) {
+    game.data.Game_Logic.setupComplete = true;
   }
 }
 
@@ -68,36 +69,51 @@ async function untapTurnCards() {
     ...(cards?.Mana_Pool ?? []),
     ...(cards?.Unit_Zone ?? [])
   ];
-  if (all.length) await functions.updateCards(all, { isTapped: false });
+
+  if (all.length) {
+    await functions.updateCards(all, { isTapped: false });
+  }
 }
 
 async function selectPhase(phase) {
   if (!game.turn.isMyTurn) return;
+
   game.data.Phase_Control.phase = phase;
   game.data.Phase_Control.activePlayer = game.turn.orderPosition;
-  if (phase === "End Phase") await untapTurnCards();
+
+  if (phase === "End Phase") {
+    await untapTurnCards();
+  }
 }
 
 async function handleNewTurn() {
-  if (!game.turn.isMyTurn) return;
-
   await untapTurnCards();
 
   const isFirstTurn = game.turn.count <= 1;
-  if (!isFirstTurn) {
+
+  if (!isFirstTurn && game.turn.isMyTurn) {
     const storage = cards?.Mana_Storage ?? [];
+
     if (storage.length) {
-      await functions.moveCard(storage[storage.length - 1], "Mana_Pool");
+      await functions.moveCard(
+        storage[storage.length - 1],
+        "Mana_Pool"
+      );
+
       const pool = cards?.Mana_Pool ?? [];
+
       if (pool.length) {
-        await functions.updateCards([pool[pool.length - 1]], {
-          isTapped: false
-        });
+        await functions.updateCards(
+          [pool[pool.length - 1]],
+          { isTapped: false }
+        );
       }
     }
   }
 
-  game.data.Phase_Control.phase = "Draw Phase";
-  game.data.Phase_Control.activePlayer = game.turn.orderPosition;
-  game.data.Phase_Control.firstTurn = false;
+  if (game.turn.isMyTurn) {
+    game.data.Phase_Control.phase = "Draw Phase";
+    game.data.Phase_Control.activePlayer = game.turn.orderPosition;
+    game.data.Phase_Control.firstTurn = false;
+  }
 }

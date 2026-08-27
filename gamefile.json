@@ -143,7 +143,8 @@
                 "height": "25vh",
                 "boxSizing": "border-box",
                 "justifyContent": "flex-start",
-                "alignItems": "stretch"
+                "alignItems": "stretch",
+                "position": "relative"
               },
               "content": [
                 {
@@ -164,7 +165,10 @@
                   "section": "Deck",
                   "style": {
                     "width": "100%",
-                    "height": "11vh"
+                    "height": "11vh",
+                    "position": "absolute",
+                    "left": "0",
+                    "bottom": "0"
                   }
                 }
               ]
@@ -186,13 +190,23 @@
                   "style": {
                     "width": "100%",
                     "height": "30vh",
-                    "margin": "0 auto",
-                    "overflow": "visible",
-                    "transform": "rotate(90deg)",
-                    "transformOrigin": "center center"
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "space-between",
+                    "alignItems": "center",
+                    "overflow": "visible"
                   }
                 }
               ]
+            },
+            {
+              "section": "Game_Logic",
+              "style": {
+                "width": "0px",
+                "height": "0px",
+                "overflow": "hidden",
+                "pointerEvents": "none"
+              }
             }
           ]
         },
@@ -213,7 +227,7 @@
             "displayedTitle": "Mana Storage",
             "noQuickActions": false,
             "noAutoPayTo": true,
-            "isGroupForbidden": true
+            "isGroupForbidden": false
           },
           "Mana_Pool": {
             "isHidden": "yes",
@@ -233,10 +247,14 @@
             "noQuickActions": false,
             "noAutoPayTo": true,
             "isGroupForbidden": true,
-            "enterTapped": false,
+            "enterTapped": true,
             "keepTappedNewTurn": true,
-            "isHorizontalAllowed": false,
-            "opponentAlignment": "CENTER"
+            "isHorizontalAllowed": true,
+            "opponentAlignment": "CENTER",
+            "cardStyle": {
+              "marginTop": "0.15vh",
+              "marginBottom": "0.15vh"
+            }
           },
           "Unit_Zone": {
             "isHidden": "no",
@@ -346,7 +364,7 @@
             "displayedTitle": "Leader Deck",
             "noQuickActions": false,
             "noAutoPayTo": true,
-            "isGroupForbidden": true
+            "isGroupForbidden": false
           },
           "Game_Logic": {
             "type": "custom",
