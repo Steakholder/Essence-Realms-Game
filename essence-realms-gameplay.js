@@ -130,7 +130,7 @@ async function ensureLeaderDeckOrder() {
 
 async function untapTurnCards() {
   const all = [
-    ...(cards?.Level 0 Leader ?? []),
+    ...(cards?.["Level 0 Leader"] ?? []),
     ...(cards?.Mana_Pool ?? []),
     ...(cards?.Unit_Zone ?? [])
   ];
