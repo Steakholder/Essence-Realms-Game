@@ -406,7 +406,7 @@
               }
             },
             "events": {
-              "onPlayersReady": "await placeSelectedLevelZeroLeader()",
+              "onPlayersDeckPicked": "await placeSelectedLevelZeroLeader()",
               "onNewTurn": "await handleNewTurn()"
             }
           },
@@ -574,6 +574,9 @@
               "isTapped": false
             }
           }
+        ],
+        "boardCategoriesInSideboard": [
+          "Level 0 Leader"
         ]
       }
     }

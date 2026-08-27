@@ -54,18 +54,24 @@ problem.
   pre-game collection after initialization, the fallback search covers the
   player's accessible card collections as well.
 */
+/*
+  Level 0 Leader deployment.
+
+  TCG Arena moves the "Level 0 Leader" deck category into the sideboard
+  before board setup because it is listed in boardCategoriesInSideboard.
+  onPlayersDeckPicked fires before the mulligan and before initial board
+  setup, so the Level 0 card is removed from the main Deck before ANY
+  opening-hand/life/mana draw can touch it.
+
+  The five normal Leader cards remain in the native Leader extra deck.
+  They are therefore also unavailable to the Main Deck and opening hand.
+
+  This function moves the existing Level 0 card instance directly to
+  Active_Leader. No duplicate is created.
+*/
 async function placeSelectedLevelZeroLeader() {
   const state = game.data.Game_Logic;
   if (state.levelZeroSetupComplete || state.levelZeroSetupRunning) return;
-
-  const active = cards?.Active_Leader ?? [];
-  if (active.some(card => {
-    const data = functions.getCardData(card);
-    return data?.type === "Level 0 Leader";
-  })) {
-    state.levelZeroSetupComplete = true;
-    return;
-  }
 
   const findLevelZero = (collection) => {
     return (collection ?? []).find(card => {
@@ -74,14 +80,13 @@ async function placeSelectedLevelZeroLeader() {
     });
   };
 
-  // Level 0 should still be in the player's main Deck after initial setup.
-  let levelZero = findLevelZero(cards?.Deck);
+  // boardCategoriesInSideboard should put it here before any board setup.
+  let levelZero = findLevelZero(cards?.Sideboard);
 
-  // Fallback in case TCG Arena has moved the selected category into a
-  // different pre-game collection before onPlayersReady fires.
-  if (!levelZero) levelZero = findLevelZero(cards?.Sideboard);
-  if (!levelZero) levelZero = findLevelZero(cards?.Exile);
-  if (!levelZero) levelZero = findLevelZero(cards?.Hand);
+  // Defensive fallback: if the engine has not yet exposed the category in
+  // Sideboard, find the same exact type in Deck. This still occurs before
+  // the mulligan/initial board setup because the event is onPlayersDeckPicked.
+  if (!levelZero) levelZero = findLevelZero(cards?.Deck);
 
   if (!levelZero) return;
 
@@ -90,11 +95,12 @@ async function placeSelectedLevelZeroLeader() {
   try {
     await functions.moveCard(levelZero, "Active_Leader", { noLogs: true });
 
-    // Re-read the destination and make the exact Level 0 Leader face-up
-    // and untapped.
     const movedLeader = findLevelZero(cards?.Active_Leader);
 
     if (movedLeader) {
+      // Active_Leader itself is a visible section. Explicitly ensure the
+      // card enters upright and face-up rather than inheriting a tapped
+      // state from another destination.
       await functions.updateCards(
         [movedLeader],
         { isTapped: false, isHidden: false }
