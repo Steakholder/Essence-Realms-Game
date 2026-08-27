@@ -159,14 +159,6 @@
                     "width": "100%",
                     "height": "7vh"
                   }
-                },
-                {
-                  "section": "Deck",
-                  "style": {
-                    "width": "8vh",
-                    "height": "8vh",
-                    "margin": "0 auto"
-                  }
                 }
               ]
             },
@@ -186,12 +178,10 @@
                 {
                   "section": "Life_Zone",
                   "style": {
-                    "width": "30vh",
-                    "height": "12vh",
-                    "transform": "rotate(90deg)",
-                    "transformOrigin": "center center",
+                    "width": "100%",
+                    "height": "30vh",
                     "margin": "0 auto",
-                    "overflow": "visible"
+                    "overflow": "hidden"
                   }
                 }
               ]
@@ -222,7 +212,7 @@
             "height": 7,
             "alignment": "DECK",
             "displayedTitle": "Mana Storage",
-            "noQuickActions": false,
+            "noQuickActions": true,
             "noAutoPayTo": true
           },
           "Mana_Pool": {
@@ -256,17 +246,6 @@
             "noQuickActions": false,
             "noAutoPayTo": true,
             "isGroupForbidden": false
-          },
-          "Deck": {
-            "isHidden": "yes",
-            "height": 7,
-            "alignment": "DECK",
-            "displayedTitle": "Main Deck",
-            "noQuickActions": false,
-            "noAutoPayTo": true,
-            "drawDestinations": {
-              "_default": "Hand"
-            }
           },
           "Discard": {
             "isHidden": "no",
@@ -365,7 +344,7 @@
             "height": 7,
             "alignment": "DECK",
             "displayedTitle": "Leader Deck",
-            "noQuickActions": false,
+            "noQuickActions": true,
             "noAutoPayTo": true,
             "isGroupForbidden": false
           },
@@ -426,10 +405,7 @@
         }
       },
       "autoPlayFromHand": {
-        "Unit": "Unit_Zone",
-        "Spell": "Stack",
-        "Enchantment": "Stack",
-        "Leader": "Active_Leader"
+        "Unit": "Unit_Zone"
       },
       "beforeGameStart": {
         "initialBoardSetup": [
@@ -449,14 +425,17 @@
               "isHidden": "yes",
               "isTapped": true
             }
+          },
+          {
+            "drawFromTop": "Mana_Storage",
+            "count": 2,
+            "destination": "Mana_Pool",
+            "overrideState": {
+              "isHidden": "yes",
+              "isTapped": false
+            }
           }
         ]
-      },
-      "autoPlayFromStack": {
-        "Spell": "Discard",
-        "Enchantment": "Discard",
-        "Unit": "Unit_Zone",
-        "Leader": "Active_Leader"
       }
     }
   },
