@@ -214,6 +214,11 @@
               "Unit": "Mana_Pool",
               "Spell": "Mana_Pool",
               "Enchantment": "Mana_Pool"
+            },
+            "autoPlayFromStack": {
+              "Unit": "Mana_Pool",
+              "Spell": "Mana_Pool",
+              "Enchantment": "Mana_Pool"
             }
           },
           "Mana_Pool": {
@@ -239,6 +244,11 @@
             "isHorizontalAllowed": true,
             "opponentAlignment": "START",
             "autoPlayFromHand": {
+              "Unit": "Hand",
+              "Spell": "Hand",
+              "Enchantment": "Hand"
+            },
+            "autoPlayFromStack": {
               "Unit": "Hand",
               "Spell": "Hand",
               "Enchantment": "Hand"
@@ -353,6 +363,9 @@
             "noQuickActions": true,
             "noAutoPayTo": true,
             "autoPlayFromHand": {
+              "Leader": "Level_0_Leader"
+            },
+            "autoPlayFromStack": {
               "Leader": "Level_0_Leader"
             }
           },
