@@ -485,14 +485,6 @@
             "enterTapped": true,
             "keepTappedNewTurn": true,
             "isHorizontalAllowed": true
-          },
-          "Level 0 Leader": {
-            "isHidden": "yes",
-            "height": 11,
-            "alignment": "DECK",
-            "displayedTitle": "Level 0 Leader",
-            "noQuickActions": true,
-            "noAutoPayTo": true
           }
         },
         "categoriesAlreadyOnBoard": [
