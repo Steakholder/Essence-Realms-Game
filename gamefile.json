@@ -139,12 +139,12 @@
             {
               "direction": "column",
               "style": {
-                "width": "10%",
+                "width": "12%",
                 "height": "25vh",
                 "boxSizing": "border-box",
                 "justifyContent": "flex-start",
                 "alignItems": "stretch",
-                "position": "relative"
+                "position": "static"
               },
               "content": [
                 {
@@ -165,10 +165,7 @@
                   "section": "Deck",
                   "style": {
                     "width": "100%",
-                    "height": "11vh",
-                    "position": "absolute",
-                    "left": "0",
-                    "bottom": "0"
+                    "height": "11vh"
                   }
                 }
               ]
@@ -198,15 +195,6 @@
                   }
                 }
               ]
-            },
-            {
-              "section": "Game_Logic",
-              "style": {
-                "width": "0px",
-                "height": "0px",
-                "overflow": "hidden",
-                "pointerEvents": "none"
-              }
             }
           ]
         },
@@ -223,11 +211,15 @@
           "Mana_Storage": {
             "isHidden": "yes",
             "height": 7,
-            "alignment": "CENTER",
+            "alignment": "DECK",
             "displayedTitle": "Mana Storage",
             "noQuickActions": false,
             "noAutoPayTo": true,
-            "isGroupForbidden": false
+            "isGroupForbidden": false,
+            "opponentAlignment": "DECK",
+            "drawDestinations": {
+              "_default": "Hand"
+            }
           },
           "Mana_Pool": {
             "isHidden": "yes",
@@ -360,35 +352,14 @@
           "Leader": {
             "isHidden": "yes",
             "height": 7,
-            "alignment": "CENTER",
+            "alignment": "DECK",
             "displayedTitle": "Leader Deck",
             "noQuickActions": false,
             "noAutoPayTo": true,
-            "isGroupForbidden": false
-          },
-          "Game_Logic": {
-            "type": "custom",
-            "defaultValue": {
-              "setupComplete": false,
-              "setupRunning": false
-            },
-            "blueprint": {
-              "type": "div",
-              "props": {
-                "style": {
-                  "display": "none",
-                  "width": "0px",
-                  "height": "0px",
-                  "overflow": "hidden",
-                  "pointerEvents": "none"
-                }
-              }
-            },
-            "events": {
-              "onPlayersReady": "await setupDuelStart()",
-              "onOpponentUpdate": "await setupDuelStart()",
-              "onCardsUpdate": "await setupDuelStart()",
-              "onNewTurn": "await handleNewTurn()"
+            "isGroupForbidden": false,
+            "opponentAlignment": "DECK",
+            "drawDestinations": {
+              "_default": "Hand"
             }
           },
           "Stack": {
@@ -408,8 +379,8 @@
           },
           "Deck": {
             "isHidden": "yes",
-            "height": 7,
-            "alignment": "END",
+            "height": 11,
+            "alignment": "DECK",
             "displayedTitle": "Main Deck",
             "noQuickActions": false,
             "noAutoPayTo": true,
@@ -417,7 +388,7 @@
             "drawDestinations": {
               "_default": "Hand"
             },
-            "opponentAlignment": "START"
+            "opponentAlignment": "DECK"
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -436,7 +407,10 @@
         }
       },
       "autoPlayFromHand": {
-        "Unit": "Unit_Zone"
+        "Leader": "Active_Leader",
+        "Unit": "Unit_Zone",
+        "Spell": "Stack",
+        "Enchantment": "Stack"
       },
       "beforeGameStart": {
         "initialBoardSetup": [
@@ -455,6 +429,24 @@
             "overrideState": {
               "isHidden": "yes",
               "isTapped": true
+            }
+          },
+          {
+            "drawFromTop": "Mana_Storage",
+            "count": 2,
+            "destination": "Mana_Pool",
+            "overrideState": {
+              "isHidden": "yes",
+              "isTapped": false
+            }
+          },
+          {
+            "drawFromTop": "Leader",
+            "count": 1,
+            "destination": "Active_Leader",
+            "overrideState": {
+              "isHidden": "no",
+              "isTapped": false
             }
           }
         ]
