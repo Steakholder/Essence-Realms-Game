@@ -349,7 +349,7 @@
             "noQuickActions": true,
             "noAutoPayTo": true,
             "drawDestinations": {
-              "Leader": "Stack"
+              "Leader": "Level_0_Leader"
             }
           },
           "Game_Logic": {
@@ -382,7 +382,7 @@
             "displayedTitle": "Active Leader",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isGroupForbidden": true
+            "isGroupForbidden": false
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -402,7 +402,8 @@
         }
       },
       "autoPlayFromHand": {
-        "Unit": "Unit_Zone"
+        "Unit": "Unit_Zone",
+        "Leader": "GROUP"
       },
       "beforeGameStart": {
         "initialBoardSetup": [
