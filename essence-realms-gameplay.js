@@ -15,60 +15,61 @@ problem.
 
 
 /*
-  Leader correction only.
-
-  Native V2.5 setup still performs the initial Leader draw. If TCG Arena
-  happens to choose a Leader other than er-00, this function returns that
-  card to the Leader Deck and moves the actual er-00 card to Active Leader.
-
-  No Mana, Life, Main Deck, layout, or other opening behavior is changed.
-*/
-/*
-  Level 0 Leader is now its own native card-type category.
-  The deckbuilder therefore automatically places cards with
-  type "Level 0 Leader" into that category, while levels 1-5 remain
-  in the built-in Leader category.
-
-  At game start, the selected Level 0 card is already in the player's
-  sideboard/category pool. We identify that actual card instance and move
-  it directly to Active Leader. No random Leader draw or replacement is used.
-*/
-/*
-  Level 0 Leader is selected by TCG Arena's native pre-game
-  boardCardSelection step. After every player has completed that
-  selection, move the selected Level 0 card directly to Active Leader.
-
-  There is deliberately no onCardsUpdate polling here: the opening board
-  is established by initialBoardSetup in one flat setup, and this handler
-  runs only once after the native pre-game selection is complete.
-*/
-/*
   Level 0 Leader deployment.
 
-  The target is explicitly the card whose card-data type is exactly
-  "Level 0 Leader". The card is moved as an existing card instance; no
-  duplicate is created.
+  "Level 0 Leader" is a deck-building category/card type, not a gameplay
+  deck section. TCG Arena places that category in the player's Sideboard
+  before the opening board is built. We therefore find the actual card
+  instance in Sideboard by its exact card type and move that same instance
+  to Active_Leader.
 
-  We search the player's Deck first because Level 0 is intentionally left
-  there by initialBoardSetup. If the engine exposes the card in another
-  pre-game collection after initialization, the fallback search covers the
-  player's accessible card collections as well.
+  This deliberately uses the canonical name "Level 0 Leader" everywhere.
+  The gameplay target is Active_Leader; the card is identified only by
+  the canonical card type/category name above.
 */
-/*
-  Level 0 Leader deployment.
+async function ensureLevelZeroLeaderFromCategory() {
+  const state = game.data.Game_Logic;
+  if (!state || state.levelZeroSetupComplete || state.levelZeroSetupRunning) return;
 
-  TCG Arena moves the "Level 0 Leader" deck category into the sideboard
-  before board setup because it is listed in boardCategoriesInSideboard.
-  onPlayersDeckPicked fires before the mulligan and before initial board
-  setup, so the Level 0 card is removed from the main Deck before ANY
-  opening-hand/life/mana draw can touch it.
+  const active = cards?.Active_Leader ?? [];
+  if (active.length) {
+    const activeData = functions.getCardData(active[active.length - 1]);
+    if (activeData?.type === "Level 0 Leader") {
+      state.levelZeroSetupComplete = true;
+      return;
+    }
+  }
 
-  The five normal Leader cards remain in the native Leader extra deck.
-  They are therefore also unavailable to the Main Deck and opening hand.
+  const sideboard = cards?.Sideboard ?? [];
+  const levelZero = sideboard.find(card => {
+    const data = functions.getCardData(card);
+    return data?.type === "Level 0 Leader";
+  });
 
-  This function moves the existing Level 0 card instance directly to
-  Active_Leader. No duplicate is created.
-*/
+  if (!levelZero) return;
+
+  state.levelZeroSetupRunning = true;
+  try {
+    await functions.moveCard(levelZero, "Active_Leader", { noLogs: true });
+
+    const nowActive = cards?.Active_Leader ?? [];
+    const deployed = nowActive.find(card => {
+      const data = functions.getCardData(card);
+      return data?.type === "Level 0 Leader";
+    });
+
+    if (deployed) {
+      await functions.updateCards(
+        [deployed],
+        { isTapped: false, isHidden: false }
+      );
+      state.levelZeroSetupComplete = true;
+    }
+  } finally {
+    state.levelZeroSetupRunning = false;
+  }
+}
+
 async function ensureLeaderDeckOrder() {
   const state = game.data.Game_Logic;
   if (!state || state.leaderOrderRunning || state.leaderSetupRunning) return;

@@ -16,8 +16,8 @@
         "gameplay": "Standard",
         "deckRuleset": "Standard",
         "customCategories": [
-          "Leader",
-          "Level 0 Leader"
+          "Level 0 Leader",
+          "Leader"
         ]
       }
     ],
@@ -31,14 +31,14 @@
         },
         "categories": [
           {
-            "category": "Leader",
-            "min": 5,
-            "max": 5
-          },
-          {
             "category": "Level 0 Leader",
             "min": 1,
             "max": 1
+          },
+          {
+            "category": "Leader",
+            "min": 5,
+            "max": 5
           }
         ]
       }
@@ -392,7 +392,9 @@
             "defaultValue": {
               "turnInitialized": false,
               "leaderOrderComplete": false,
-              "leaderOrderRunning": false
+              "leaderOrderRunning": false,
+              "levelZeroSetupComplete": false,
+              "levelZeroSetupRunning": false
             },
             "blueprint": {
               "type": "div",
@@ -407,7 +409,9 @@
               }
             },
             "events": {
-              "onNewTurn": "await handleNewTurn()"
+              "onCardsUpdate": "await ensureLevelZeroLeaderFromCategory()",
+              "onNewTurn": "await handleNewTurn()",
+              "onPlayersReady": "await ensureLevelZeroLeaderFromCategory()"
             }
           },
           "Life_1": {
@@ -481,14 +485,6 @@
             "enterTapped": true,
             "keepTappedNewTurn": true,
             "isHorizontalAllowed": true
-          },
-          "Level_0_Leader": {
-            "isHidden": "yes",
-            "height": 11,
-            "alignment": "DECK",
-            "displayedTitle": "Level 0 Leader",
-            "noQuickActions": true,
-            "noAutoPayTo": true
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -512,15 +508,6 @@
       },
       "beforeGameStart": {
         "initialBoardSetup": [
-          {
-            "drawFromTop": "Level_0_Leader",
-            "count": 1,
-            "destination": "Active_Leader",
-            "overrideState": {
-              "isHidden": "no",
-              "isTapped": false
-            }
-          },
           {
             "drawFromTop": "Deck",
             "count": 6,
