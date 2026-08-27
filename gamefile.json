@@ -95,14 +95,14 @@
                   }
                 },
                 {
-                  "section": "Leader",
+                  "section": "Leader_Deck",
                   "style": {
                     "width": "100%",
                     "height": "7vh"
                   }
                 },
                 {
-                  "section": "Mana_Storage",
+                  "section": "Mana_Storage_Pile",
                   "style": {
                     "width": "100%",
                     "height": "7vh"
@@ -178,20 +178,50 @@
                 "boxSizing": "border-box",
                 "display": "flex",
                 "alignItems": "center",
-                "justifyContent": "center",
+                "justifyContent": "flex-end",
                 "overflow": "visible"
               },
               "content": [
                 {
-                  "section": "Life_Zone",
+                  "section": "Life_6",
                   "style": {
                     "width": "100%",
-                    "height": "30vh",
-                    "display": "flex",
-                    "flexDirection": "column",
-                    "justifyContent": "space-between",
-                    "alignItems": "center",
-                    "overflow": "visible"
+                    "height": "5vh"
+                  }
+                },
+                {
+                  "section": "Life_5",
+                  "style": {
+                    "width": "100%",
+                    "height": "5vh"
+                  }
+                },
+                {
+                  "section": "Life_4",
+                  "style": {
+                    "width": "100%",
+                    "height": "5vh"
+                  }
+                },
+                {
+                  "section": "Life_3",
+                  "style": {
+                    "width": "100%",
+                    "height": "5vh"
+                  }
+                },
+                {
+                  "section": "Life_2",
+                  "style": {
+                    "width": "100%",
+                    "height": "5vh"
+                  }
+                },
+                {
+                  "section": "Life_1",
+                  "style": {
+                    "width": "100%",
+                    "height": "5vh"
                   }
                 }
               ]
@@ -216,10 +246,7 @@
             "noQuickActions": false,
             "noAutoPayTo": true,
             "isGroupForbidden": false,
-            "opponentAlignment": "DECK",
-            "drawDestinations": {
-              "_default": "Hand"
-            }
+            "opponentAlignment": "DECK"
           },
           "Mana_Pool": {
             "isHidden": "yes",
@@ -304,7 +331,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '● ' : '' }}Draw Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '\u25cf ' : '' }}Draw Phase",
                   "onClick": "await selectPhase('Draw Phase')"
                 },
                 {
@@ -317,7 +344,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '● ' : '' }}Main Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '\u25cf ' : '' }}Main Phase",
                   "onClick": "await selectPhase('Main Phase')"
                 },
                 {
@@ -330,7 +357,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '● ' : '' }}Combat Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '\u25cf ' : '' }}Combat Phase",
                   "onClick": "await selectPhase('Combat Phase')"
                 },
                 {
@@ -343,7 +370,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '● ' : '' }}End Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '\u25cf ' : '' }}End Phase",
                   "onClick": "await selectPhase('End Phase')"
                 }
               ]
@@ -357,10 +384,7 @@
             "noQuickActions": false,
             "noAutoPayTo": true,
             "isGroupForbidden": false,
-            "opponentAlignment": "DECK",
-            "drawDestinations": {
-              "_default": "Hand"
-            }
+            "opponentAlignment": "DECK"
           },
           "Stack": {
             "isDefaultSection": true,
@@ -389,6 +413,96 @@
               "_default": "Hand"
             },
             "opponentAlignment": "DECK"
+          },
+          "Leader_Deck": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "Leader Deck",
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
+          },
+          "Mana_Storage_Pile": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "Mana Storage",
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
+          },
+          "Life_1": {
+            "isHidden": "yes",
+            "height": 5,
+            "alignment": "CENTER",
+            "displayedTitle": "Life",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_2": {
+            "isHidden": "yes",
+            "height": 5,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_3": {
+            "isHidden": "yes",
+            "height": 5,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_4": {
+            "isHidden": "yes",
+            "height": 5,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_5": {
+            "isHidden": "yes",
+            "height": 5,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_6": {
+            "isHidden": "yes",
+            "height": 5,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -413,43 +527,204 @@
         "Enchantment": "Stack"
       },
       "beforeGameStart": {
-        "initialBoardSetup": [
-          {
-            "drawFromTop": "Deck",
-            "count": 8,
-            "destination": "Mana_Storage",
-            "overrideState": {
-              "isHidden": "yes"
+        "initialBoardSetup": {
+          "0": [
+            {
+              "drawFromTop": "Deck",
+              "count": 8,
+              "destination": "Mana_Storage",
+              "overrideState": {
+                "isHidden": "yes"
+              }
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 1,
+              "destination": "Life_6",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": true
+              }
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 1,
+              "destination": "Life_5",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": true
+              }
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 1,
+              "destination": "Life_4",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": true
+              }
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 1,
+              "destination": "Life_3",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": true
+              }
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 1,
+              "destination": "Life_2",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": true
+              }
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 1,
+              "destination": "Life_1",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": true
+              }
+            },
+            {
+              "drawFromTop": "Mana_Storage",
+              "count": 2,
+              "destination": "Mana_Pool",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": false
+              }
+            },
+            {
+              "drawFromTop": "Mana_Storage",
+              "count": 6,
+              "destination": "Mana_Storage_Pile",
+              "overrideState": {
+                "isHidden": "yes"
+              }
+            },
+            {
+              "drawFromTop": "Leader",
+              "count": 1,
+              "destination": "Active_Leader",
+              "overrideState": {
+                "isHidden": "no",
+                "isTapped": false
+              }
+            },
+            {
+              "drawFromTop": "Leader",
+              "count": 5,
+              "destination": "Leader_Deck",
+              "overrideState": {
+                "isHidden": "yes"
+              }
             }
-          },
-          {
-            "drawFromTop": "Deck",
-            "count": 6,
-            "destination": "Life_Zone",
-            "overrideState": {
-              "isHidden": "yes",
-              "isTapped": true
+          ],
+          "1": [
+            {
+              "drawFromTop": "Deck",
+              "count": 8,
+              "destination": "Mana_Storage",
+              "overrideState": {
+                "isHidden": "yes"
+              }
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 1,
+              "destination": "Life_6",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": true
+              }
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 1,
+              "destination": "Life_5",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": true
+              }
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 1,
+              "destination": "Life_4",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": true
+              }
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 1,
+              "destination": "Life_3",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": true
+              }
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 1,
+              "destination": "Life_2",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": true
+              }
+            },
+            {
+              "drawFromTop": "Deck",
+              "count": 1,
+              "destination": "Life_1",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": true
+              }
+            },
+            {
+              "drawFromTop": "Mana_Storage",
+              "count": 2,
+              "destination": "Mana_Pool",
+              "overrideState": {
+                "isHidden": "yes",
+                "isTapped": false
+              }
+            },
+            {
+              "drawFromTop": "Mana_Storage",
+              "count": 6,
+              "destination": "Mana_Storage_Pile",
+              "overrideState": {
+                "isHidden": "yes"
+              }
+            },
+            {
+              "drawFromTop": "Leader",
+              "count": 1,
+              "destination": "Active_Leader",
+              "overrideState": {
+                "isHidden": "no",
+                "isTapped": false
+              }
+            },
+            {
+              "drawFromTop": "Leader",
+              "count": 5,
+              "destination": "Leader_Deck",
+              "overrideState": {
+                "isHidden": "yes"
+              }
             }
-          },
-          {
-            "drawFromTop": "Mana_Storage",
-            "count": 2,
-            "destination": "Mana_Pool",
-            "overrideState": {
-              "isHidden": "yes",
-              "isTapped": false
-            }
-          },
-          {
-            "drawFromTop": "Leader",
-            "count": 1,
-            "destination": "Active_Leader",
-            "overrideState": {
-              "isHidden": "no",
-              "isTapped": false
-            }
-          }
-        ]
+          ]
+        }
       }
     }
   },

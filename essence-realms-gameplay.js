@@ -22,7 +22,7 @@ async function handleNewTurn() {
   // First player receives no new Mana on the opening turn.
   const isFirstTurn = game.turn.count <= 1;
   if (!isFirstTurn) {
-    const storage = cards?.Mana_Storage ?? [];
+    const storage = cards?.Mana_Storage_Pile ?? [];
     if (storage.length) {
       await functions.moveCard(storage[storage.length - 1], "Mana_Pool");
       const pool = cards?.Mana_Pool ?? [];
