@@ -16,7 +16,9 @@
         "gameplay": "Standard",
         "deckRuleset": "Standard",
         "customCategories": [
-          "Level 0 Leader"
+          "Level 0 Leader",
+          "Leader",
+          "Level_0_Leader"
         ]
       }
     ],
@@ -38,6 +40,11 @@
             "category": "Leader",
             "min": 5,
             "max": 5
+          },
+          {
+            "category": "Level_0_Leader",
+            "min": 1,
+            "max": 1
           }
         ]
       }
@@ -383,9 +390,8 @@
             "height": 11,
             "alignment": "DECK",
             "displayedTitle": "Leader Deck",
-            "noQuickActions": false,
-            "noAutoPayTo": true,
-            "isGroupForbidden": false
+            "noQuickActions": true,
+            "noAutoPayTo": true
           },
           "Game_Logic": {
             "type": "custom",
@@ -481,6 +487,14 @@
             "enterTapped": true,
             "keepTappedNewTurn": true,
             "isHorizontalAllowed": true
+          },
+          "Level_0_Leader": {
+            "isHidden": "yes",
+            "height": 11,
+            "alignment": "DECK",
+            "displayedTitle": "Level 0 Leader",
+            "noQuickActions": true,
+            "noAutoPayTo": true
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -505,7 +519,7 @@
       "beforeGameStart": {
         "initialBoardSetup": [
           {
-            "drawFromTop": "Level 0 Leader",
+            "drawFromTop": "Level_0_Leader",
             "count": 1,
             "destination": "Active_Leader",
             "overrideState": {
@@ -584,6 +598,10 @@
               "isTapped": false
             }
           }
+        ],
+        "boardCategoriesInSideboard": [
+          "Leader",
+          "Level_0_Leader"
         ]
       }
     }
