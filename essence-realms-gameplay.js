@@ -33,45 +33,44 @@ problem.
   sideboard/category pool. We identify that actual card instance and move
   it directly to Active Leader. No random Leader draw or replacement is used.
 */
-async function ensureLevelZeroLeaderFromCategory() {
-  const state = game.data.Game_Logic;
-  if (!state || state.levelZeroSetupComplete || state.levelZeroSetupRunning) return;
+/*
+  Level 0 Leader is selected by TCG Arena's native pre-game
+  boardCardSelection step. After every player has completed that
+  selection, move the selected Level 0 card directly to Active Leader.
 
+  There is deliberately no onCardsUpdate polling here: the opening board
+  is established by initialBoardSetup in one flat setup, and this handler
+  runs only once after the native pre-game selection is complete.
+*/
+async function placeSelectedLevelZeroLeader() {
   const active = cards?.Active_Leader ?? [];
-  const sideboard = cards?.Sideboard ?? [];
-
-  if (active.length) {
-    const activeData = functions.getCardData(active[active.length - 1]);
-    if (activeData?.type === "Level 0 Leader") {
-      state.levelZeroSetupComplete = true;
-      return;
-    }
+  if (active.some(card => functions.getCardData(card)?.type === "Level 0 Leader")) {
+    return;
   }
 
-  const levelZero = sideboard.find(card => {
-    const d = functions.getCardData(card);
-    return d?.type === "Level 0 Leader";
+  const sideboard = cards?.Sideboard ?? [];
+  const selected = sideboard.find(card => {
+    const data = functions.getCardData(card);
+    return data?.type === "Level 0 Leader";
   });
 
-  if (!levelZero) return;
+  if (!selected) return;
 
-  state.levelZeroSetupRunning = true;
+  await functions.moveCard(selected, "Active_Leader", { noLogs: true });
 
-  try {
-    await functions.moveCard(levelZero, "Active_Leader", { noLogs: true });
+  const nowActive = cards?.Active_Leader ?? [];
+  const leader = nowActive.find(card =>
+    functions.getCardData(card)?.type === "Level 0 Leader"
+  );
 
-    const nowActive = cards?.Active_Leader ?? [];
-    if (nowActive.length) {
-      await functions.updateCards(
-        [nowActive[nowActive.length - 1]],
-        { isTapped: false, isHidden: false }
-      );
-    }
-
-    state.levelZeroSetupComplete = true;
-  } finally {
-    state.levelZeroSetupRunning = false;
+  if (leader) {
+    await functions.updateCards(
+      [leader],
+      { isTapped: false, isHidden: false }
+    );
   }
+
+  game.data.Game_Logic.levelZeroSetupComplete = true;
 }
 
 async function ensureLeaderDeckOrder() {

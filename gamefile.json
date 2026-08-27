@@ -391,8 +391,7 @@
               "leaderOrderComplete": false,
               "leaderOrderRunning": false,
               "leaderSetupRunning": false,
-              "levelZeroSetupComplete": false,
-              "levelZeroSetupRunning": false
+              "levelZeroSetupComplete": false
             },
             "blueprint": {
               "type": "div",
@@ -407,9 +406,8 @@
               }
             },
             "events": {
-              "onCardsUpdate": "await ensureLevelZeroLeaderFromCategory()",
-              "onNewTurn": "await handleNewTurn()",
-              "onPlayersReady": "await ensureLevelZeroLeaderFromCategory()"
+              "onPlayersBoardCardSelected": "await placeSelectedLevelZeroLeader()",
+              "onNewTurn": "await handleNewTurn()"
             }
           },
           "Life_1": {
@@ -507,7 +505,7 @@
         "initialBoardSetup": [
           {
             "drawFromTop": "Deck",
-            "count": 8,
+            "count": 6,
             "destination": "Mana_Storage",
             "overrideState": {
               "isHidden": "yes"
@@ -568,7 +566,7 @@
             }
           },
           {
-            "drawFromTop": "Mana_Storage",
+            "drawFromTop": "Deck",
             "count": 2,
             "destination": "Mana_Pool",
             "overrideState": {
@@ -580,6 +578,14 @@
         "boardCategoriesInSideboard": [
           "Leader",
           "Level 0 Leader"
+        ],
+        "boardCardSelection": [
+          {
+            "category": "Level 0 Leader",
+            "min": 1,
+            "max": 1,
+            "unselectedDestination": "RemoveHidden"
+          }
         ]
       }
     }
