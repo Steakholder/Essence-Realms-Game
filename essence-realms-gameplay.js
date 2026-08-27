@@ -42,35 +42,68 @@ problem.
   is established by initialBoardSetup in one flat setup, and this handler
   runs only once after the native pre-game selection is complete.
 */
+/*
+  Level 0 Leader deployment.
+
+  The target is explicitly the card whose card-data type is exactly
+  "Level 0 Leader". The card is moved as an existing card instance; no
+  duplicate is created.
+
+  We search the player's Deck first because Level 0 is intentionally left
+  there by initialBoardSetup. If the engine exposes the card in another
+  pre-game collection after initialization, the fallback search covers the
+  player's accessible card collections as well.
+*/
 async function placeSelectedLevelZeroLeader() {
+  const state = game.data.Game_Logic;
+  if (state.levelZeroSetupComplete || state.levelZeroSetupRunning) return;
+
   const active = cards?.Active_Leader ?? [];
-  if (active.some(card => functions.getCardData(card)?.type === "Level 0 Leader")) {
+  if (active.some(card => {
+    const data = functions.getCardData(card);
+    return data?.type === "Level 0 Leader";
+  })) {
+    state.levelZeroSetupComplete = true;
     return;
   }
 
-  const sideboard = cards?.Sideboard ?? [];
-  const selected = sideboard.find(card => {
-    const data = functions.getCardData(card);
-    return data?.type === "Level 0 Leader";
-  });
+  const findLevelZero = (collection) => {
+    return (collection ?? []).find(card => {
+      const data = functions.getCardData(card);
+      return data?.type === "Level 0 Leader";
+    });
+  };
 
-  if (!selected) return;
+  // Level 0 should still be in the player's main Deck after initial setup.
+  let levelZero = findLevelZero(cards?.Deck);
 
-  await functions.moveCard(selected, "Active_Leader", { noLogs: true });
+  // Fallback in case TCG Arena has moved the selected category into a
+  // different pre-game collection before onPlayersReady fires.
+  if (!levelZero) levelZero = findLevelZero(cards?.Sideboard);
+  if (!levelZero) levelZero = findLevelZero(cards?.Exile);
+  if (!levelZero) levelZero = findLevelZero(cards?.Hand);
 
-  const nowActive = cards?.Active_Leader ?? [];
-  const leader = nowActive.find(card =>
-    functions.getCardData(card)?.type === "Level 0 Leader"
-  );
+  if (!levelZero) return;
 
-  if (leader) {
-    await functions.updateCards(
-      [leader],
-      { isTapped: false, isHidden: false }
-    );
+  state.levelZeroSetupRunning = true;
+
+  try {
+    await functions.moveCard(levelZero, "Active_Leader", { noLogs: true });
+
+    // Re-read the destination and make the exact Level 0 Leader face-up
+    // and untapped.
+    const movedLeader = findLevelZero(cards?.Active_Leader);
+
+    if (movedLeader) {
+      await functions.updateCards(
+        [movedLeader],
+        { isTapped: false, isHidden: false }
+      );
+      state.levelZeroSetupComplete = true;
+    }
+  } finally {
+    state.levelZeroSetupRunning = false;
   }
-
-  game.data.Game_Logic.levelZeroSetupComplete = true;
 }
 
 async function ensureLeaderDeckOrder() {
