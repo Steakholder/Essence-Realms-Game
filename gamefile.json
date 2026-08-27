@@ -180,9 +180,50 @@
                 "justifyContent": "flex-start",
                 "alignItems": "center"
               },
-              "content": {
-                "section": "Life_Zone"
-              }
+              "content": [
+                {
+                  "section": "Life_6",
+                  "style": {
+                    "width": "12vh",
+                    "height": "7vh"
+                  }
+                },
+                {
+                  "section": "Life_5",
+                  "style": {
+                    "width": "12vh",
+                    "height": "7vh"
+                  }
+                },
+                {
+                  "section": "Life_4",
+                  "style": {
+                    "width": "12vh",
+                    "height": "7vh"
+                  }
+                },
+                {
+                  "section": "Life_3",
+                  "style": {
+                    "width": "12vh",
+                    "height": "7vh"
+                  }
+                },
+                {
+                  "section": "Life_2",
+                  "style": {
+                    "width": "12vh",
+                    "height": "7vh"
+                  }
+                },
+                {
+                  "section": "Life_1",
+                  "style": {
+                    "width": "12vh",
+                    "height": "7vh"
+                  }
+                }
+              ]
             },
             {
               "section": "Game_Logic",
@@ -217,9 +258,9 @@
           },
           "Life_Zone": {
             "isHidden": "yes",
-            "height": 14,
-            "alignment": "DECK",
-            "displayedTitle": "Life Zone",
+            "height": 7,
+            "alignment": "END",
+            "displayedTitle": "Life",
             "noQuickActions": false,
             "noAutoPayTo": true,
             "isGroupForbidden": true,
@@ -359,6 +400,78 @@
             "events": {
               "onNewTurn": "await handleNewTurn()"
             }
+          },
+          "Life_1": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_2": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_3": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_4": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_5": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
+          },
+          "Life_6": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "Life",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
+            "isHorizontalAllowed": true
           },
           "Level_0_Leader": {
             "isHidden": "no",
