@@ -1025,35 +1025,5 @@
       "ER_STD": 1
     },
     "manaValue": 3
-  },
-    },
-  "er-37": {
-    "id": "er-37",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Dr. Romero, Zomborg Patient Zero"
-        },
-        "type": "Leader",
-        "cost": 20,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/37.webp"
-      }
-    },
-    "name": "Dr. Zomborg, Era of Eternal Unlife",
-    "type": "Leader",
-    "cost": 20,
-    "level": 5,
-    "essence": [
-      "Metal",
-      "Unlife",
-      "Plasma"
-    ],
-    "battlePower": 15000,
-    "limited": true,
-    "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
-    },
-    "manaValue": 4
   }
 }
