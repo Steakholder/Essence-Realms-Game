@@ -209,7 +209,10 @@
             "displayedTitle": "Mana Storage",
             "noQuickActions": false,
             "noAutoPayTo": true,
-            "isGroupForbidden": false
+            "isGroupForbidden": false,
+            "autoPlayFromHand": {
+              "_default": "Mana_Pool"
+            }
           },
           "Mana_Pool": {
             "isHidden": "yes",
@@ -232,7 +235,10 @@
             "enterTapped": true,
             "keepTappedNewTurn": true,
             "isHorizontalAllowed": true,
-            "opponentAlignment": "START"
+            "opponentAlignment": "START",
+            "autoPlayFromHand": {
+              "_default": "Hand"
+            }
           },
           "Unit_Zone": {
             "isHidden": "no",
@@ -341,7 +347,10 @@
             "alignment": "DECK",
             "displayedTitle": "Leader Deck",
             "noQuickActions": true,
-            "noAutoPayTo": true
+            "noAutoPayTo": true,
+            "autoPlayFromHand": {
+              "_default": "Level_0_Leader"
+            }
           },
           "Game_Logic": {
             "type": "custom",
