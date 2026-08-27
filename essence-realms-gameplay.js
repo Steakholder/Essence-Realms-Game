@@ -1,53 +1,51 @@
-/* Essence Realms gameplay foundation v0.6.3 */
+/* Essence Realms gameplay foundation v0.8 */
 
-function cardDef(card) { return card ? functions.getCardData(card) : null; }
+function cardDef(card) {
+    return card ? functions.getCardData(card) : null;
+}
 
 function findLevelZeroLeader() {
-    const leaders = [...(cards?.Leader_Deck ?? []), ...(cards?.Sideboard ?? [])];
+    const leaders = cards?.Leader ?? [];
     return leaders.find(card => {
         const d = cardDef(card);
         return d?.type === "Leader" && Number(d?.level) === 0;
     });
 }
 
-async function ensureLeaderDeck() {
-    const sideboardLeaders = (cards?.Sideboard ?? []).filter(card => cardDef(card)?.type === "Leader");
-    if (sideboardLeaders.length) await functions.moveCards(sideboardLeaders, "Leader_Deck");
-}
-
-async function afterMulliganSetup() {
-    // This runs after the built-in mulligan, so the opening hand is already settled.
-    const storage = cards?.Mana_Storage ?? [];
-    const life = cards?.Life_Zone ?? [];
-    const deck = cards?.Deck ?? [];
-
-    if (storage.length < 8 && deck.length) {
-        await functions.draw(Math.min(8 - storage.length, deck.length), false, "Mana_Storage");
-    }
-
-    const deckAfterStorage = cards?.Deck ?? [];
-    const lifeNow = cards?.Life_Zone ?? [];
-    if (lifeNow.length < 6 && deckAfterStorage.length) {
-        await functions.draw(Math.min(6 - lifeNow.length, deckAfterStorage.length), false, "Life_Zone");
-    }
-
-    await ensureLeaderDeck();
-
+async function setupDuelStart() {
+    // Native initialBoardSetup now handles:
+    // 8 cards -> Mana_Storage
+    // 6 cards -> Life_Zone
+    //
+    // This script only performs the two actions that require card inspection:
+    // Level 0 Leader -> Active Leader
+    // 2 Mana Storage cards -> Mana Pool
     const levelZero = findLevelZeroLeader();
-    if (levelZero && !(cards?.Active_Leader ?? []).length) {
+    const activeLeader = cards?.Active_Leader ?? [];
+
+    if (levelZero && activeLeader.length === 0) {
         await functions.moveCard(levelZero, "Active_Leader");
-        await functions.updateCards([levelZero], { isTapped: false });
+        const movedLeader = cards?.Active_Leader ?? [];
+        const newest = movedLeader[movedLeader.length - 1];
+        if (newest) {
+            await functions.updateCards([newest], { isTapped: false });
+        }
     }
 
-    const currentStorage = cards?.Mana_Storage ?? [];
     const currentPool = cards?.Mana_Pool ?? [];
+    const currentStorage = cards?.Mana_Storage ?? [];
     const manaNeeded = Math.max(0, 2 - currentPool.length);
-    if (manaNeeded > 0 && currentStorage.length) {
-        const manaCards = currentStorage.slice(-Math.min(manaNeeded, currentStorage.length));
+
+    if (manaNeeded > 0 && currentStorage.length > 0) {
+        const manaCards = currentStorage.slice(
+            -Math.min(manaNeeded, currentStorage.length)
+        );
         await functions.moveCards(manaCards, "Mana_Pool");
-        const poolAfter = cards?.Mana_Pool ?? [];
-        const newest = poolAfter.slice(-manaCards.length);
-        if (newest.length) await functions.updateCards(newest, { isTapped: false });
+        const pool = cards?.Mana_Pool ?? [];
+        const movedMana = pool.slice(-manaCards.length);
+        if (movedMana.length) {
+            await functions.updateCards(movedMana, { isTapped: false });
+        }
     }
 
     game.data.Phase_Control.phase = "Draw Phase";
@@ -56,21 +54,39 @@ async function afterMulliganSetup() {
 }
 
 async function untapTurnCards() {
-    const toUntap = [...(cards?.Active_Leader ?? []), ...(cards?.Mana_Pool ?? []), ...(cards?.Unit_Zone ?? [])];
-    if (toUntap.length) await functions.updateCards(toUntap, { isTapped: false });
+    const toUntap = [
+        ...(cards?.Active_Leader ?? []),
+        ...(cards?.Mana_Pool ?? []),
+        ...(cards?.Unit_Zone ?? [])
+    ];
+    if (toUntap.length) {
+        await functions.updateCards(toUntap, { isTapped: false });
+    }
 }
 
 async function selectPhase(phase) {
     if (!game.turn.isMyTurn) return;
+
     game.data.Phase_Control.phase = phase;
     game.data.Phase_Control.activePlayer = game.turn.orderPosition;
-    if (phase === "End Phase") await untapTurnCards();
+
+    if (phase === "End Phase") {
+        await untapTurnCards();
+    }
 }
 
 async function handleNewTurn() {
     if (!game.turn.isMyTurn) return;
+
+    // The engine's native newTurn system handles the draw:
+    // drawOnStart=false means the first player does not draw.
+    // drawPerTurn=1 means subsequent turns draw one.
+    //
+    // We only add the one automatic mana and untap here.
     const isFirstTurn = game.turn.count <= 1;
+
     await untapTurnCards();
+
     if (!isFirstTurn) {
         const storage = cards?.Mana_Storage ?? [];
         if (storage.length) {
@@ -78,15 +94,12 @@ async function handleNewTurn() {
             await functions.moveCard(mana, "Mana_Pool");
             const pool = cards?.Mana_Pool ?? [];
             const newest = pool[pool.length - 1];
-            if (newest) await functions.updateCards([newest], { isTapped: false });
-        }
-        const deck = cards?.Deck ?? [];
-        if (deck.length) {
-            await functions.draw(1);
-        } else {
-            functions.chatLog("Draw Phase: no card could be drawn. This player loses the duel.");
+            if (newest) {
+                await functions.updateCards([newest], { isTapped: false });
+            }
         }
     }
+
     game.data.Phase_Control.phase = "Draw Phase";
     game.data.Phase_Control.activePlayer = game.turn.orderPosition;
     game.data.Phase_Control.firstTurn = false;

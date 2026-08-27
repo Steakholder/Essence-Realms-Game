@@ -1,7 +1,7 @@
 {
   "name": "Essence Realms",
   "cardRotation": 90,
-  "customHelp": "Essence Realms prototype.\nMain Deck: exactly 66 cards. Leader Deck: exactly 6 Leaders, including exactly one Level 0 Leader.\nUnits must share at least one Essence with your Level 0 Leader. Spells and Enchantments are unrestricted by Essence.",
+  "customHelp": "Essence Realms gameplay prototype. Main Deck: exactly 66 cards. Leader Deck: exactly 6 Leaders. Gameplay systems are under development.",
   "deckBuilding": {
     "mainFilters": [
       "type",
@@ -74,55 +74,92 @@
             {
               "direction": "column",
               "style": {
-                "width": "10vh"
+                "width": "8vh",
+                "margin": "0.3vh"
               },
               "content": [
                 {
-                  "section": "Active_Leader"
+                  "section": "Active_Leader",
+                  "style": {
+                    "width": "8vh",
+                    "height": "10vh"
+                  }
                 },
                 {
-                  "section": "Leader_Deck"
+                  "section": "Leader",
+                  "style": {
+                    "width": "8vh",
+                    "height": "10vh"
+                  }
                 },
                 {
-                  "section": "Mana_Storage"
+                  "section": "Mana_Storage",
+                  "style": {
+                    "width": "8vh",
+                    "height": "10vh"
+                  }
                 }
               ]
             },
             {
               "direction": "column",
               "style": {
-                "width": "1fr"
+                "width": "calc(100% - 29vh)",
+                "margin": "0.3vh"
               },
               "content": [
                 {
-                  "section": "Unit_Zone"
+                  "section": "Unit_Zone",
+                  "style": {
+                    "width": "100%",
+                    "height": "15vh"
+                  }
                 },
                 {
-                  "section": "Mana_Pool"
+                  "section": "Mana_Pool",
+                  "style": {
+                    "width": "100%",
+                    "height": "10vh"
+                  }
                 }
               ]
             },
             {
               "direction": "column",
               "style": {
-                "width": "10vh"
+                "width": "8vh",
+                "margin": "0.3vh"
               },
               "content": [
                 {
-                  "section": "Remove"
+                  "section": "Remove",
+                  "style": {
+                    "width": "8vh",
+                    "height": "10vh"
+                  }
                 },
                 {
-                  "section": "Discard"
+                  "section": "Discard",
+                  "style": {
+                    "width": "8vh",
+                    "height": "10vh"
+                  }
                 },
                 {
-                  "section": "Deck"
+                  "section": "Deck",
+                  "style": {
+                    "width": "8vh",
+                    "height": "10vh"
+                  }
                 }
               ]
             },
             {
               "section": "Life_Zone",
               "style": {
-                "width": "18vh"
+                "width": "9vh",
+                "height": "34vh",
+                "margin": "0.3vh"
               }
             }
           ]
@@ -130,25 +167,16 @@
         "sectionsDict": {
           "Active_Leader": {
             "isHidden": "no",
-            "height": 14,
+            "height": 10,
             "alignment": "CENTER",
             "displayedTitle": "Active Leader",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isGroupForbidden": true
           },
-          "Leader_Deck": {
-            "isHidden": "yes",
-            "height": 14,
-            "alignment": "DECK",
-            "displayedTitle": "Leader Deck",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isGroupForbidden": false
-          },
           "Mana_Storage": {
             "isHidden": "yes",
-            "height": 14,
+            "height": 10,
             "alignment": "DECK",
             "displayedTitle": "Mana Storage",
             "noQuickActions": false,
@@ -156,29 +184,28 @@
           },
           "Mana_Pool": {
             "isHidden": "yes",
-            "height": 14,
+            "height": 11,
             "alignment": "CENTER",
             "displayedTitle": "Mana Pool",
             "noQuickActions": false,
             "noAutoPayTo": true,
-            "isGroupForbidden": true
+            "isGroupForbidden": true,
+            "isHorizontalAllowed": false
           },
           "Life_Zone": {
             "isHidden": "yes",
-            "height": 42,
+            "height": 34,
             "alignment": "CENTER",
             "displayedTitle": "Life",
             "noQuickActions": false,
             "noAutoPayTo": true,
             "isGroupForbidden": true,
-            "heightReference": "horizontal",
-            "isHorizontalAllowed": true,
             "enterTapped": true,
             "keepTappedNewTurn": true
           },
           "Unit_Zone": {
             "isHidden": "no",
-            "height": 21,
+            "height": 16,
             "alignment": "CENTER",
             "displayedTitle": "Unit Zone",
             "noQuickActions": false,
@@ -187,7 +214,7 @@
           },
           "Deck": {
             "isHidden": "yes",
-            "height": 14,
+            "height": 10,
             "alignment": "DECK",
             "displayedTitle": "Main Deck",
             "noQuickActions": true,
@@ -195,7 +222,7 @@
           },
           "Discard": {
             "isHidden": "no",
-            "height": 14,
+            "height": 10,
             "alignment": "CENTER",
             "displayedTitle": "Grave",
             "noQuickActions": false,
@@ -203,7 +230,7 @@
           },
           "Remove": {
             "isHidden": "yes",
-            "height": 14,
+            "height": 10,
             "alignment": "CENTER",
             "displayedTitle": "Banished",
             "noQuickActions": false,
@@ -234,51 +261,80 @@
                   "type": "button",
                   "props": {
                     "disabled": "{{ !game.turn.isMyTurn }}",
-                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}"
+                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}",
+                    "style": {
+                      "minWidth": "85px",
+                      "padding": "4px 8px",
+                      "fontSize": "12px"
+                    }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '\u25cf ' : '' }}Draw Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '● ' : '' }}Draw Phase",
                   "onClick": "await selectPhase('Draw Phase')"
                 },
                 {
                   "type": "button",
                   "props": {
                     "disabled": "{{ !game.turn.isMyTurn }}",
-                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}"
+                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}",
+                    "style": {
+                      "minWidth": "85px",
+                      "padding": "4px 8px",
+                      "fontSize": "12px"
+                    }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '\u25cf ' : '' }}Main Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '● ' : '' }}Main Phase",
                   "onClick": "await selectPhase('Main Phase')"
                 },
                 {
                   "type": "button",
                   "props": {
                     "disabled": "{{ !game.turn.isMyTurn }}",
-                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}"
+                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}",
+                    "style": {
+                      "minWidth": "85px",
+                      "padding": "4px 8px",
+                      "fontSize": "12px"
+                    }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '\u25cf ' : '' }}Combat Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '● ' : '' }}Combat Phase",
                   "onClick": "await selectPhase('Combat Phase')"
                 },
                 {
                   "type": "button",
                   "props": {
                     "disabled": "{{ !game.turn.isMyTurn }}",
-                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}"
+                    "title": "{{ game.turn.isMyTurn ? 'Select phase' : 'Waiting for opponent' }}",
+                    "style": {
+                      "minWidth": "85px",
+                      "padding": "4px 8px",
+                      "fontSize": "12px"
+                    }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '\u25cf ' : '' }}End Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '● ' : '' }}End Phase",
                   "onClick": "await selectPhase('End Phase')"
                 }
               ]
             },
             "events": {
-              "onPlayersMulligan": "await afterMulliganSetup()",
+              "onPlayersReady": "await setupDuelStart()",
               "onNewTurn": "await handleNewTurn()"
             }
+          },
+          "Leader": {
+            "isHidden": "yes",
+            "height": 10,
+            "alignment": "DECK",
+            "displayedTitle": "Leader Deck",
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
           }
         },
         "categoriesAlreadyOnBoard": [
           "Leader"
         ],
         "sharedZone": {
-          "height": 7,
+          "height": 5,
           "layout": {
             "direction": "row",
             "content": [
