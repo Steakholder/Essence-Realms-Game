@@ -139,11 +139,11 @@
             {
               "direction": "column",
               "style": {
-                "width": "16%",
-                "height": "100%",
+                "width": "10%",
+                "height": "25vh",
                 "boxSizing": "border-box",
                 "justifyContent": "flex-start",
-                "alignItems": "flex-start"
+                "alignItems": "stretch"
               },
               "content": [
                 {
@@ -256,7 +256,7 @@
             "noAutoPayTo": true
           },
           "Remove": {
-            "isHidden": "yes",
+            "isHidden": "no",
             "height": 7,
             "alignment": "CENTER",
             "displayedTitle": "Banished",
@@ -391,14 +391,15 @@
           "Deck": {
             "isHidden": "yes",
             "height": 7,
-            "alignment": "CENTER",
+            "alignment": "END",
             "displayedTitle": "Main Deck",
             "noQuickActions": false,
             "noAutoPayTo": true,
             "isGroupForbidden": true,
             "drawDestinations": {
               "_default": "Hand"
-            }
+            },
+            "opponentAlignment": "START"
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -436,15 +437,6 @@
             "overrideState": {
               "isHidden": "yes",
               "isTapped": true
-            }
-          },
-          {
-            "drawFromTop": "Mana_Storage",
-            "count": 2,
-            "destination": "Mana_Pool",
-            "overrideState": {
-              "isHidden": "yes",
-              "isTapped": false
             }
           }
         ]
