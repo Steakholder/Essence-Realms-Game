@@ -139,7 +139,7 @@
             {
               "direction": "column",
               "style": {
-                "width": "10%",
+                "width": "11%",
                 "height": "100%",
                 "margin": "0.2vh",
                 "boxSizing": "border-box",
@@ -163,20 +163,38 @@
                 {
                   "section": "Deck",
                   "style": {
-                    "width": "100%",
-                    "height": "7vh"
+                    "width": "8vh",
+                    "height": "8vh",
+                    "margin": "0 auto"
                   }
                 }
               ]
             },
             {
-              "section": "Life_Zone",
+              "direction": "column",
               "style": {
                 "width": "12%",
                 "height": "30vh",
                 "margin": "0.2vh",
-                "boxSizing": "border-box"
-              }
+                "boxSizing": "border-box",
+                "display": "flex",
+                "alignItems": "center",
+                "justifyContent": "center",
+                "overflow": "visible"
+              },
+              "content": [
+                {
+                  "section": "Life_Zone",
+                  "style": {
+                    "width": "30vh",
+                    "height": "12vh",
+                    "transform": "rotate(90deg)",
+                    "transformOrigin": "center center",
+                    "margin": "0 auto",
+                    "overflow": "visible"
+                  }
+                }
+              ]
             },
             {
               "section": "Game_Logic",
@@ -220,15 +238,15 @@
           "Life_Zone": {
             "isHidden": "yes",
             "height": 7,
-            "alignment": "END",
+            "alignment": "CENTER",
             "displayedTitle": "Life",
             "noQuickActions": false,
             "noAutoPayTo": true,
             "isGroupForbidden": true,
-            "enterTapped": true,
+            "enterTapped": false,
             "keepTappedNewTurn": true,
-            "isHorizontalAllowed": true,
-            "opponentAlignment": "START"
+            "isHorizontalAllowed": false,
+            "opponentAlignment": "CENTER"
           },
           "Unit_Zone": {
             "isHidden": "no",
@@ -242,7 +260,7 @@
           "Deck": {
             "isHidden": "yes",
             "height": 7,
-            "alignment": "CENTER",
+            "alignment": "DECK",
             "displayedTitle": "Main Deck",
             "noQuickActions": false,
             "noAutoPayTo": true,
@@ -375,6 +393,21 @@
               "onCardsUpdate": "await setupDuelStart()",
               "onNewTurn": "await handleNewTurn()"
             }
+          },
+          "Stack": {
+            "isDefaultSection": true,
+            "isHidden": "no",
+            "height": "HUGE",
+            "alignment": "NONE",
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true,
+            "displayedTitle": "Pile",
+            "opponentAlignment": "CENTER",
+            "noAutoPayTo": true,
+            "noQuickActions": false,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -393,7 +426,10 @@
         }
       },
       "autoPlayFromHand": {
-        "Unit": "Unit_Zone"
+        "Unit": "Unit_Zone",
+        "Spell": "Stack",
+        "Enchantment": "Stack",
+        "Leader": "Active_Leader"
       },
       "beforeGameStart": {
         "initialBoardSetup": [
@@ -415,6 +451,12 @@
             }
           }
         ]
+      },
+      "autoPlayFromStack": {
+        "Spell": "Discard",
+        "Enchantment": "Discard",
+        "Unit": "Unit_Zone",
+        "Leader": "Active_Leader"
       }
     }
   },
