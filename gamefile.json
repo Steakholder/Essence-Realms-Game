@@ -95,7 +95,7 @@
               },
               "content": [
                 {
-                  "section": "Active_Leader",
+                  "section": "Level 0 Leader",
                   "style": {
                     "width": "11vh",
                     "height": "11vh"
@@ -236,15 +236,6 @@
           ]
         },
         "sectionsDict": {
-          "Active_Leader": {
-            "isHidden": "no",
-            "height": 11,
-            "alignment": "CENTER",
-            "displayedTitle": "Active Leader",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isGroupForbidden": true
-          },
           "Mana_Storage": {
             "isHidden": "yes",
             "height": 7,
@@ -483,13 +474,18 @@
             "isHorizontalAllowed": true
           },
           "Level 0 Leader": {
-            "isHidden": "yes",
+            "isHidden": "no",
             "height": 11,
-            "alignment": "DECK",
-            "displayedTitle": "Level 0 Leader",
+            "alignment": "CENTER",
+            "displayedTitle": "Active Leader",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isGroupForbidden": true
+            "isHorizontalAllowed": true,
+            "enterTapped": false,
+            "enterSpun": false,
+            "isGroupForbidden": true,
+            "keepTappedNewTurn": false,
+            "showHiddenCardInHistory": false
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -513,15 +509,6 @@
       },
       "beforeGameStart": {
         "initialBoardSetup": [
-          {
-            "drawFromTop": "Level 0 Leader",
-            "count": 1,
-            "destination": "Active_Leader",
-            "overrideState": {
-              "isHidden": "no",
-              "isTapped": false
-            }
-          },
           {
             "drawFromTop": "Deck",
             "count": 6,
@@ -593,6 +580,9 @@
               "isTapped": false
             }
           }
+        ],
+        "boardCategoriesInSideboard": [
+          "Level 0 Leader"
         ]
       }
     }
