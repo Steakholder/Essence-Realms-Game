@@ -1,44 +1,58 @@
-/* Essence Realms gameplay foundation v1.2 */
+/* Essence Realms gameplay foundation v1.4 */
 function cardDef(card) {
   return card ? functions.getCardData(card) : null;
 }
 
 async function setupDuelStart() {
-  if (game.data.Game_Logic?.setupComplete) return;
+  const state = game.data.Game_Logic;
+  if (!state || state.setupComplete || state.setupRunning) return;
+  state.setupRunning = true;
 
-  // Native initialBoardSetup is responsible for the 8 Mana Storage + 6 Life cards.
-  // This script only performs the card-dependent portion of setup.
-  const leaders = cards?.Leader ?? [];
-  const active = cards?.Active_Leader ?? [];
-
-  if (!active.length) {
-    const levelZero = leaders.find(card => {
-      const d = cardDef(card);
-      return d?.type === "Leader" && Number(d?.level) === 0;
-    });
-    if (levelZero) {
-      await functions.moveCard(levelZero, "Active_Leader");
-      const moved = cards?.Active_Leader ?? [];
-      if (moved.length) await functions.updateCards([moved[moved.length - 1]], { isTapped: false });
-    }
-  }
-
-  // Move exactly two cards from Mana Storage to Mana Pool.
-  const pool = cards?.Mana_Pool ?? [];
-  const needMana = Math.max(0, 2 - pool.length);
-  if (needMana > 0) {
+  try {
+    // Wait until the native initialBoardSetup has actually populated this player's zones.
     const storage = cards?.Mana_Storage ?? [];
-    const mana = storage.slice(-Math.min(needMana, storage.length));
-    if (mana.length) {
-      await functions.moveCards(mana, "Mana_Pool");
-      const newPool = cards?.Mana_Pool ?? [];
-      const moved = newPool.slice(-mana.length);
-      if (moved.length) await functions.updateCards(moved, { isTapped: false });
+    const life = cards?.Life_Zone ?? [];
+    if (storage.length < 8 || life.length < 6) {
+      state.setupRunning = false;
+      return;
     }
-  }
 
-  if ((cards?.Active_Leader ?? []).length >= 1 && (cards?.Mana_Pool ?? []).length >= 2) {
-    game.data.Game_Logic.setupComplete = true;
+    // Put this player's Level 0 Leader into Active Leader.
+    const active = cards?.Active_Leader ?? [];
+    if (!active.length) {
+      const leaders = cards?.Leader ?? [];
+      const levelZero = leaders.find(card => {
+        const d = cardDef(card);
+        return d?.type === "Leader" && Number(d?.level) === 0;
+      });
+      if (levelZero) {
+        await functions.moveCard(levelZero, "Active_Leader");
+        const moved = cards?.Active_Leader ?? [];
+        if (moved.length) await functions.updateCards([moved[moved.length - 1]], { isTapped: false });
+      }
+    }
+
+    // Put exactly two Mana Storage cards into the Mana Pool.
+    const pool = cards?.Mana_Pool ?? [];
+    const needMana = Math.max(0, 2 - pool.length);
+    if (needMana > 0) {
+      const currentStorage = cards?.Mana_Storage ?? [];
+      const mana = currentStorage.slice(-Math.min(needMana, currentStorage.length));
+      if (mana.length) {
+        await functions.moveCards(mana, "Mana_Pool");
+        const newPool = cards?.Mana_Pool ?? [];
+        const moved = newPool.slice(-mana.length);
+        if (moved.length) await functions.updateCards(moved, { isTapped: false });
+      }
+    }
+
+    // Life cards remain face-down; the format-level hideFacedDownCards setting
+    // prevents their owner from revealing them by hovering.
+    if ((cards?.Active_Leader ?? []).length >= 1 && (cards?.Mana_Pool ?? []).length >= 2) {
+      state.setupComplete = true;
+    }
+  } finally {
+    state.setupRunning = false;
   }
 }
 
