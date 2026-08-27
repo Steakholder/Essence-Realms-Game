@@ -162,13 +162,6 @@
                     "width": "11vh",
                     "height": "7vh"
                   }
-                },
-                {
-                  "section": "Deck",
-                  "style": {
-                    "width": "11vh",
-                    "height": "11vh"
-                  }
                 }
               ]
             },
@@ -252,9 +245,8 @@
             "height": 7,
             "alignment": "DECK",
             "displayedTitle": "Mana Storage",
-            "noQuickActions": false,
-            "noAutoPayTo": true,
-            "isGroupForbidden": false
+            "noQuickActions": true,
+            "noAutoPayTo": true
           },
           "Mana_Pool": {
             "isHidden": "yes",
@@ -287,17 +279,6 @@
             "noQuickActions": false,
             "noAutoPayTo": true,
             "isGroupForbidden": false
-          },
-          "Deck": {
-            "isHidden": "yes",
-            "height": 7,
-            "alignment": "DECK",
-            "displayedTitle": "Main Deck",
-            "noQuickActions": false,
-            "noAutoPayTo": true,
-            "drawDestinations": {
-              "_default": "Hand"
-            }
           },
           "Discard": {
             "isHidden": "no",
@@ -393,17 +374,18 @@
           },
           "Leader": {
             "isHidden": "yes",
-            "height": 11,
+            "height": 7,
             "alignment": "DECK",
             "displayedTitle": "Leader Deck",
-            "noQuickActions": false,
+            "noQuickActions": true,
             "noAutoPayTo": true,
             "isGroupForbidden": false
           },
           "Game_Logic": {
             "type": "custom",
             "defaultValue": {
-              "turnInitialized": false
+              "setupComplete": false,
+              "setupRunning": false
             },
             "blueprint": {
               "type": "div",
@@ -418,6 +400,9 @@
               }
             },
             "events": {
+              "onPlayersReady": "await setupDuelStart()",
+              "onOpponentUpdate": "await setupDuelStart()",
+              "onCardsUpdate": "await setupDuelStart()",
               "onNewTurn": "await handleNewTurn()"
             }
           },
@@ -492,6 +477,15 @@
             "enterTapped": true,
             "keepTappedNewTurn": true,
             "isHorizontalAllowed": true
+          },
+          "Leader_Order_Temp": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "DECK",
+            "displayedTitle": "Leader Order Temp",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -582,15 +576,6 @@
             "destination": "Mana_Pool",
             "overrideState": {
               "isHidden": "yes",
-              "isTapped": false
-            }
-          },
-          {
-            "drawFromTop": "Leader",
-            "count": 1,
-            "destination": "Active_Leader",
-            "overrideState": {
-              "isHidden": "no",
               "isTapped": false
             }
           }
