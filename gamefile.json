@@ -96,7 +96,7 @@
               },
               "content": [
                 {
-                  "section": "Active_Leader",
+                  "section": "Level_0_Leader",
                   "style": {
                     "width": "11vh",
                     "height": "11vh"
@@ -237,15 +237,6 @@
           ]
         },
         "sectionsDict": {
-          "Active_Leader": {
-            "isHidden": "no",
-            "height": 11,
-            "alignment": "CENTER",
-            "displayedTitle": "Active Leader",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isGroupForbidden": true
-          },
           "Mana_Storage": {
             "isHidden": "yes",
             "height": 7,
@@ -481,10 +472,19 @@
             "enterTapped": true,
             "keepTappedNewTurn": true,
             "isHorizontalAllowed": true
+          },
+          "Level_0_Leader": {
+            "isHidden": "no",
+            "height": 11,
+            "alignment": "CENTER",
+            "displayedTitle": "Active Leader",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true
           }
         },
         "categoriesAlreadyOnBoard": [
-          "Active Leader",
+          "Level 0 Leader",
           "Leader"
         ],
         "sharedZone": {
@@ -572,15 +572,6 @@
             "destination": "Mana_Pool",
             "overrideState": {
               "isHidden": "yes",
-              "isTapped": false
-            }
-          },
-          {
-            "drawFromTop": "Leader",
-            "count": 1,
-            "destination": "Active_Leader",
-            "overrideState": {
-              "isHidden": "no",
               "isTapped": false
             }
           }
