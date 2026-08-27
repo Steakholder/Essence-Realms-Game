@@ -218,7 +218,7 @@
             "isHidden": "yes",
             "height": 10,
             "alignment": "CENTER",
-            "displayedTitle": "Mana Pool",
+            "displayedTitle": "Mana Zone",
             "noQuickActions": false,
             "noAutoPayTo": true,
             "isGroupForbidden": true,
@@ -382,7 +382,7 @@
             "displayedTitle": "Active Leader",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isGroupForbidden": false
+            "isGroupForbidden": true
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -402,8 +402,7 @@
         }
       },
       "autoPlayFromHand": {
-        "Unit": "Unit_Zone",
-        "Leader": "GROUP"
+        "Unit": "Unit_Zone"
       },
       "beforeGameStart": {
         "initialBoardSetup": [
