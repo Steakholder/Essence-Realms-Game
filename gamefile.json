@@ -95,7 +95,7 @@
               },
               "content": [
                 {
-                  "section": "Level 0 Leader",
+                  "section": "Active_Leader",
                   "style": {
                     "width": "11vh",
                     "height": "11vh"
@@ -236,6 +236,15 @@
           ]
         },
         "sectionsDict": {
+          "Active_Leader": {
+            "isHidden": "no",
+            "height": 11,
+            "alignment": "CENTER",
+            "displayedTitle": "Active Leader",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true
+          },
           "Mana_Storage": {
             "isHidden": "yes",
             "height": 7,
@@ -472,20 +481,6 @@
             "enterTapped": true,
             "keepTappedNewTurn": true,
             "isHorizontalAllowed": true
-          },
-          "Level 0 Leader": {
-            "isHidden": "no",
-            "height": 11,
-            "alignment": "CENTER",
-            "displayedTitle": "Active Leader",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false,
-            "enterSpun": false,
-            "isGroupForbidden": true,
-            "keepTappedNewTurn": false,
-            "showHiddenCardInHistory": false
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -509,6 +504,15 @@
       },
       "beforeGameStart": {
         "initialBoardSetup": [
+          {
+            "drawFromTop": "Level 0 Leader",
+            "count": 1,
+            "destination": "Active_Leader",
+            "overrideState": {
+              "isHidden": "no",
+              "isTapped": false
+            }
+          },
           {
             "drawFromTop": "Deck",
             "count": 6,
@@ -580,9 +584,6 @@
               "isTapped": false
             }
           }
-        ],
-        "boardCategoriesInSideboard": [
-          "Level 0 Leader"
         ]
       }
     }

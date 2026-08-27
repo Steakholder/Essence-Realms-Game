@@ -2,10 +2,11 @@
 
 /*
 Opening setup is intentionally NOT performed by this file.
-TCG Arena's beforeGameStart.beforeGameStart handles the Level 0 Leader exactly like Riftbound's
-Chosen_Champion category: it is moved out of the main deck through
-boardCategoriesInSideboard and represented by its same-named board section.
-initialBoardSetup handles only the Main Deck opening board.
+TCG Arena's beforeGameStart.initialBoardSetup handles:
+  - 8 cards -> Mana Storage
+  - 6 Life cards -> Life_6 ... Life_1
+  - 2 Mana Storage -> Mana Pool
+  - 1 Level 0 Leader -> Active Leader
 
 The setup is a single flat array, so the same sequence is applied to
 both players. This avoids the previous seat-specific initialization
@@ -66,7 +67,7 @@ problem.
   They are therefore also unavailable to the Main Deck and opening hand.
 
   This function moves the existing Level 0 card instance directly to
-  Level 0 Leader. No duplicate is created.
+  Active_Leader. No duplicate is created.
 */
 async function ensureLeaderDeckOrder() {
   const state = game.data.Game_Logic;
@@ -74,7 +75,7 @@ async function ensureLeaderDeckOrder() {
 
   // Ordering is only valid after Level 0 is active and exactly five Leaders
   // remain in the real Leader Deck.
-  const active = cards?.["Level 0 Leader"] ?? [];
+  const active = cards?.Active_Leader ?? [];
   const leaderDeck = cards?.Leader ?? [];
 
   if (active.length !== 1 || leaderDeck.length !== 5) return;
@@ -130,7 +131,7 @@ async function ensureLeaderDeckOrder() {
 
 async function untapTurnCards() {
   const all = [
-    ...(cards?.["Level 0 Leader"] ?? []),
+    ...(cards?.Active_Leader ?? []),
     ...(cards?.Mana_Pool ?? []),
     ...(cards?.Unit_Zone ?? [])
   ];
