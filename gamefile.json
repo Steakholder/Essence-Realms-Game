@@ -17,7 +17,7 @@
         "deckRuleset": "Standard",
         "customCategories": [
           "Leader",
-          "Level_0_Leader"
+          "Level 0 Leader"
         ]
       }
     ],
@@ -36,7 +36,7 @@
             "max": 5
           },
           {
-            "category": "Level_0_Leader",
+            "category": "Level 0 Leader",
             "min": 1,
             "max": 1
           }
@@ -595,7 +595,7 @@
         ],
         "boardCategoriesInSideboard": [
           "Leader",
-          "Level_0_Leader"
+          "Level 0 Leader"
         ]
       }
     }
