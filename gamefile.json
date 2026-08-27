@@ -42,7 +42,7 @@
     "Standard": {
       "defaultNotes": "",
       "countersStartingValues": [],
-      "hideFacedDownCards": false,
+      "hideFacedDownCards": true,
       "mulligan": {
         "startingHandSize": 6,
         "mulliganCount": {
@@ -70,33 +70,41 @@
       "sections": {
         "layout": {
           "direction": "row",
+          "style": {
+            "width": "100%",
+            "height": "100%",
+            "boxSizing": "border-box"
+          },
           "content": [
             {
               "direction": "column",
               "style": {
-                "width": "8vh",
-                "margin": "0.3vh"
+                "width": "9%",
+                "height": "100%",
+                "margin": "0.2vh",
+                "boxSizing": "border-box",
+                "justifyContent": "flex-start"
               },
               "content": [
                 {
                   "section": "Active_Leader",
                   "style": {
-                    "width": "8vh",
-                    "height": "8vh"
+                    "width": "100%",
+                    "height": "10vh"
                   }
                 },
                 {
                   "section": "Leader",
                   "style": {
-                    "width": "8vh",
-                    "height": "8vh"
+                    "width": "100%",
+                    "height": "7vh"
                   }
                 },
                 {
                   "section": "Mana_Storage",
                   "style": {
-                    "width": "8vh",
-                    "height": "8vh"
+                    "width": "100%",
+                    "height": "7vh"
                   }
                 }
               ]
@@ -104,22 +112,26 @@
             {
               "direction": "column",
               "style": {
-                "width": "calc(100% - 29vh)",
-                "margin": "0.3vh"
+                "width": "65%",
+                "height": "100%",
+                "margin": "0.2vh",
+                "boxSizing": "border-box",
+                "justifyContent": "flex-start"
               },
               "content": [
                 {
                   "section": "Unit_Zone",
                   "style": {
                     "width": "100%",
-                    "height": "12vh"
+                    "height": "13vh"
                   }
                 },
                 {
                   "section": "Mana_Pool",
                   "style": {
                     "width": "100%",
-                    "height": "8vh"
+                    "height": "9vh",
+                    "marginTop": "0.4vh"
                   }
                 }
               ]
@@ -127,29 +139,32 @@
             {
               "direction": "column",
               "style": {
-                "width": "8vh",
-                "margin": "0.3vh"
+                "width": "9%",
+                "height": "100%",
+                "margin": "0.2vh",
+                "boxSizing": "border-box",
+                "justifyContent": "flex-start"
               },
               "content": [
                 {
                   "section": "Remove",
                   "style": {
-                    "width": "8vh",
-                    "height": "8vh"
+                    "width": "100%",
+                    "height": "7vh"
                   }
                 },
                 {
                   "section": "Discard",
                   "style": {
-                    "width": "8vh",
-                    "height": "8vh"
+                    "width": "100%",
+                    "height": "7vh"
                   }
                 },
                 {
                   "section": "Deck",
                   "style": {
-                    "width": "8vh",
-                    "height": "8vh"
+                    "width": "100%",
+                    "height": "7vh"
                   }
                 }
               ]
@@ -157,9 +172,10 @@
             {
               "section": "Life_Zone",
               "style": {
-                "width": "9vh",
-                "height": "34vh",
-                "margin": "0.3vh"
+                "width": "10%",
+                "height": "42vh",
+                "margin": "0.2vh",
+                "boxSizing": "border-box"
               }
             },
             {
@@ -176,7 +192,7 @@
         "sectionsDict": {
           "Active_Leader": {
             "isHidden": "no",
-            "height": 8,
+            "height": 10,
             "alignment": "CENTER",
             "displayedTitle": "Active Leader",
             "noQuickActions": true,
@@ -185,7 +201,7 @@
           },
           "Mana_Storage": {
             "isHidden": "yes",
-            "height": 8,
+            "height": 7,
             "alignment": "DECK",
             "displayedTitle": "Mana Storage",
             "noQuickActions": false,
@@ -193,7 +209,7 @@
           },
           "Mana_Pool": {
             "isHidden": "yes",
-            "height": 8,
+            "height": 9,
             "alignment": "CENTER",
             "displayedTitle": "Mana Pool",
             "noQuickActions": false,
@@ -203,8 +219,8 @@
           },
           "Life_Zone": {
             "isHidden": "yes",
-            "height": 8,
-            "alignment": "CENTER",
+            "height": 7,
+            "alignment": "END",
             "displayedTitle": "Life",
             "noQuickActions": false,
             "noAutoPayTo": true,
@@ -216,7 +232,7 @@
           },
           "Unit_Zone": {
             "isHidden": "no",
-            "height": 12,
+            "height": 13,
             "alignment": "CENTER",
             "displayedTitle": "Unit Zone",
             "noQuickActions": false,
@@ -225,15 +241,18 @@
           },
           "Deck": {
             "isHidden": "yes",
-            "height": 8,
+            "height": 7,
             "alignment": "DECK",
             "displayedTitle": "Main Deck",
-            "noQuickActions": true,
-            "noAutoPayTo": true
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "drawDestinations": {
+              "_default": "Hand"
+            }
           },
           "Discard": {
             "isHidden": "no",
-            "height": 8,
+            "height": 7,
             "alignment": "CENTER",
             "displayedTitle": "Grave",
             "noQuickActions": false,
@@ -241,7 +260,7 @@
           },
           "Remove": {
             "isHidden": "yes",
-            "height": 8,
+            "height": 7,
             "alignment": "CENTER",
             "displayedTitle": "Banished",
             "noQuickActions": false,
@@ -325,7 +344,7 @@
           },
           "Leader": {
             "isHidden": "yes",
-            "height": 8,
+            "height": 7,
             "alignment": "DECK",
             "displayedTitle": "Leader Deck",
             "noQuickActions": false,
