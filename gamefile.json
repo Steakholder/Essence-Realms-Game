@@ -389,9 +389,7 @@
             "defaultValue": {
               "turnInitialized": false,
               "leaderOrderComplete": false,
-              "leaderOrderRunning": false,
-              "levelZeroSetupComplete": false,
-              "levelZeroSetupRunning": false
+              "leaderOrderRunning": false
             },
             "blueprint": {
               "type": "div",
@@ -406,7 +404,6 @@
               }
             },
             "events": {
-              "onPlayersDeckPicked": "await placeSelectedLevelZeroLeader()",
               "onNewTurn": "await handleNewTurn()"
             }
           },
@@ -481,6 +478,15 @@
             "enterTapped": true,
             "keepTappedNewTurn": true,
             "isHorizontalAllowed": true
+          },
+          "Level_0_Leader": {
+            "isHidden": "yes",
+            "height": 11,
+            "alignment": "DECK",
+            "displayedTitle": "Level 0 Leader",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -503,6 +509,15 @@
       },
       "beforeGameStart": {
         "initialBoardSetup": [
+          {
+            "drawFromTop": "Level_0_Leader",
+            "count": 1,
+            "destination": "Active_Leader",
+            "overrideState": {
+              "isHidden": "no",
+              "isTapped": false
+            }
+          },
           {
             "drawFromTop": "Deck",
             "count": 6,

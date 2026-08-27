@@ -69,49 +69,6 @@ problem.
   This function moves the existing Level 0 card instance directly to
   Active_Leader. No duplicate is created.
 */
-async function placeSelectedLevelZeroLeader() {
-  const state = game.data.Game_Logic;
-  if (state.levelZeroSetupComplete || state.levelZeroSetupRunning) return;
-
-  const findLevelZero = (collection) => {
-    return (collection ?? []).find(card => {
-      const data = functions.getCardData(card);
-      return data?.type === "Level 0 Leader";
-    });
-  };
-
-  // boardCategoriesInSideboard should put it here before any board setup.
-  let levelZero = findLevelZero(cards?.Sideboard);
-
-  // Defensive fallback: if the engine has not yet exposed the category in
-  // Sideboard, find the same exact type in Deck. This still occurs before
-  // the mulligan/initial board setup because the event is onPlayersDeckPicked.
-  if (!levelZero) levelZero = findLevelZero(cards?.Deck);
-
-  if (!levelZero) return;
-
-  state.levelZeroSetupRunning = true;
-
-  try {
-    await functions.moveCard(levelZero, "Active_Leader", { noLogs: true });
-
-    const movedLeader = findLevelZero(cards?.Active_Leader);
-
-    if (movedLeader) {
-      // Active_Leader itself is a visible section. Explicitly ensure the
-      // card enters upright and face-up rather than inheriting a tapped
-      // state from another destination.
-      await functions.updateCards(
-        [movedLeader],
-        { isTapped: false, isHidden: false }
-      );
-      state.levelZeroSetupComplete = true;
-    }
-  } finally {
-    state.levelZeroSetupRunning = false;
-  }
-}
-
 async function ensureLeaderDeckOrder() {
   const state = game.data.Game_Logic;
   if (!state || state.leaderOrderRunning || state.leaderSetupRunning) return;
