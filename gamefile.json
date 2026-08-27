@@ -73,7 +73,9 @@
           "style": {
             "width": "100%",
             "height": "100%",
-            "boxSizing": "border-box"
+            "boxSizing": "border-box",
+            "justifyContent": "flex-start",
+            "alignItems": "flex-start"
           },
           "content": [
             {
@@ -81,7 +83,6 @@
               "style": {
                 "width": "10%",
                 "height": "100%",
-                "margin": "0.2vh",
                 "boxSizing": "border-box",
                 "justifyContent": "flex-start"
               },
@@ -112,9 +113,8 @@
             {
               "direction": "column",
               "style": {
-                "width": "61%",
+                "width": "57%",
                 "height": "100%",
-                "margin": "0.2vh",
                 "boxSizing": "border-box",
                 "justifyContent": "flex-start"
               },
@@ -131,7 +131,7 @@
                   "style": {
                     "width": "100%",
                     "height": "10vh",
-                    "marginTop": "0.4vh"
+                    "marginTop": "0.2vh"
                   }
                 }
               ]
@@ -139,11 +139,11 @@
             {
               "direction": "column",
               "style": {
-                "width": "11%",
+                "width": "16%",
                 "height": "100%",
-                "margin": "0.2vh",
                 "boxSizing": "border-box",
-                "justifyContent": "flex-start"
+                "justifyContent": "flex-start",
+                "alignItems": "flex-start"
               },
               "content": [
                 {
@@ -159,6 +159,13 @@
                     "width": "100%",
                     "height": "7vh"
                   }
+                },
+                {
+                  "section": "Deck",
+                  "style": {
+                    "width": "100%",
+                    "height": "11vh"
+                  }
                 }
               ]
             },
@@ -167,7 +174,6 @@
               "style": {
                 "width": "12%",
                 "height": "30vh",
-                "margin": "0.2vh",
                 "boxSizing": "border-box",
                 "display": "flex",
                 "alignItems": "center",
@@ -181,19 +187,12 @@
                     "width": "100%",
                     "height": "30vh",
                     "margin": "0 auto",
-                    "overflow": "hidden"
+                    "overflow": "visible",
+                    "transform": "rotate(90deg)",
+                    "transformOrigin": "center center"
                   }
                 }
               ]
-            },
-            {
-              "section": "Game_Logic",
-              "style": {
-                "width": "0px",
-                "height": "0px",
-                "overflow": "hidden",
-                "pointerEvents": "none"
-              }
             }
           ]
         },
@@ -210,10 +209,11 @@
           "Mana_Storage": {
             "isHidden": "yes",
             "height": 7,
-            "alignment": "DECK",
+            "alignment": "CENTER",
             "displayedTitle": "Mana Storage",
-            "noQuickActions": true,
-            "noAutoPayTo": true
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true
           },
           "Mana_Pool": {
             "isHidden": "yes",
@@ -294,7 +294,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '\u25cf ' : '' }}Draw Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '● ' : '' }}Draw Phase",
                   "onClick": "await selectPhase('Draw Phase')"
                 },
                 {
@@ -307,7 +307,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '\u25cf ' : '' }}Main Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '● ' : '' }}Main Phase",
                   "onClick": "await selectPhase('Main Phase')"
                 },
                 {
@@ -320,7 +320,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '\u25cf ' : '' }}Combat Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '● ' : '' }}Combat Phase",
                   "onClick": "await selectPhase('Combat Phase')"
                 },
                 {
@@ -333,7 +333,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '\u25cf ' : '' }}End Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '● ' : '' }}End Phase",
                   "onClick": "await selectPhase('End Phase')"
                 }
               ]
@@ -342,11 +342,11 @@
           "Leader": {
             "isHidden": "yes",
             "height": 7,
-            "alignment": "DECK",
+            "alignment": "CENTER",
             "displayedTitle": "Leader Deck",
-            "noQuickActions": true,
+            "noQuickActions": false,
             "noAutoPayTo": true,
-            "isGroupForbidden": false
+            "isGroupForbidden": true
           },
           "Game_Logic": {
             "type": "custom",
@@ -387,6 +387,18 @@
             "enterTapped": false,
             "keepTappedNewTurn": false,
             "showHiddenCardInHistory": false
+          },
+          "Deck": {
+            "isHidden": "yes",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "Main Deck",
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "isGroupForbidden": true,
+            "drawDestinations": {
+              "_default": "Hand"
+            }
           }
         },
         "categoriesAlreadyOnBoard": [
