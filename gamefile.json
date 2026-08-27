@@ -175,47 +175,12 @@
               "direction": "column",
               "style": {
                 "width": "12vh",
-                "height": "42vh",
+                "height": "14vh",
                 "boxSizing": "border-box",
                 "justifyContent": "flex-start",
                 "alignItems": "center"
               },
               "content": [
-                {
-                  "section": "Life_Zone",
-                  "style": {
-                    "width": "12vh",
-                    "height": "14vh"
-                  }
-                },
-                {
-                  "section": "Life_Zone",
-                  "style": {
-                    "width": "12vh",
-                    "height": "14vh"
-                  }
-                },
-                {
-                  "section": "Life_Zone",
-                  "style": {
-                    "width": "12vh",
-                    "height": "14vh"
-                  }
-                },
-                {
-                  "section": "Life_Zone",
-                  "style": {
-                    "width": "12vh",
-                    "height": "14vh"
-                  }
-                },
-                {
-                  "section": "Life_Zone",
-                  "style": {
-                    "width": "12vh",
-                    "height": "14vh"
-                  }
-                },
                 {
                   "section": "Life_Zone",
                   "style": {
@@ -446,7 +411,7 @@
             "destination": "Life_Zone",
             "overrideState": {
               "isHidden": "yes",
-              "isTapped": true
+              "isTapped": false
             }
           },
           {
@@ -455,7 +420,7 @@
             "destination": "Life_Zone",
             "overrideState": {
               "isHidden": "yes",
-              "isTapped": true
+              "isTapped": false
             }
           },
           {
@@ -464,7 +429,7 @@
             "destination": "Life_Zone",
             "overrideState": {
               "isHidden": "yes",
-              "isTapped": true
+              "isTapped": false
             }
           },
           {
@@ -473,7 +438,7 @@
             "destination": "Life_Zone",
             "overrideState": {
               "isHidden": "yes",
-              "isTapped": true
+              "isTapped": false
             }
           },
           {
@@ -482,7 +447,7 @@
             "destination": "Life_Zone",
             "overrideState": {
               "isHidden": "yes",
-              "isTapped": true
+              "isTapped": false
             }
           },
           {
@@ -491,7 +456,7 @@
             "destination": "Life_Zone",
             "overrideState": {
               "isHidden": "yes",
-              "isTapped": true
+              "isTapped": false
             }
           },
           {
