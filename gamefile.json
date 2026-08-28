@@ -287,7 +287,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '\u25cf ' : '' }}Draw Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '● ' : '' }}Draw Phase",
                   "onClick": "await selectPhase('Draw Phase')"
                 },
                 {
@@ -300,7 +300,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '\u25cf ' : '' }}Main Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '● ' : '' }}Main Phase",
                   "onClick": "await selectPhase('Main Phase')"
                 },
                 {
@@ -313,7 +313,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '\u25cf ' : '' }}Combat Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '● ' : '' }}Combat Phase",
                   "onClick": "await selectPhase('Combat Phase')"
                 },
                 {
@@ -326,7 +326,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '\u25cf ' : '' }}End Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '● ' : '' }}End Phase",
                   "onClick": "await selectPhase('End Phase')"
                 }
               ]
@@ -488,11 +488,11 @@
     }
   },
   "cards": {
-    "dataUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/cards.json",
+    "dataUrl": "cards.json",
     "cardBack": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/00_back.webp"
   },
   "scriptsUrls": [
-    "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/essence-realms-gameplay.js"
+    "essence-realms-gameplay.js"
   ],
   "translationsUrl": "translations.json"
 }
