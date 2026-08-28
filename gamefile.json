@@ -167,7 +167,7 @@
                     {
                       "section": "Banished",
                       "style": {
-                        "width": "12vh",
+                        "width": "11vh",
                         "height": "14vh"
                       }
                     },
@@ -365,7 +365,6 @@
               }
             },
             "events": {
-              "onCardsUpdate": "const life = cards?.Life_Zone ?? []; const tappedLife = life.filter(card => card.isTapped); if (tappedLife.length) await functions.updateCards(tappedLife, { isTapped: false });",
               "onNewTurn": "await handleNewTurn()"
             }
           },
