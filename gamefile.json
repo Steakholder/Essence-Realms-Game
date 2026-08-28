@@ -384,6 +384,15 @@
             "displayedTitle": "Banished",
             "noQuickActions": false,
             "noAutoPayTo": true
+          },
+          "Stack": {
+            "isHidden": "no",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "Stack",
+            "noQuickActions": false,
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
           }
         },
         "categoriesAlreadyOnBoard": [
