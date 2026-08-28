@@ -8,35 +8,35 @@
         },
         "type": "Level_0_Leader",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/00.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/00.webp",
+        "level": "0",
+        "essence": [
+          "Dark",
+          "Life",
+          "Light"
+        ],
+        "battlePower": 1000.0,
+        "limited": true,
+        "manaValue": "1"
       }
     },
     "name": "Mara, the Sinister Cherub",
     "type": "Level_0_Leader",
     "cost": 0,
-    "level": 0,
+    "level": "0",
     "essence": [
       "Dark",
       "Life",
       "Light"
     ],
-    "battlePower": 1000,
+    "battlePower": 1.0,
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1,
-    "Type": [
-      "Leader"
-    ],
-    "Level": [
-      0
-    ],
-    "Battle Power": 1.0,
-    "Mana Value": [
-      1
-    ],
-    "Keywords": []
+    "manaValue": "1",
+    "Type": "Leader",
+    "keywords": []
   },
   "er-01": {
     "id": "er-01",
@@ -47,35 +47,35 @@
         },
         "type": "Leader",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/01.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/01.webp",
+        "level": "1",
+        "essence": [
+          "Dark",
+          "Life",
+          "Light"
+        ],
+        "battlePower": 3000.0,
+        "limited": true,
+        "manaValue": "1"
       }
     },
     "name": "Mara, the Cult Figure",
     "type": "Leader",
     "cost": 2,
-    "level": 1,
+    "level": "1",
     "essence": [
       "Dark",
       "Life",
       "Light"
     ],
-    "battlePower": 3000,
+    "battlePower": 3.0,
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1,
-    "Type": [
-      "Leader"
-    ],
-    "Level": [
-      1
-    ],
-    "Battle Power": 3.0,
-    "Mana Value": [
-      1
-    ],
-    "Keywords": []
+    "manaValue": "1",
+    "Type": "Leader",
+    "keywords": []
   },
   "er-02": {
     "id": "er-02",
@@ -86,35 +86,35 @@
         },
         "type": "Leader",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/02.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/02.webp",
+        "level": "2",
+        "essence": [
+          "Dark",
+          "Life",
+          "Light"
+        ],
+        "battlePower": 5000.0,
+        "limited": true,
+        "manaValue": "2"
       }
     },
     "name": "Mara, the Shining Charlatan",
     "type": "Leader",
     "cost": 5,
-    "level": 2,
+    "level": "2",
     "essence": [
       "Dark",
       "Life",
       "Light"
     ],
-    "battlePower": 5000,
+    "battlePower": 5.0,
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 2,
-    "Type": [
-      "Leader"
-    ],
-    "Level": [
-      2
-    ],
-    "Battle Power": 5.0,
-    "Mana Value": [
-      2
-    ],
-    "Keywords": []
+    "manaValue": "2",
+    "Type": "Leader",
+    "keywords": []
   },
   "er-03": {
     "id": "er-03",
@@ -125,35 +125,35 @@
         },
         "type": "Leader",
         "cost": 9,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/03.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/03.webp",
+        "level": "3",
+        "essence": [
+          "Dark",
+          "Life",
+          "Light"
+        ],
+        "battlePower": 10000.0,
+        "limited": true,
+        "manaValue": "3"
       }
     },
     "name": "Mara, the Twilight Priest",
     "type": "Leader",
     "cost": 9,
-    "level": 3,
+    "level": "3",
     "essence": [
       "Dark",
       "Life",
       "Light"
     ],
-    "battlePower": 10000,
+    "battlePower": 10.0,
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 3,
-    "Type": [
-      "Leader"
-    ],
-    "Level": [
-      3
-    ],
-    "Battle Power": 10.0,
-    "Mana Value": [
-      3
-    ],
-    "Keywords": []
+    "manaValue": "3",
+    "Type": "Leader",
+    "keywords": []
   },
   "er-04": {
     "id": "er-04",
@@ -164,35 +164,35 @@
         },
         "type": "Leader",
         "cost": 13,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/04.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/04.webp",
+        "level": "4",
+        "essence": [
+          "Dark",
+          "Life",
+          "Light"
+        ],
+        "battlePower": 15000.0,
+        "limited": true,
+        "manaValue": "3"
       }
     },
     "name": "Mara, the False Prophet",
     "type": "Leader",
     "cost": 13,
-    "level": 4,
+    "level": "4",
     "essence": [
       "Dark",
       "Life",
       "Light"
     ],
-    "battlePower": 15000,
+    "battlePower": 15.0,
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 3,
-    "Type": [
-      "Leader"
-    ],
-    "Level": [
-      4
-    ],
-    "Battle Power": 15.0,
-    "Mana Value": [
-      3
-    ],
-    "Keywords": []
+    "manaValue": "3",
+    "Type": "Leader",
+    "keywords": []
   },
   "er-05": {
     "id": "er-05",
@@ -203,35 +203,35 @@
         },
         "type": "Leader",
         "cost": 18,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/05.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/05.webp",
+        "level": "5",
+        "essence": [
+          "Dark",
+          "Life",
+          "Light"
+        ],
+        "battlePower": 25000.0,
+        "limited": true,
+        "manaValue": "4"
       }
     },
     "name": "Mara, the Divine Impersonator",
     "type": "Leader",
     "cost": 18,
-    "level": 5,
+    "level": "5",
     "essence": [
       "Dark",
       "Life",
       "Light"
     ],
-    "battlePower": 25000,
+    "battlePower": 25.0,
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 4,
-    "Type": [
-      "Leader"
-    ],
-    "Level": [
-      5
-    ],
-    "Battle Power": 25.0,
-    "Mana Value": [
-      4
-    ],
-    "Keywords": []
+    "manaValue": "4",
+    "Type": "Leader",
+    "keywords": []
   },
   "er-06": {
     "id": "er-06",
@@ -242,27 +242,26 @@
         },
         "type": "Spell",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/06.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/06.webp",
+        "level": "0",
+        "essence": [],
+        "battlePower": 1500.0,
+        "limited": true,
+        "manaValue": null
       }
     },
     "name": "Devilish Bounty",
     "type": "Spell",
     "cost": 2,
-    "level": 0,
+    "level": "0",
     "essence": [],
-    "battlePower": 1500,
+    "battlePower": 1.5,
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
-    "Type": [
-      "Spell"
-    ],
-    "Level": [
-      0
-    ],
-    "Battle Power": 1.5,
-    "Keywords": []
+    "Type": "Spell",
+    "keywords": []
   },
   "er-07": {
     "id": "er-07",
@@ -273,33 +272,31 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/07.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/07.webp",
+        "level": "0",
+        "essence": [
+          "Dark"
+        ],
+        "battlePower": 1000.0,
+        "limited": false,
+        "manaValue": "1"
       }
     },
     "name": "Shadow Baby",
     "type": "Unit",
     "cost": 3,
-    "level": 0,
+    "level": "0",
     "essence": [
       "Dark"
     ],
-    "battlePower": 1000,
+    "battlePower": 1.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      0
-    ],
-    "Battle Power": 1.0,
-    "Mana Value": [
-      1
-    ],
-    "Keywords": []
+    "manaValue": "1",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-08": {
     "id": "er-08",
@@ -310,33 +307,31 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/08.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/08.webp",
+        "level": "0",
+        "essence": [
+          "Life"
+        ],
+        "battlePower": 1000.0,
+        "limited": false,
+        "manaValue": "1"
       }
     },
     "name": "Sprouting Seedling",
     "type": "Unit",
     "cost": 3,
-    "level": 0,
+    "level": "0",
     "essence": [
       "Life"
     ],
-    "battlePower": 1000,
+    "battlePower": 1.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      0
-    ],
-    "Battle Power": 1.0,
-    "Mana Value": [
-      1
-    ],
-    "Keywords": []
+    "manaValue": "1",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-09": {
     "id": "er-09",
@@ -347,33 +342,31 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/09.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/09.webp",
+        "level": "1",
+        "essence": [
+          "Dark"
+        ],
+        "battlePower": 3000.0,
+        "limited": false,
+        "manaValue": "3"
       }
     },
     "name": "Shade Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
+    "level": "1",
     "essence": [
       "Dark"
     ],
-    "battlePower": 3000,
+    "battlePower": 3.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      1
-    ],
-    "Battle Power": 3.0,
-    "Mana Value": [
-      3
-    ],
-    "Keywords": []
+    "manaValue": "3",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-10": {
     "id": "er-10",
@@ -384,33 +377,31 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/10.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/10.webp",
+        "level": "1",
+        "essence": [
+          "Life"
+        ],
+        "battlePower": 3000.0,
+        "limited": false,
+        "manaValue": "3"
       }
     },
     "name": "Algae Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
+    "level": "1",
     "essence": [
       "Life"
     ],
-    "battlePower": 3000,
+    "battlePower": 3.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      1
-    ],
-    "Battle Power": 3.0,
-    "Mana Value": [
-      3
-    ],
-    "Keywords": []
+    "manaValue": "3",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-11": {
     "id": "er-11",
@@ -421,34 +412,33 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/11.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/11.webp",
+        "level": "0",
+        "essence": [
+          "Life",
+          "Water"
+        ],
+        "battlePower": 1000.0,
+        "limited": false,
+        "manaValue": "1"
       }
     },
     "name": "Froggy Ficus",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
+    "level": "0",
     "essence": [
       "Life",
       "Water"
     ],
-    "battlePower": 1000,
+    "battlePower": 1.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      0
-    ],
-    "Battle Power": 1.0,
-    "Mana Value": [
-      1
-    ],
-    "Keywords": []
+    "manaValue": "1",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-12": {
     "id": "er-12",
@@ -459,27 +449,26 @@
         },
         "type": "Spell",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/12.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/12.webp",
+        "level": "3",
+        "essence": [],
+        "battlePower": 1500.0,
+        "limited": false,
+        "manaValue": null
       }
     },
     "name": "Risks and Rewards",
     "type": "Spell",
     "cost": 3,
-    "level": 3,
+    "level": "3",
     "essence": [],
-    "battlePower": 1500,
+    "battlePower": 1.5,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "Type": [
-      "Spell"
-    ],
-    "Level": [
-      3
-    ],
-    "Battle Power": 1.5,
-    "Keywords": []
+    "Type": "Spell",
+    "keywords": []
   },
   "er-13": {
     "id": "er-13",
@@ -490,27 +479,26 @@
         },
         "type": "Enchantment",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/13.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/13.webp",
+        "level": "3",
+        "essence": [],
+        "battlePower": 1500.0,
+        "limited": false,
+        "manaValue": null
       }
     },
     "name": "Double Tap",
     "type": "Enchantment",
     "cost": 2,
-    "level": 3,
+    "level": "3",
     "essence": [],
-    "battlePower": 1500,
+    "battlePower": 1.5,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "Type": [
-      "Enchantment"
-    ],
-    "Level": [
-      3
-    ],
-    "Battle Power": 1.5,
-    "Keywords": []
+    "Type": "Enchantment",
+    "keywords": []
   },
   "er-14": {
     "id": "er-14",
@@ -521,27 +509,26 @@
         },
         "type": "Spell",
         "cost": 6,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/14.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/14.webp",
+        "level": "2",
+        "essence": [],
+        "battlePower": 1500.0,
+        "limited": true,
+        "manaValue": null
       }
     },
     "name": "Energy Surge",
     "type": "Spell",
     "cost": 6,
-    "level": 2,
+    "level": "2",
     "essence": [],
-    "battlePower": 1500,
+    "battlePower": 1.5,
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
-    "Type": [
-      "Spell"
-    ],
-    "Level": [
-      2
-    ],
-    "Battle Power": 1.5,
-    "Keywords": []
+    "Type": "Spell",
+    "keywords": []
   },
   "er-15": {
     "id": "er-15",
@@ -552,34 +539,33 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/15.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/15.webp",
+        "level": "1",
+        "essence": [
+          "Dark",
+          "Life"
+        ],
+        "battlePower": 3000.0,
+        "limited": false,
+        "manaValue": "2"
       }
     },
     "name": "Planted Plant",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
+    "level": "1",
     "essence": [
       "Dark",
       "Life"
     ],
-    "battlePower": 3000,
+    "battlePower": 3.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      1
-    ],
-    "Battle Power": 3.0,
-    "Mana Value": [
-      2
-    ],
-    "Keywords": []
+    "manaValue": "2",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-16": {
     "id": "er-16",
@@ -590,34 +576,33 @@
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/16.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/16.webp",
+        "level": "2",
+        "essence": [
+          "Arcane",
+          "Dark"
+        ],
+        "battlePower": 4000.0,
+        "limited": false,
+        "manaValue": "3"
       }
     },
     "name": "Everlayer Magician",
     "type": "Unit",
     "cost": 4,
-    "level": 2,
+    "level": "2",
     "essence": [
       "Arcane",
       "Dark"
     ],
-    "battlePower": 4000,
+    "battlePower": 4.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      2
-    ],
-    "Battle Power": 4.0,
-    "Mana Value": [
-      3
-    ],
-    "Keywords": []
+    "manaValue": "3",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-17": {
     "id": "er-17",
@@ -628,34 +613,33 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/17.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/17.webp",
+        "level": "1",
+        "essence": [
+          "Life",
+          "Water"
+        ],
+        "battlePower": 3000.0,
+        "limited": false,
+        "manaValue": "1"
       }
     },
     "name": "Believer",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
+    "level": "1",
     "essence": [
       "Life",
       "Water"
     ],
-    "battlePower": 3000,
+    "battlePower": 3.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      1
-    ],
-    "Battle Power": 3.0,
-    "Mana Value": [
-      1
-    ],
-    "Keywords": []
+    "manaValue": "1",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-18": {
     "id": "er-18",
@@ -666,34 +650,33 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/18.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/18.webp",
+        "level": "2",
+        "essence": [
+          "Dark",
+          "Life"
+        ],
+        "battlePower": 5000.0,
+        "limited": false,
+        "manaValue": "1"
       }
     },
     "name": "Hunting Foxtail",
     "type": "Unit",
     "cost": 3,
-    "level": 2,
+    "level": "2",
     "essence": [
       "Dark",
       "Life"
     ],
-    "battlePower": 5000,
+    "battlePower": 5.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      2
-    ],
-    "Battle Power": 5.0,
-    "Mana Value": [
-      1
-    ],
-    "Keywords": []
+    "manaValue": "1",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-19": {
     "id": "er-19",
@@ -704,33 +687,31 @@
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/19.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/19.webp",
+        "level": "2",
+        "essence": [
+          "Life"
+        ],
+        "battlePower": 7000.0,
+        "limited": false,
+        "manaValue": "3"
       }
     },
     "name": "Brittle Boar",
     "type": "Unit",
     "cost": 4,
-    "level": 2,
+    "level": "2",
     "essence": [
       "Life"
     ],
-    "battlePower": 7000,
+    "battlePower": 7.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      2
-    ],
-    "Battle Power": 7.0,
-    "Mana Value": [
-      3
-    ],
-    "Keywords": []
+    "manaValue": "3",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-20": {
     "id": "er-20",
@@ -741,34 +722,33 @@
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/20.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/20.webp",
+        "level": "3",
+        "essence": [
+          "Life",
+          "Water"
+        ],
+        "battlePower": 14000.0,
+        "limited": false,
+        "manaValue": "2"
       }
     },
     "name": "Beleaver Dam",
     "type": "Unit",
     "cost": 4,
-    "level": 3,
+    "level": "3",
     "essence": [
       "Life",
       "Water"
     ],
-    "battlePower": 14000,
+    "battlePower": 14.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      3
-    ],
-    "Battle Power": 14.0,
-    "Mana Value": [
-      2
-    ],
-    "Keywords": []
+    "manaValue": "2",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-21": {
     "id": "er-21",
@@ -779,33 +759,31 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/21.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/21.webp",
+        "level": "1",
+        "essence": [
+          "Dark"
+        ],
+        "battlePower": 4000.0,
+        "limited": false,
+        "manaValue": "1"
       }
     },
     "name": "Deki, the Imp",
     "type": "Unit",
     "cost": 2,
-    "level": 1,
+    "level": "1",
     "essence": [
       "Dark"
     ],
-    "battlePower": 4000,
+    "battlePower": 4.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      1
-    ],
-    "Battle Power": 4.0,
-    "Mana Value": [
-      1
-    ],
-    "Keywords": []
+    "manaValue": "1",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-22": {
     "id": "er-22",
@@ -816,33 +794,31 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/22.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/22.webp",
+        "level": "2",
+        "essence": [
+          "Dark"
+        ],
+        "battlePower": 10000.0,
+        "limited": false,
+        "manaValue": "1"
       }
     },
     "name": "Deki, the Fiendish Soldier",
     "type": "Unit",
     "cost": 3,
-    "level": 2,
+    "level": "2",
     "essence": [
       "Dark"
     ],
-    "battlePower": 10000,
+    "battlePower": 10.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      2
-    ],
-    "Battle Power": 10.0,
-    "Mana Value": [
-      1
-    ],
-    "Keywords": []
+    "manaValue": "1",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-23": {
     "id": "er-23",
@@ -853,33 +829,31 @@
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/23.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/23.webp",
+        "level": "3",
+        "essence": [
+          "Dark"
+        ],
+        "battlePower": 15000.0,
+        "limited": false,
+        "manaValue": "2"
       }
     },
     "name": "Deki, the Fiendish Archduke",
     "type": "Unit",
     "cost": 4,
-    "level": 3,
+    "level": "3",
     "essence": [
       "Dark"
     ],
-    "battlePower": 15000,
+    "battlePower": 15.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      3
-    ],
-    "Battle Power": 15.0,
-    "Mana Value": [
-      2
-    ],
-    "Keywords": []
+    "manaValue": "2",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-24": {
     "id": "er-24",
@@ -890,33 +864,31 @@
         },
         "type": "Unit",
         "cost": 6,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/24.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/24.webp",
+        "level": "4",
+        "essence": [
+          "Dark"
+        ],
+        "battlePower": 20000.0,
+        "limited": false,
+        "manaValue": "2"
       }
     },
     "name": "Deki, the Fiend Lord",
     "type": "Unit",
     "cost": 6,
-    "level": 4,
+    "level": "4",
     "essence": [
       "Dark"
     ],
-    "battlePower": 20000,
+    "battlePower": 20.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      4
-    ],
-    "Battle Power": 20.0,
-    "Mana Value": [
-      2
-    ],
-    "Keywords": []
+    "manaValue": "2",
+    "Type": "Unit",
+    "keywords": []
   },
   "er-25": {
     "id": "er-25",
@@ -927,32 +899,30 @@
         },
         "type": "Unit",
         "cost": 8,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/25.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/25.webp",
+        "level": "5",
+        "essence": [
+          "Dark"
+        ],
+        "battlePower": 30000.0,
+        "limited": false,
+        "manaValue": "3"
       }
     },
     "name": "Deki, the True Majin",
     "type": "Unit",
     "cost": 8,
-    "level": 5,
+    "level": "5",
     "essence": [
       "Dark"
     ],
-    "battlePower": 30000,
+    "battlePower": 30.0,
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
-    "Type": [
-      "Unit"
-    ],
-    "Level": [
-      5
-    ],
-    "Battle Power": 30.0,
-    "Mana Value": [
-      3
-    ],
-    "Keywords": []
+    "manaValue": "3",
+    "Type": "Unit",
+    "keywords": []
   }
 }
