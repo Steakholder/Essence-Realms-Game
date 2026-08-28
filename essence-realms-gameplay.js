@@ -20,6 +20,16 @@ async function untapTurnCards() {
   }
 }
 
+async function enforceLifeZoneRules() {
+  // Life cards must never remain tapped. TCGA does not expose an untappable
+  // section flag, so enforce the state whenever a card update occurs.
+  const life = cards?.Life_Zone ?? [];
+  const tappedLife = life.filter(card => card.isTapped);
+  if (tappedLife.length) {
+    await functions.updateCards(tappedLife, { isTapped: false });
+  }
+}
+
 async function selectPhase(phase) {
   if (!game.turn.isMyTurn) return;
 

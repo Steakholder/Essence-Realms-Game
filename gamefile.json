@@ -1,10 +1,10 @@
 {
   "name": "Essence Realms",
   "cardRotation": 90,
-  "customHelp": "Essence Realms gameplay prototype. Main Deck: exactly 66 cards. Leader Deck: exactly 6 Leaders. Level_0_Leader uses the native Level_0_Leader category for deck rules. Deckbuilding filters: Type groups Level 0 Leaders with Leaders; Level, Essence Attribute, Battle Power, Limited, Mana Value, and Keywords are available in the filter menu. TCGA native Stack is used without a custom Stack interaction UI. Crash-fix baseline restored from the known-good extra-deck routing architecture: extra decks use drawDestinations; no custom autoPlayFromStack overrides are defined.",
+  "customHelp": "Essence Realms gameplay prototype. Main Deck: exactly 66 cards. Leader Deck: exactly 6 Leaders. Level_0_Leader uses the native Level_0_Leader category for deck rules. Deckbuilding filters: Type groups Level 0 Leaders with Leaders; Level, Essence Attribute, Battle Power, Limited, Mana Value, and Keywords are available in the filter menu. TCGA native Stack is used without a custom Stack interaction UI. Crash-fix baseline restored from the known-good extra-deck routing architecture: extra decks use drawDestinations; no custom autoPlayFromStack overrides are defined. Life cards are forced untapped; automatic per-card reveal on moving to Hand is not enabled because TCGA documents visibility at section level, not as a card update property. Unsupported Play actions route to Grave until Stack resolution is implemented.",
   "deckBuilding": {
     "mainFilters": [
-      "Type",
+      "cardType",
       "cost",
       "level"
     ],
@@ -228,11 +228,11 @@
             "height": 14,
             "alignment": "DECK",
             "displayedTitle": "Life Zone",
-            "noQuickActions": false,
+            "noQuickActions": true,
             "noAutoPayTo": true,
             "isGroupForbidden": true,
-            "enterTapped": true,
-            "keepTappedNewTurn": true,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
             "isHorizontalAllowed": true,
             "opponentAlignment": "START",
             "drawDestinations": {
@@ -363,6 +363,7 @@
               }
             },
             "events": {
+              "onCardsUpdate": "await enforceLifeZoneRules()",
               "onNewTurn": "await handleNewTurn()"
             }
           },
@@ -376,10 +377,10 @@
             "isGroupForbidden": false
           },
           "Banished": {
+            "displayedTitle": "Banished",
             "isHidden": "no",
             "height": 7,
             "alignment": "CENTER",
-            "displayedTitle": "Banished",
             "noQuickActions": false,
             "noAutoPayTo": true
           }
@@ -401,7 +402,11 @@
         }
       },
       "autoPlayFromHand": {
-        "Unit": "Unit_Zone"
+        "Unit": "Unit_Zone",
+        "Spell": "Discard",
+        "Enchantment": "Discard",
+        "Leader": "Discard",
+        "Level_0_Leader": "Discard"
       },
       "beforeGameStart": {
         "initialBoardSetup": [
@@ -485,11 +490,11 @@
     }
   },
   "cards": {
-    "dataUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/cards.json",
+    "dataUrl": "cards.json",
     "cardBack": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/00_back.webp"
   },
   "scriptsUrls": [
-    "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/essence-realms-gameplay.js"
+    "essence-realms-gameplay.js"
   ],
   "translationsUrl": "translations.json"
 }
