@@ -1,13 +1,12 @@
 {
   "name": "Essence Realms",
   "cardRotation": 90,
-  "customHelp": "Essence Realms gameplay prototype. Main Deck: exactly 66 cards. Leader Deck: exactly 6 Leaders. Level_0_Leader uses the same native Leader category/deck mechanism as the other Leaders; the opening setup draws the top Leader directly into Active Leader face-up and untapped.",
+  "customHelp": "Essence Realms gameplay prototype. Main Deck: exactly 66 cards. Leader Deck: exactly 6 Leaders. Level_0_Leader uses the same native Leader category/deck mechanism as the other Leaders; the opening setup draws the top Leader directly into Active Leader face-up and untapped. Unit Stack Actions: Unit cards on the Stack expose Banish, Grave, Summon, Call, Evolve, and Overlay selections through the custom action panel. Summon uses the card cost (not manaValue) to spend untapped Mana_Pool cards. Deckbuilding filters: Type groups Level 0 Leaders with Leaders; Level, Essence Attribute, Battle Power, Limited, Mana Value, and Keywords are available in the filter menu.",
   "deckBuilding": {
     "mainFilters": [
-      "type",
+      "Type",
       "cost",
-      "level",
-      "essence"
+      "Level"
     ],
     "formats": [
       {
@@ -156,7 +155,7 @@
               },
               "content": [
                 {
-                  "section": "Remove",
+                  "section": "Banished",
                   "style": {
                     "width": "11vh",
                     "height": "7vh"
@@ -196,6 +195,19 @@
                 "width": "0px",
                 "height": "0px",
                 "overflow": "hidden",
+                "pointerEvents": "none"
+              }
+            },
+            {
+              "section": "Stack_Actions",
+              "style": {
+                "position": "absolute",
+                "left": "50%",
+                "top": "2vh",
+                "transform": "translateX(-50%)",
+                "width": "34vh",
+                "height": "auto",
+                "zIndex": "1000",
                 "pointerEvents": "none"
               }
             }
@@ -254,14 +266,6 @@
             "height": 7,
             "alignment": "CENTER",
             "displayedTitle": "Grave",
-            "noQuickActions": false,
-            "noAutoPayTo": true
-          },
-          "Remove": {
-            "isHidden": "yes",
-            "height": 7,
-            "alignment": "CENTER",
-            "displayedTitle": "Banished",
             "noQuickActions": false,
             "noAutoPayTo": true
           },
@@ -382,7 +386,177 @@
             "displayedTitle": "Active Leader",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isGroupForbidden": true
+            "isGroupForbidden": false
+          },
+          "Stack_Actions": {
+            "type": "custom",
+            "defaultValue": {
+              "cardId": "",
+              "cardType": "",
+              "cardName": "",
+              "cost": 0,
+              "selectedAction": "",
+              "targetId": "",
+              "targetName": "",
+              "error": "",
+              "leaderTargetId": "",
+              "leaderTargetName": ""
+            },
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "{{ ['Unit','Leader','Level_0_Leader'].includes(game.data.Stack_Actions.cardType) ? 'flex' : 'none' }}",
+                  "flexDirection": "column",
+                  "gap": "6px",
+                  "padding": "8px",
+                  "background": "rgba(0,0,0,0.82)",
+                  "borderRadius": "6px",
+                  "pointerEvents": "auto",
+                  "boxSizing": "border-box",
+                  "width": "100%"
+                }
+              },
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontWeight": "bold",
+                      "textAlign": "center"
+                    }
+                  },
+                  "children": "{{ game.data.Stack_Actions.cardName }}"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontSize": "11px",
+                      "textAlign": "center"
+                    }
+                  },
+                  "children": "Cost: {{ game.data.Stack_Actions.cost }} | Selected: {{ game.data.Stack_Actions.selectedAction || 'Return' }}"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "display": "{{ game.data.Stack_Actions.cardType === 'Unit' ? 'grid' : 'none' }}",
+                      "gridTemplateColumns": "repeat(3, 1fr)",
+                      "gap": "4px"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "children": "Banish",
+                      "onClick": "selectUnitStackAction('Banish')"
+                    },
+                    {
+                      "type": "button",
+                      "children": "Grave",
+                      "onClick": "selectUnitStackAction('Grave')"
+                    },
+                    {
+                      "type": "button",
+                      "children": "Summon",
+                      "onClick": "selectUnitStackAction('Summon')"
+                    },
+                    {
+                      "type": "button",
+                      "children": "Call",
+                      "onClick": "selectUnitStackAction('Call')"
+                    },
+                    {
+                      "type": "button",
+                      "children": "Evolve",
+                      "onClick": "selectUnitStackAction('Evolve')"
+                    },
+                    {
+                      "type": "button",
+                      "children": "Overlay",
+                      "onClick": "selectUnitStackAction('Overlay')"
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "display": "{{ ['Leader','Level_0_Leader'].includes(game.data.Stack_Actions.cardType) ? 'grid' : 'none' }}",
+                      "gridTemplateColumns": "repeat(2, 1fr)",
+                      "gap": "4px"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "children": "Evolve",
+                      "onClick": "selectLeaderStackAction('Evolve')"
+                    },
+                    {
+                      "type": "button",
+                      "children": "Return",
+                      "onClick": "selectLeaderStackAction('Return')"
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontSize": "10px",
+                      "textAlign": "center"
+                    }
+                  },
+                  "children": "{{ game.data.Stack_Actions.targetName ? 'Target: ' + game.data.Stack_Actions.targetName : '' }}"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "display": "flex",
+                      "justifyContent": "center",
+                      "gap": "6px"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "children": "Resolve",
+                      "onClick": "await resolveCurrentStackAction()"
+                    },
+                    {
+                      "type": "button",
+                      "children": "Clear",
+                      "onClick": "clearStackAction()"
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontSize": "10px",
+                      "textAlign": "center"
+                    }
+                  },
+                  "children": "{{ game.data.Stack_Actions.error }}"
+                }
+              ]
+            },
+            "events": {
+              "onCardsUpdate": "syncStackActionState()"
+            }
+          },
+          "Banished": {
+            "isHidden": "no",
+            "height": 7,
+            "alignment": "CENTER",
+            "displayedTitle": "Banished",
+            "noQuickActions": false,
+            "noAutoPayTo": true
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -482,6 +656,13 @@
           "Level_0_Leader",
           "Leader"
         ]
+      },
+      "autoPlayFromStack": {
+        "Unit": "Discard",
+        "Spell": "Discard",
+        "Enchantment": "Discard",
+        "Leader": "Leader",
+        "Level_0_Leader": "Leader"
       }
     }
   },
@@ -491,5 +672,6 @@
   },
   "scriptsUrls": [
     "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/essence-realms-gameplay.js"
-  ]
+  ],
+  "translationsUrl": "translations.json"
 }

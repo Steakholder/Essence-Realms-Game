@@ -25,7 +25,18 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "Type": [
+      "Leader"
+    ],
+    "Level": [
+      0
+    ],
+    "Battle Power": 1.0,
+    "Mana Value": [
+      1
+    ],
+    "Keywords": []
   },
   "er-01": {
     "id": "er-01",
@@ -53,7 +64,18 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "Type": [
+      "Leader"
+    ],
+    "Level": [
+      1
+    ],
+    "Battle Power": 3.0,
+    "Mana Value": [
+      1
+    ],
+    "Keywords": []
   },
   "er-02": {
     "id": "er-02",
@@ -81,7 +103,18 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 2
+    "manaValue": 2,
+    "Type": [
+      "Leader"
+    ],
+    "Level": [
+      2
+    ],
+    "Battle Power": 5.0,
+    "Mana Value": [
+      2
+    ],
+    "Keywords": []
   },
   "er-03": {
     "id": "er-03",
@@ -109,7 +142,18 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "Type": [
+      "Leader"
+    ],
+    "Level": [
+      3
+    ],
+    "Battle Power": 10.0,
+    "Mana Value": [
+      3
+    ],
+    "Keywords": []
   },
   "er-04": {
     "id": "er-04",
@@ -137,7 +181,18 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "Type": [
+      "Leader"
+    ],
+    "Level": [
+      4
+    ],
+    "Battle Power": 15.0,
+    "Mana Value": [
+      3
+    ],
+    "Keywords": []
   },
   "er-05": {
     "id": "er-05",
@@ -165,7 +220,18 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 4
+    "manaValue": 4,
+    "Type": [
+      "Leader"
+    ],
+    "Level": [
+      5
+    ],
+    "Battle Power": 25.0,
+    "Mana Value": [
+      4
+    ],
+    "Keywords": []
   },
   "er-06": {
     "id": "er-06",
@@ -188,7 +254,15 @@
     "limited": true,
     "_legal": {
       "ER_STD": 1
-    }
+    },
+    "Type": [
+      "Spell"
+    ],
+    "Level": [
+      0
+    ],
+    "Battle Power": 1.5,
+    "Keywords": []
   },
   "er-07": {
     "id": "er-07",
@@ -214,7 +288,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      0
+    ],
+    "Battle Power": 1.0,
+    "Mana Value": [
+      1
+    ],
+    "Keywords": []
   },
   "er-08": {
     "id": "er-08",
@@ -240,7 +325,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      0
+    ],
+    "Battle Power": 1.0,
+    "Mana Value": [
+      1
+    ],
+    "Keywords": []
   },
   "er-09": {
     "id": "er-09",
@@ -266,7 +362,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      1
+    ],
+    "Battle Power": 3.0,
+    "Mana Value": [
+      3
+    ],
+    "Keywords": []
   },
   "er-10": {
     "id": "er-10",
@@ -292,7 +399,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      1
+    ],
+    "Battle Power": 3.0,
+    "Mana Value": [
+      3
+    ],
+    "Keywords": []
   },
   "er-11": {
     "id": "er-11",
@@ -319,7 +437,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      0
+    ],
+    "Battle Power": 1.0,
+    "Mana Value": [
+      1
+    ],
+    "Keywords": []
   },
   "er-12": {
     "id": "er-12",
@@ -342,7 +471,15 @@
     "limited": false,
     "_legal": {
       "ER_STD": true
-    }
+    },
+    "Type": [
+      "Spell"
+    ],
+    "Level": [
+      3
+    ],
+    "Battle Power": 1.5,
+    "Keywords": []
   },
   "er-13": {
     "id": "er-13",
@@ -365,7 +502,15 @@
     "limited": false,
     "_legal": {
       "ER_STD": true
-    }
+    },
+    "Type": [
+      "Enchantment"
+    ],
+    "Level": [
+      3
+    ],
+    "Battle Power": 1.5,
+    "Keywords": []
   },
   "er-14": {
     "id": "er-14",
@@ -388,7 +533,15 @@
     "limited": true,
     "_legal": {
       "ER_STD": 1
-    }
+    },
+    "Type": [
+      "Spell"
+    ],
+    "Level": [
+      2
+    ],
+    "Battle Power": 1.5,
+    "Keywords": []
   },
   "er-15": {
     "id": "er-15",
@@ -415,7 +568,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2
+    "manaValue": 2,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      1
+    ],
+    "Battle Power": 3.0,
+    "Mana Value": [
+      2
+    ],
+    "Keywords": []
   },
   "er-16": {
     "id": "er-16",
@@ -442,7 +606,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      2
+    ],
+    "Battle Power": 4.0,
+    "Mana Value": [
+      3
+    ],
+    "Keywords": []
   },
   "er-17": {
     "id": "er-17",
@@ -469,7 +644,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      1
+    ],
+    "Battle Power": 3.0,
+    "Mana Value": [
+      1
+    ],
+    "Keywords": []
   },
   "er-18": {
     "id": "er-18",
@@ -496,7 +682,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      2
+    ],
+    "Battle Power": 5.0,
+    "Mana Value": [
+      1
+    ],
+    "Keywords": []
   },
   "er-19": {
     "id": "er-19",
@@ -522,7 +719,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      2
+    ],
+    "Battle Power": 7.0,
+    "Mana Value": [
+      3
+    ],
+    "Keywords": []
   },
   "er-20": {
     "id": "er-20",
@@ -549,7 +757,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2
+    "manaValue": 2,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      3
+    ],
+    "Battle Power": 14.0,
+    "Mana Value": [
+      2
+    ],
+    "Keywords": []
   },
   "er-21": {
     "id": "er-21",
@@ -575,7 +794,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      1
+    ],
+    "Battle Power": 4.0,
+    "Mana Value": [
+      1
+    ],
+    "Keywords": []
   },
   "er-22": {
     "id": "er-22",
@@ -601,7 +831,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1
+    "manaValue": 1,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      2
+    ],
+    "Battle Power": 10.0,
+    "Mana Value": [
+      1
+    ],
+    "Keywords": []
   },
   "er-23": {
     "id": "er-23",
@@ -627,7 +868,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2
+    "manaValue": 2,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      3
+    ],
+    "Battle Power": 15.0,
+    "Mana Value": [
+      2
+    ],
+    "Keywords": []
   },
   "er-24": {
     "id": "er-24",
@@ -653,7 +905,18 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2
+    "manaValue": 2,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      4
+    ],
+    "Battle Power": 20.0,
+    "Mana Value": [
+      2
+    ],
+    "Keywords": []
   },
   "er-25": {
     "id": "er-25",
@@ -679,6 +942,17 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3
+    "manaValue": 3,
+    "Type": [
+      "Unit"
+    ],
+    "Level": [
+      5
+    ],
+    "Battle Power": 30.0,
+    "Mana Value": [
+      3
+    ],
+    "Keywords": []
   }
 }
