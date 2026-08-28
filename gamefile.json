@@ -487,11 +487,11 @@
     }
   },
   "cards": {
-    "dataUrl": "cards.json",
+    "dataUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/cards.json",
     "cardBack": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/00_back.webp"
   },
   "scriptsUrls": [
-    "essence-realms-gameplay.js"
+    "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/essence-realms-gameplay.js"
   ],
   "translationsUrl": "translations.json"
 }
