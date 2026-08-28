@@ -23,7 +23,6 @@
     "battlePower": 1000,
     "limited": true,
     "_legal": {
-      "TEST": 1,
       "ER_STD": 1
     },
     "manaValue": 1
@@ -52,7 +51,6 @@
     "battlePower": 3000,
     "limited": true,
     "_legal": {
-      "TEST": 1,
       "ER_STD": 1
     },
     "manaValue": 1
@@ -81,7 +79,6 @@
     "battlePower": 5000,
     "limited": true,
     "_legal": {
-      "TEST": 1,
       "ER_STD": 1
     },
     "manaValue": 2
@@ -110,7 +107,6 @@
     "battlePower": 10000,
     "limited": true,
     "_legal": {
-      "TEST": 1,
       "ER_STD": 1
     },
     "manaValue": 3
@@ -139,7 +135,6 @@
     "battlePower": 15000,
     "limited": true,
     "_legal": {
-      "TEST": 1,
       "ER_STD": 1
     },
     "manaValue": 3
@@ -168,7 +163,6 @@
     "battlePower": 25000,
     "limited": true,
     "_legal": {
-      "TEST": 1,
       "ER_STD": 1
     },
     "manaValue": 4
@@ -193,7 +187,6 @@
     "battlePower": 1500,
     "limited": true,
     "_legal": {
-      "TEST": 1,
       "ER_STD": 1
     }
   },
@@ -219,8 +212,7 @@
     "battlePower": 1000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 1
   },
@@ -246,8 +238,7 @@
     "battlePower": 1000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 1
   },
@@ -273,8 +264,7 @@
     "battlePower": 3000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 3
   },
@@ -300,8 +290,7 @@
     "battlePower": 3000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 3
   },
@@ -328,8 +317,7 @@
     "battlePower": 1000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 1
   },
@@ -353,8 +341,7 @@
     "battlePower": 1500,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     }
   },
   "er-13": {
@@ -377,8 +364,7 @@
     "battlePower": 1500,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     }
   },
   "er-14": {
@@ -399,9 +385,8 @@
     "level": 2,
     "essence": [],
     "battlePower": 1500,
-    "limited": false,
+    "limited": true,
     "_legal": {
-      "TEST": 1,
       "ER_STD": 1
     }
   },
@@ -428,8 +413,7 @@
     "battlePower": 3000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 2
   },
@@ -456,8 +440,7 @@
     "battlePower": 4000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 3
   },
@@ -484,8 +467,7 @@
     "battlePower": 3000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 1
   },
@@ -512,8 +494,7 @@
     "battlePower": 5000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 1
   },
@@ -539,8 +520,7 @@
     "battlePower": 7000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 3
   },
@@ -567,8 +547,7 @@
     "battlePower": 14000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 2
   },
@@ -594,8 +573,7 @@
     "battlePower": 4000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 1
   },
@@ -621,8 +599,7 @@
     "battlePower": 10000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 1
   },
@@ -648,8 +625,7 @@
     "battlePower": 15000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 2
   },
@@ -675,8 +651,7 @@
     "battlePower": 20000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 2
   },
@@ -702,327 +677,7 @@
     "battlePower": 30000,
     "limited": false,
     "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
-    },
-    "manaValue": 3
-  },
-  "er-26": {
-    "id": "er-26",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Shigekira, the Nefarious Gift"
-        },
-        "type": "Level_0_Leader",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/26.webp"
-      }
-    },
-    "name": "Shigekira, the Nefarious Gift",
-    "type": "Level_0_Leader",
-    "cost": 0,
-    "level": 0,
-    "essence": [
-      "Arcane",
-      "Mind",
-      "Ruin"
-    ],
-    "battlePower": 3000,
-    "limited": true,
-    "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
-    },
-    "manaValue": 1
-  },
-  "er-27": {
-    "id": "er-27",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Shigekira, the Test Subject"
-        },
-        "type": "Leader",
-        "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/27.webp"
-      }
-    },
-    "name": "Shigekira, the Test Subject",
-    "type": "Leader",
-    "cost": 2,
-    "level": 1,
-    "essence": [
-      "Arcane",
-      "Mind",
-      "Ruin"
-    ],
-    "battlePower": 5000,
-    "limited": true,
-    "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
-    },
-    "manaValue": 1
-  },
-  "er-28": {
-    "id": "er-28",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Shigekira, the Rampaging Patient"
-        },
-        "type": "Leader",
-        "cost": 5,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/28.webp"
-      }
-    },
-    "name": "Shigekira, the Rampaging Patient",
-    "type": "Leader",
-    "cost": 5,
-    "level": 2,
-    "essence": [
-      "Arcane",
-      "Mind",
-      "Ruin"
-    ],
-    "battlePower": 8000,
-    "limited": true,
-    "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
-    },
-    "manaValue": 2
-  },
-  "er-29": {
-    "id": "er-29",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Shigekira, the Growing Influence"
-        },
-        "type": "Leader",
-        "cost": 9,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/29.webp"
-      }
-    },
-    "name": "Shigekira, the Growing Influence",
-    "type": "Leader",
-    "cost": 9,
-    "level": 3,
-    "essence": [
-      "Arcane",
-      "Mind",
-      "Ruin"
-    ],
-    "battlePower": 15000,
-    "limited": true,
-    "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
-    },
-    "manaValue": 3
-  },
-  "er-30": {
-    "id": "er-30",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Shigekira, the Serpent Whispering"
-        },
-        "type": "Leader",
-        "cost": 14,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/30.webp"
-      }
-    },
-    "name": "Shigekira, the Serpent Whispering",
-    "type": "Leader",
-    "cost": 14,
-    "level": 4,
-    "essence": [
-      "Arcane",
-      "Mind",
-      "Ruin"
-    ],
-    "battlePower": 20000,
-    "limited": true,
-    "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
-    },
-    "manaValue": 3
-  },
-  "er-31": {
-    "id": "er-31",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Shigekira, the Ouroboros Consumed"
-        },
-        "type": "Leader",
-        "cost": 20,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/31.webp"
-      }
-    },
-    "name": "Shigekira, the Ouroboros Consumed",
-    "type": "Leader",
-    "cost": 20,
-    "level": 5,
-    "essence": [
-      "Arcane",
-      "Mind",
-      "Ruin"
-    ],
-    "battlePower": 28000,
-    "limited": true,
-    "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
-    },
-    "manaValue": 4
-  },
-  "er-32": {
-    "id": "er-32",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Young Georgie, Before the Zomborgs"
-        },
-        "type": "Level_0_Leader",
-        "cost": 0,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/32.webp"
-      }
-    },
-    "name": "Young Georgie, Before the Zomborgs",
-    "type": "Level_0_Leader",
-    "cost": 0,
-    "level": 0,
-    "essence": [
-      "Metal",
-      "Unlife",
-      "Plasma"
-    ],
-    "battlePower": 1000,
-    "limited": true,
-    "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
-    },
-    "manaValue": 1
-  },
-  "er-33": {
-    "id": "er-33",
-    "face": {
-      "front": {
-        "name": {
-          "name": "George the Infected, Edge of Zomborgs"
-        },
-        "type": "Leader",
-        "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/33.webp"
-      }
-    },
-    "name": "George the Infected, Edge of Zomborgs",
-    "type": "Leader",
-    "cost": 2,
-    "level": 1,
-    "essence": [
-      "Metal",
-      "Unlife",
-      "Plasma"
-    ],
-    "battlePower": 3000,
-    "limited": true,
-    "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
-    },
-    "manaValue": 1
-  },
-  "er-34": {
-    "id": "er-34",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Dr. Romero, Zomborg Patient Zero"
-        },
-        "type": "Leader",
-        "cost": 5,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/34.webp"
-      }
-    },
-    "name": "Dr. Romero, Zomborg Patient Zero",
-    "type": "Leader",
-    "cost": 5,
-    "level": 2,
-    "essence": [
-      "Metal",
-      "Unlife",
-      "Plasma"
-    ],
-    "battlePower": 5000,
-    "limited": true,
-    "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
-    },
-    "manaValue": 2
-  },
-  "er-35": {
-    "id": "er-35",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Dr. Romero, the Zomborg Factory"
-        },
-        "type": "Leader",
-        "cost": 9,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/35.webp"
-      }
-    },
-    "name": "Dr. Romero, the Zomborg Factory",
-    "type": "Leader",
-    "cost": 9,
-    "level": 3,
-    "essence": [
-      "Metal",
-      "Unlife",
-      "Plasma"
-    ],
-    "battlePower": 7000,
-    "limited": true,
-    "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
-    },
-    "manaValue": 3
-  },
-  "er-36": {
-    "id": "er-36",
-    "face": {
-      "front": {
-        "name": {
-          "name": "Dr. Romero, the Zomborg General"
-        },
-        "type": "Leader",
-        "cost": 14,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/36.webp"
-      }
-    },
-    "name": "Dr. Romero, the Zomborg General",
-    "type": "Leader",
-    "cost": 14,
-    "level": 4,
-    "essence": [
-      "Metal",
-      "Unlife",
-      "Plasma"
-    ],
-    "battlePower": 11000,
-    "limited": true,
-    "_legal": {
-      "TEST": 1,
-      "ER_STD": 1
+      "ER_STD": true
     },
     "manaValue": 3
   }
