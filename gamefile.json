@@ -363,7 +363,6 @@
               }
             },
             "events": {
-              "onCardsUpdate": "await enforceLifeZoneRules()",
               "onNewTurn": "await handleNewTurn()"
             }
           },
@@ -382,8 +381,7 @@
             "alignment": "CENTER",
             "displayedTitle": "Banished",
             "noQuickActions": false,
-            "noAutoPayTo": true,
-            "isGroupForbidden": false
+            "noAutoPayTo": true
           }
         },
         "categoriesAlreadyOnBoard": [
