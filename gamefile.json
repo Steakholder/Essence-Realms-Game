@@ -348,7 +348,9 @@
             "defaultValue": {
               "turnInitialized": false,
               "leaderOrderComplete": false,
-              "leaderOrderRunning": false
+              "leaderOrderRunning": false,
+              "lifeCardIds": [],
+              "revealedLifeCardIds": []
             },
             "blueprint": {
               "type": "div",
@@ -363,8 +365,8 @@
               }
             },
             "events": {
-              "onNewTurn": "await handleNewTurn()",
-              "onCardsUpdate": "const life = cards?.Life_Zone ?? []; const tappedLife = life.filter(card => card.isTapped); if (tappedLife.length) await functions.updateCards(tappedLife, { isTapped: false });"
+              "onCardsUpdate": "const life = cards?.Life_Zone ?? []; const currentLifeIds = life.map(card => card.id); const knownLifeIds = game.data.Game_Logic.lifeCardIds ?? []; game.data.Game_Logic.lifeCardIds = Array.from(new Set([...knownLifeIds, ...currentLifeIds])); const tappedLife = life.filter(card => card.isTapped); if (tappedLife.length) await functions.updateCards(tappedLife, { isTapped: false }); const revealedIds = game.data.Game_Logic.revealedLifeCardIds ?? []; const toReveal = (cards?.Hand ?? []).filter(card => game.data.Game_Logic.lifeCardIds.includes(card.id) && !revealedIds.includes(card.id)); if (toReveal.length) { await functions.updateCards(toReveal, { isHidden: false }); game.data.Game_Logic.revealedLifeCardIds = Array.from(new Set([...revealedIds, ...toReveal.map(card => card.id)])); }",
+              "onNewTurn": "await handleNewTurn()"
             }
           },
           "Level_0_Leader": {
@@ -379,7 +381,7 @@
           "Banished": {
             "isHidden": "no",
             "height": 7,
-            "alignment": "CENTER",
+            "alignment": "DECK",
             "displayedTitle": "Banished",
             "noQuickActions": false,
             "noAutoPayTo": true
