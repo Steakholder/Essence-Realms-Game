@@ -4,7 +4,7 @@
   "customHelp": "Essence Realms gameplay prototype. Main Deck: exactly 66 cards. Leader Deck: exactly 6 Leaders. Level_0_Leader uses the native Level_0_Leader category for deck rules. Deckbuilding filters: Type groups Level 0 Leaders with Leaders; Level, Essence Attribute, Battle Power, Limited, Mana Value, and Keywords are available in the filter menu. TCGA native Stack is used without a custom Stack interaction UI. Crash-fix baseline restored from the known-good extra-deck routing architecture: extra decks use drawDestinations; no custom autoPlayFromStack overrides are defined.",
   "deckBuilding": {
     "mainFilters": [
-      "Type",
+      "cardType",
       "cost",
       "level"
     ],
@@ -228,11 +228,11 @@
             "height": 14,
             "alignment": "DECK",
             "displayedTitle": "Life Zone",
-            "noQuickActions": false,
+            "noQuickActions": true,
             "noAutoPayTo": true,
             "isGroupForbidden": true,
-            "enterTapped": true,
-            "keepTappedNewTurn": true,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
             "isHorizontalAllowed": true,
             "opponentAlignment": "START",
             "drawDestinations": {
@@ -287,7 +287,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '● ' : '' }}Draw Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '\u25cf ' : '' }}Draw Phase",
                   "onClick": "await selectPhase('Draw Phase')"
                 },
                 {
@@ -300,7 +300,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '● ' : '' }}Main Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '\u25cf ' : '' }}Main Phase",
                   "onClick": "await selectPhase('Main Phase')"
                 },
                 {
@@ -313,7 +313,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '● ' : '' }}Combat Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '\u25cf ' : '' }}Combat Phase",
                   "onClick": "await selectPhase('Combat Phase')"
                 },
                 {
@@ -326,7 +326,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '● ' : '' }}End Phase",
+                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '\u25cf ' : '' }}End Phase",
                   "onClick": "await selectPhase('End Phase')"
                 }
               ]
@@ -363,6 +363,8 @@
               }
             },
             "events": {
+              "onPlayersReady": "await rememberLifeCards()",
+              "onCardsUpdate": "await enforceLifeZoneRules()",
               "onNewTurn": "await handleNewTurn()"
             }
           },
@@ -381,7 +383,8 @@
             "alignment": "CENTER",
             "displayedTitle": "Banished",
             "noQuickActions": false,
-            "noAutoPayTo": true
+            "noAutoPayTo": true,
+            "isGroupForbidden": false
           }
         },
         "categoriesAlreadyOnBoard": [

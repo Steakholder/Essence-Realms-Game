@@ -20,6 +20,27 @@ async function untapTurnCards() {
   }
 }
 
+async function rememberLifeCards() {
+  const life = cards?.Life_Zone ?? [];
+  game.data.Game_Logic.lifeCardIds = life.map(card => card.id);
+}
+
+async function enforceLifeZoneRules() {
+  const life = cards?.Life_Zone ?? [];
+  const tappedLife = life.filter(card => card.isTapped);
+  if (tappedLife.length) {
+    await functions.updateCards(tappedLife, { isTapped: false });
+  }
+
+  const lifeIds = game.data.Game_Logic.lifeCardIds ?? [];
+  if (!lifeIds.length) return;
+
+  const revealedLifeCards = (cards?.Hand ?? []).filter(card => lifeIds.includes(card.id));
+  if (revealedLifeCards.length) {
+    await functions.updateCards(revealedLifeCards, { isHidden: false });
+  }
+}
+
 async function selectPhase(phase) {
   if (!game.turn.isMyTurn) return;
 
