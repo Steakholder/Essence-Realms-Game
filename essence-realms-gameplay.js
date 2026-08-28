@@ -91,7 +91,22 @@ function syncStackActionState() {
   const state = game.data.Stack_Actions;
   const top = getTopStackCard();
 
+  // Avoid writing to custom-section state when nothing relevant changed.
+  // This event can fire for any card movement anywhere on the board.
   if (!top) {
+    if (
+      state.cardId === '' &&
+      state.cardType === '' &&
+      state.cardName === '' &&
+      Number(state.cost ?? 0) === 0 &&
+      state.selectedAction === '' &&
+      state.targetId === '' &&
+      state.targetName === '' &&
+      state.leaderTargetId === '' &&
+      state.leaderTargetName === '' &&
+      state.error === ''
+    ) return;
+
     state.cardId = '';
     state.cardType = '';
     state.cardName = '';
@@ -99,16 +114,19 @@ function syncStackActionState() {
     state.selectedAction = '';
     state.targetId = '';
     state.targetName = '';
+    state.error = '';
     state.leaderTargetId = '';
     state.leaderTargetName = '';
-    state.error = '';
     return;
   }
 
   const data = getStackCardData(top);
   const type = data.type ?? '';
+  const name = data.name ?? data.face?.front?.name?.name ?? '';
+  const cost = Number(data.cost ?? 0);
+  const isNewCard = state.cardId !== top.id;
 
-  if (state.cardId !== top.id) {
+  if (isNewCard) {
     state.selectedAction = '';
     state.targetId = '';
     state.targetName = '';
@@ -119,11 +137,11 @@ function syncStackActionState() {
 
   state.cardId = top.id;
   state.cardType = type;
-  state.cardName = data.name ?? data.face?.front?.name?.name ?? '';
-  state.cost = Number(data.cost ?? 0);
+  state.cardName = name;
+  state.cost = cost;
 
-  // The default action for Leaders is Return. Units still require an explicit choice.
-  if ((type === 'Leader' || type === 'Level_0_Leader') && !state.selectedAction) {
+  // Leaders default to Return. Units and future card types require an explicit action.
+  if (isNewCard && (type === 'Leader' || type === 'Level_0_Leader')) {
     state.selectedAction = 'Return';
   }
 }
