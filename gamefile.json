@@ -120,7 +120,7 @@
             {
               "direction": "column",
               "style": {
-                "width": "calc(100% - 34vh)",
+                "width": "calc(100% - 35vh)",
                 "height": "100%",
                 "boxSizing": "border-box",
                 "justifyContent": "flex-start",
@@ -147,44 +147,44 @@
             {
               "direction": "column",
               "style": {
-                "width": "11vh",
-                "height": "32vh",
+                "width": "24vh",
+                "height": "28vh",
                 "boxSizing": "border-box",
                 "justifyContent": "flex-start",
                 "alignItems": "stretch"
               },
               "content": [
                 {
-                  "section": "Banished",
+                  "direction": "row",
                   "style": {
-                    "width": "11vh",
-                    "height": "7vh"
-                  }
+                    "width": "24vh",
+                    "height": "14vh",
+                    "boxSizing": "border-box",
+                    "justifyContent": "flex-start",
+                    "alignItems": "stretch"
+                  },
+                  "content": [
+                    {
+                      "section": "Banished",
+                      "style": {
+                        "width": "12vh",
+                        "height": "14vh"
+                      }
+                    },
+                    {
+                      "section": "Life_Zone",
+                      "style": {
+                        "width": "12vh",
+                        "height": "14vh"
+                      }
+                    }
+                  ]
                 },
                 {
                   "section": "Discard",
                   "style": {
-                    "width": "11vh",
+                    "width": "24vh",
                     "height": "7vh"
-                  }
-                }
-              ]
-            },
-            {
-              "direction": "column",
-              "style": {
-                "width": "12vh",
-                "height": "14vh",
-                "boxSizing": "border-box",
-                "justifyContent": "flex-start",
-                "alignItems": "center"
-              },
-              "content": [
-                {
-                  "section": "Life_Zone",
-                  "style": {
-                    "width": "12vh",
-                    "height": "14vh"
                   }
                 }
               ]
