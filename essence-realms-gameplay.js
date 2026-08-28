@@ -10,7 +10,7 @@ No script moves, searches for, duplicates, or corrects Leaders.
 
 async function untapTurnCards() {
   const all = [
-    ...(cards?.Active_Leader ?? []),
+    ...(cards?.Level_0_Leader ?? []),
     ...(cards?.Mana_Pool ?? []),
     ...(cards?.Unit_Zone ?? [])
   ];
@@ -37,6 +37,13 @@ async function handleNewTurn() {
   // makes the untap effectively occur at both the start and end of every
   // player's turn without attempting to modify the opponent's cards.
   await untapTurnCards();
+
+  // Only the player whose turn it is performs the normal turn-start
+  // draw/mana-channeling actions and updates the shared phase state.
+  // Untapping above intentionally remains outside this check so each
+  // player's script untaps their own Leader, Units, and Mana at every
+  // turn boundary.
+  if (!game.turn.isMyTurn) return;
 
   // The first player's opening turn gets no additional Mana.
   const isFirstTurn = game.turn.count <= 1;
