@@ -32,8 +32,10 @@ async function selectPhase(phase) {
 }
 
 async function handleNewTurn() {
-  if (!game.turn.isMyTurn) return;
-
+  // Untap this player's cards at the start of every turn, regardless of
+  // whose turn it is. Each player's script handles its own cards, which
+  // makes the untap effectively occur at both the start and end of every
+  // player's turn without attempting to modify the opponent's cards.
   await untapTurnCards();
 
   // The first player's opening turn gets no additional Mana.
