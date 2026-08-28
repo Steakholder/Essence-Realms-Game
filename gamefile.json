@@ -4,7 +4,7 @@
   "customHelp": "Essence Realms gameplay prototype. Main Deck: exactly 66 cards. Leader Deck: exactly 6 Leaders. Level_0_Leader uses the native Level_0_Leader category for deck rules. Deckbuilding filters: Type groups Level 0 Leaders with Leaders; Level, Essence Attribute, Battle Power, Limited, Mana Value, and Keywords are available in the filter menu. TCGA native Stack is used without a custom Stack interaction UI. Crash-fix baseline restored from the known-good extra-deck routing architecture: extra decks use drawDestinations; no custom autoPlayFromStack overrides are defined.",
   "deckBuilding": {
     "mainFilters": [
-      "cardType",
+      "Type",
       "cost",
       "level"
     ],
@@ -228,11 +228,11 @@
             "height": 14,
             "alignment": "DECK",
             "displayedTitle": "Life Zone",
-            "noQuickActions": true,
+            "noQuickActions": false,
             "noAutoPayTo": true,
             "isGroupForbidden": true,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
+            "enterTapped": true,
+            "keepTappedNewTurn": true,
             "isHorizontalAllowed": true,
             "opponentAlignment": "START",
             "drawDestinations": {
@@ -363,8 +363,6 @@
               }
             },
             "events": {
-              "onPlayersReady": "await rememberLifeCards()",
-              "onCardsUpdate": "await enforceLifeZoneRules()",
               "onNewTurn": "await handleNewTurn()"
             }
           },
@@ -383,8 +381,7 @@
             "alignment": "CENTER",
             "displayedTitle": "Banished",
             "noQuickActions": false,
-            "noAutoPayTo": true,
-            "isGroupForbidden": false
+            "noAutoPayTo": true
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -488,11 +485,11 @@
     }
   },
   "cards": {
-    "dataUrl": "cards.json",
+    "dataUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/cards.json",
     "cardBack": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/00_back.webp"
   },
   "scriptsUrls": [
-    "essence-realms-gameplay.js"
+    "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/essence-realms-gameplay.js"
   ],
   "translationsUrl": "translations.json"
 }

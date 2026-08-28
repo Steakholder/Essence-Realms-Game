@@ -23,9 +23,7 @@
       "battlePower": "Battle Power",
       "limited": "Limited",
       "manaValue": "Mana Value",
-      "keywords": "Keywords",
-      "cardType": "Type",
-      "battlePowerValue": "Battle Power"
+      "keywords": "Keywords"
     }
   }
 }
