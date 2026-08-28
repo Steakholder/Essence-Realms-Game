@@ -341,21 +341,7 @@
     },
     "name": "Froggy Ficus",
     "type": "Unit",
-    "cost": 2,
-    "level": 0,
-    "essence": [
-      "Life",
-      "Water"
-    ],
-    "battlePower": 1,
-    "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
-    "manaValue": 1,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "cost": 2
   },
   "er-12": {
     "id": "er-12",
