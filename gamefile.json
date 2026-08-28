@@ -363,7 +363,8 @@
               }
             },
             "events": {
-              "onNewTurn": "await handleNewTurn()"
+              "onNewTurn": "await handleNewTurn()",
+              "onCardsUpdate": "const life = cards?.Life_Zone ?? []; const tappedLife = life.filter(card => card.isTapped); if (tappedLife.length) await functions.updateCards(tappedLife, { isTapped: false });"
             }
           },
           "Level_0_Leader": {
