@@ -1,18 +1,18 @@
 {
-  "er-00": {
-    "id": "er-00",
+  "er-0002": {
+    "id": "er-0002",
     "face": {
       "front": {
         "name": {
           "name": "Mara, the Sinister Cherub"
         },
-        "type": "Level_0_Leader",
+        "type": "LV0Leader",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/00.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/00.webp"
       }
     },
     "name": "Mara, the Sinister Cherub",
-    "type": "Level_0_Leader",
+    "type": "LV0Leader",
     "cost": 0,
     "level": 0,
     "essence": [
@@ -20,18 +20,21 @@
       "Life",
       "Light"
     ],
-    "battlePower": 1,
+    "keywords": [
+      "Lesser",
+      "Fiend",
+      "Winged"
+    ],
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
     "manaValue": 1,
-    "keywords": [],
-    "cardType": "Leader",
-    "battlePowerValue": 0
+    "battlePower": 1000,
+    "effects": []
   },
-  "er-01": {
-    "id": "er-01",
+  "er-0003": {
+    "id": "er-0003",
     "face": {
       "front": {
         "name": {
@@ -39,7 +42,7 @@
         },
         "type": "Leader",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/01.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/01.webp"
       }
     },
     "name": "Mara, the Cult Figure",
@@ -51,18 +54,21 @@
       "Life",
       "Light"
     ],
-    "battlePower": 3,
+    "keywords": [
+      "Lesser",
+      "Fiend",
+      "Winged"
+    ],
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
     "manaValue": 1,
-    "keywords": [],
-    "cardType": "Leader",
-    "battlePowerValue": 0
+    "battlePower": 3000,
+    "effects": []
   },
-  "er-02": {
-    "id": "er-02",
+  "er-0004": {
+    "id": "er-0004",
     "face": {
       "front": {
         "name": {
@@ -70,7 +76,7 @@
         },
         "type": "Leader",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/02.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/02.webp"
       }
     },
     "name": "Mara, the Shining Charlatan",
@@ -82,18 +88,21 @@
       "Life",
       "Light"
     ],
-    "battlePower": 5,
+    "keywords": [
+      "Greater",
+      "Fiend",
+      "Winged"
+    ],
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
     "manaValue": 2,
-    "keywords": [],
-    "cardType": "Leader",
-    "battlePowerValue": 0
+    "battlePower": 5000,
+    "effects": []
   },
-  "er-03": {
-    "id": "er-03",
+  "er-0005": {
+    "id": "er-0005",
     "face": {
       "front": {
         "name": {
@@ -101,7 +110,7 @@
         },
         "type": "Leader",
         "cost": 9,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/03.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/03.webp"
       }
     },
     "name": "Mara, the Twilight Priest",
@@ -113,18 +122,21 @@
       "Life",
       "Light"
     ],
-    "battlePower": 10,
+    "keywords": [
+      "Greater",
+      "Fiend",
+      "Winged"
+    ],
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
     "manaValue": 3,
-    "keywords": [],
-    "cardType": "Leader",
-    "battlePowerValue": 0
+    "battlePower": 10000,
+    "effects": []
   },
-  "er-04": {
-    "id": "er-04",
+  "er-0006": {
+    "id": "er-0006",
     "face": {
       "front": {
         "name": {
@@ -132,7 +144,7 @@
         },
         "type": "Leader",
         "cost": 13,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/04.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/04.webp"
       }
     },
     "name": "Mara, the False Prophet",
@@ -144,18 +156,20 @@
       "Life",
       "Light"
     ],
-    "battlePower": 15,
+    "keywords": [
+      "True",
+      "Winged"
+    ],
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
     "manaValue": 3,
-    "keywords": [],
-    "cardType": "Leader",
-    "battlePowerValue": 0
+    "battlePower": 15000,
+    "effects": []
   },
-  "er-05": {
-    "id": "er-05",
+  "er-0007": {
+    "id": "er-0007",
     "face": {
       "front": {
         "name": {
@@ -163,7 +177,7 @@
         },
         "type": "Leader",
         "cost": 18,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/05.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/05.webp"
       }
     },
     "name": "Mara, the Divine Impersonator",
@@ -175,18 +189,22 @@
       "Life",
       "Light"
     ],
-    "battlePower": 25,
+    "keywords": [
+      "True",
+      "True",
+      "Majin",
+      "Winged"
+    ],
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
     "manaValue": 4,
-    "keywords": [],
-    "cardType": "Leader",
-    "battlePowerValue": 0
+    "battlePower": 25000,
+    "effects": []
   },
-  "er-06": {
-    "id": "er-06",
+  "er-0008": {
+    "id": "er-0008",
     "face": {
       "front": {
         "name": {
@@ -194,7 +212,7 @@
         },
         "type": "Spell",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/06.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/06.webp"
       }
     },
     "name": "Devilish Bounty",
@@ -202,75 +220,470 @@
     "cost": 2,
     "level": 0,
     "essence": [],
-    "battlePower": 2,
+    "keywords": [
+      "Overspell"
+    ],
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
-    "keywords": [],
-    "cardType": "Spell",
-    "battlePowerValue": 0
+    "effects": []
   },
-  "er-07": {
-    "id": "er-07",
+  "er-0009": {
+    "id": "er-0009",
     "face": {
       "front": {
         "name": {
           "name": "Shadow Baby"
         },
         "type": "Unit",
-        "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/07.webp"
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/07.webp"
       }
     },
     "name": "Shadow Baby",
     "type": "Unit",
-    "cost": 3,
+    "cost": 2,
     "level": 0,
     "essence": [
       "Dark"
     ],
-    "battlePower": 1,
+    "keywords": [
+      "Lesser",
+      "Fiend"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 1,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 1000,
+    "effects": []
   },
-  "er-08": {
-    "id": "er-08",
+  "er-0010": {
+    "id": "er-0010",
     "face": {
       "front": {
         "name": {
           "name": "Sprouting Seedling"
         },
         "type": "Unit",
-        "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/08.webp"
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/08.webp"
       }
     },
     "name": "Sprouting Seedling",
     "type": "Unit",
-    "cost": 3,
+    "cost": 2,
     "level": 0,
     "essence": [
       "Life"
     ],
-    "battlePower": 1,
+    "keywords": [
+      "Plant"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 1,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 1000,
+    "effects": []
   },
-  "er-09": {
-    "id": "er-09",
+  "er-0011": {
+    "id": "er-0011",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Shine Cluster"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/09.webp"
+      }
+    },
+    "name": "Shine Cluster",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Light"
+    ],
+    "keywords": [
+      "Fey"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0012": {
+    "id": "er-0012",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Roe Clump"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/10.webp"
+      }
+    },
+    "name": "Roe Clump",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Water"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0013": {
+    "id": "er-0013",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Blown Dandelion"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/11.webp"
+      }
+    },
+    "name": "Blown Dandelion",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Wind"
+    ],
+    "keywords": [
+      "Plant"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0014": {
+    "id": "er-0014",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Torchbearer"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/12.webp"
+      }
+    },
+    "name": "Torchbearer",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Fire"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0015": {
+    "id": "er-0015",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Fungal Spore"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/13.webp"
+      }
+    },
+    "name": "Fungal Spore",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Unlife"
+    ],
+    "keywords": [
+      "Plant"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0016": {
+    "id": "er-0016",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Bacteria X"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/14.webp"
+      }
+    },
+    "name": "Bacteria X",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Ruin"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0017": {
+    "id": "er-0017",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Twin Worm"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/15.webp"
+      }
+    },
+    "name": "Twin Worm",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Earth"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0018": {
+    "id": "er-0018",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mimic Coin"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/16.webp"
+      }
+    },
+    "name": "Mimic Coin",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Metal"
+    ],
+    "keywords": [
+      "Lesser",
+      "Fiend"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0019": {
+    "id": "er-0019",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Imaginary Fiend"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/17.webp"
+      }
+    },
+    "name": "Imaginary Fiend",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Mind"
+    ],
+    "keywords": [
+      "Lesser",
+      "Fiend"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0020": {
+    "id": "er-0020",
+    "face": {
+      "front": {
+        "name": {
+          "name": "The Abominable Snowball"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/18.webp"
+      }
+    },
+    "name": "The Abominable Snowball",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Cold"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0021": {
+    "id": "er-0021",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Static Puff"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/19.webp"
+      }
+    },
+    "name": "Static Puff",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Plasma"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0022": {
+    "id": "er-0022",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Will o’ Wisp"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/20.webp"
+      }
+    },
+    "name": "Will o’ Wisp",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Spirit"
+    ],
+    "keywords": [
+      "Fey"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0023": {
+    "id": "er-0023",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mana Sprite"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/21.webp"
+      }
+    },
+    "name": "Mana Sprite",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Arcane"
+    ],
+    "keywords": [
+      "Fey"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0024": {
+    "id": "er-0024",
     "face": {
       "front": {
         "name": {
@@ -278,7 +691,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/09.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/22.webp"
       }
     },
     "name": "Shade Slime",
@@ -288,18 +701,19 @@
     "essence": [
       "Dark"
     ],
-    "battlePower": 3,
+    "keywords": [
+      "Amorphous"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 3,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 3000,
+    "effects": []
   },
-  "er-10": {
-    "id": "er-10",
+  "er-0025": {
+    "id": "er-0025",
     "face": {
       "front": {
         "name": {
@@ -307,7 +721,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/10.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/23.webp"
       }
     },
     "name": "Algae Slime",
@@ -317,18 +731,440 @@
     "essence": [
       "Life"
     ],
-    "battlePower": 3,
+    "keywords": [
+      "Amorphous"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 3,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 3000,
+    "effects": []
   },
-  "er-11": {
-    "id": "er-11",
+  "er-0026": {
+    "id": "er-0026",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Bright Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/24.webp"
+      }
+    },
+    "name": "Bright Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Light"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0027": {
+    "id": "er-0027",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Fishbowl Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/25.webp"
+      }
+    },
+    "name": "Fishbowl Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Water"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0028": {
+    "id": "er-0028",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Float Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/26.webp"
+      }
+    },
+    "name": "Float Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Wind"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0029": {
+    "id": "er-0029",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Magma Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/27.webp"
+      }
+    },
+    "name": "Magma Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Fire"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0030": {
+    "id": "er-0030",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Skull Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/28.webp"
+      }
+    },
+    "name": "Skull Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Unlife"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0031": {
+    "id": "er-0031",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Smog Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/29.webp"
+      }
+    },
+    "name": "Smog Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Ruin"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0032": {
+    "id": "er-0032",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Tar Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/30.webp"
+      }
+    },
+    "name": "Tar Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Earth"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0033": {
+    "id": "er-0033",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mercury Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/31.webp"
+      }
+    },
+    "name": "Mercury Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Metal"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0034": {
+    "id": "er-0034",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Brain Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/32.webp"
+      }
+    },
+    "name": "Brain Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Mind"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0035": {
+    "id": "er-0035",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Snowball Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/33.webp"
+      }
+    },
+    "name": "Snowball Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Cold"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0036": {
+    "id": "er-0036",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Shock Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/34.webp"
+      }
+    },
+    "name": "Shock Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Plasma"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0037": {
+    "id": "er-0037",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Spectral Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/35.webp"
+      }
+    },
+    "name": "Spectral Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Spirit"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0038": {
+    "id": "er-0038",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mana Slime"
+        },
+        "type": "Unit",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/36.webp"
+      }
+    },
+    "name": "Mana Slime",
+    "type": "Unit",
+    "cost": 3,
+    "level": 1,
+    "essence": [
+      "Arcane"
+    ],
+    "keywords": [
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0039": {
+    "id": "er-0039",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Ninja"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/37.webp"
+      }
+    },
+    "name": "Froggy Ninja",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Dark",
+      "Water"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0040": {
+    "id": "er-0040",
     "face": {
       "front": {
         "name": {
@@ -336,7 +1172,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/11.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/38.webp"
       }
     },
     "name": "Froggy Ficus",
@@ -347,18 +1183,428 @@
       "Life",
       "Water"
     ],
-    "battlePower": 1,
+    "keywords": [
+      "Plant"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 1,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 1000,
+    "effects": []
   },
-  "er-12": {
-    "id": "er-12",
+  "er-0041": {
+    "id": "er-0041",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Photon"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/39.webp"
+      }
+    },
+    "name": "Froggy Photon",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Light",
+      "Water"
+    ],
+    "keywords": [
+      "Critter",
+      "Fey"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0042": {
+    "id": "er-0042",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Frog"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/40.webp"
+      }
+    },
+    "name": "Froggy Frog",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Water"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0043": {
+    "id": "er-0043",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Flutter"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/41.webp"
+      }
+    },
+    "name": "Froggy Flutter",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Water",
+      "Wind"
+    ],
+    "keywords": [
+      "Critter",
+      "Winged"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0044": {
+    "id": "er-0044",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Flare"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/42.webp"
+      }
+    },
+    "name": "Froggy Flare",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Fire",
+      "Water"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0045": {
+    "id": "er-0045",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Vampire"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/43.webp"
+      }
+    },
+    "name": "Froggy Vampire",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Unlife",
+      "Water"
+    ],
+    "keywords": [
+      "Critter",
+      "Undead",
+      "Immortal"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0046": {
+    "id": "er-0046",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy C-4rog"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/44.webp"
+      }
+    },
+    "name": "Froggy C-4rog",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Ruin",
+      "Water"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0047": {
+    "id": "er-0047",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Mudskipper"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/45.webp"
+      }
+    },
+    "name": "Froggy Mudskipper",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Earth",
+      "Water"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0048": {
+    "id": "er-0048",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Gizmo"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/46.webp"
+      }
+    },
+    "name": "Froggy Gizmo",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Metal",
+      "Water"
+    ],
+    "keywords": [
+      "Machine"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0049": {
+    "id": "er-0049",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Medium"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/47.webp"
+      }
+    },
+    "name": "Froggy Medium",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Mind",
+      "Water"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0050": {
+    "id": "er-0050",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Freeze"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/48.webp"
+      }
+    },
+    "name": "Froggy Freeze",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Cold",
+      "Water"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0051": {
+    "id": "er-0051",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Thunder"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/49.webp"
+      }
+    },
+    "name": "Froggy Thunder",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Plasma",
+      "Water"
+    ],
+    "keywords": [
+      "Critter",
+      "Amorphous"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0052": {
+    "id": "er-0052",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Phantom"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/50.webp"
+      }
+    },
+    "name": "Froggy Phantom",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Spirit",
+      "Water"
+    ],
+    "keywords": [
+      "Critter",
+      "Ghast"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0053": {
+    "id": "er-0053",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Familiar"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/51.webp"
+      }
+    },
+    "name": "Froggy Familiar",
+    "type": "Unit",
+    "cost": 2,
+    "level": 0,
+    "essence": [
+      "Arcane",
+      "Water"
+    ],
+    "keywords": [
+      "Critter",
+      "Immortal"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0054": {
+    "id": "er-0054",
     "face": {
       "front": {
         "name": {
@@ -366,7 +1612,7 @@
         },
         "type": "Spell",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/12.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/52.webp"
       }
     },
     "name": "Risks and Rewards",
@@ -374,17 +1620,95 @@
     "cost": 3,
     "level": 3,
     "essence": [],
-    "battlePower": 2,
+    "keywords": [
+      "Channeled"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "keywords": [],
-    "cardType": "Spell",
-    "battlePowerValue": 0
+    "effects": []
   },
-  "er-13": {
-    "id": "er-13",
+  "er-0055": {
+    "id": "er-0055",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Binding Spell"
+        },
+        "type": "Spell",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/53.webp"
+      }
+    },
+    "name": "Binding Spell",
+    "type": "Spell",
+    "cost": 3,
+    "level": 2,
+    "essence": [],
+    "keywords": [
+      "Counterspell"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "effects": []
+  },
+  "er-0056": {
+    "id": "er-0056",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Monsterous Rush"
+        },
+        "type": "Enchantment",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/54.webp"
+      }
+    },
+    "name": "Monsterous Rush",
+    "type": "Enchantment",
+    "cost": 1,
+    "level": 1,
+    "essence": [],
+    "keywords": [
+      "Buff"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "effects": []
+  },
+  "er-0057": {
+    "id": "er-0057",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Deadly Hex"
+        },
+        "type": "Enchantment",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/55.webp"
+      }
+    },
+    "name": "Deadly Hex",
+    "type": "Enchantment",
+    "cost": 4,
+    "level": 3,
+    "essence": [],
+    "keywords": [
+      "Curse"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "effects": []
+  },
+  "er-0058": {
+    "id": "er-0058",
     "face": {
       "front": {
         "name": {
@@ -392,7 +1716,7 @@
         },
         "type": "Enchantment",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/13.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/56.webp"
       }
     },
     "name": "Double Tap",
@@ -400,17 +1724,17 @@
     "cost": 2,
     "level": 3,
     "essence": [],
-    "battlePower": 2,
+    "keywords": [
+      "Buff"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
-    "keywords": [],
-    "cardType": "Enchantment",
-    "battlePowerValue": 0
+    "effects": []
   },
-  "er-14": {
-    "id": "er-14",
+  "er-0059": {
+    "id": "er-0059",
     "face": {
       "front": {
         "name": {
@@ -418,7 +1742,7 @@
         },
         "type": "Spell",
         "cost": 6,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/14.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/57.webp"
       }
     },
     "name": "Energy Surge",
@@ -426,17 +1750,43 @@
     "cost": 6,
     "level": 2,
     "essence": [],
-    "battlePower": 2,
+    "keywords": [
+      "Counterspell"
+    ],
     "limited": true,
     "_legal": {
       "ER_STD": 1
     },
-    "keywords": [],
-    "cardType": "Spell",
-    "battlePowerValue": 0
+    "effects": []
   },
-  "er-15": {
-    "id": "er-15",
+  "er-0060": {
+    "id": "er-0060",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Frenzy Wave"
+        },
+        "type": "Spell",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/58.webp"
+      }
+    },
+    "name": "Frenzy Wave",
+    "type": "Spell",
+    "cost": 5,
+    "level": 4,
+    "essence": [],
+    "keywords": [
+      "Counterspell"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "effects": []
+  },
+  "er-0061": {
+    "id": "er-0061",
     "face": {
       "front": {
         "name": {
@@ -444,7 +1794,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/15.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/59.webp"
       }
     },
     "name": "Planted Plant",
@@ -455,29 +1805,32 @@
       "Dark",
       "Life"
     ],
-    "battlePower": 3,
+    "keywords": [
+      "Lesser",
+      "Fiend",
+      "Plant"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 2,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 3000,
+    "effects": []
   },
-  "er-16": {
-    "id": "er-16",
+  "er-0062": {
+    "id": "er-0062",
     "face": {
       "front": {
         "name": {
-          "name": "Everlayer Magician"
+          "name": "Evilslayer Magician"
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/16.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/60.webp"
       }
     },
-    "name": "Everlayer Magician",
+    "name": "Evilslayer Magician",
     "type": "Unit",
     "cost": 4,
     "level": 2,
@@ -485,48 +1838,117 @@
       "Arcane",
       "Dark"
     ],
-    "battlePower": 4,
+    "keywords": [
+      "Abomination",
+      "Adventurer",
+      "Lesser",
+      "Fiend"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 3,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 4000,
+    "effects": []
   },
-  "er-17": {
-    "id": "er-17",
+  "er-0063": {
+    "id": "er-0063",
     "face": {
       "front": {
         "name": {
-          "name": "Believer"
+          "name": "Shimmer Wing"
         },
         "type": "Unit",
-        "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/17.webp"
+        "cost": 6,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/61.webp"
       }
     },
-    "name": "Believer",
+    "name": "Shimmer Wing",
     "type": "Unit",
-    "cost": 3,
+    "cost": 6,
+    "level": 4,
+    "essence": [
+      "Light"
+    ],
+    "keywords": [
+      "Mythical",
+      "Beast",
+      "Winged"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 3,
+    "battlePower": 12000,
+    "effects": []
+  },
+  "er-0064": {
+    "id": "er-0064",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Leaf Glider"
+        },
+        "type": "Unit",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/62.webp"
+      }
+    },
+    "name": "Leaf Glider",
+    "type": "Unit",
+    "cost": 1,
     "level": 1,
     "essence": [
-      "Life",
-      "Water"
+      "Earth",
+      "Life"
     ],
-    "battlePower": 3,
+    "keywords": [
+      "Critter",
+      "Winged"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 1,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 1000,
+    "effects": []
   },
-  "er-18": {
-    "id": "er-18",
+  "er-0065": {
+    "id": "er-0065",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Beleaver"
+        },
+        "type": "Unit",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/63.webp"
+      }
+    },
+    "name": "Beleaver",
+    "type": "Unit",
+    "cost": 2,
+    "level": 1,
+    "essence": [
+      "Life",
+      "Water"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0066": {
+    "id": "er-0066",
     "face": {
       "front": {
         "name": {
@@ -534,7 +1956,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/18.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/64.webp"
       }
     },
     "name": "Hunting Foxtail",
@@ -545,47 +1967,49 @@
       "Dark",
       "Life"
     ],
-    "battlePower": 5,
+    "keywords": [
+      "Critter"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 1,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 5000,
+    "effects": []
   },
-  "er-19": {
-    "id": "er-19",
+  "er-0067": {
+    "id": "er-0067",
     "face": {
       "front": {
         "name": {
-          "name": "Brittle Boar"
+          "name": "Bristle Boar"
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/19.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/65.webp"
       }
     },
-    "name": "Brittle Boar",
+    "name": "Bristle Boar",
     "type": "Unit",
     "cost": 4,
     "level": 2,
     "essence": [
       "Life"
     ],
-    "battlePower": 7,
+    "keywords": [
+      "Beast"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 3,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 7000,
+    "effects": []
   },
-  "er-20": {
-    "id": "er-20",
+  "er-0068": {
+    "id": "er-0068",
     "face": {
       "front": {
         "name": {
@@ -593,7 +2017,7 @@
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/20.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/66.webp"
       }
     },
     "name": "Beleaver Dam",
@@ -604,18 +2028,49 @@
       "Life",
       "Water"
     ],
-    "battlePower": 14,
+    "keywords": [
+      "Critter"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 2,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 14000,
+    "effects": []
   },
-  "er-21": {
-    "id": "er-21",
+  "er-0069": {
+    "id": "er-0069",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Tree Rutter"
+        },
+        "type": "Unit",
+        "cost": 6,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/67.webp"
+      }
+    },
+    "name": "Tree Rutter",
+    "type": "Unit",
+    "cost": 6,
+    "level": 4,
+    "essence": [
+      "Life"
+    ],
+    "keywords": [
+      "Beast"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 2,
+    "battlePower": 12000,
+    "effects": []
+  },
+  "er-0070": {
+    "id": "er-0070",
     "face": {
       "front": {
         "name": {
@@ -623,7 +2078,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/21.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/68.webp"
       }
     },
     "name": "Deki, the Imp",
@@ -633,18 +2088,20 @@
     "essence": [
       "Dark"
     ],
-    "battlePower": 4,
+    "keywords": [
+      "Lesser",
+      "Fiend"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 1,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 4000,
+    "effects": []
   },
-  "er-22": {
-    "id": "er-22",
+  "er-0071": {
+    "id": "er-0071",
     "face": {
       "front": {
         "name": {
@@ -652,7 +2109,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/22.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/69.webp"
       }
     },
     "name": "Deki, the Fiendish Soldier",
@@ -662,18 +2119,20 @@
     "essence": [
       "Dark"
     ],
-    "battlePower": 10,
+    "keywords": [
+      "Lesser",
+      "Fiend"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 1,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 10000,
+    "effects": []
   },
-  "er-23": {
-    "id": "er-23",
+  "er-0072": {
+    "id": "er-0072",
     "face": {
       "front": {
         "name": {
@@ -681,7 +2140,7 @@
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/23.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/70.webp"
       }
     },
     "name": "Deki, the Fiendish Archduke",
@@ -691,18 +2150,20 @@
     "essence": [
       "Dark"
     ],
-    "battlePower": 15,
+    "keywords": [
+      "Greater",
+      "Fiend"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 2,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 15000,
+    "effects": []
   },
-  "er-24": {
-    "id": "er-24",
+  "er-0073": {
+    "id": "er-0073",
     "face": {
       "front": {
         "name": {
@@ -710,7 +2171,7 @@
         },
         "type": "Unit",
         "cost": 6,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/24.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/71.webp"
       }
     },
     "name": "Deki, the Fiend Lord",
@@ -720,18 +2181,20 @@
     "essence": [
       "Dark"
     ],
-    "battlePower": 20,
+    "keywords": [
+      "Greater",
+      "Fiend"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 2,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 20000,
+    "effects": []
   },
-  "er-25": {
-    "id": "er-25",
+  "er-0074": {
+    "id": "er-0074",
     "face": {
       "front": {
         "name": {
@@ -739,7 +2202,7 @@
         },
         "type": "Unit",
         "cost": 8,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms/main/25.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/72.webp"
       }
     },
     "name": "Deki, the True Majin",
@@ -749,14 +2212,704 @@
     "essence": [
       "Dark"
     ],
-    "battlePower": 30,
+    "keywords": [
+      "True"
+    ],
     "limited": false,
     "_legal": {
       "ER_STD": true
     },
     "manaValue": 3,
-    "keywords": [],
-    "cardType": "Unit",
-    "battlePowerValue": 0
+    "battlePower": 30000,
+    "effects": []
+  },
+  "er-0075": {
+    "id": "er-0075",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Shine Bird"
+        },
+        "type": "Unit",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/73.webp"
+      }
+    },
+    "name": "Shine Bird",
+    "type": "Unit",
+    "cost": 1,
+    "level": 2,
+    "essence": [
+      "Light"
+    ],
+    "keywords": [
+      "Critter",
+      "Winged"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0076": {
+    "id": "er-0076",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Glare Hawk"
+        },
+        "type": "Unit",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/74.webp"
+      }
+    },
+    "name": "Glare Hawk",
+    "type": "Unit",
+    "cost": 4,
+    "level": 3,
+    "essence": [
+      "Light"
+    ],
+    "keywords": [
+      "Beast",
+      "Winged"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "manaValue": 1,
+    "battlePower": 8000,
+    "effects": []
+  },
+  "er-0077": {
+    "id": "er-0077",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Adaptive Changeling"
+        },
+        "type": "Enchantment",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/75.webp"
+      }
+    },
+    "name": "Adaptive Changeling",
+    "type": "Enchantment",
+    "cost": 0,
+    "level": 1,
+    "essence": [],
+    "keywords": [
+      "Curse"
+    ],
+    "limited": false,
+    "_legal": {
+      "ER_STD": true
+    },
+    "effects": []
+  },
+  "er-0078": {
+    "id": "er-0078",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Elementova"
+        },
+        "type": "LV0Leader",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/76.webp"
+      }
+    },
+    "name": "Froggy Elementova",
+    "type": "LV0Leader",
+    "cost": 0,
+    "level": 0,
+    "essence": [
+      "Fire",
+      "Water",
+      "Wind"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 5,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0079": {
+    "id": "er-0079",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Elementadpole"
+        },
+        "type": "Leader",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/77.webp"
+      }
+    },
+    "name": "Froggy Elementadpole",
+    "type": "Leader",
+    "cost": 1,
+    "level": 1,
+    "essence": [
+      "Fire",
+      "Water",
+      "Wind"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 5,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0080": {
+    "id": "er-0080",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Elementamoph"
+        },
+        "type": "Leader",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/78.webp"
+      }
+    },
+    "name": "Froggy Elementamoph",
+    "type": "Leader",
+    "cost": 3,
+    "level": 2,
+    "essence": [
+      "Fire",
+      "Water",
+      "Wind"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 4,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0081": {
+    "id": "er-0081",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Elementoad"
+        },
+        "type": "Leader",
+        "cost": 6,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/79.webp"
+      }
+    },
+    "name": "Froggy Elementoad",
+    "type": "Leader",
+    "cost": 6,
+    "level": 3,
+    "essence": [
+      "Fire",
+      "Water",
+      "Wind"
+    ],
+    "keywords": [
+      "Critter"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 3,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0082": {
+    "id": "er-0082",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Eldelementoad"
+        },
+        "type": "Leader",
+        "cost": 10,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/80.webp"
+      }
+    },
+    "name": "Froggy Eldelementoad",
+    "type": "Leader",
+    "cost": 10,
+    "level": 4,
+    "essence": [
+      "Fire",
+      "Water",
+      "Wind"
+    ],
+    "keywords": [
+      "Critter",
+      "Winged",
+      "Fey"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 2,
+    "battlePower": 7000,
+    "effects": []
+  },
+  "er-0083": {
+    "id": "er-0083",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Froggy Eldomegelementoad"
+        },
+        "type": "Leader",
+        "cost": 15,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/81.webp"
+      }
+    },
+    "name": "Froggy Eldomegelementoad",
+    "type": "Leader",
+    "cost": 15,
+    "level": 5,
+    "essence": [
+      "Fire",
+      "Water",
+      "Wind"
+    ],
+    "keywords": [
+      "Critter",
+      "Winged",
+      "Celestial",
+      "Immortal"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 1,
+    "battlePower": 12000,
+    "effects": []
+  },
+  "er-0084": {
+    "id": "er-0084",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Shigekira, the Nefarious Gift"
+        },
+        "type": "LV0Leader",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/82.webp"
+      }
+    },
+    "name": "Shigekira, the Nefarious Gift",
+    "type": "LV0Leader",
+    "cost": 0,
+    "level": 0,
+    "essence": [
+      "Arcane",
+      "Mind",
+      "Ruin"
+    ],
+    "keywords": [
+      "Adventurer"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 2,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0085": {
+    "id": "er-0085",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Shigekira, the Test Subject"
+        },
+        "type": "Leader",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/83.webp"
+      }
+    },
+    "name": "Shigekira, the Test Subject",
+    "type": "Leader",
+    "cost": 2,
+    "level": 1,
+    "essence": [
+      "Arcane",
+      "Mind",
+      "Ruin"
+    ],
+    "keywords": [
+      "Adventurer"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 3,
+    "battlePower": 5000,
+    "effects": []
+  },
+  "er-0086": {
+    "id": "er-0086",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Shigekira, the Rampaging Patient"
+        },
+        "type": "Leader",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/84.webp"
+      }
+    },
+    "name": "Shigekira, the Rampaging Patient",
+    "type": "Leader",
+    "cost": 5,
+    "level": 2,
+    "essence": [
+      "Arcane",
+      "Mind",
+      "Ruin"
+    ],
+    "keywords": [
+      "Adventurer",
+      "Abomination"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 4,
+    "battlePower": 8000,
+    "effects": []
+  },
+  "er-0087": {
+    "id": "er-0087",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Shigekira, the Growing Influence"
+        },
+        "type": "Leader",
+        "cost": 9,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/85.webp"
+      }
+    },
+    "name": "Shigekira, the Growing Influence",
+    "type": "Leader",
+    "cost": 9,
+    "level": 3,
+    "essence": [
+      "Arcane",
+      "Mind",
+      "Ruin"
+    ],
+    "keywords": [
+      "Adventurer",
+      "Abomination"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 5,
+    "battlePower": 15000,
+    "effects": []
+  },
+  "er-0088": {
+    "id": "er-0088",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Shigekira, the Serpent Whispering"
+        },
+        "type": "Leader",
+        "cost": 14,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/86.webp"
+      }
+    },
+    "name": "Shigekira, the Serpent Whispering",
+    "type": "Leader",
+    "cost": 14,
+    "level": 4,
+    "essence": [
+      "Arcane",
+      "Mind",
+      "Ruin"
+    ],
+    "keywords": [
+      "Adventurer",
+      "Abomination",
+      "Mythical",
+      "Beast",
+      "Serpent"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 5,
+    "battlePower": 20000,
+    "effects": []
+  },
+  "er-0089": {
+    "id": "er-0089",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Shigekira, the Oroborus Consumed"
+        },
+        "type": "Leader",
+        "cost": 20,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/87.webp"
+      }
+    },
+    "name": "Shigekira, the Oroborus Consumed",
+    "type": "Leader",
+    "cost": 20,
+    "level": 5,
+    "essence": [
+      "Arcane",
+      "Mind",
+      "Ruin"
+    ],
+    "keywords": [
+      "Adventurer",
+      "Abomination",
+      "Mythical",
+      "Beast",
+      "Serpent"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 5,
+    "battlePower": 28000,
+    "effects": []
+  },
+  "er-0090": {
+    "id": "er-0090",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Young Georgie, Before the Zomborgs"
+        },
+        "type": "LV0Leader",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/88.webp"
+      }
+    },
+    "name": "Young Georgie, Before the Zomborgs",
+    "type": "LV0Leader",
+    "cost": 0,
+    "level": 0,
+    "essence": [
+      "Metal",
+      "Unlife",
+      "Plasma"
+    ],
+    "keywords": [
+      "Adventurer"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 1,
+    "battlePower": 1000,
+    "effects": []
+  },
+  "er-0091": {
+    "id": "er-0091",
+    "face": {
+      "front": {
+        "name": {
+          "name": "George the Infected, Edge of Zomborgs"
+        },
+        "type": "Leader",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/89.webp"
+      }
+    },
+    "name": "George the Infected, Edge of Zomborgs",
+    "type": "Leader",
+    "cost": 2,
+    "level": 1,
+    "essence": [
+      "Metal",
+      "Unlife",
+      "Plasma"
+    ],
+    "keywords": [
+      "Adventurer",
+      "Undead"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 1,
+    "battlePower": 3000,
+    "effects": []
+  },
+  "er-0092": {
+    "id": "er-0092",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Dr. Romero, Zomborg Patient Zero"
+        },
+        "type": "Leader",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/90.webp"
+      }
+    },
+    "name": "Dr. Romero, Zomborg Patient Zero",
+    "type": "Leader",
+    "cost": 5,
+    "level": 2,
+    "essence": [
+      "Metal",
+      "Unlife",
+      "Plasma"
+    ],
+    "keywords": [
+      "Hero",
+      "Machine",
+      "Undead"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 1,
+    "battlePower": 5000,
+    "effects": []
+  },
+  "er-0093": {
+    "id": "er-0093",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Dr. Romero, the Zomborg Factory"
+        },
+        "type": "Leader",
+        "cost": 9,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/91.webp"
+      }
+    },
+    "name": "Dr. Romero, the Zomborg Factory",
+    "type": "Leader",
+    "cost": 9,
+    "level": 3,
+    "essence": [
+      "Metal",
+      "Unlife",
+      "Plasma"
+    ],
+    "keywords": [
+      "Hero",
+      "Machine",
+      "Undead"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 1,
+    "battlePower": 7000,
+    "effects": []
+  },
+  "er-0094": {
+    "id": "er-0094",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Dr. Romero, the Zomborg General"
+        },
+        "type": "Leader",
+        "cost": 14,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/92.webp"
+      }
+    },
+    "name": "Dr. Romero, the Zomborg General",
+    "type": "Leader",
+    "cost": 14,
+    "level": 4,
+    "essence": [
+      "Metal",
+      "Unlife",
+      "Plasma"
+    ],
+    "keywords": [
+      "Hero",
+      "Machine",
+      "Undead"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 1,
+    "battlePower": 11000,
+    "effects": []
+  },
+  "er-0095": {
+    "id": "er-0095",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Dr. Zomborg, the Era of Eternal Unlife"
+        },
+        "type": "Leader",
+        "cost": 20,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/93.webp"
+      }
+    },
+    "name": "Dr. Zomborg, the Era of Eternal Unlife",
+    "type": "Leader",
+    "cost": 20,
+    "level": 5,
+    "essence": [
+      "Metal",
+      "Unlife",
+      "Plasma"
+    ],
+    "keywords": [
+      "Legendary",
+      "Hero",
+      "Machine",
+      "Undead"
+    ],
+    "limited": true,
+    "_legal": {
+      "ER_STD": 1
+    },
+    "manaValue": 1,
+    "battlePower": 15000,
+    "effects": []
   }
 }
