@@ -7,7 +7,7 @@
  *   - no automatic first-turn draw
  *
  * Scripted rules:
- *   - after both players finish mulliganing:
+ *   - after BOTH players finish mulliganing:
  *       6 cards -> Mana Storage
  *       2 cards -> Mana Pool
  *       6 cards -> Life Zone
@@ -21,29 +21,30 @@
 async function setupAfterMulligan() {
     const state = game.data.GameLogic;
 
-    // onPlayersMulligan fires only after every player has completed the
-    // mulligan step.
+    // onPlayersMulligan fires once all players have completed the mulligan.
+    // GameLogic is per-player, so each player performs this setup on their
+    // own deck exactly once.
     if (state.startupSetupDone) return;
 
-    const deck = cards?.Deck ?? [];
+    // functions.draw() already knows the player's main deck. There is no
+    // need to inspect the deck through the read-only cards object here.
 
-    // After a six-card opening hand, the main deck still contains plenty
-    // of cards. Require the fourteen cards needed for initialization.
-    if (deck.length < 14) return;
-
+    // Top 6 -> Mana Storage.
     await functions.draw(6, false, "ManaStorage");
+
+    // Next 2 -> Mana Pool.
     await functions.draw(2, false, "ManaPool");
+
+    // Next 6 -> Life Zone.
     await functions.draw(6, false, "LifeZone");
 
     state.startupSetupDone = true;
 }
 
 async function untapMyCards() {
-    // Scripts can only modify the current player's cards. onNewTurn runs
-    // for each player, so this untaps both sides independently.
+    // onNewTurn runs for each player, so both sides untap independently.
     const sectionNames = [
         "Hand",
-        "Deck",
         "LV0Leader",
         "Leader",
         "ManaStorage",
@@ -66,23 +67,19 @@ async function untapMyCards() {
 }
 
 async function handleNewTurn() {
-    // This event runs for each player at the start of every new turn.
-    // Therefore every player can untap their own cards.
+    // Both players execute this event, so both sides untap independently.
     await untapMyCards();
 
-    // The first global turn is the only turn with no draw and no mana
-    // transfer. TCGA exposes the global sum of player turn counts here.
-    // Treat 0/1 as the initial turn so this remains safe across the
-    // engine's initial turn-count convention.
+    // The first player's first turn has no draw and no mana transfer.
     if (game.turn.count <= 1) return;
 
-    // Only the actual turn player performs the draw and mana gain.
+    // Only the active/turn player draws and gains one mana.
     if (!game.turn.isMyTurn) return;
 
     await functions.draw(1);
 
-    const manaStorage = cards?.ManaStorage ?? [];
-    if (manaStorage.length > 0) {
+    // Move the top card of Mana Storage to Mana Pool.
+    if ((cards?.ManaStorage ?? []).length > 0) {
         await functions.drawFromExtraDeck(
             "ManaStorage",
             1,
