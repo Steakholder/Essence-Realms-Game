@@ -384,15 +384,6 @@
             "displayedTitle": "Banished",
             "noQuickActions": false,
             "noAutoPayTo": true
-          },
-          "Stack": {
-            "isHidden": "no",
-            "height": 7,
-            "alignment": "CENTER",
-            "displayedTitle": "Stack",
-            "noQuickActions": false,
-            "noAutoPayTo": true,
-            "isGroupForbidden": false
           }
         },
         "categoriesAlreadyOnBoard": [
@@ -412,7 +403,11 @@
         }
       },
       "autoPlayFromHand": {
-        "Unit": "Unit_Zone"
+        "Unit": "Stack",
+        "Spell": "Stack",
+        "Enchantment": "Stack",
+        "Leader": "Stack",
+        "Level_0_Leader": "Stack"
       },
       "beforeGameStart": {
         "initialBoardSetup": [
@@ -492,6 +487,13 @@
           "Level_0_Leader",
           "Leader"
         ]
+      },
+      "autoPlayFromStack": {
+        "Unit": "Discard",
+        "Spell": "Discard",
+        "Enchantment": "Discard",
+        "Leader": "Discard",
+        "Level_0_Leader": "Discard"
       }
     }
   },
