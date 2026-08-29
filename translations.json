@@ -10,7 +10,9 @@
       "manaValue": "Mana Value",
       "level": "Level",
       "type": "Card Type",
-      "limited": "Limited"
+      "limited": "Limited",
+      "levelFilter": "Level",
+      "manaValueFilter": "Mana Value"
     }
   }
 }
