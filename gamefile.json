@@ -179,7 +179,7 @@
         "autoPlayFromHand": {
           "Unit": "ActiveUnitZone",
           "LV0Leader": "LV0Leader",
-          "Leader": "ActiveUnitZone",
+          "Leader": "LV0Leader",
           "Spell": "Stack",
           "Enchantment": "Stack"
         },
