@@ -68,8 +68,8 @@
         }
       },
       "newTurn": {
-        "drawOnStart": true,
-        "drawPerTurn": 1,
+        "drawOnStart": false,
+        "drawPerTurn": 0,
         "sharedTurn": false
       },
       "countersStartingValues": [],
@@ -289,6 +289,15 @@
             "type": "custom",
             "defaultValue": {
               "startupSetupDone": false
+            },
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "none"
+                }
+              },
+              "children": []
             },
             "events": {
               "onPlayersMulligan": "await setupAfterMulligan()",
