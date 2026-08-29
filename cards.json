@@ -30,12 +30,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0003": {
     "id": "er-0003",
@@ -68,12 +64,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 1,
+    "manaValue": 1
   },
   "er-0004": {
     "id": "er-0004",
@@ -106,12 +98,8 @@
     },
     "battlePower": 5000,
     "effects": [],
-    "level": [
-      2
-    ],
-    "manaValue": [
-      2
-    ]
+    "level": 2,
+    "manaValue": 2
   },
   "er-0005": {
     "id": "er-0005",
@@ -144,12 +132,8 @@
     },
     "battlePower": 10000,
     "effects": [],
-    "level": [
-      3
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 3,
+    "manaValue": 3
   },
   "er-0006": {
     "id": "er-0006",
@@ -181,12 +165,8 @@
     },
     "battlePower": 15000,
     "effects": [],
-    "level": [
-      4
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 4,
+    "manaValue": 3
   },
   "er-0007": {
     "id": "er-0007",
@@ -220,12 +200,8 @@
     },
     "battlePower": 25000,
     "effects": [],
-    "level": [
-      5
-    ],
-    "manaValue": [
-      4
-    ]
+    "level": 5,
+    "manaValue": 4
   },
   "er-0008": {
     "id": "er-0008",
@@ -251,9 +227,7 @@
       "ER_STD": 1
     },
     "effects": [],
-    "level": [
-      0
-    ]
+    "level": 0
   },
   "er-0009": {
     "id": "er-0009",
@@ -283,12 +257,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0010": {
     "id": "er-0010",
@@ -317,12 +287,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0011": {
     "id": "er-0011",
@@ -351,12 +317,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0012": {
     "id": "er-0012",
@@ -385,12 +347,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0013": {
     "id": "er-0013",
@@ -419,12 +377,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0014": {
     "id": "er-0014",
@@ -453,12 +407,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0015": {
     "id": "er-0015",
@@ -487,12 +437,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0016": {
     "id": "er-0016",
@@ -521,12 +467,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0017": {
     "id": "er-0017",
@@ -555,12 +497,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0018": {
     "id": "er-0018",
@@ -590,12 +528,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0019": {
     "id": "er-0019",
@@ -625,12 +559,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0020": {
     "id": "er-0020",
@@ -659,12 +589,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0021": {
     "id": "er-0021",
@@ -693,12 +619,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0022": {
     "id": "er-0022",
@@ -727,12 +649,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0023": {
     "id": "er-0023",
@@ -761,12 +679,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0024": {
     "id": "er-0024",
@@ -795,12 +709,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0025": {
     "id": "er-0025",
@@ -829,12 +739,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0026": {
     "id": "er-0026",
@@ -863,12 +769,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0027": {
     "id": "er-0027",
@@ -897,12 +799,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0028": {
     "id": "er-0028",
@@ -931,12 +829,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0029": {
     "id": "er-0029",
@@ -965,12 +859,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0030": {
     "id": "er-0030",
@@ -999,12 +889,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0031": {
     "id": "er-0031",
@@ -1033,12 +919,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0032": {
     "id": "er-0032",
@@ -1067,12 +949,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0033": {
     "id": "er-0033",
@@ -1101,12 +979,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0034": {
     "id": "er-0034",
@@ -1135,12 +1009,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0035": {
     "id": "er-0035",
@@ -1169,12 +1039,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0036": {
     "id": "er-0036",
@@ -1203,12 +1069,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0037": {
     "id": "er-0037",
@@ -1237,12 +1099,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0038": {
     "id": "er-0038",
@@ -1271,12 +1129,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0039": {
     "id": "er-0039",
@@ -1306,12 +1160,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0040": {
     "id": "er-0040",
@@ -1341,12 +1191,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0041": {
     "id": "er-0041",
@@ -1377,12 +1223,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0042": {
     "id": "er-0042",
@@ -1411,12 +1253,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0043": {
     "id": "er-0043",
@@ -1447,12 +1285,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0044": {
     "id": "er-0044",
@@ -1482,12 +1316,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0045": {
     "id": "er-0045",
@@ -1519,12 +1349,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0046": {
     "id": "er-0046",
@@ -1554,12 +1380,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0047": {
     "id": "er-0047",
@@ -1589,12 +1411,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0048": {
     "id": "er-0048",
@@ -1624,12 +1442,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0049": {
     "id": "er-0049",
@@ -1659,12 +1473,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0050": {
     "id": "er-0050",
@@ -1694,12 +1504,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0051": {
     "id": "er-0051",
@@ -1730,12 +1536,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0052": {
     "id": "er-0052",
@@ -1766,12 +1568,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0053": {
     "id": "er-0053",
@@ -1802,12 +1600,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0054": {
     "id": "er-0054",
@@ -1833,9 +1627,7 @@
       "ER_STD": true
     },
     "effects": [],
-    "level": [
-      3
-    ]
+    "level": 3
   },
   "er-0055": {
     "id": "er-0055",
@@ -1861,9 +1653,7 @@
       "ER_STD": true
     },
     "effects": [],
-    "level": [
-      2
-    ]
+    "level": 2
   },
   "er-0056": {
     "id": "er-0056",
@@ -1889,9 +1679,7 @@
       "ER_STD": true
     },
     "effects": [],
-    "level": [
-      1
-    ]
+    "level": 1
   },
   "er-0057": {
     "id": "er-0057",
@@ -1917,9 +1705,7 @@
       "ER_STD": true
     },
     "effects": [],
-    "level": [
-      3
-    ]
+    "level": 3
   },
   "er-0058": {
     "id": "er-0058",
@@ -1945,9 +1731,7 @@
       "ER_STD": true
     },
     "effects": [],
-    "level": [
-      3
-    ]
+    "level": 3
   },
   "er-0059": {
     "id": "er-0059",
@@ -1973,9 +1757,7 @@
       "ER_STD": 1
     },
     "effects": [],
-    "level": [
-      2
-    ]
+    "level": 2
   },
   "er-0060": {
     "id": "er-0060",
@@ -2001,9 +1783,7 @@
       "ER_STD": true
     },
     "effects": [],
-    "level": [
-      4
-    ]
+    "level": 4
   },
   "er-0061": {
     "id": "er-0061",
@@ -2035,12 +1815,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      2
-    ]
+    "level": 1,
+    "manaValue": 2
   },
   "er-0062": {
     "id": "er-0062",
@@ -2073,12 +1849,8 @@
     },
     "battlePower": 4000,
     "effects": [],
-    "level": [
-      2
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 2,
+    "manaValue": 3
   },
   "er-0063": {
     "id": "er-0063",
@@ -2109,12 +1881,8 @@
     },
     "battlePower": 12000,
     "effects": [],
-    "level": [
-      4
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 4,
+    "manaValue": 3
   },
   "er-0064": {
     "id": "er-0064",
@@ -2145,12 +1913,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 1,
+    "manaValue": 1
   },
   "er-0065": {
     "id": "er-0065",
@@ -2180,12 +1944,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 1,
+    "manaValue": 1
   },
   "er-0066": {
     "id": "er-0066",
@@ -2215,12 +1975,8 @@
     },
     "battlePower": 5000,
     "effects": [],
-    "level": [
-      2
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 2,
+    "manaValue": 1
   },
   "er-0067": {
     "id": "er-0067",
@@ -2249,12 +2005,8 @@
     },
     "battlePower": 7000,
     "effects": [],
-    "level": [
-      2
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 2,
+    "manaValue": 3
   },
   "er-0068": {
     "id": "er-0068",
@@ -2284,12 +2036,8 @@
     },
     "battlePower": 14000,
     "effects": [],
-    "level": [
-      3
-    ],
-    "manaValue": [
-      2
-    ]
+    "level": 3,
+    "manaValue": 2
   },
   "er-0069": {
     "id": "er-0069",
@@ -2318,12 +2066,8 @@
     },
     "battlePower": 12000,
     "effects": [],
-    "level": [
-      4
-    ],
-    "manaValue": [
-      2
-    ]
+    "level": 4,
+    "manaValue": 2
   },
   "er-0070": {
     "id": "er-0070",
@@ -2353,12 +2097,8 @@
     },
     "battlePower": 4000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 1,
+    "manaValue": 1
   },
   "er-0071": {
     "id": "er-0071",
@@ -2388,12 +2128,8 @@
     },
     "battlePower": 10000,
     "effects": [],
-    "level": [
-      2
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 2,
+    "manaValue": 1
   },
   "er-0072": {
     "id": "er-0072",
@@ -2423,12 +2159,8 @@
     },
     "battlePower": 15000,
     "effects": [],
-    "level": [
-      3
-    ],
-    "manaValue": [
-      2
-    ]
+    "level": 3,
+    "manaValue": 2
   },
   "er-0073": {
     "id": "er-0073",
@@ -2458,12 +2190,8 @@
     },
     "battlePower": 20000,
     "effects": [],
-    "level": [
-      4
-    ],
-    "manaValue": [
-      2
-    ]
+    "level": 4,
+    "manaValue": 2
   },
   "er-0074": {
     "id": "er-0074",
@@ -2492,12 +2220,8 @@
     },
     "battlePower": 30000,
     "effects": [],
-    "level": [
-      5
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 5,
+    "manaValue": 3
   },
   "er-0075": {
     "id": "er-0075",
@@ -2527,12 +2251,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      2
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 2,
+    "manaValue": 1
   },
   "er-0076": {
     "id": "er-0076",
@@ -2562,12 +2282,8 @@
     },
     "battlePower": 8000,
     "effects": [],
-    "level": [
-      3
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 3,
+    "manaValue": 1
   },
   "er-0077": {
     "id": "er-0077",
@@ -2593,9 +2309,7 @@
       "ER_STD": true
     },
     "effects": [],
-    "level": [
-      1
-    ]
+    "level": 1
   },
   "er-0078": {
     "id": "er-0078",
@@ -2626,12 +2340,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      5
-    ]
+    "level": 0,
+    "manaValue": 5
   },
   "er-0079": {
     "id": "er-0079",
@@ -2662,12 +2372,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      5
-    ]
+    "level": 1,
+    "manaValue": 5
   },
   "er-0080": {
     "id": "er-0080",
@@ -2698,12 +2404,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      2
-    ],
-    "manaValue": [
-      4
-    ]
+    "level": 2,
+    "manaValue": 4
   },
   "er-0081": {
     "id": "er-0081",
@@ -2734,12 +2436,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      3
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 3,
+    "manaValue": 3
   },
   "er-0082": {
     "id": "er-0082",
@@ -2772,12 +2470,8 @@
     },
     "battlePower": 7000,
     "effects": [],
-    "level": [
-      4
-    ],
-    "manaValue": [
-      2
-    ]
+    "level": 4,
+    "manaValue": 2
   },
   "er-0083": {
     "id": "er-0083",
@@ -2811,12 +2505,8 @@
     },
     "battlePower": 12000,
     "effects": [],
-    "level": [
-      5
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 5,
+    "manaValue": 1
   },
   "er-0084": {
     "id": "er-0084",
@@ -2847,12 +2537,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      2
-    ]
+    "level": 0,
+    "manaValue": 2
   },
   "er-0085": {
     "id": "er-0085",
@@ -2883,12 +2569,8 @@
     },
     "battlePower": 5000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      3
-    ]
+    "level": 1,
+    "manaValue": 3
   },
   "er-0086": {
     "id": "er-0086",
@@ -2920,12 +2602,8 @@
     },
     "battlePower": 8000,
     "effects": [],
-    "level": [
-      2
-    ],
-    "manaValue": [
-      4
-    ]
+    "level": 2,
+    "manaValue": 4
   },
   "er-0087": {
     "id": "er-0087",
@@ -2957,12 +2635,8 @@
     },
     "battlePower": 15000,
     "effects": [],
-    "level": [
-      3
-    ],
-    "manaValue": [
-      5
-    ]
+    "level": 3,
+    "manaValue": 5
   },
   "er-0088": {
     "id": "er-0088",
@@ -2997,12 +2671,8 @@
     },
     "battlePower": 20000,
     "effects": [],
-    "level": [
-      4
-    ],
-    "manaValue": [
-      5
-    ]
+    "level": 4,
+    "manaValue": 5
   },
   "er-0089": {
     "id": "er-0089",
@@ -3037,12 +2707,8 @@
     },
     "battlePower": 28000,
     "effects": [],
-    "level": [
-      5
-    ],
-    "manaValue": [
-      5
-    ]
+    "level": 5,
+    "manaValue": 5
   },
   "er-0090": {
     "id": "er-0090",
@@ -3073,12 +2739,8 @@
     },
     "battlePower": 1000,
     "effects": [],
-    "level": [
-      0
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 0,
+    "manaValue": 1
   },
   "er-0091": {
     "id": "er-0091",
@@ -3110,12 +2772,8 @@
     },
     "battlePower": 3000,
     "effects": [],
-    "level": [
-      1
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 1,
+    "manaValue": 1
   },
   "er-0092": {
     "id": "er-0092",
@@ -3148,12 +2806,8 @@
     },
     "battlePower": 5000,
     "effects": [],
-    "level": [
-      2
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 2,
+    "manaValue": 1
   },
   "er-0093": {
     "id": "er-0093",
@@ -3186,12 +2840,8 @@
     },
     "battlePower": 7000,
     "effects": [],
-    "level": [
-      3
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 3,
+    "manaValue": 1
   },
   "er-0094": {
     "id": "er-0094",
@@ -3224,12 +2874,8 @@
     },
     "battlePower": 11000,
     "effects": [],
-    "level": [
-      4
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 4,
+    "manaValue": 1
   },
   "er-0095": {
     "id": "er-0095",
@@ -3263,11 +2909,7 @@
     },
     "battlePower": 15000,
     "effects": [],
-    "level": [
-      5
-    ],
-    "manaValue": [
-      1
-    ]
+    "level": 5,
+    "manaValue": 1
   }
 }
