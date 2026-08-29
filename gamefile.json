@@ -1,7 +1,7 @@
 {
   "name": "Essence Realms",
   "cardRotation": 90,
-  "customHelp": "Essence Realms uses a 60-card Main Deck, 1 Level 0 Leader, and 5 Leaders. Level 0 Leaders begin in Active Leader. Leaders begin in Leader Deck.",
+  "customHelp": "Essence Realms: Main Deck exactly 66 cards; 1 Starting Leader and 5 Leaders. Deck editor uses TCGA native filters for Card Type, Level, Essence Attribute, Limited, Mana Value, and Keywords.",
   "cards": {
     "dataUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/cards.json",
     "cardBack": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/0_back.png"
@@ -9,10 +9,8 @@
   "deckBuilding": {
     "mainFilters": [
       "type",
-      "limited",
-      "levelFilter",
-      "essence",
-      "manaValueFilter"
+      "cost",
+      "level"
     ],
     "formats": [
       {

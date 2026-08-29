@@ -31,9 +31,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0003": {
     "id": "er-0003",
@@ -67,9 +65,7 @@
     },
     "manaValue": 1,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0004": {
     "id": "er-0004",
@@ -103,9 +99,7 @@
     },
     "manaValue": 2,
     "battlePower": 5000,
-    "effects": [],
-    "levelFilter": "2",
-    "manaValueFilter": "2"
+    "effects": []
   },
   "er-0005": {
     "id": "er-0005",
@@ -139,9 +133,7 @@
     },
     "manaValue": 3,
     "battlePower": 10000,
-    "effects": [],
-    "levelFilter": "3",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0006": {
     "id": "er-0006",
@@ -174,9 +166,7 @@
     },
     "manaValue": 3,
     "battlePower": 15000,
-    "effects": [],
-    "levelFilter": "4",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0007": {
     "id": "er-0007",
@@ -211,9 +201,7 @@
     },
     "manaValue": 4,
     "battlePower": 25000,
-    "effects": [],
-    "levelFilter": "5",
-    "manaValueFilter": "4"
+    "effects": []
   },
   "er-0008": {
     "id": "er-0008",
@@ -239,8 +227,7 @@
     "_legal": {
       "ER_STD": 1
     },
-    "effects": [],
-    "levelFilter": "0"
+    "effects": []
   },
   "er-0009": {
     "id": "er-0009",
@@ -271,9 +258,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0010": {
     "id": "er-0010",
@@ -303,9 +288,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0011": {
     "id": "er-0011",
@@ -335,9 +318,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0012": {
     "id": "er-0012",
@@ -367,9 +348,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0013": {
     "id": "er-0013",
@@ -399,9 +378,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0014": {
     "id": "er-0014",
@@ -431,9 +408,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0015": {
     "id": "er-0015",
@@ -463,9 +438,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0016": {
     "id": "er-0016",
@@ -495,9 +468,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0017": {
     "id": "er-0017",
@@ -527,9 +498,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0018": {
     "id": "er-0018",
@@ -560,9 +529,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0019": {
     "id": "er-0019",
@@ -593,9 +560,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0020": {
     "id": "er-0020",
@@ -625,9 +590,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0021": {
     "id": "er-0021",
@@ -657,9 +620,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0022": {
     "id": "er-0022",
@@ -689,9 +650,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0023": {
     "id": "er-0023",
@@ -721,9 +680,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0024": {
     "id": "er-0024",
@@ -753,9 +710,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0025": {
     "id": "er-0025",
@@ -785,9 +740,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0026": {
     "id": "er-0026",
@@ -817,9 +770,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0027": {
     "id": "er-0027",
@@ -849,9 +800,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0028": {
     "id": "er-0028",
@@ -881,9 +830,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0029": {
     "id": "er-0029",
@@ -913,9 +860,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0030": {
     "id": "er-0030",
@@ -945,9 +890,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0031": {
     "id": "er-0031",
@@ -977,9 +920,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0032": {
     "id": "er-0032",
@@ -1009,9 +950,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0033": {
     "id": "er-0033",
@@ -1041,9 +980,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0034": {
     "id": "er-0034",
@@ -1073,9 +1010,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0035": {
     "id": "er-0035",
@@ -1105,9 +1040,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0036": {
     "id": "er-0036",
@@ -1137,9 +1070,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0037": {
     "id": "er-0037",
@@ -1169,9 +1100,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0038": {
     "id": "er-0038",
@@ -1201,9 +1130,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0039": {
     "id": "er-0039",
@@ -1234,9 +1161,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0040": {
     "id": "er-0040",
@@ -1267,9 +1192,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0041": {
     "id": "er-0041",
@@ -1301,9 +1224,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0042": {
     "id": "er-0042",
@@ -1333,9 +1254,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0043": {
     "id": "er-0043",
@@ -1367,9 +1286,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0044": {
     "id": "er-0044",
@@ -1400,9 +1317,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0045": {
     "id": "er-0045",
@@ -1435,9 +1350,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0046": {
     "id": "er-0046",
@@ -1468,9 +1381,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0047": {
     "id": "er-0047",
@@ -1501,9 +1412,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0048": {
     "id": "er-0048",
@@ -1534,9 +1443,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0049": {
     "id": "er-0049",
@@ -1567,9 +1474,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0050": {
     "id": "er-0050",
@@ -1600,9 +1505,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0051": {
     "id": "er-0051",
@@ -1634,9 +1537,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0052": {
     "id": "er-0052",
@@ -1668,9 +1569,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0053": {
     "id": "er-0053",
@@ -1702,9 +1601,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0054": {
     "id": "er-0054",
@@ -1730,8 +1627,7 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": [],
-    "levelFilter": "3"
+    "effects": []
   },
   "er-0055": {
     "id": "er-0055",
@@ -1757,8 +1653,7 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": [],
-    "levelFilter": "2"
+    "effects": []
   },
   "er-0056": {
     "id": "er-0056",
@@ -1784,8 +1679,7 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": [],
-    "levelFilter": "1"
+    "effects": []
   },
   "er-0057": {
     "id": "er-0057",
@@ -1811,8 +1705,7 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": [],
-    "levelFilter": "3"
+    "effects": []
   },
   "er-0058": {
     "id": "er-0058",
@@ -1838,8 +1731,7 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": [],
-    "levelFilter": "3"
+    "effects": []
   },
   "er-0059": {
     "id": "er-0059",
@@ -1865,8 +1757,7 @@
     "_legal": {
       "ER_STD": 1
     },
-    "effects": [],
-    "levelFilter": "2"
+    "effects": []
   },
   "er-0060": {
     "id": "er-0060",
@@ -1892,8 +1783,7 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": [],
-    "levelFilter": "4"
+    "effects": []
   },
   "er-0061": {
     "id": "er-0061",
@@ -1926,9 +1816,7 @@
     },
     "manaValue": 2,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "2"
+    "effects": []
   },
   "er-0062": {
     "id": "er-0062",
@@ -1962,9 +1850,7 @@
     },
     "manaValue": 3,
     "battlePower": 4000,
-    "effects": [],
-    "levelFilter": "2",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0063": {
     "id": "er-0063",
@@ -1996,9 +1882,7 @@
     },
     "manaValue": 3,
     "battlePower": 12000,
-    "effects": [],
-    "levelFilter": "4",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0064": {
     "id": "er-0064",
@@ -2030,9 +1914,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0065": {
     "id": "er-0065",
@@ -2063,9 +1945,7 @@
     },
     "manaValue": 1,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0066": {
     "id": "er-0066",
@@ -2096,9 +1976,7 @@
     },
     "manaValue": 1,
     "battlePower": 5000,
-    "effects": [],
-    "levelFilter": "2",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0067": {
     "id": "er-0067",
@@ -2128,9 +2006,7 @@
     },
     "manaValue": 3,
     "battlePower": 7000,
-    "effects": [],
-    "levelFilter": "2",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0068": {
     "id": "er-0068",
@@ -2161,9 +2037,7 @@
     },
     "manaValue": 2,
     "battlePower": 14000,
-    "effects": [],
-    "levelFilter": "3",
-    "manaValueFilter": "2"
+    "effects": []
   },
   "er-0069": {
     "id": "er-0069",
@@ -2193,9 +2067,7 @@
     },
     "manaValue": 2,
     "battlePower": 12000,
-    "effects": [],
-    "levelFilter": "4",
-    "manaValueFilter": "2"
+    "effects": []
   },
   "er-0070": {
     "id": "er-0070",
@@ -2226,9 +2098,7 @@
     },
     "manaValue": 1,
     "battlePower": 4000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0071": {
     "id": "er-0071",
@@ -2259,9 +2129,7 @@
     },
     "manaValue": 1,
     "battlePower": 10000,
-    "effects": [],
-    "levelFilter": "2",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0072": {
     "id": "er-0072",
@@ -2292,9 +2160,7 @@
     },
     "manaValue": 2,
     "battlePower": 15000,
-    "effects": [],
-    "levelFilter": "3",
-    "manaValueFilter": "2"
+    "effects": []
   },
   "er-0073": {
     "id": "er-0073",
@@ -2325,9 +2191,7 @@
     },
     "manaValue": 2,
     "battlePower": 20000,
-    "effects": [],
-    "levelFilter": "4",
-    "manaValueFilter": "2"
+    "effects": []
   },
   "er-0074": {
     "id": "er-0074",
@@ -2357,9 +2221,7 @@
     },
     "manaValue": 3,
     "battlePower": 30000,
-    "effects": [],
-    "levelFilter": "5",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0075": {
     "id": "er-0075",
@@ -2390,9 +2252,7 @@
     },
     "manaValue": 1,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "2",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0076": {
     "id": "er-0076",
@@ -2423,9 +2283,7 @@
     },
     "manaValue": 1,
     "battlePower": 8000,
-    "effects": [],
-    "levelFilter": "3",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0077": {
     "id": "er-0077",
@@ -2451,8 +2309,7 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": [],
-    "levelFilter": "1"
+    "effects": []
   },
   "er-0078": {
     "id": "er-0078",
@@ -2484,9 +2341,7 @@
     },
     "manaValue": 5,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "5"
+    "effects": []
   },
   "er-0079": {
     "id": "er-0079",
@@ -2518,9 +2373,7 @@
     },
     "manaValue": 5,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "5"
+    "effects": []
   },
   "er-0080": {
     "id": "er-0080",
@@ -2552,9 +2405,7 @@
     },
     "manaValue": 4,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "2",
-    "manaValueFilter": "4"
+    "effects": []
   },
   "er-0081": {
     "id": "er-0081",
@@ -2586,9 +2437,7 @@
     },
     "manaValue": 3,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "3",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0082": {
     "id": "er-0082",
@@ -2622,9 +2471,7 @@
     },
     "manaValue": 2,
     "battlePower": 7000,
-    "effects": [],
-    "levelFilter": "4",
-    "manaValueFilter": "2"
+    "effects": []
   },
   "er-0083": {
     "id": "er-0083",
@@ -2659,9 +2506,7 @@
     },
     "manaValue": 1,
     "battlePower": 12000,
-    "effects": [],
-    "levelFilter": "5",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0084": {
     "id": "er-0084",
@@ -2693,9 +2538,7 @@
     },
     "manaValue": 2,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "2"
+    "effects": []
   },
   "er-0085": {
     "id": "er-0085",
@@ -2727,9 +2570,7 @@
     },
     "manaValue": 3,
     "battlePower": 5000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "3"
+    "effects": []
   },
   "er-0086": {
     "id": "er-0086",
@@ -2762,9 +2603,7 @@
     },
     "manaValue": 4,
     "battlePower": 8000,
-    "effects": [],
-    "levelFilter": "2",
-    "manaValueFilter": "4"
+    "effects": []
   },
   "er-0087": {
     "id": "er-0087",
@@ -2797,9 +2636,7 @@
     },
     "manaValue": 5,
     "battlePower": 15000,
-    "effects": [],
-    "levelFilter": "3",
-    "manaValueFilter": "5"
+    "effects": []
   },
   "er-0088": {
     "id": "er-0088",
@@ -2835,9 +2672,7 @@
     },
     "manaValue": 5,
     "battlePower": 20000,
-    "effects": [],
-    "levelFilter": "4",
-    "manaValueFilter": "5"
+    "effects": []
   },
   "er-0089": {
     "id": "er-0089",
@@ -2873,9 +2708,7 @@
     },
     "manaValue": 5,
     "battlePower": 28000,
-    "effects": [],
-    "levelFilter": "5",
-    "manaValueFilter": "5"
+    "effects": []
   },
   "er-0090": {
     "id": "er-0090",
@@ -2907,9 +2740,7 @@
     },
     "manaValue": 1,
     "battlePower": 1000,
-    "effects": [],
-    "levelFilter": "0",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0091": {
     "id": "er-0091",
@@ -2942,9 +2773,7 @@
     },
     "manaValue": 1,
     "battlePower": 3000,
-    "effects": [],
-    "levelFilter": "1",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0092": {
     "id": "er-0092",
@@ -2978,9 +2807,7 @@
     },
     "manaValue": 1,
     "battlePower": 5000,
-    "effects": [],
-    "levelFilter": "2",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0093": {
     "id": "er-0093",
@@ -3014,9 +2841,7 @@
     },
     "manaValue": 1,
     "battlePower": 7000,
-    "effects": [],
-    "levelFilter": "3",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0094": {
     "id": "er-0094",
@@ -3050,9 +2875,7 @@
     },
     "manaValue": 1,
     "battlePower": 11000,
-    "effects": [],
-    "levelFilter": "4",
-    "manaValueFilter": "1"
+    "effects": []
   },
   "er-0095": {
     "id": "er-0095",
@@ -3087,8 +2910,6 @@
     },
     "manaValue": 1,
     "battlePower": 15000,
-    "effects": [],
-    "levelFilter": "5",
-    "manaValueFilter": "1"
+    "effects": []
   }
 }

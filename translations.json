@@ -3,16 +3,23 @@
   "en": {
     "Card types": {
       "Leader": "Leaders",
-      "LV0Leader": "Starting Leader"
+      "LV0Leader": "Starting Leader",
+      "Level_0_Leader": "Starting Leader"
     },
     "UI text": {
-      "essence": "Essence Attribute",
-      "manaValue": "Mana Value",
-      "level": "Level",
+      "Type": "Card Type",
       "type": "Card Type",
+      "Level": "Level",
+      "level": "Level",
+      "Essence": "Essence Attribute",
+      "essence": "Essence Attribute",
+      "Limited": "Limited",
       "limited": "Limited",
-      "levelFilter": "Level",
-      "manaValueFilter": "Mana Value"
+      "Mana Value": "Mana Value",
+      "manaValue": "Mana Value",
+      "Keywords": "Keywords",
+      "keywords": "Keywords",
+      "cost": "Cost"
     }
   }
 }
