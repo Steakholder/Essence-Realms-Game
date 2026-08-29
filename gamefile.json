@@ -88,7 +88,7 @@
                 {
                   "direction": "column",
                   "style": {
-                    "width": "64.4%",
+                    "width": "78%",
                     "gap": "0.8vh"
                   },
                   "content": [
@@ -103,19 +103,19 @@
                         {
                           "section": "LV0Leader",
                           "style": {
-                            "width": "10.3%"
+                            "width": "8%"
                           }
                         },
                         {
                           "section": "ActiveUnitZone",
                           "style": {
-                            "width": "78.5%"
+                            "width": "82%"
                           }
                         },
                         {
                           "section": "Banishment",
                           "style": {
-                            "width": "10.4%"
+                            "width": "8%"
                           }
                         }
                       ]
@@ -131,19 +131,19 @@
                         {
                           "section": "Leader",
                           "style": {
-                            "width": "10.3%"
+                            "width": "8%"
                           }
                         },
                         {
                           "section": "ManaPool",
                           "style": {
-                            "width": "78.5%"
+                            "width": "82%"
                           }
                         },
                         {
                           "section": "Grave",
                           "style": {
-                            "width": "10.4%"
+                            "width": "8%"
                           }
                         }
                       ]
@@ -161,7 +161,7 @@
                 {
                   "section": "LifeZone",
                   "style": {
-                    "width": "34.6%",
+                    "width": "20%",
                     "height": "34.8vh"
                   }
                 }
@@ -193,7 +193,9 @@
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
-            "enterTapped": false
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false
           },
           "ManaStorage": {
             "isHidden": "yes",
@@ -202,8 +204,11 @@
             "displayedTitle": "Mana Storage",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": true
           },
           "ActiveUnitZone": {
             "isHidden": "no",
@@ -212,7 +217,9 @@
             "displayedTitle": "Active Unit Zone",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
-            "enterTapped": false
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false
           },
           "ManaPool": {
             "isHidden": "no",
@@ -221,7 +228,9 @@
             "displayedTitle": "Mana Pool",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
-            "enterTapped": false
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false
           },
           "Banishment": {
             "isHidden": "no",
@@ -230,8 +239,11 @@
             "displayedTitle": "Banishment",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": true
           },
           "Grave": {
             "isHidden": "no",
@@ -240,8 +252,11 @@
             "displayedTitle": "Grave",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": true
           },
           "LifeZone": {
             "isHidden": "yes",
@@ -250,8 +265,11 @@
             "displayedTitle": "Life Zone",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": true
           },
           "Leader": {
             "isHidden": "yes",
@@ -260,8 +278,11 @@
             "displayedTitle": "Leader Deck",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "enterSpun": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": true
           }
         }
       }
