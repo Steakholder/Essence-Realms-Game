@@ -25,8 +25,8 @@
     "deckRulesets": {
       "Standard": {
         "general": {
-          "min": 60,
-          "max": 60,
+          "min": 66,
+          "max": 66,
           "maxPerCard": 4
         },
         "categories": [
@@ -88,14 +88,14 @@
                 {
                   "direction": "column",
                   "style": {
-                    "width": "78%",
+                    "width": "82%",
                     "gap": "0.8vh"
                   },
                   "content": [
                     {
                       "direction": "row",
                       "style": {
-                        "height": "18vh",
+                        "height": "14vh",
                         "gap": "0.8vw"
                       },
                       "isSymmetricalForOpponents": true,
@@ -103,19 +103,19 @@
                         {
                           "section": "LV0Leader",
                           "style": {
-                            "width": "8%"
+                            "width": "5%"
                           }
                         },
                         {
                           "section": "ActiveUnitZone",
                           "style": {
-                            "width": "82%"
+                            "width": "88%"
                           }
                         },
                         {
                           "section": "Banishment",
                           "style": {
-                            "width": "8%"
+                            "width": "5%"
                           }
                         }
                       ]
@@ -123,7 +123,7 @@
                     {
                       "direction": "row",
                       "style": {
-                        "height": "16vh",
+                        "height": "12vh",
                         "gap": "0.8vw"
                       },
                       "isSymmetricalForOpponents": true,
@@ -131,19 +131,19 @@
                         {
                           "section": "Leader",
                           "style": {
-                            "width": "8%"
+                            "width": "5%"
                           }
                         },
                         {
                           "section": "ManaPool",
                           "style": {
-                            "width": "82%"
+                            "width": "88%"
                           }
                         },
                         {
                           "section": "Grave",
                           "style": {
-                            "width": "8%"
+                            "width": "5%"
                           }
                         }
                       ]
@@ -151,8 +151,8 @@
                     {
                       "section": "ManaStorage",
                       "style": {
-                        "width": "6.0%",
-                        "height": "10vh",
+                        "width": "5%",
+                        "height": "8vh",
                         "marginTop": "0.8vh"
                       }
                     }
@@ -161,8 +161,8 @@
                 {
                   "section": "LifeZone",
                   "style": {
-                    "width": "20%",
-                    "height": "34.8vh"
+                    "width": "15%",
+                    "height": "27vh"
                   }
                 }
               ]
@@ -187,7 +187,7 @@
         "sectionsDict": {
           "LV0Leader": {
             "isHidden": "no",
-            "height": "18",
+            "height": "14",
             "alignment": "CENTER",
             "displayedTitle": "Active Leader",
             "noQuickActions": true,
@@ -208,7 +208,7 @@
             "enterTapped": false,
             "enterSpun": false,
             "keepTappedNewTurn": false,
-            "isGroupForbidden": true
+            "isGroupForbidden": false
           },
           "ActiveUnitZone": {
             "isHidden": "no",
@@ -234,7 +234,7 @@
           },
           "Banishment": {
             "isHidden": "no",
-            "height": "18",
+            "height": "12",
             "alignment": "DECK",
             "displayedTitle": "Banishment",
             "noQuickActions": true,
@@ -243,11 +243,11 @@
             "enterTapped": false,
             "enterSpun": false,
             "keepTappedNewTurn": false,
-            "isGroupForbidden": true
+            "isGroupForbidden": false
           },
           "Grave": {
             "isHidden": "no",
-            "height": "16",
+            "height": "12",
             "alignment": "DECK",
             "displayedTitle": "Grave",
             "noQuickActions": true,
@@ -256,11 +256,11 @@
             "enterTapped": false,
             "enterSpun": false,
             "keepTappedNewTurn": false,
-            "isGroupForbidden": true
+            "isGroupForbidden": false
           },
           "LifeZone": {
             "isHidden": "yes",
-            "height": "34.8",
+            "height": "27",
             "alignment": "DECK",
             "displayedTitle": "Life Zone",
             "noQuickActions": true,
@@ -269,11 +269,11 @@
             "enterTapped": false,
             "enterSpun": false,
             "keepTappedNewTurn": false,
-            "isGroupForbidden": true
+            "isGroupForbidden": false
           },
           "Leader": {
             "isHidden": "yes",
-            "height": "16",
+            "height": "12",
             "alignment": "DECK",
             "displayedTitle": "Leader Deck",
             "noQuickActions": true,
@@ -282,7 +282,7 @@
             "enterTapped": false,
             "enterSpun": false,
             "keepTappedNewTurn": false,
-            "isGroupForbidden": true
+            "isGroupForbidden": false
           }
         }
       }
