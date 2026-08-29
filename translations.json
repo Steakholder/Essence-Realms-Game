@@ -21,7 +21,10 @@
       "keywords": "Keywords",
       "cost": "Cost",
       "levelFilter": "Level",
-      "manaValueFilter": "Mana Value"
+      "manaValueFilter": "Mana Value",
+      "Essence Deck Invalid": "Essence Deck Invalid",
+      "Unit does not share an Essence Attribute with the Starting Leader": "Unit does not share an Essence Attribute with the Starting Leader",
+      "All Unit cards must share at least 1 Essence Attribute with the Starting Leader.": "All Unit cards must share at least 1 Essence Attribute with the Starting Leader."
     }
   }
 }
