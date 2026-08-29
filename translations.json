@@ -4,6 +4,11 @@
     "Card types": {
       "Leader": "Leaders",
       "LV0Leader": "Starting Leader"
+    },
+    "UI text": {
+      "Essence": "Essence Attribute",
+      "ManaValue": "Mana Value",
+      "Level": "Level"
     }
   }
 }

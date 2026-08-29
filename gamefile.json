@@ -9,7 +9,7 @@
   "deckBuilding": {
     "mainFilters": [
       "type",
-      "cost",
+      "manaValue",
       "level",
       "essence",
       "keywords"
@@ -129,7 +129,9 @@
                     },
                     {
                       "section": "ManaPool",
-                      "style": {}
+                      "style": {
+                        "marginTop": "-1.2vh"
+                      }
                     }
                   ]
                 },
