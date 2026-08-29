@@ -6,9 +6,9 @@
       "LV0Leader": "Starting Leader"
     },
     "UI text": {
-      "Essence": "Essence Attribute",
-      "ManaValue": "Mana Value",
-      "Level": "Level"
+      "essence": "Essence Attribute",
+      "manaValue": "Mana Value",
+      "level": "Level"
     }
   }
 }

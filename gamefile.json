@@ -9,10 +9,9 @@
   "deckBuilding": {
     "mainFilters": [
       "type",
-      "manaValue",
-      "level",
       "essence",
-      "keywords"
+      "manaValue",
+      "level"
     ],
     "formats": [
       {
@@ -129,9 +128,7 @@
                     },
                     {
                       "section": "ManaPool",
-                      "style": {
-                        "marginTop": "-1.2vh"
-                      }
+                      "style": {}
                     }
                   ]
                 },
