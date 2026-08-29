@@ -4,7 +4,7 @@
   "customHelp": "Essence Realms uses a 60-card Main Deck, 1 Level 0 Leader, and 5 Leaders. Level 0 Leaders begin in Active Leader. Leaders begin in Leader Deck.",
   "cards": {
     "dataUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/cards.json",
-    "cardBack": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/00.webp"
+    "cardBack": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/0_back.png"
   },
   "deckBuilding": {
     "mainFilters": [
@@ -64,7 +64,7 @@
             "min": 0,
             "max": 6
           },
-          "keepCardsOrder": false
+          "keepCardOrder": false
         }
       },
       "newTurn": {
@@ -202,7 +202,8 @@
             "displayedTitle": "Mana Storage",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true
+            "isHorizontalAllowed": true,
+            "enterTapped": false
           },
           "ActiveUnitZone": {
             "isHidden": "no",
@@ -210,7 +211,8 @@
             "alignment": "CENTER",
             "displayedTitle": "Active Unit Zone",
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true
+            "isHorizontalAllowed": true,
+            "enterTapped": false
           },
           "ManaPool": {
             "isHidden": "no",
@@ -218,7 +220,8 @@
             "alignment": "CENTER",
             "displayedTitle": "Mana Pool",
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true
+            "isHorizontalAllowed": true,
+            "enterTapped": false
           },
           "Banishment": {
             "isHidden": "no",
@@ -227,7 +230,8 @@
             "displayedTitle": "Banishment",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true
+            "isHorizontalAllowed": true,
+            "enterTapped": false
           },
           "Grave": {
             "isHidden": "no",
@@ -236,7 +240,8 @@
             "displayedTitle": "Grave",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true
+            "isHorizontalAllowed": true,
+            "enterTapped": false
           },
           "LifeZone": {
             "isHidden": "yes",
@@ -245,7 +250,8 @@
             "displayedTitle": "Life Zone",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true
+            "isHorizontalAllowed": true,
+            "enterTapped": false
           },
           "Leader": {
             "isHidden": "yes",
@@ -254,10 +260,12 @@
             "displayedTitle": "Leader Deck",
             "noQuickActions": true,
             "noAutoPayTo": true,
-            "isHorizontalAllowed": true
+            "isHorizontalAllowed": true,
+            "enterTapped": false
           }
         }
       }
     }
-  }
+  },
+  "translationsUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/translations.json"
 }
