@@ -287,8 +287,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '● ' : '' }}Draw Phase",
-                  "onClick": "await selectPhase('Draw Phase')"
+                  "children": "{{ game.data.Phase_Control.phase === 'Draw Phase' ? '● ' : '' }}Draw Phase"
                 },
                 {
                   "type": "button",
@@ -300,8 +299,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '● ' : '' }}Main Phase",
-                  "onClick": "await selectPhase('Main Phase')"
+                  "children": "{{ game.data.Phase_Control.phase === 'Main Phase' ? '● ' : '' }}Main Phase"
                 },
                 {
                   "type": "button",
@@ -313,8 +311,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '● ' : '' }}Combat Phase",
-                  "onClick": "await selectPhase('Combat Phase')"
+                  "children": "{{ game.data.Phase_Control.phase === 'Combat Phase' ? '● ' : '' }}Combat Phase"
                 },
                 {
                   "type": "button",
@@ -326,8 +323,7 @@
                       "fontSize": "12px"
                     }
                   },
-                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '● ' : '' }}End Phase",
-                  "onClick": "await selectPhase('End Phase')"
+                  "children": "{{ game.data.Phase_Control.phase === 'End Phase' ? '● ' : '' }}End Phase"
                 }
               ]
             }
@@ -363,10 +359,6 @@
                   "pointerEvents": "none"
                 }
               }
-            },
-            "events": {
-              "onNewTurn": "await handleNewTurn()",
-              "onCardsUpdate": "const stack = cards?.Stack ?? []; if (stack.length) await functions.moveCards(stack, 'Discard');"
             }
           },
           "Level_0_Leader": {
