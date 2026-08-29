@@ -18,9 +18,6 @@
       {
         "title": "Standard",
         "gameplay": "Standard",
-        "customCategories": [
-          "Leaders"
-        ],
         "deckRuleset": "Standard",
         "legalityCode": "ER_STD"
       }
@@ -40,7 +37,7 @@
             "maxPerCard": 1
           },
           {
-            "category": "Leaders",
+            "category": "Leader",
             "min": 5,
             "max": 5,
             "maxPerCard": 4
@@ -132,7 +129,7 @@
                       "isSymmetricalForOpponents": true,
                       "content": [
                         {
-                          "section": "Leaders",
+                          "section": "Leader",
                           "style": {
                             "width": "10.3%"
                           }
@@ -174,7 +171,7 @@
         },
         "categoriesAlreadyOnBoard": [
           "LV0Leader",
-          "Leaders"
+          "Leader"
         ],
         "autoPlayFromHand": {
           "Unit": "ActiveUnitZone",
@@ -197,15 +194,6 @@
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false
-          },
-          "Leaders": {
-            "isHidden": "yes",
-            "height": "16",
-            "alignment": "DECK",
-            "displayedTitle": "Leader Deck",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true
           },
           "ManaStorage": {
             "isHidden": "yes",
@@ -255,6 +243,15 @@
             "height": "34.8",
             "alignment": "DECK",
             "displayedTitle": "Life Zone",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true
+          },
+          "Leader": {
+            "isHidden": "yes",
+            "height": "16",
+            "alignment": "DECK",
+            "displayedTitle": "Leader Deck",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": true
