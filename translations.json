@@ -8,7 +8,9 @@
     "UI text": {
       "essence": "Essence Attribute",
       "manaValue": "Mana Value",
-      "level": "Level"
+      "level": "Level",
+      "type": "Card Type",
+      "limited": "Limited"
     }
   }
 }

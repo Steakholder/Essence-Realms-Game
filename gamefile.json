@@ -9,9 +9,10 @@
   "deckBuilding": {
     "mainFilters": [
       "type",
+      "limited",
+      "level",
       "essence",
-      "manaValue",
-      "level"
+      "manaValue"
     ],
     "formats": [
       {
