@@ -78,7 +78,7 @@
           "direction": "row",
           "style": {
             "width": "100%",
-            "gap": "0.8vw",
+            "gap": "1.2vw",
             "alignItems": "flex-start",
             "boxSizing": "border-box"
           },
@@ -108,7 +108,10 @@
                       "section": "Leader"
                     },
                     {
-                      "section": "ManaStorage"
+                      "section": "ManaStorage",
+                      "style": {
+                        "marginTop": "1.2vh"
+                      }
                     }
                   ]
                 },
@@ -125,7 +128,10 @@
                       "section": "ActiveUnitZone"
                     },
                     {
-                      "section": "ManaPool"
+                      "section": "ManaPool",
+                      "style": {
+                        "marginTop": "1.2vh"
+                      }
                     }
                   ]
                 },
@@ -150,7 +156,7 @@
             {
               "section": "LifeZone",
               "style": {
-                "width": "10%",
+                "width": "8%",
                 "flexShrink": "0",
                 "boxSizing": "border-box"
               }
@@ -194,7 +200,10 @@
             "isHorizontalAllowed": false,
             "enterTapped": false,
             "keepTappedNewTurn": false,
-            "isGroupForbidden": false
+            "isGroupForbidden": false,
+            "autoPlayFromHand": {
+              "_default": "ManaPool"
+            }
           },
           "ActiveUnitZone": {
             "isHidden": "no",
@@ -207,7 +216,7 @@
             "keepTappedNewTurn": false
           },
           "ManaPool": {
-            "isHidden": "no",
+            "isHidden": "yes",
             "height": "10",
             "alignment": "CENTER",
             "displayedTitle": "Mana Pool",
