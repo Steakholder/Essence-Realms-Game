@@ -61,14 +61,14 @@
             "draw"
           ],
           "selectionRange": {
-            "min": 0,
+            "min": 6,
             "max": 6
           },
           "keepCardOrder": false
         }
       },
       "newTurn": {
-        "drawOnStart": false,
+        "drawOnStart": true,
         "drawPerTurn": 1,
         "sharedTurn": false
       },
@@ -110,7 +110,7 @@
                     {
                       "section": "ManaStorage",
                       "style": {
-                        "marginTop": "1.2vh"
+                        "marginTop": "2.0vh"
                       }
                     }
                   ]
@@ -128,10 +128,7 @@
                       "section": "ActiveUnitZone"
                     },
                     {
-                      "section": "ManaPool",
-                      "style": {
-                        "marginTop": "1.2vh"
-                      }
+                      "section": "ManaPool"
                     }
                   ]
                 },
@@ -159,6 +156,17 @@
                 "width": "8%",
                 "flexShrink": "0",
                 "boxSizing": "border-box"
+              }
+            },
+            {
+              "section": "GameLogic",
+              "style": {
+                "position": "absolute",
+                "width": "0px",
+                "height": "0px",
+                "overflow": "hidden",
+                "pointerEvents": "none",
+                "opacity": "0"
               }
             }
           ]
@@ -207,7 +215,7 @@
           },
           "ActiveUnitZone": {
             "isHidden": "no",
-            "height": "14",
+            "height": "16",
             "alignment": "CENTER",
             "displayedTitle": "Active Unit Zone",
             "noAutoPayTo": true,
@@ -247,7 +255,10 @@
             "isHorizontalAllowed": false,
             "enterTapped": false,
             "keepTappedNewTurn": false,
-            "isGroupForbidden": false
+            "isGroupForbidden": false,
+            "autoPlayFromHand": {
+              "_default": "Stack"
+            }
           },
           "Leader": {
             "isHidden": "yes",
@@ -272,6 +283,27 @@
             "enterTapped": false,
             "keepTappedNewTurn": false,
             "isGroupForbidden": false
+          },
+          "GameLogic": {
+            "type": "custom",
+            "defaultValue": {},
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "position": "absolute",
+                  "width": "0px",
+                  "height": "0px",
+                  "overflow": "hidden",
+                  "pointerEvents": "none",
+                  "opacity": "0"
+                }
+              }
+            },
+            "events": {
+              "onPlayersMulligan": "await functions.draw(6, false, 'ManaStorage'); await functions.draw(2, false, 'ManaPool'); await functions.draw(6, false, 'LifeZone');",
+              "onNewTurn": "if (game.turn.isMyTurn) { const topMana = cards?.ManaStorage?.[cards.ManaStorage.length - 1]; if (topMana) await functions.moveCard(topMana, 'ManaPool'); }"
+            }
           }
         }
       }
