@@ -75,17 +75,43 @@
       "countersStartingValues": [],
       "sections": {
         "layout": {
-          "direction": "column",
+          "direction": "row",
+          "style": {
+            "width": "100%",
+            "gap": "0.8vw",
+            "alignItems": "flex-start",
+            "boxSizing": "border-box"
+          },
           "content": [
             {
               "direction": "row",
               "style": {
-                "width": "100%",
+                "flex": "1 1 0",
+                "minWidth": "0",
                 "gap": "0.8vw",
-                "alignItems": "flex-start",
                 "boxSizing": "border-box"
               },
+              "isSymmetricalForOpponents": true,
               "content": [
+                {
+                  "direction": "column",
+                  "style": {
+                    "width": "5%",
+                    "gap": "0.8vh",
+                    "boxSizing": "border-box"
+                  },
+                  "content": [
+                    {
+                      "section": "LV0Leader"
+                    },
+                    {
+                      "section": "Leader"
+                    },
+                    {
+                      "section": "ManaStorage"
+                    }
+                  ]
+                },
                 {
                   "direction": "column",
                   "style": {
@@ -96,96 +122,38 @@
                   },
                   "content": [
                     {
-                      "direction": "row",
-                      "style": {
-                        "width": "100%",
-                        "gap": "0.8vw",
-                        "alignItems": "stretch"
-                      },
-                      "isSymmetricalForOpponents": true,
-                      "content": [
-                        {
-                          "section": "LV0Leader",
-                          "style": {
-                            "width": "5%",
-                            "flexShrink": "0",
-                            "boxSizing": "border-box"
-                          }
-                        },
-                        {
-                          "section": "ActiveUnitZone",
-                          "style": {
-                            "flex": "1 1 0",
-                            "minWidth": "0",
-                            "boxSizing": "border-box"
-                          }
-                        },
-                        {
-                          "section": "Banishment",
-                          "style": {
-                            "width": "5%",
-                            "flexShrink": "0",
-                            "boxSizing": "border-box"
-                          }
-                        }
-                      ]
+                      "section": "ActiveUnitZone"
                     },
                     {
-                      "direction": "row",
-                      "style": {
-                        "width": "100%",
-                        "gap": "0.8vw",
-                        "alignItems": "stretch"
-                      },
-                      "isSymmetricalForOpponents": true,
-                      "content": [
-                        {
-                          "section": "Leader",
-                          "style": {
-                            "width": "5%",
-                            "flexShrink": "0",
-                            "boxSizing": "border-box"
-                          }
-                        },
-                        {
-                          "section": "ManaPool",
-                          "style": {
-                            "flex": "1 1 0",
-                            "minWidth": "0",
-                            "boxSizing": "border-box"
-                          }
-                        },
-                        {
-                          "section": "Grave",
-                          "style": {
-                            "width": "5%",
-                            "flexShrink": "0",
-                            "boxSizing": "border-box"
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "section": "ManaStorage",
-                      "style": {
-                        "width": "5%",
-                        "flexShrink": "0",
-                        "boxSizing": "border-box",
-                        "margin": "0"
-                      }
+                      "section": "ManaPool"
                     }
                   ]
                 },
                 {
-                  "section": "LifeZone",
+                  "direction": "column",
                   "style": {
-                    "width": "12%",
-                    "flexShrink": "0",
-                    "boxSizing": "border-box",
-                    "margin": "0"
-                  }
+                    "width": "5%",
+                    "gap": "0.8vh",
+                    "boxSizing": "border-box"
+                  },
+                  "content": [
+                    {
+                      "section": "Banishment"
+                    },
+                    {
+                      "section": "Discard"
+                    }
+                  ]
                 }
               ]
+            },
+            {
+              "section": "LifeZone",
+              "style": {
+                "width": "10%",
+                "flexShrink": "0",
+                "boxSizing": "border-box"
+              }
             }
           ]
         },
@@ -260,21 +228,9 @@
             "keepTappedNewTurn": false,
             "isGroupForbidden": false
           },
-          "Grave": {
-            "isHidden": "no",
-            "height": "10",
-            "alignment": "DECK",
-            "displayedTitle": "Grave",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
-          },
           "LifeZone": {
             "isHidden": "yes",
-            "height": "24",
+            "height": "22",
             "alignment": "DECK",
             "displayedTitle": "Life Zone",
             "noQuickActions": true,
@@ -289,6 +245,18 @@
             "height": "10",
             "alignment": "DECK",
             "displayedTitle": "Leader Deck",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": false
+          },
+          "Discard": {
+            "isHidden": "no",
+            "height": "10",
+            "alignment": "DECK",
+            "displayedTitle": "Grave",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
