@@ -9,8 +9,10 @@
   "deckBuilding": {
     "mainFilters": [
       "type",
-      "cost",
-      "level"
+      "limited",
+      "levelFilter",
+      "essence",
+      "manaValueFilter"
     ],
     "formats": [
       {

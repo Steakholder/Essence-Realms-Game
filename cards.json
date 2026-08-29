@@ -14,7 +14,6 @@
     "name": "Mara, the Sinister Cherub",
     "type": "LV0Leader",
     "cost": 0,
-    "level": 0,
     "essence": [
       "Dark",
       "Life",
@@ -29,9 +28,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0003": {
     "id": "er-0003",
@@ -48,7 +48,6 @@
     "name": "Mara, the Cult Figure",
     "type": "Leader",
     "cost": 2,
-    "level": 1,
     "essence": [
       "Dark",
       "Life",
@@ -63,9 +62,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "1"
   },
   "er-0004": {
     "id": "er-0004",
@@ -82,7 +82,6 @@
     "name": "Mara, the Shining Charlatan",
     "type": "Leader",
     "cost": 5,
-    "level": 2,
     "essence": [
       "Dark",
       "Life",
@@ -97,9 +96,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 2,
     "battlePower": 5000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "2",
+    "manaValueFilter": "2"
   },
   "er-0005": {
     "id": "er-0005",
@@ -116,7 +116,6 @@
     "name": "Mara, the Twilight Priest",
     "type": "Leader",
     "cost": 9,
-    "level": 3,
     "essence": [
       "Dark",
       "Life",
@@ -131,9 +130,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 3,
     "battlePower": 10000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "3",
+    "manaValueFilter": "3"
   },
   "er-0006": {
     "id": "er-0006",
@@ -150,7 +150,6 @@
     "name": "Mara, the False Prophet",
     "type": "Leader",
     "cost": 13,
-    "level": 4,
     "essence": [
       "Dark",
       "Life",
@@ -164,9 +163,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 3,
     "battlePower": 15000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "4",
+    "manaValueFilter": "3"
   },
   "er-0007": {
     "id": "er-0007",
@@ -183,7 +183,6 @@
     "name": "Mara, the Divine Impersonator",
     "type": "Leader",
     "cost": 18,
-    "level": 5,
     "essence": [
       "Dark",
       "Life",
@@ -199,9 +198,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 4,
     "battlePower": 25000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "5",
+    "manaValueFilter": "4"
   },
   "er-0008": {
     "id": "er-0008",
@@ -218,7 +218,6 @@
     "name": "Devilish Bounty",
     "type": "Spell",
     "cost": 2,
-    "level": 0,
     "essence": [],
     "keywords": [
       "Overspell"
@@ -227,7 +226,8 @@
     "_legal": {
       "ER_STD": 1
     },
-    "effects": []
+    "effects": [],
+    "levelFilter": "0"
   },
   "er-0009": {
     "id": "er-0009",
@@ -244,7 +244,6 @@
     "name": "Shadow Baby",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Dark"
     ],
@@ -256,9 +255,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0010": {
     "id": "er-0010",
@@ -275,7 +275,6 @@
     "name": "Sprouting Seedling",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Life"
     ],
@@ -286,9 +285,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0011": {
     "id": "er-0011",
@@ -305,7 +305,6 @@
     "name": "Shine Cluster",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Light"
     ],
@@ -316,9 +315,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0012": {
     "id": "er-0012",
@@ -335,7 +335,6 @@
     "name": "Roe Clump",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Water"
     ],
@@ -346,9 +345,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0013": {
     "id": "er-0013",
@@ -365,7 +365,6 @@
     "name": "Blown Dandelion",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Wind"
     ],
@@ -376,9 +375,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0014": {
     "id": "er-0014",
@@ -395,7 +395,6 @@
     "name": "Torchbearer",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Fire"
     ],
@@ -406,9 +405,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0015": {
     "id": "er-0015",
@@ -425,7 +425,6 @@
     "name": "Fungal Spore",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Unlife"
     ],
@@ -436,9 +435,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0016": {
     "id": "er-0016",
@@ -455,7 +455,6 @@
     "name": "Bacteria X",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Ruin"
     ],
@@ -466,9 +465,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0017": {
     "id": "er-0017",
@@ -485,7 +485,6 @@
     "name": "Twin Worm",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Earth"
     ],
@@ -496,9 +495,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0018": {
     "id": "er-0018",
@@ -515,7 +515,6 @@
     "name": "Mimic Coin",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Metal"
     ],
@@ -527,9 +526,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0019": {
     "id": "er-0019",
@@ -546,7 +546,6 @@
     "name": "Imaginary Fiend",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Mind"
     ],
@@ -558,9 +557,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0020": {
     "id": "er-0020",
@@ -577,7 +577,6 @@
     "name": "The Abominable Snowball",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Cold"
     ],
@@ -588,9 +587,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0021": {
     "id": "er-0021",
@@ -607,7 +607,6 @@
     "name": "Static Puff",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Plasma"
     ],
@@ -618,9 +617,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0022": {
     "id": "er-0022",
@@ -637,7 +637,6 @@
     "name": "Will o’ Wisp",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Spirit"
     ],
@@ -648,9 +647,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0023": {
     "id": "er-0023",
@@ -667,7 +667,6 @@
     "name": "Mana Sprite",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Arcane"
     ],
@@ -678,9 +677,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0024": {
     "id": "er-0024",
@@ -697,7 +697,6 @@
     "name": "Shade Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Dark"
     ],
@@ -708,9 +707,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0025": {
     "id": "er-0025",
@@ -727,7 +727,6 @@
     "name": "Algae Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Life"
     ],
@@ -738,9 +737,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0026": {
     "id": "er-0026",
@@ -757,7 +757,6 @@
     "name": "Bright Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Light"
     ],
@@ -768,9 +767,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0027": {
     "id": "er-0027",
@@ -787,7 +787,6 @@
     "name": "Fishbowl Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Water"
     ],
@@ -798,9 +797,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0028": {
     "id": "er-0028",
@@ -817,7 +817,6 @@
     "name": "Float Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Wind"
     ],
@@ -828,9 +827,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0029": {
     "id": "er-0029",
@@ -847,7 +847,6 @@
     "name": "Magma Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Fire"
     ],
@@ -858,9 +857,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0030": {
     "id": "er-0030",
@@ -877,7 +877,6 @@
     "name": "Skull Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Unlife"
     ],
@@ -888,9 +887,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0031": {
     "id": "er-0031",
@@ -907,7 +907,6 @@
     "name": "Smog Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Ruin"
     ],
@@ -918,9 +917,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0032": {
     "id": "er-0032",
@@ -937,7 +937,6 @@
     "name": "Tar Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Earth"
     ],
@@ -948,9 +947,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0033": {
     "id": "er-0033",
@@ -967,7 +967,6 @@
     "name": "Mercury Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Metal"
     ],
@@ -978,9 +977,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0034": {
     "id": "er-0034",
@@ -997,7 +997,6 @@
     "name": "Brain Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Mind"
     ],
@@ -1008,9 +1007,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0035": {
     "id": "er-0035",
@@ -1027,7 +1027,6 @@
     "name": "Snowball Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Cold"
     ],
@@ -1038,9 +1037,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0036": {
     "id": "er-0036",
@@ -1057,7 +1057,6 @@
     "name": "Shock Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Plasma"
     ],
@@ -1068,9 +1067,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0037": {
     "id": "er-0037",
@@ -1087,7 +1087,6 @@
     "name": "Spectral Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Spirit"
     ],
@@ -1098,9 +1097,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0038": {
     "id": "er-0038",
@@ -1117,7 +1117,6 @@
     "name": "Mana Slime",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Arcane"
     ],
@@ -1128,9 +1127,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0039": {
     "id": "er-0039",
@@ -1147,7 +1147,6 @@
     "name": "Froggy Ninja",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Dark",
       "Water"
@@ -1159,9 +1158,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0040": {
     "id": "er-0040",
@@ -1178,7 +1178,6 @@
     "name": "Froggy Ficus",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Life",
       "Water"
@@ -1190,9 +1189,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0041": {
     "id": "er-0041",
@@ -1209,7 +1209,6 @@
     "name": "Froggy Photon",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Light",
       "Water"
@@ -1222,9 +1221,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0042": {
     "id": "er-0042",
@@ -1241,7 +1241,6 @@
     "name": "Froggy Frog",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Water"
     ],
@@ -1252,9 +1251,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0043": {
     "id": "er-0043",
@@ -1271,7 +1271,6 @@
     "name": "Froggy Flutter",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Water",
       "Wind"
@@ -1284,9 +1283,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0044": {
     "id": "er-0044",
@@ -1303,7 +1303,6 @@
     "name": "Froggy Flare",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Fire",
       "Water"
@@ -1315,9 +1314,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0045": {
     "id": "er-0045",
@@ -1334,7 +1334,6 @@
     "name": "Froggy Vampire",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Unlife",
       "Water"
@@ -1348,9 +1347,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0046": {
     "id": "er-0046",
@@ -1367,7 +1367,6 @@
     "name": "Froggy C-4rog",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Ruin",
       "Water"
@@ -1379,9 +1378,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0047": {
     "id": "er-0047",
@@ -1398,7 +1398,6 @@
     "name": "Froggy Mudskipper",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Earth",
       "Water"
@@ -1410,9 +1409,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0048": {
     "id": "er-0048",
@@ -1429,7 +1429,6 @@
     "name": "Froggy Gizmo",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Metal",
       "Water"
@@ -1441,9 +1440,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0049": {
     "id": "er-0049",
@@ -1460,7 +1460,6 @@
     "name": "Froggy Medium",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Mind",
       "Water"
@@ -1472,9 +1471,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0050": {
     "id": "er-0050",
@@ -1491,7 +1491,6 @@
     "name": "Froggy Freeze",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Cold",
       "Water"
@@ -1503,9 +1502,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0051": {
     "id": "er-0051",
@@ -1522,7 +1522,6 @@
     "name": "Froggy Thunder",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Plasma",
       "Water"
@@ -1535,9 +1534,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0052": {
     "id": "er-0052",
@@ -1554,7 +1554,6 @@
     "name": "Froggy Phantom",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Spirit",
       "Water"
@@ -1567,9 +1566,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0053": {
     "id": "er-0053",
@@ -1586,7 +1586,6 @@
     "name": "Froggy Familiar",
     "type": "Unit",
     "cost": 2,
-    "level": 0,
     "essence": [
       "Arcane",
       "Water"
@@ -1599,9 +1598,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0054": {
     "id": "er-0054",
@@ -1618,7 +1618,6 @@
     "name": "Risks and Rewards",
     "type": "Spell",
     "cost": 3,
-    "level": 3,
     "essence": [],
     "keywords": [
       "Channeled"
@@ -1627,7 +1626,8 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": []
+    "effects": [],
+    "levelFilter": "3"
   },
   "er-0055": {
     "id": "er-0055",
@@ -1644,7 +1644,6 @@
     "name": "Binding Spell",
     "type": "Spell",
     "cost": 3,
-    "level": 2,
     "essence": [],
     "keywords": [
       "Counterspell"
@@ -1653,7 +1652,8 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": []
+    "effects": [],
+    "levelFilter": "2"
   },
   "er-0056": {
     "id": "er-0056",
@@ -1670,7 +1670,6 @@
     "name": "Monsterous Rush",
     "type": "Enchantment",
     "cost": 1,
-    "level": 1,
     "essence": [],
     "keywords": [
       "Buff"
@@ -1679,7 +1678,8 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": []
+    "effects": [],
+    "levelFilter": "1"
   },
   "er-0057": {
     "id": "er-0057",
@@ -1696,7 +1696,6 @@
     "name": "Deadly Hex",
     "type": "Enchantment",
     "cost": 4,
-    "level": 3,
     "essence": [],
     "keywords": [
       "Curse"
@@ -1705,7 +1704,8 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": []
+    "effects": [],
+    "levelFilter": "3"
   },
   "er-0058": {
     "id": "er-0058",
@@ -1722,7 +1722,6 @@
     "name": "Double Tap",
     "type": "Enchantment",
     "cost": 2,
-    "level": 3,
     "essence": [],
     "keywords": [
       "Buff"
@@ -1731,7 +1730,8 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": []
+    "effects": [],
+    "levelFilter": "3"
   },
   "er-0059": {
     "id": "er-0059",
@@ -1748,7 +1748,6 @@
     "name": "Energy Surge",
     "type": "Spell",
     "cost": 6,
-    "level": 2,
     "essence": [],
     "keywords": [
       "Counterspell"
@@ -1757,7 +1756,8 @@
     "_legal": {
       "ER_STD": 1
     },
-    "effects": []
+    "effects": [],
+    "levelFilter": "2"
   },
   "er-0060": {
     "id": "er-0060",
@@ -1774,7 +1774,6 @@
     "name": "Frenzy Wave",
     "type": "Spell",
     "cost": 5,
-    "level": 4,
     "essence": [],
     "keywords": [
       "Counterspell"
@@ -1783,7 +1782,8 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": []
+    "effects": [],
+    "levelFilter": "4"
   },
   "er-0061": {
     "id": "er-0061",
@@ -1800,7 +1800,6 @@
     "name": "Planted Plant",
     "type": "Unit",
     "cost": 3,
-    "level": 1,
     "essence": [
       "Dark",
       "Life"
@@ -1814,9 +1813,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "2"
   },
   "er-0062": {
     "id": "er-0062",
@@ -1833,7 +1833,6 @@
     "name": "Evilslayer Magician",
     "type": "Unit",
     "cost": 4,
-    "level": 2,
     "essence": [
       "Arcane",
       "Dark"
@@ -1848,9 +1847,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 4000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "2",
+    "manaValueFilter": "3"
   },
   "er-0063": {
     "id": "er-0063",
@@ -1867,7 +1867,6 @@
     "name": "Shimmer Wing",
     "type": "Unit",
     "cost": 6,
-    "level": 4,
     "essence": [
       "Light"
     ],
@@ -1880,9 +1879,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 12000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "4",
+    "manaValueFilter": "3"
   },
   "er-0064": {
     "id": "er-0064",
@@ -1899,7 +1899,6 @@
     "name": "Leaf Glider",
     "type": "Unit",
     "cost": 1,
-    "level": 1,
     "essence": [
       "Earth",
       "Life"
@@ -1912,9 +1911,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "1"
   },
   "er-0065": {
     "id": "er-0065",
@@ -1931,7 +1931,6 @@
     "name": "Beleaver",
     "type": "Unit",
     "cost": 2,
-    "level": 1,
     "essence": [
       "Life",
       "Water"
@@ -1943,9 +1942,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "1"
   },
   "er-0066": {
     "id": "er-0066",
@@ -1962,7 +1962,6 @@
     "name": "Hunting Foxtail",
     "type": "Unit",
     "cost": 3,
-    "level": 2,
     "essence": [
       "Dark",
       "Life"
@@ -1974,9 +1973,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 5000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "2",
+    "manaValueFilter": "1"
   },
   "er-0067": {
     "id": "er-0067",
@@ -1993,7 +1993,6 @@
     "name": "Bristle Boar",
     "type": "Unit",
     "cost": 4,
-    "level": 2,
     "essence": [
       "Life"
     ],
@@ -2004,9 +2003,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 7000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "2",
+    "manaValueFilter": "3"
   },
   "er-0068": {
     "id": "er-0068",
@@ -2023,7 +2023,6 @@
     "name": "Beleaver Dam",
     "type": "Unit",
     "cost": 4,
-    "level": 3,
     "essence": [
       "Life",
       "Water"
@@ -2035,9 +2034,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2,
     "battlePower": 14000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "3",
+    "manaValueFilter": "2"
   },
   "er-0069": {
     "id": "er-0069",
@@ -2054,7 +2054,6 @@
     "name": "Tree Rutter",
     "type": "Unit",
     "cost": 6,
-    "level": 4,
     "essence": [
       "Life"
     ],
@@ -2065,9 +2064,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2,
     "battlePower": 12000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "4",
+    "manaValueFilter": "2"
   },
   "er-0070": {
     "id": "er-0070",
@@ -2084,7 +2084,6 @@
     "name": "Deki, the Imp",
     "type": "Unit",
     "cost": 2,
-    "level": 1,
     "essence": [
       "Dark"
     ],
@@ -2096,9 +2095,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 4000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "1"
   },
   "er-0071": {
     "id": "er-0071",
@@ -2115,7 +2115,6 @@
     "name": "Deki, the Fiendish Soldier",
     "type": "Unit",
     "cost": 3,
-    "level": 2,
     "essence": [
       "Dark"
     ],
@@ -2127,9 +2126,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 10000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "2",
+    "manaValueFilter": "1"
   },
   "er-0072": {
     "id": "er-0072",
@@ -2146,7 +2146,6 @@
     "name": "Deki, the Fiendish Archduke",
     "type": "Unit",
     "cost": 4,
-    "level": 3,
     "essence": [
       "Dark"
     ],
@@ -2158,9 +2157,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2,
     "battlePower": 15000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "3",
+    "manaValueFilter": "2"
   },
   "er-0073": {
     "id": "er-0073",
@@ -2177,7 +2177,6 @@
     "name": "Deki, the Fiend Lord",
     "type": "Unit",
     "cost": 6,
-    "level": 4,
     "essence": [
       "Dark"
     ],
@@ -2189,9 +2188,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 2,
     "battlePower": 20000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "4",
+    "manaValueFilter": "2"
   },
   "er-0074": {
     "id": "er-0074",
@@ -2208,7 +2208,6 @@
     "name": "Deki, the True Majin",
     "type": "Unit",
     "cost": 8,
-    "level": 5,
     "essence": [
       "Dark"
     ],
@@ -2219,9 +2218,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 3,
     "battlePower": 30000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "5",
+    "manaValueFilter": "3"
   },
   "er-0075": {
     "id": "er-0075",
@@ -2238,7 +2238,6 @@
     "name": "Shine Bird",
     "type": "Unit",
     "cost": 1,
-    "level": 2,
     "essence": [
       "Light"
     ],
@@ -2250,9 +2249,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "2",
+    "manaValueFilter": "1"
   },
   "er-0076": {
     "id": "er-0076",
@@ -2269,7 +2269,6 @@
     "name": "Glare Hawk",
     "type": "Unit",
     "cost": 4,
-    "level": 3,
     "essence": [
       "Light"
     ],
@@ -2281,9 +2280,10 @@
     "_legal": {
       "ER_STD": true
     },
-    "manaValue": 1,
     "battlePower": 8000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "3",
+    "manaValueFilter": "1"
   },
   "er-0077": {
     "id": "er-0077",
@@ -2300,7 +2300,6 @@
     "name": "Adaptive Changeling",
     "type": "Enchantment",
     "cost": 0,
-    "level": 1,
     "essence": [],
     "keywords": [
       "Curse"
@@ -2309,7 +2308,8 @@
     "_legal": {
       "ER_STD": true
     },
-    "effects": []
+    "effects": [],
+    "levelFilter": "1"
   },
   "er-0078": {
     "id": "er-0078",
@@ -2326,7 +2326,6 @@
     "name": "Froggy Elementova",
     "type": "LV0Leader",
     "cost": 0,
-    "level": 0,
     "essence": [
       "Fire",
       "Water",
@@ -2339,9 +2338,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 5,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "5"
   },
   "er-0079": {
     "id": "er-0079",
@@ -2358,7 +2358,6 @@
     "name": "Froggy Elementadpole",
     "type": "Leader",
     "cost": 1,
-    "level": 1,
     "essence": [
       "Fire",
       "Water",
@@ -2371,9 +2370,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 5,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "5"
   },
   "er-0080": {
     "id": "er-0080",
@@ -2390,7 +2390,6 @@
     "name": "Froggy Elementamoph",
     "type": "Leader",
     "cost": 3,
-    "level": 2,
     "essence": [
       "Fire",
       "Water",
@@ -2403,9 +2402,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 4,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "2",
+    "manaValueFilter": "4"
   },
   "er-0081": {
     "id": "er-0081",
@@ -2422,7 +2422,6 @@
     "name": "Froggy Elementoad",
     "type": "Leader",
     "cost": 6,
-    "level": 3,
     "essence": [
       "Fire",
       "Water",
@@ -2435,9 +2434,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 3,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "3",
+    "manaValueFilter": "3"
   },
   "er-0082": {
     "id": "er-0082",
@@ -2454,7 +2454,6 @@
     "name": "Froggy Eldelementoad",
     "type": "Leader",
     "cost": 10,
-    "level": 4,
     "essence": [
       "Fire",
       "Water",
@@ -2469,9 +2468,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 2,
     "battlePower": 7000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "4",
+    "manaValueFilter": "2"
   },
   "er-0083": {
     "id": "er-0083",
@@ -2488,7 +2488,6 @@
     "name": "Froggy Eldomegelementoad",
     "type": "Leader",
     "cost": 15,
-    "level": 5,
     "essence": [
       "Fire",
       "Water",
@@ -2504,9 +2503,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1,
     "battlePower": 12000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "5",
+    "manaValueFilter": "1"
   },
   "er-0084": {
     "id": "er-0084",
@@ -2523,7 +2523,6 @@
     "name": "Shigekira, the Nefarious Gift",
     "type": "LV0Leader",
     "cost": 0,
-    "level": 0,
     "essence": [
       "Arcane",
       "Mind",
@@ -2536,9 +2535,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 2,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "2"
   },
   "er-0085": {
     "id": "er-0085",
@@ -2555,7 +2555,6 @@
     "name": "Shigekira, the Test Subject",
     "type": "Leader",
     "cost": 2,
-    "level": 1,
     "essence": [
       "Arcane",
       "Mind",
@@ -2568,9 +2567,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 3,
     "battlePower": 5000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "3"
   },
   "er-0086": {
     "id": "er-0086",
@@ -2587,7 +2587,6 @@
     "name": "Shigekira, the Rampaging Patient",
     "type": "Leader",
     "cost": 5,
-    "level": 2,
     "essence": [
       "Arcane",
       "Mind",
@@ -2601,9 +2600,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 4,
     "battlePower": 8000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "2",
+    "manaValueFilter": "4"
   },
   "er-0087": {
     "id": "er-0087",
@@ -2620,7 +2620,6 @@
     "name": "Shigekira, the Growing Influence",
     "type": "Leader",
     "cost": 9,
-    "level": 3,
     "essence": [
       "Arcane",
       "Mind",
@@ -2634,9 +2633,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 5,
     "battlePower": 15000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "3",
+    "manaValueFilter": "5"
   },
   "er-0088": {
     "id": "er-0088",
@@ -2653,7 +2653,6 @@
     "name": "Shigekira, the Serpent Whispering",
     "type": "Leader",
     "cost": 14,
-    "level": 4,
     "essence": [
       "Arcane",
       "Mind",
@@ -2670,9 +2669,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 5,
     "battlePower": 20000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "4",
+    "manaValueFilter": "5"
   },
   "er-0089": {
     "id": "er-0089",
@@ -2689,7 +2689,6 @@
     "name": "Shigekira, the Oroborus Consumed",
     "type": "Leader",
     "cost": 20,
-    "level": 5,
     "essence": [
       "Arcane",
       "Mind",
@@ -2706,9 +2705,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 5,
     "battlePower": 28000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "5",
+    "manaValueFilter": "5"
   },
   "er-0090": {
     "id": "er-0090",
@@ -2725,7 +2725,6 @@
     "name": "Young Georgie, Before the Zomborgs",
     "type": "LV0Leader",
     "cost": 0,
-    "level": 0,
     "essence": [
       "Metal",
       "Unlife",
@@ -2738,9 +2737,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1,
     "battlePower": 1000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "0",
+    "manaValueFilter": "1"
   },
   "er-0091": {
     "id": "er-0091",
@@ -2757,7 +2757,6 @@
     "name": "George the Infected, Edge of Zomborgs",
     "type": "Leader",
     "cost": 2,
-    "level": 1,
     "essence": [
       "Metal",
       "Unlife",
@@ -2771,9 +2770,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1,
     "battlePower": 3000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "1",
+    "manaValueFilter": "1"
   },
   "er-0092": {
     "id": "er-0092",
@@ -2790,7 +2790,6 @@
     "name": "Dr. Romero, Zomborg Patient Zero",
     "type": "Leader",
     "cost": 5,
-    "level": 2,
     "essence": [
       "Metal",
       "Unlife",
@@ -2805,9 +2804,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1,
     "battlePower": 5000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "2",
+    "manaValueFilter": "1"
   },
   "er-0093": {
     "id": "er-0093",
@@ -2824,7 +2824,6 @@
     "name": "Dr. Romero, the Zomborg Factory",
     "type": "Leader",
     "cost": 9,
-    "level": 3,
     "essence": [
       "Metal",
       "Unlife",
@@ -2839,9 +2838,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1,
     "battlePower": 7000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "3",
+    "manaValueFilter": "1"
   },
   "er-0094": {
     "id": "er-0094",
@@ -2858,7 +2858,6 @@
     "name": "Dr. Romero, the Zomborg General",
     "type": "Leader",
     "cost": 14,
-    "level": 4,
     "essence": [
       "Metal",
       "Unlife",
@@ -2873,9 +2872,10 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1,
     "battlePower": 11000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "4",
+    "manaValueFilter": "1"
   },
   "er-0095": {
     "id": "er-0095",
@@ -2892,7 +2892,6 @@
     "name": "Dr. Zomborg, the Era of Eternal Unlife",
     "type": "Leader",
     "cost": 20,
-    "level": 5,
     "essence": [
       "Metal",
       "Unlife",
@@ -2908,8 +2907,9 @@
     "_legal": {
       "ER_STD": 1
     },
-    "manaValue": 1,
     "battlePower": 15000,
-    "effects": []
+    "effects": [],
+    "levelFilter": "5",
+    "manaValueFilter": "1"
   }
 }

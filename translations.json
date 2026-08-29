@@ -19,7 +19,9 @@
       "manaValue": "Mana Value",
       "Keywords": "Keywords",
       "keywords": "Keywords",
-      "cost": "Cost"
+      "cost": "Cost",
+      "levelFilter": "Level",
+      "manaValueFilter": "Mana Value"
     }
   }
 }
