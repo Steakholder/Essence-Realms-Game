@@ -10,9 +10,9 @@
     "mainFilters": [
       "type",
       "limited",
-      "levelFilter",
+      "level",
       "essence",
-      "manaValueFilter"
+      "manaValue"
     ],
     "formats": [
       {
