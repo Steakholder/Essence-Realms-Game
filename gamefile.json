@@ -365,7 +365,8 @@
               }
             },
             "events": {
-              "onNewTurn": "await handleNewTurn()"
+              "onNewTurn": "await handleNewTurn()",
+              "onCardsUpdate": "const stack = cards?.Stack ?? []; if (stack.length) await functions.moveCards(stack, 'Discard');"
             }
           },
           "Level_0_Leader": {
@@ -403,11 +404,7 @@
         }
       },
       "autoPlayFromHand": {
-        "Unit": "Stack",
-        "Spell": "Stack",
-        "Enchantment": "Stack",
-        "Leader": "Stack",
-        "Level_0_Leader": "Stack"
+        "Unit": "Unit_Zone"
       },
       "beforeGameStart": {
         "initialBoardSetup": [
@@ -487,13 +484,6 @@
           "Level_0_Leader",
           "Leader"
         ]
-      },
-      "autoPlayFromStack": {
-        "Unit": "Discard",
-        "Spell": "Discard",
-        "Enchantment": "Discard",
-        "Leader": "Discard",
-        "Level_0_Leader": "Discard"
       }
     }
   },
