@@ -82,40 +82,50 @@
               "style": {
                 "width": "100%",
                 "gap": "0.8vw",
-                "alignItems": "stretch"
+                "alignItems": "flex-start",
+                "boxSizing": "border-box"
               },
               "content": [
                 {
                   "direction": "column",
                   "style": {
-                    "width": "calc(88% - 0.8vw)",
-                    "gap": "0.8vh"
+                    "flex": "1 1 0",
+                    "minWidth": "0",
+                    "gap": "0.8vh",
+                    "boxSizing": "border-box"
                   },
                   "content": [
                     {
                       "direction": "row",
                       "style": {
-                        "height": "14vh",
-                        "gap": "0.8vw"
+                        "width": "100%",
+                        "gap": "0.8vw",
+                        "alignItems": "stretch"
                       },
                       "isSymmetricalForOpponents": true,
                       "content": [
                         {
                           "section": "LV0Leader",
                           "style": {
-                            "width": "5%"
+                            "width": "5%",
+                            "flexShrink": "0",
+                            "boxSizing": "border-box"
                           }
                         },
                         {
                           "section": "ActiveUnitZone",
                           "style": {
-                            "width": "calc(90% - 1.6vw)"
+                            "flex": "1 1 0",
+                            "minWidth": "0",
+                            "boxSizing": "border-box"
                           }
                         },
                         {
                           "section": "Banishment",
                           "style": {
-                            "width": "5%"
+                            "width": "5%",
+                            "flexShrink": "0",
+                            "boxSizing": "border-box"
                           }
                         }
                       ]
@@ -123,27 +133,34 @@
                     {
                       "direction": "row",
                       "style": {
-                        "height": "10vh",
-                        "gap": "0.8vw"
+                        "width": "100%",
+                        "gap": "0.8vw",
+                        "alignItems": "stretch"
                       },
                       "isSymmetricalForOpponents": true,
                       "content": [
                         {
                           "section": "Leader",
                           "style": {
-                            "width": "5%"
+                            "width": "5%",
+                            "flexShrink": "0",
+                            "boxSizing": "border-box"
                           }
                         },
                         {
                           "section": "ManaPool",
                           "style": {
-                            "width": "calc(90% - 1.6vw)"
+                            "flex": "1 1 0",
+                            "minWidth": "0",
+                            "boxSizing": "border-box"
                           }
                         },
                         {
                           "section": "Grave",
                           "style": {
-                            "width": "5%"
+                            "width": "5%",
+                            "flexShrink": "0",
+                            "boxSizing": "border-box"
                           }
                         }
                       ]
@@ -152,8 +169,9 @@
                       "section": "ManaStorage",
                       "style": {
                         "width": "5%",
-                        "height": "7vh",
-                        "marginTop": "0.8vh"
+                        "flexShrink": "0",
+                        "boxSizing": "border-box",
+                        "margin": "0"
                       }
                     }
                   ]
@@ -162,7 +180,9 @@
                   "section": "LifeZone",
                   "style": {
                     "width": "12%",
-                    "height": "24vh"
+                    "flexShrink": "0",
+                    "boxSizing": "border-box",
+                    "margin": "0"
                   }
                 }
               ]
@@ -187,38 +207,35 @@
         "sectionsDict": {
           "LV0Leader": {
             "isHidden": "no",
-            "height": "12",
+            "height": "14",
             "alignment": "CENTER",
             "displayedTitle": "Active Leader",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
-            "enterSpun": false,
             "keepTappedNewTurn": false
           },
           "ManaStorage": {
             "isHidden": "yes",
-            "height": "10",
+            "height": "7",
             "alignment": "DECK",
             "displayedTitle": "Mana Storage",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
             "enterTapped": false,
-            "enterSpun": false,
             "keepTappedNewTurn": false,
             "isGroupForbidden": false
           },
           "ActiveUnitZone": {
             "isHidden": "no",
-            "height": "18",
+            "height": "14",
             "alignment": "CENTER",
             "displayedTitle": "Active Unit Zone",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
-            "enterSpun": false,
             "keepTappedNewTurn": false
           },
           "ManaPool": {
@@ -229,32 +246,29 @@
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
-            "enterSpun": false,
             "keepTappedNewTurn": false
           },
           "Banishment": {
             "isHidden": "no",
-            "height": "12",
+            "height": "14",
             "alignment": "DECK",
             "displayedTitle": "Banishment",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
             "enterTapped": false,
-            "enterSpun": false,
             "keepTappedNewTurn": false,
             "isGroupForbidden": false
           },
           "Grave": {
             "isHidden": "no",
-            "height": "12",
+            "height": "10",
             "alignment": "DECK",
             "displayedTitle": "Grave",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
             "enterTapped": false,
-            "enterSpun": false,
             "keepTappedNewTurn": false,
             "isGroupForbidden": false
           },
@@ -267,20 +281,18 @@
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
             "enterTapped": false,
-            "enterSpun": false,
             "keepTappedNewTurn": false,
             "isGroupForbidden": false
           },
           "Leader": {
             "isHidden": "yes",
-            "height": "12",
+            "height": "10",
             "alignment": "DECK",
             "displayedTitle": "Leader Deck",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
             "enterTapped": false,
-            "enterSpun": false,
             "keepTappedNewTurn": false,
             "isGroupForbidden": false
           }
