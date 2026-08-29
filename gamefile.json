@@ -61,7 +61,7 @@
             "draw"
           ],
           "selectionRange": {
-            "min": 6,
+            "min": 0,
             "max": 6
           },
           "keepCardOrder": false
@@ -128,7 +128,8 @@
                       "section": "ActiveUnitZone"
                     },
                     {
-                      "section": "ManaPool"
+                      "section": "ManaPool",
+                      "style": {}
                     }
                   ]
                 },
@@ -286,28 +287,20 @@
           },
           "GameLogic": {
             "type": "custom",
-            "defaultValue": {},
-            "blueprint": {
-              "type": "div",
-              "props": {
-                "style": {
-                  "position": "absolute",
-                  "width": "0px",
-                  "height": "0px",
-                  "overflow": "hidden",
-                  "pointerEvents": "none",
-                  "opacity": "0"
-                }
-              }
+            "defaultValue": {
+              "startupSetupDone": false
             },
             "events": {
-              "onPlayersMulligan": "await functions.draw(6, false, 'ManaStorage'); await functions.draw(2, false, 'ManaPool'); await functions.draw(6, false, 'LifeZone');",
-              "onNewTurn": "if (game.turn.isMyTurn) { const topMana = cards?.ManaStorage?.[cards.ManaStorage.length - 1]; if (topMana) await functions.moveCard(topMana, 'ManaPool'); }"
+              "onPlayersMulligan": "await setupAfterMulligan()",
+              "onNewTurn": "await handleNewTurn()"
             }
           }
         }
       }
     }
   },
-  "translationsUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/translations.json"
+  "translationsUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/translations.json",
+  "scriptsUrls": [
+    "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/essence-realms-gameplay.js"
+  ]
 }
