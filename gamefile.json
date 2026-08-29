@@ -61,10 +61,10 @@
             "draw"
           ],
           "selectionRange": {
-            "min": 0,
+            "min": 6,
             "max": 6
           },
-          "keepCardOrder": false
+          "keepCardsOrder": false
         }
       },
       "newTurn": {
