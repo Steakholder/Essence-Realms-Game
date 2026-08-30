@@ -29,13 +29,14 @@ async function setupAfterMulligan() {
     // functions.draw() already knows the player's main deck. There is no
     // need to inspect the deck through the read-only cards object here.
 
-    // Top 6 -> Mana Storage.
-    await functions.draw(6, false, "ManaStorage");
+    // The 10 required Mana Rune cards begin in the Mana deck/category.
+    // After both players finish their mulligans:
+    //   8 Mana Runes -> Mana Storage
+    //   2 Mana Runes -> Mana Pool
+    await functions.drawFromExtraDeck("Mana", 8, false, "ManaStorage");
+    await functions.drawFromExtraDeck("Mana", 2, false, "ManaPool");
 
-    // Next 2 -> Mana Pool.
-    await functions.draw(2, false, "ManaPool");
-
-    // Next 6 -> Life Zone.
+    // 6 cards from the main deck -> Life Zone.
     await functions.draw(6, false, "LifeZone");
 
     state.startupSetupDone = true;

@@ -2911,5 +2911,27 @@
     "effects": [],
     "level": 5,
     "manaValue": 1
+  },
+  "er-mana-rune": {
+    "id": "er-mana-rune",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mana Rune"
+        },
+        "type": "Mana",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/mana.png"
+      }
+    },
+    "name": "Mana Rune",
+    "type": "Mana",
+    "cost": 0,
+    "limited": false,
+    "_legal": {
+      "ER_STD": 10
+    },
+    "effects": [],
+    "manaValue": 0
   }
 }

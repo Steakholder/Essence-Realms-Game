@@ -3,7 +3,10 @@
   "cardRotation": 90,
   "cards": {
     "dataUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/cards.json",
-    "cardBack": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/0_back.png"
+    "cardBack": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/0_back.png",
+    "extraCardBacks": {
+      "Mana": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/mana.png"
+    }
   },
   "deckBuilding": {
     "mainFilters": [
@@ -22,9 +25,9 @@
     "deckRulesets": {
       "Standard": {
         "general": {
-          "min": 66,
-          "max": 66,
-          "maxPerCard": 4
+          "min": 56,
+          "max": 56,
+          "maxPerCard": 3
         },
         "categories": [
           {
@@ -38,6 +41,12 @@
             "min": 5,
             "max": 5,
             "maxPerCard": 4
+          },
+          {
+            "category": "Mana",
+            "min": 10,
+            "max": 10,
+            "maxPerCard": 10
           }
         ],
         "checkCardLegality": true
@@ -171,14 +180,16 @@
         },
         "categoriesAlreadyOnBoard": [
           "LV0Leader",
-          "Leader"
+          "Leader",
+          "Mana"
         ],
         "autoPlayFromHand": {
           "Unit": "ActiveUnitZone",
           "LV0Leader": "LV0Leader",
           "Leader": "ActiveUnitZone",
           "Spell": "Stack",
-          "Enchantment": "Stack"
+          "Enchantment": "Stack",
+          "Mana": "Mana"
         },
         "autoPlayFromStack": {
           "Spell": "Grave",
@@ -301,6 +312,18 @@
               "onNewTurn": "await handleNewTurn()",
               "onPlayersDeckPicked": "await validateEssenceDeck()"
             }
+          },
+          "Mana": {
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "displayedTitle": "Mana Deck",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": false
           }
         }
       }
