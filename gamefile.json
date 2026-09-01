@@ -40,7 +40,7 @@
             "category": "Leader",
             "min": 5,
             "max": 5,
-            "maxPerCard": 4
+            "maxPerCard": 3
           },
           {
             "category": "Mana",
