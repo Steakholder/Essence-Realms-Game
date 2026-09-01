@@ -20,18 +20,16 @@
       "Light"
     ],
     "keywords": [
-      "Lesser",
-      "Fiend",
+      "Lesser Fiend",
       "Winged"
     ],
     "limited": true,
+    "battlePower": 1000,
+    "level": 0,
+    "manaValue": 1,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 1000,
-    "effects": [],
-    "level": 0,
-    "manaValue": 1
+    }
   },
   "er-0003": {
     "id": "er-0003",
@@ -54,18 +52,16 @@
       "Light"
     ],
     "keywords": [
-      "Lesser",
-      "Fiend",
+      "Lesser Fiend",
       "Winged"
     ],
     "limited": true,
+    "battlePower": 3000,
+    "level": 1,
+    "manaValue": 1,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 3000,
-    "effects": [],
-    "level": 1,
-    "manaValue": 1
+    }
   },
   "er-0004": {
     "id": "er-0004",
@@ -88,18 +84,16 @@
       "Light"
     ],
     "keywords": [
-      "Greater",
-      "Fiend",
+      "Greater Fiend",
       "Winged"
     ],
     "limited": true,
+    "battlePower": 5000,
+    "level": 2,
+    "manaValue": 2,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 5000,
-    "effects": [],
-    "level": 2,
-    "manaValue": 2
+    }
   },
   "er-0005": {
     "id": "er-0005",
@@ -122,18 +116,16 @@
       "Light"
     ],
     "keywords": [
-      "Greater",
-      "Fiend",
+      "Greater Fiend",
       "Winged"
     ],
     "limited": true,
+    "battlePower": 10000,
+    "level": 3,
+    "manaValue": 3,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 10000,
-    "effects": [],
-    "level": 3,
-    "manaValue": 3
+    }
   },
   "er-0006": {
     "id": "er-0006",
@@ -156,17 +148,16 @@
       "Light"
     ],
     "keywords": [
-      "True",
+      "True Majin",
       "Winged"
     ],
     "limited": true,
+    "battlePower": 15000,
+    "level": 4,
+    "manaValue": 3,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 15000,
-    "effects": [],
-    "level": 4,
-    "manaValue": 3
+    }
   },
   "er-0007": {
     "id": "er-0007",
@@ -189,19 +180,17 @@
       "Light"
     ],
     "keywords": [
-      "True",
-      "True",
-      "Majin",
+      "True Divine",
+      "True Majin",
       "Winged"
     ],
     "limited": true,
+    "battlePower": 25000,
+    "level": 5,
+    "manaValue": 4,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 25000,
-    "effects": [],
-    "level": 5,
-    "manaValue": 4
+    }
   },
   "er-0008": {
     "id": "er-0008",
@@ -218,16 +207,14 @@
     "name": "Devilish Bounty",
     "type": "Spell",
     "cost": 2,
-    "essence": [],
     "keywords": [
       "Overspell"
     ],
     "limited": true,
+    "level": 0,
     "_legal": {
       "ER_STD": 1
-    },
-    "effects": [],
-    "level": 0
+    }
   },
   "er-0009": {
     "id": "er-0009",
@@ -248,17 +235,15 @@
       "Dark"
     ],
     "keywords": [
-      "Lesser",
-      "Fiend"
+      "Lesser Fiend"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0010": {
     "id": "er-0010",
@@ -282,13 +267,12 @@
       "Plant"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0011": {
     "id": "er-0011",
@@ -312,13 +296,12 @@
       "Fey"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0012": {
     "id": "er-0012",
@@ -342,13 +325,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0013": {
     "id": "er-0013",
@@ -372,13 +354,12 @@
       "Plant"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0014": {
     "id": "er-0014",
@@ -402,13 +383,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0015": {
     "id": "er-0015",
@@ -432,13 +412,12 @@
       "Plant"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0016": {
     "id": "er-0016",
@@ -462,13 +441,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0017": {
     "id": "er-0017",
@@ -492,13 +470,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0018": {
     "id": "er-0018",
@@ -519,17 +496,15 @@
       "Metal"
     ],
     "keywords": [
-      "Lesser",
-      "Fiend"
+      "Lesser Fiend"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0019": {
     "id": "er-0019",
@@ -550,17 +525,15 @@
       "Mind"
     ],
     "keywords": [
-      "Lesser",
-      "Fiend"
+      "Lesser Fiend"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0020": {
     "id": "er-0020",
@@ -584,13 +557,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0021": {
     "id": "er-0021",
@@ -614,13 +586,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0022": {
     "id": "er-0022",
@@ -644,13 +615,12 @@
       "Fey"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0023": {
     "id": "er-0023",
@@ -674,13 +644,12 @@
       "Fey"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0024": {
     "id": "er-0024",
@@ -704,13 +673,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0025": {
     "id": "er-0025",
@@ -734,13 +702,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0026": {
     "id": "er-0026",
@@ -764,13 +731,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0027": {
     "id": "er-0027",
@@ -794,13 +760,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0028": {
     "id": "er-0028",
@@ -824,13 +789,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0029": {
     "id": "er-0029",
@@ -854,13 +818,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0030": {
     "id": "er-0030",
@@ -884,13 +847,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0031": {
     "id": "er-0031",
@@ -914,13 +876,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0032": {
     "id": "er-0032",
@@ -944,13 +905,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0033": {
     "id": "er-0033",
@@ -974,13 +934,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0034": {
     "id": "er-0034",
@@ -1004,13 +963,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0035": {
     "id": "er-0035",
@@ -1034,13 +992,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0036": {
     "id": "er-0036",
@@ -1064,13 +1021,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0037": {
     "id": "er-0037",
@@ -1094,13 +1050,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0038": {
     "id": "er-0038",
@@ -1124,27 +1079,26 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0039": {
     "id": "er-0039",
     "face": {
       "front": {
         "name": {
-          "name": "Froggy Ninja"
+          "name": "Froggy Ninpo"
         },
         "type": "Unit",
         "cost": 2,
         "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/37.webp"
       }
     },
-    "name": "Froggy Ninja",
+    "name": "Froggy Ninpo",
     "type": "Unit",
     "cost": 2,
     "essence": [
@@ -1155,13 +1109,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0040": {
     "id": "er-0040",
@@ -1186,13 +1139,12 @@
       "Plant"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0041": {
     "id": "er-0041",
@@ -1218,13 +1170,12 @@
       "Fey"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0042": {
     "id": "er-0042",
@@ -1248,13 +1199,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0043": {
     "id": "er-0043",
@@ -1280,13 +1230,12 @@
       "Winged"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0044": {
     "id": "er-0044",
@@ -1311,13 +1260,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0045": {
     "id": "er-0045",
@@ -1344,13 +1292,12 @@
       "Immortal"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0046": {
     "id": "er-0046",
@@ -1375,13 +1322,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0047": {
     "id": "er-0047",
@@ -1406,13 +1352,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0048": {
     "id": "er-0048",
@@ -1437,13 +1382,12 @@
       "Machine"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0049": {
     "id": "er-0049",
@@ -1468,13 +1412,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0050": {
     "id": "er-0050",
@@ -1499,13 +1442,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0051": {
     "id": "er-0051",
@@ -1531,13 +1473,12 @@
       "Amorphous"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0052": {
     "id": "er-0052",
@@ -1563,13 +1504,12 @@
       "Ghast"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0053": {
     "id": "er-0053",
@@ -1595,13 +1535,12 @@
       "Immortal"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 0,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0054": {
     "id": "er-0054",
@@ -1610,24 +1549,22 @@
         "name": {
           "name": "Risks and Rewards"
         },
-        "type": "Spell",
+        "type": "Enchantment",
         "cost": 3,
         "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/52.webp"
       }
     },
     "name": "Risks and Rewards",
-    "type": "Spell",
+    "type": "Enchantment",
     "cost": 3,
-    "essence": [],
     "keywords": [
-      "Channeled"
+      "Buff"
     ],
     "limited": false,
+    "level": 3,
     "_legal": {
-      "ER_STD": true
-    },
-    "effects": [],
-    "level": 3
+      "ER_STD": 1
+    }
   },
   "er-0055": {
     "id": "er-0055",
@@ -1644,16 +1581,14 @@
     "name": "Binding Spell",
     "type": "Spell",
     "cost": 3,
-    "essence": [],
     "keywords": [
       "Counterspell"
     ],
     "limited": false,
+    "level": 2,
     "_legal": {
-      "ER_STD": true
-    },
-    "effects": [],
-    "level": 2
+      "ER_STD": 1
+    }
   },
   "er-0056": {
     "id": "er-0056",
@@ -1670,16 +1605,14 @@
     "name": "Monsterous Rush",
     "type": "Enchantment",
     "cost": 1,
-    "essence": [],
     "keywords": [
       "Buff"
     ],
     "limited": false,
+    "level": 1,
     "_legal": {
-      "ER_STD": true
-    },
-    "effects": [],
-    "level": 1
+      "ER_STD": 1
+    }
   },
   "er-0057": {
     "id": "er-0057",
@@ -1696,16 +1629,14 @@
     "name": "Deadly Hex",
     "type": "Enchantment",
     "cost": 4,
-    "essence": [],
     "keywords": [
       "Curse"
     ],
     "limited": false,
+    "level": 3,
     "_legal": {
-      "ER_STD": true
-    },
-    "effects": [],
-    "level": 3
+      "ER_STD": 1
+    }
   },
   "er-0058": {
     "id": "er-0058",
@@ -1722,16 +1653,14 @@
     "name": "Double Tap",
     "type": "Enchantment",
     "cost": 2,
-    "essence": [],
     "keywords": [
       "Buff"
     ],
     "limited": false,
+    "level": 3,
     "_legal": {
-      "ER_STD": true
-    },
-    "effects": [],
-    "level": 3
+      "ER_STD": 1
+    }
   },
   "er-0059": {
     "id": "er-0059",
@@ -1748,16 +1677,14 @@
     "name": "Energy Surge",
     "type": "Spell",
     "cost": 6,
-    "essence": [],
     "keywords": [
       "Counterspell"
     ],
     "limited": true,
+    "level": 2,
     "_legal": {
       "ER_STD": 1
-    },
-    "effects": [],
-    "level": 2
+    }
   },
   "er-0060": {
     "id": "er-0060",
@@ -1774,16 +1701,14 @@
     "name": "Frenzy Wave",
     "type": "Spell",
     "cost": 5,
-    "essence": [],
     "keywords": [
       "Counterspell"
     ],
     "limited": false,
+    "level": 4,
     "_legal": {
-      "ER_STD": true
-    },
-    "effects": [],
-    "level": 4
+      "ER_STD": 1
+    }
   },
   "er-0061": {
     "id": "er-0061",
@@ -1805,18 +1730,16 @@
       "Life"
     ],
     "keywords": [
-      "Lesser",
-      "Fiend",
+      "Lesser Fiend",
       "Plant"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 2
+    "manaValue": 2,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0062": {
     "id": "er-0062",
@@ -1840,17 +1763,15 @@
     "keywords": [
       "Abomination",
       "Adventurer",
-      "Lesser",
-      "Fiend"
+      "Lesser Fiend"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 4000,
-    "effects": [],
     "level": 2,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0063": {
     "id": "er-0063",
@@ -1871,18 +1792,16 @@
       "Light"
     ],
     "keywords": [
-      "Mythical",
-      "Beast",
+      "Mythical Beast",
       "Winged"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 12000,
-    "effects": [],
     "level": 4,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0064": {
     "id": "er-0064",
@@ -1908,13 +1827,12 @@
       "Winged"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 1000,
-    "effects": [],
     "level": 1,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0065": {
     "id": "er-0065",
@@ -1939,13 +1857,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 1,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0066": {
     "id": "er-0066",
@@ -1970,13 +1887,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 5000,
-    "effects": [],
     "level": 2,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0067": {
     "id": "er-0067",
@@ -2000,13 +1916,12 @@
       "Beast"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 7000,
-    "effects": [],
     "level": 2,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0068": {
     "id": "er-0068",
@@ -2031,13 +1946,12 @@
       "Critter"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 14000,
-    "effects": [],
     "level": 3,
-    "manaValue": 2
+    "manaValue": 2,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0069": {
     "id": "er-0069",
@@ -2061,13 +1975,12 @@
       "Beast"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 12000,
-    "effects": [],
     "level": 4,
-    "manaValue": 2
+    "manaValue": 2,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0070": {
     "id": "er-0070",
@@ -2088,17 +2001,15 @@
       "Dark"
     ],
     "keywords": [
-      "Lesser",
-      "Fiend"
+      "Lesser Fiend"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 4000,
-    "effects": [],
     "level": 1,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0071": {
     "id": "er-0071",
@@ -2119,17 +2030,15 @@
       "Dark"
     ],
     "keywords": [
-      "Lesser",
-      "Fiend"
+      "Lesser Fiend"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 10000,
-    "effects": [],
     "level": 2,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0072": {
     "id": "er-0072",
@@ -2150,17 +2059,15 @@
       "Dark"
     ],
     "keywords": [
-      "Greater",
-      "Fiend"
+      "Greater Fiend"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 15000,
-    "effects": [],
     "level": 3,
-    "manaValue": 2
+    "manaValue": 2,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0073": {
     "id": "er-0073",
@@ -2181,17 +2088,15 @@
       "Dark"
     ],
     "keywords": [
-      "Greater",
-      "Fiend"
+      "Greater Fiend"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 20000,
-    "effects": [],
     "level": 4,
-    "manaValue": 2
+    "manaValue": 2,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0074": {
     "id": "er-0074",
@@ -2212,16 +2117,15 @@
       "Dark"
     ],
     "keywords": [
-      "True"
+      "True Majin"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 30000,
-    "effects": [],
     "level": 5,
-    "manaValue": 3
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0075": {
     "id": "er-0075",
@@ -2246,13 +2150,12 @@
       "Winged"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 3000,
-    "effects": [],
     "level": 2,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0076": {
     "id": "er-0076",
@@ -2277,13 +2180,12 @@
       "Winged"
     ],
     "limited": false,
-    "_legal": {
-      "ER_STD": true
-    },
     "battlePower": 8000,
-    "effects": [],
     "level": 3,
-    "manaValue": 1
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-0077": {
     "id": "er-0077",
@@ -2300,16 +2202,14 @@
     "name": "Adaptive Changeling",
     "type": "Enchantment",
     "cost": 0,
-    "essence": [],
     "keywords": [
       "Curse"
     ],
     "limited": false,
+    "level": 1,
     "_legal": {
-      "ER_STD": true
-    },
-    "effects": [],
-    "level": 1
+      "ER_STD": 1
+    }
   },
   "er-0078": {
     "id": "er-0078",
@@ -2335,13 +2235,12 @@
       "Critter"
     ],
     "limited": true,
+    "battlePower": 1000,
+    "level": 0,
+    "manaValue": 1,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 1000,
-    "effects": [],
-    "level": 0,
-    "manaValue": 5
+    }
   },
   "er-0079": {
     "id": "er-0079",
@@ -2367,13 +2266,12 @@
       "Critter"
     ],
     "limited": true,
+    "battlePower": 1000,
+    "level": 1,
+    "manaValue": 1,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 1000,
-    "effects": [],
-    "level": 1,
-    "manaValue": 5
+    }
   },
   "er-0080": {
     "id": "er-0080",
@@ -2399,13 +2297,12 @@
       "Critter"
     ],
     "limited": true,
+    "battlePower": 1000,
+    "level": 2,
+    "manaValue": 1,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 1000,
-    "effects": [],
-    "level": 2,
-    "manaValue": 4
+    }
   },
   "er-0081": {
     "id": "er-0081",
@@ -2431,13 +2328,12 @@
       "Critter"
     ],
     "limited": true,
+    "battlePower": 3000,
+    "level": 3,
+    "manaValue": 1,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 3000,
-    "effects": [],
-    "level": 3,
-    "manaValue": 3
+    }
   },
   "er-0082": {
     "id": "er-0082",
@@ -2465,13 +2361,12 @@
       "Fey"
     ],
     "limited": true,
+    "battlePower": 7000,
+    "level": 4,
+    "manaValue": 2,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 7000,
-    "effects": [],
-    "level": 4,
-    "manaValue": 2
+    }
   },
   "er-0083": {
     "id": "er-0083",
@@ -2500,13 +2395,12 @@
       "Immortal"
     ],
     "limited": true,
+    "battlePower": 12000,
+    "level": 5,
+    "manaValue": 3,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 12000,
-    "effects": [],
-    "level": 5,
-    "manaValue": 1
+    }
   },
   "er-0084": {
     "id": "er-0084",
@@ -2532,13 +2426,12 @@
       "Adventurer"
     ],
     "limited": true,
+    "battlePower": 3000,
+    "level": 0,
+    "manaValue": 2,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 3000,
-    "effects": [],
-    "level": 0,
-    "manaValue": 2
+    }
   },
   "er-0085": {
     "id": "er-0085",
@@ -2564,13 +2457,12 @@
       "Adventurer"
     ],
     "limited": true,
+    "battlePower": 5000,
+    "level": 1,
+    "manaValue": 3,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 5000,
-    "effects": [],
-    "level": 1,
-    "manaValue": 3
+    }
   },
   "er-0086": {
     "id": "er-0086",
@@ -2597,13 +2489,12 @@
       "Abomination"
     ],
     "limited": true,
+    "battlePower": 8000,
+    "level": 2,
+    "manaValue": 4,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 8000,
-    "effects": [],
-    "level": 2,
-    "manaValue": 4
+    }
   },
   "er-0087": {
     "id": "er-0087",
@@ -2630,13 +2521,12 @@
       "Abomination"
     ],
     "limited": true,
+    "battlePower": 15000,
+    "level": 3,
+    "manaValue": 5,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 15000,
-    "effects": [],
-    "level": 3,
-    "manaValue": 5
+    }
   },
   "er-0088": {
     "id": "er-0088",
@@ -2661,18 +2551,16 @@
     "keywords": [
       "Adventurer",
       "Abomination",
-      "Mythical",
-      "Beast",
+      "Mythical Beast",
       "Serpent"
     ],
     "limited": true,
+    "battlePower": 20000,
+    "level": 4,
+    "manaValue": 5,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 20000,
-    "effects": [],
-    "level": 4,
-    "manaValue": 5
+    }
   },
   "er-0089": {
     "id": "er-0089",
@@ -2697,18 +2585,16 @@
     "keywords": [
       "Adventurer",
       "Abomination",
-      "Mythical",
-      "Beast",
+      "Mythical Beast",
       "Serpent"
     ],
     "limited": true,
+    "battlePower": 28000,
+    "level": 5,
+    "manaValue": 5,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 28000,
-    "effects": [],
-    "level": 5,
-    "manaValue": 5
+    }
   },
   "er-0090": {
     "id": "er-0090",
@@ -2734,13 +2620,12 @@
       "Adventurer"
     ],
     "limited": true,
+    "battlePower": 1000,
+    "level": 0,
+    "manaValue": 1,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 1000,
-    "effects": [],
-    "level": 0,
-    "manaValue": 1
+    }
   },
   "er-0091": {
     "id": "er-0091",
@@ -2767,13 +2652,12 @@
       "Undead"
     ],
     "limited": true,
+    "battlePower": 3000,
+    "level": 1,
+    "manaValue": 1,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 3000,
-    "effects": [],
-    "level": 1,
-    "manaValue": 1
+    }
   },
   "er-0092": {
     "id": "er-0092",
@@ -2801,13 +2685,12 @@
       "Undead"
     ],
     "limited": true,
+    "battlePower": 5000,
+    "level": 2,
+    "manaValue": 1,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 5000,
-    "effects": [],
-    "level": 2,
-    "manaValue": 1
+    }
   },
   "er-0093": {
     "id": "er-0093",
@@ -2835,13 +2718,12 @@
       "Undead"
     ],
     "limited": true,
+    "battlePower": 7000,
+    "level": 3,
+    "manaValue": 1,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 7000,
-    "effects": [],
-    "level": 3,
-    "manaValue": 1
+    }
   },
   "er-0094": {
     "id": "er-0094",
@@ -2869,13 +2751,12 @@
       "Undead"
     ],
     "limited": true,
+    "battlePower": 11000,
+    "level": 4,
+    "manaValue": 1,
     "_legal": {
       "ER_STD": 1
-    },
-    "battlePower": 11000,
-    "effects": [],
-    "level": 4,
-    "manaValue": 1
+    }
   },
   "er-0095": {
     "id": "er-0095",
@@ -2898,19 +2779,395 @@
       "Plasma"
     ],
     "keywords": [
-      "Legendary",
-      "Hero",
+      "Legendary Hero",
       "Machine",
       "Undead"
     ],
     "limited": true,
+    "battlePower": 15000,
+    "level": 5,
+    "manaValue": 1,
     "_legal": {
       "ER_STD": 1
+    }
+  },
+  "er-0096": {
+    "id": "er-0096",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Ymir, Infant in Ginnungagap"
+        },
+        "type": "LV0Leader",
+        "cost": 0,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/94.webp"
+      }
     },
-    "battlePower": 15000,
-    "effects": [],
+    "name": "Ymir, Infant in Ginnungagap",
+    "type": "LV0Leader",
+    "cost": 0,
+    "essence": [
+      "Cold",
+      "Earth",
+      "Spirit"
+    ],
+    "keywords": [
+      "True Divine"
+    ],
+    "limited": true,
+    "battlePower": 1000,
+    "level": 0,
+    "manaValue": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0097": {
+    "id": "er-0097",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Ymir, by Audumla's Grace"
+        },
+        "type": "Leader",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/95.webp"
+      }
+    },
+    "name": "Ymir, by Audumla's Grace",
+    "type": "Leader",
+    "cost": 2,
+    "essence": [
+      "Cold",
+      "Earth",
+      "Spirit"
+    ],
+    "keywords": [
+      "True Divine"
+    ],
+    "limited": true,
+    "battlePower": 10000,
+    "level": 1,
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0098": {
+    "id": "er-0098",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Ymir, the Mighty Old God"
+        },
+        "type": "Leader",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/96.webp"
+      }
+    },
+    "name": "Ymir, the Mighty Old God",
+    "type": "Leader",
+    "cost": 4,
+    "essence": [
+      "Cold",
+      "Earth",
+      "Spirit"
+    ],
+    "keywords": [
+      "True Divine"
+    ],
+    "limited": true,
+    "battlePower": 18000,
+    "level": 2,
+    "manaValue": 5,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0099": {
+    "id": "er-0099",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Ymir, the Fallen"
+        },
+        "type": "Leader",
+        "cost": 7,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/97.webp"
+      }
+    },
+    "name": "Ymir, the Fallen",
+    "type": "Leader",
+    "cost": 7,
+    "essence": [
+      "Cold",
+      "Earth",
+      "Spirit"
+    ],
+    "keywords": [
+      "True Divine"
+    ],
+    "limited": true,
+    "battlePower": 1000,
+    "level": 3,
+    "manaValue": 2,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0100": {
+    "id": "er-0100",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Ymir, the Grave, the World"
+        },
+        "type": "Leader",
+        "cost": 10,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/98.webp"
+      }
+    },
+    "name": "Ymir, the Grave, the World",
+    "type": "Leader",
+    "cost": 10,
+    "essence": [
+      "Cold",
+      "Earth",
+      "Spirit"
+    ],
+    "keywords": [
+      "True Divine"
+    ],
+    "limited": true,
+    "battlePower": 1000,
+    "level": 4,
+    "manaValue": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0101": {
+    "id": "er-0101",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Ymir, Birther of Jotunn"
+        },
+        "type": "Leader",
+        "cost": 14,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/99.webp"
+      }
+    },
+    "name": "Ymir, Birther of Jotunn",
+    "type": "Leader",
+    "cost": 14,
+    "essence": [
+      "Cold",
+      "Earth",
+      "Spirit"
+    ],
+    "keywords": [
+      "True Divine"
+    ],
+    "limited": true,
+    "battlePower": 1000,
     "level": 5,
-    "manaValue": 1
+    "manaValue": 4,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0102": {
+    "id": "er-0102",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Negate Magic"
+        },
+        "type": "Spell",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/100.webp"
+      }
+    },
+    "name": "Negate Magic",
+    "type": "Spell",
+    "cost": 5,
+    "keywords": [
+      "Counterspell"
+    ],
+    "limited": false,
+    "level": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0103": {
+    "id": "er-0103",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Dispell"
+        },
+        "type": "Spell",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/101.webp"
+      }
+    },
+    "name": "Dispell",
+    "type": "Spell",
+    "cost": 5,
+    "keywords": [
+      "Counterspell"
+    ],
+    "limited": false,
+    "level": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0104": {
+    "id": "er-0104",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Disenchant"
+        },
+        "type": "Spell",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/102.webp"
+      }
+    },
+    "name": "Disenchant",
+    "type": "Spell",
+    "cost": 5,
+    "keywords": [
+      "Counterspell"
+    ],
+    "limited": false,
+    "level": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0105": {
+    "id": "er-0105",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Drought and Flood"
+        },
+        "type": "Spell",
+        "cost": 3,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/103.webp"
+      }
+    },
+    "name": "Drought and Flood",
+    "type": "Spell",
+    "cost": 3,
+    "keywords": [
+      "Overspell"
+    ],
+    "limited": true,
+    "level": 5,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0106": {
+    "id": "er-0106",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Give and Take"
+        },
+        "type": "Spell",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/104.webp"
+      }
+    },
+    "name": "Give and Take",
+    "type": "Spell",
+    "cost": 2,
+    "keywords": [
+      "Channeled"
+    ],
+    "limited": false,
+    "level": 1,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0107": {
+    "id": "er-0107",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Shatter"
+        },
+        "type": "Spell",
+        "cost": 6,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/105.webp"
+      }
+    },
+    "name": "Shatter",
+    "type": "Spell",
+    "cost": 6,
+    "keywords": [
+      "Channeled"
+    ],
+    "limited": false,
+    "level": 4,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0108": {
+    "id": "er-0108",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Embrittlement"
+        },
+        "type": "Enchantment",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/106.webp"
+      }
+    },
+    "name": "Embrittlement",
+    "type": "Enchantment",
+    "cost": 1,
+    "keywords": [
+      "Curse"
+    ],
+    "limited": false,
+    "level": 2,
+    "_legal": {
+      "ER_STD": 1
+    }
+  },
+  "er-0109": {
+    "id": "er-0109",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Soulbind"
+        },
+        "type": "Enchantment",
+        "cost": 4,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/107.webp"
+      }
+    },
+    "name": "Soulbind",
+    "type": "Enchantment",
+    "cost": 4,
+    "keywords": [
+      "Buff"
+    ],
+    "limited": false,
+    "level": 3,
+    "_legal": {
+      "ER_STD": 1
+    }
   },
   "er-mana-rune": {
     "id": "er-mana-rune",
@@ -2928,10 +3185,9 @@
     "type": "Mana",
     "cost": 0,
     "limited": false,
+    "manaValue": 0,
     "_legal": {
       "ER_STD": 10
-    },
-    "effects": [],
-    "manaValue": 0
+    }
   }
 }
