@@ -462,13 +462,8 @@
         "initialBoardSetup": [
           {
             "drawFromTop": "ManaRune",
-            "count": 8,
+            "count": 10,
             "destination": "ManaStorage"
-          },
-          {
-            "drawFromTop": "ManaRune",
-            "count": 2,
-            "destination": "Mana"
           }
         ]
       }

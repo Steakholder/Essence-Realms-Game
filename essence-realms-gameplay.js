@@ -21,12 +21,11 @@ async function setupAfterMulligan() {
     // Six cards from the main deck become the Life Zone.
     await functions.draw(6, false, "LifeZone");
 
-    // Mana Rune is a deck category that should begin with exactly 8 cards in
-    // Mana Storage and 2 cards in the Mana Pool. TCGA normally performs the
-    // initial split through initialBoardSetup. If any Mana Runes nevertheless
-    // reached the opening hand, move only enough of them to Storage to bring
-    // Storage up to 8. This prevents the opening hand from stealing Storage
-    // cards while never taking the two starting Mana Pool cards.
+    // Mana Rune cards are all placed into Mana Storage at startup. The special
+    // Mana section then handles the two starting cards that appear in the Mana
+    // Pool, leaving the intended 8 cards in Storage. If any Mana Runes
+    // nevertheless reach the opening hand, move only enough of them to Storage
+    // to restore Storage to 8.
     const storageCount = (cards?.ManaStorage ?? []).length;
     const needed = Math.max(0, 8 - storageCount);
 
