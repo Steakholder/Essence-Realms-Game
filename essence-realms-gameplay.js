@@ -4,11 +4,12 @@
  *
  * PhaseController is a shared custom section in sections.sharedZone.
  * The turn player requests the next phase; the non-turn player approves.
- * No phase can be skipped or revisited.
+ * The phase may only advance one step at a time and never moves backward.
  *
- * TCGA scripts may only modify the current player's cards. Consequently,
- * Untap runs locally on both clients when the global phase reaches Untap;
- * together this untaps every tapped card belonging to BOTH players.
+ * Untap is global in effect: TCGA scripts may only modify the current
+ * player's cards, so each client untaps its own cards when Untap is entered.
+ * Both clients therefore untap their own board, resulting in both boards
+ * being untapped.
  */
 
 const UNIT_SLOTS = [
@@ -118,6 +119,7 @@ async function untapOwnCards() {
             if (card.isTapped) tappedCards.push(card);
         }
     }
+
     if (tappedCards.length > 0) {
         await functions.updateCards(tappedCards, { isTapped: false });
     }
@@ -137,21 +139,19 @@ async function initializePhaseSystem() {
     phase.currentPhase = "UNTAP";
     phase.pendingPhase = null;
     phase.transitionId = 0;
-    phase.approvalId = 0;
     phase.turnCount = game.turn.count;
     phase.effectEpoch = 0;
     phase.initialized = true;
     phase.status = game.turn.isMyTurn
-        ? "Turn player: choose Draw when ready."
+        ? "Turn player: request Draw Phase when ready."
         : "Waiting for the turn player to request Draw Phase.";
 }
 
 async function resetPhaseForNewTurn() {
     const phase = game.data.PhaseController;
-    const state = game.data.GameLogic;
 
-    // Each client untaps its own cards. Since both clients execute this,
-    // the result is a global untap of BOTH players' cards.
+    // Reset the shared phase state only on the active player's client.
+    // Every client independently untaps its own cards.
     await untapOwnCards();
 
     if (!game.turn.isMyTurn) return;
@@ -159,25 +159,23 @@ async function resetPhaseForNewTurn() {
     phase.currentPhase = "UNTAP";
     phase.pendingPhase = null;
     phase.transitionId += 1;
-    phase.approvalId = 0;
     phase.turnCount = game.turn.count;
     phase.effectEpoch += 1;
-    state.phaseEffectEpoch = phase.effectEpoch;
-    phase.status = "Turn player: choose Draw when ready.";
+    phase.status = "Turn player: request Draw Phase when ready.";
 }
 
+// Called directly by the phase buttons. There is intentionally no disabled
+// attribute on the buttons; legality is enforced here instead.
 async function requestPhase(targetPhase) {
     const phase = game.data.PhaseController;
     if (!game.turn.isMyTurn) return;
     if (phase.pendingPhase !== null) return;
 
-    // A request is valid only for the immediate next phase.
     const expected = nextPhaseName(phase.currentPhase);
     if (targetPhase !== expected) return;
 
     phase.pendingPhase = targetPhase;
     phase.transitionId += 1;
-    phase.approvalId = 0;
     phase.status = `Waiting for opponent approval to enter ${phaseLabel(targetPhase)}.`;
 }
 
@@ -185,30 +183,23 @@ async function approvePhase() {
     const phase = game.data.PhaseController;
     if (game.turn.isMyTurn) return;
     if (phase.pendingPhase === null) return;
-    if (phase.approvalId === phase.transitionId) return;
 
-    phase.approvalId = phase.transitionId;
-    phase.status = `Approved ${phaseLabel(phase.pendingPhase)}.`;
+    // Approval is the only action the non-turn player can take.
+    const target = phase.pendingPhase;
+    if (target !== nextPhaseName(phase.currentPhase)) return;
+
+    phase.currentPhase = target;
+    phase.pendingPhase = null;
+    phase.transitionId += 1;
+    phase.effectEpoch += 1;
+    phase.status = target === "END"
+        ? "End Phase. Turn player may end the turn when ready."
+        : `Entered ${phaseLabel(target)}.`;
 }
 
 async function processPhaseUpdate() {
     const phase = game.data.PhaseController;
     if (!phase.initialized) return;
-
-    // Only the turn player resolves an approved transition.
-    if (phase.pendingPhase !== null &&
-        phase.approvalId === phase.transitionId &&
-        game.turn.isMyTurn) {
-        const next = phase.pendingPhase;
-        phase.currentPhase = next;
-        phase.pendingPhase = null;
-        phase.approvalId = 0;
-        phase.effectEpoch += 1;
-        phase.status = next === "END"
-            ? "End Phase reached. End your turn when ready."
-            : `Entered ${phaseLabel(next)}. Choose the next phase when ready.`;
-    }
-
     await processLocalPhaseEffect();
 }
 
@@ -232,5 +223,6 @@ async function processLocalPhaseEffect() {
 }
 
 async function handleNewTurn() {
-    // Native new-turn draw is disabled. Phase actions are handled above.
+    // Native new-turn draw is disabled. Phase actions are handled by the
+    // PhaseController instead.
 }

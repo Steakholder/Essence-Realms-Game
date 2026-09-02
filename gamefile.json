@@ -103,7 +103,7 @@
                   "direction": "column",
                   "style": {
                     "width": "5%",
-                    "gap": "0.8vh",
+                    "gap": "0.6vh",
                     "boxSizing": "border-box"
                   },
                   "content": [
@@ -116,7 +116,7 @@
                     {
                       "section": "ManaStorage",
                       "style": {
-                        "marginTop": "2.0vh"
+                        "marginTop": "-1vh"
                       }
                     }
                   ]
@@ -126,7 +126,7 @@
                   "style": {
                     "flex": "1 1 0",
                     "minWidth": "0",
-                    "gap": "0.8vh",
+                    "gap": "0.55vh",
                     "boxSizing": "border-box"
                   },
                   "content": [
@@ -209,7 +209,9 @@
                     },
                     {
                       "section": "Mana",
-                      "style": {}
+                      "style": {
+                        "marginTop": "-4vh"
+                      }
                     }
                   ]
                 },
@@ -217,7 +219,7 @@
                   "direction": "column",
                   "style": {
                     "width": "5%",
-                    "gap": "0.8vh",
+                    "gap": "0.6vh",
                     "boxSizing": "border-box"
                   },
                   "content": [
@@ -225,7 +227,10 @@
                       "section": "Banishment"
                     },
                     {
-                      "section": "Discard"
+                      "section": "Discard",
+                      "style": {
+                        "marginTop": "-6vh"
+                      }
                     }
                   ]
                 }
@@ -485,13 +490,13 @@
                   "alignItems": "center",
                   "justifyContent": "center",
                   "gap": "0.45vh",
-                  "padding": "0.55vh 1vw",
+                  "padding": "0.35vh 0.8vw",
                   "background": "rgba(0,0,0,0.72)",
                   "border": "1px solid rgba(255,255,255,0.28)",
                   "borderRadius": "0.55vh",
                   "boxSizing": "border-box",
-                  "width": "min(58vw, 900px)",
-                  "minHeight": "8vh"
+                  "width": "min(52vw, 820px)",
+                  "minHeight": "6vh"
                 }
               },
               "children": [
@@ -503,7 +508,7 @@
                       "alignItems": "center",
                       "gap": "0.7vw",
                       "fontWeight": "bold",
-                      "fontSize": "1.05em"
+                      "fontSize": "0.95em"
                     }
                   },
                   "children": [
@@ -532,42 +537,27 @@
                     {
                       "type": "button",
                       "children": "Untap",
-                      "props": {
-                        "disabled": "{{ game.data.PhaseController.currentPhase !== 'UNTAP' || !game.turn.isMyTurn || game.data.PhaseController.pendingPhase !== null }}"
-                      },
-                      "onClick": "await requestNextPhase()"
+                      "onClick": "await requestPhase(\"UNTAP\")"
                     },
                     {
                       "type": "button",
                       "children": "Draw",
-                      "props": {
-                        "disabled": "{{ game.data.PhaseController.currentPhase !== 'DRAW' || !game.turn.isMyTurn || game.data.PhaseController.pendingPhase !== null }}"
-                      },
-                      "onClick": "await requestNextPhase()"
+                      "onClick": "await requestPhase(\"DRAW\")"
                     },
                     {
                       "type": "button",
                       "children": "Summon",
-                      "props": {
-                        "disabled": "{{ game.data.PhaseController.currentPhase !== 'SUMMON' || !game.turn.isMyTurn || game.data.PhaseController.pendingPhase !== null }}"
-                      },
-                      "onClick": "await requestNextPhase()"
+                      "onClick": "await requestPhase(\"SUMMON\")"
                     },
                     {
                       "type": "button",
                       "children": "Combat",
-                      "props": {
-                        "disabled": "{{ game.data.PhaseController.currentPhase !== 'COMBAT' || !game.turn.isMyTurn || game.data.PhaseController.pendingPhase !== null }}"
-                      },
-                      "onClick": "await requestNextPhase()"
+                      "onClick": "await requestPhase(\"COMBAT\")"
                     },
                     {
                       "type": "button",
                       "children": "End",
-                      "props": {
-                        "disabled": "{{ game.data.PhaseController.currentPhase !== 'END' || !game.turn.isMyTurn || game.data.PhaseController.pendingPhase !== null }}"
-                      },
-                      "onClick": "await requestNextPhase()"
+                      "onClick": "await requestPhase(\"END\")"
                     }
                   ]
                 },
@@ -575,7 +565,7 @@
                   "type": "div",
                   "props": {
                     "style": {
-                      "fontSize": "0.82em",
+                      "fontSize": "0.75em",
                       "opacity": "0.82"
                     }
                   },
@@ -616,7 +606,7 @@
           }
         },
         "sharedZone": {
-          "height": 12,
+          "height": 7,
           "layout": {
             "direction": "row",
             "style": {
