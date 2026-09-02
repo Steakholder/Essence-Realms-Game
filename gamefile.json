@@ -294,6 +294,9 @@
             "isGroupForbidden": false,
             "drawDestinations": {
               "ManaRune": "Mana"
+            },
+            "autoPlayFromHand": {
+              "_default": "Mana"
             }
           },
           "ActiveUnitZone": {
@@ -362,7 +365,8 @@
             "type": "custom",
             "defaultValue": {
               "startupSetupDone": false,
-              "firstTurnCompleted": false
+              "firstTurnCompleted": false,
+              "startingManaSetupDone": false
             },
             "blueprint": {
               "type": "div",
@@ -376,7 +380,8 @@
             "events": {
               "onPlayersMulligan": "await setupAfterMulligan()",
               "onNewTurn": "await handleNewTurn()",
-              "onCardsUpdate": "await arrangeUnitSlots()"
+              "onCardsUpdate": "await arrangeUnitSlots()",
+              "onPlayersReady": "await setupStartingMana()"
             }
           },
           "Mana": {

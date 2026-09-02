@@ -1,8 +1,14 @@
 /*
  * Essence Realms - TCGA gameplay logic
  *
- * The Active Unit Zone is six real, aligned card sections. Slot 1 keeps the
- * original ActiveUnitZone name so existing auto-play destinations remain valid.
+ * Starting Mana flow:
+ *   1. TCGA puts all 10 Mana Runes into ManaStorage before the game starts.
+ *   2. After every player finishes all pre-game steps, the top 2 Mana Runes
+ *      are moved from ManaStorage into the special Mana section.
+ *   3. This leaves exactly 8 Mana Runes in ManaStorage and 2 Mana in the pool.
+ *
+ * ManaStorage also uses its native extra-deck click destination so a Mana Rune
+ * clicked from Storage goes directly into the Mana pool.
  */
 
 const UNIT_SLOTS = [
@@ -18,33 +24,29 @@ async function setupAfterMulligan() {
     const state = game.data.GameLogic;
     if (state.startupSetupDone) return;
 
-    // Six cards from the main deck become the Life Zone.
+    // Six cards from the main deck become the Life Zone after mulligan.
     await functions.draw(6, false, "LifeZone");
-
-    // All 10 Mana Runes begin in Mana Storage. TCGA does not automatically
-    // move the two starting Mana cards from this custom storage pile into the
-    // special Mana section, so do that explicitly here. This leaves exactly
-    // 8 Mana Runes in Storage and 2 in the Mana Pool before the first turn.
-    if ((cards?.ManaStorage ?? []).length >= 2) {
-        await functions.drawFromExtraDeck("ManaStorage", 2, false, "Mana");
-    }
-
-    // If any Mana Runes nevertheless reach the opening hand, move only enough
-    // of them to Storage to restore Storage to 8.
-    const storageCount = (cards?.ManaStorage ?? []).length;
-    const needed = Math.max(0, 8 - storageCount);
-
-    if (needed > 0) {
-        const handMana = (cards?.Hand ?? []).filter(card =>
-            functions.getCardData(card)?.type === "ManaRune"
-        );
-
-        for (let i = 0; i < Math.min(needed, handMana.length); i++) {
-            await functions.moveCard(handMana[i], "ManaStorage", { noLogs: true });
-        }
-    }
-
     state.startupSetupDone = true;
+}
+
+async function setupStartingMana() {
+    const state = game.data.GameLogic;
+    if (state.startingManaSetupDone) return;
+
+    const manaInPool = (cards?.Mana ?? []).length;
+    const manaNeeded = Math.max(0, 2 - manaInPool);
+    if (manaNeeded === 0) {
+        state.startingManaSetupDone = true;
+        return;
+    }
+
+    const storage = cards?.ManaStorage ?? [];
+    if (storage.length < manaNeeded) return;
+
+    // cards arrays are ordered with the top of a deck-like section at the end.
+    const topMana = storage.slice(-manaNeeded);
+    await functions.moveCards(topMana, "Mana");
+    state.startingManaSetupDone = true;
 }
 
 async function arrangeUnitSlots() {
@@ -62,9 +64,6 @@ async function arrangeUnitSlots() {
 
     if (units.length === 0) return;
 
-    // If the six slots already contain at most one Unit each, nothing needs
-    // to happen. This check is important because this function is triggered
-    // by onCardsUpdate and must not move cards on every board update.
     const alreadySeparated = slotCards.every(slot => {
         const unitCount = slot.filter(card => functions.getCardData(card)?.type === "Unit").length;
         return unitCount <= 1;
@@ -74,14 +73,10 @@ async function arrangeUnitSlots() {
     state.unitSlotsBusy = true;
     try {
         const unitIds = units.map(card => card.id);
-
-        // Temporarily gather the affected Units in Hand so that occupied
-        // slots cannot collide while we redistribute them.
         for (const card of units) {
             await functions.moveCard(card, "Hand", { noLogs: true });
         }
 
-        // Re-read Hand after the moves to get current card objects.
         const handUnits = [];
         for (const card of (cards?.Hand ?? [])) {
             if (unitIds.includes(card.id) && functions.getCardData(card)?.type === "Unit") {
@@ -89,8 +84,6 @@ async function arrangeUnitSlots() {
             }
         }
 
-        // Place at most six Units into the six slots. Any additional Unit
-        // remains in Hand, enforcing the six-Unit control limit.
         for (let i = 0; i < Math.min(handUnits.length, UNIT_SLOTS.length); i++) {
             await functions.moveCard(handUnits[i], UNIT_SLOTS[i], { noLogs: true });
         }
@@ -120,9 +113,7 @@ async function handleNewTurn() {
 
     const state = game.data.GameLogic;
 
-    // game.turn.count is global across players, so it cannot reliably be used
-    // to identify a player's first turn. Track that locally instead. Each
-    // player skips the Mana Pool transfer and draw on their own first turn.
+    // Each player's first turn skips both the normal draw and Mana transfer.
     if (!state.firstTurnCompleted) {
         state.firstTurnCompleted = true;
         return;
