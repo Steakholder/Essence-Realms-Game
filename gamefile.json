@@ -504,8 +504,8 @@
                   "boxSizing": "border-box",
                   "width": "min(52vw, 820px)",
                   "minHeight": "0",
-                  "height": "6.4vh",
-                  "maxHeight": "6.4vh"
+                  "height": "8vh",
+                  "maxHeight": "8vh"
                 }
               },
               "children": [
@@ -615,7 +615,7 @@
           }
         },
         "sharedZone": {
-          "height": 7.2,
+          "height": 10,
           "layout": {
             "direction": "row",
             "style": {
