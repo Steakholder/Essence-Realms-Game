@@ -21,11 +21,16 @@ async function setupAfterMulligan() {
     // Six cards from the main deck become the Life Zone.
     await functions.draw(6, false, "LifeZone");
 
-    // Mana Rune cards are all placed into Mana Storage at startup. The special
-    // Mana section then handles the two starting cards that appear in the Mana
-    // Pool, leaving the intended 8 cards in Storage. If any Mana Runes
-    // nevertheless reach the opening hand, move only enough of them to Storage
-    // to restore Storage to 8.
+    // All 10 Mana Runes begin in Mana Storage. TCGA does not automatically
+    // move the two starting Mana cards from this custom storage pile into the
+    // special Mana section, so do that explicitly here. This leaves exactly
+    // 8 Mana Runes in Storage and 2 in the Mana Pool before the first turn.
+    if ((cards?.ManaStorage ?? []).length >= 2) {
+        await functions.drawFromExtraDeck("ManaStorage", 2, false, "Mana");
+    }
+
+    // If any Mana Runes nevertheless reach the opening hand, move only enough
+    // of them to Storage to restore Storage to 8.
     const storageCount = (cards?.ManaStorage ?? []).length;
     const needed = Math.max(0, 8 - storageCount);
 
