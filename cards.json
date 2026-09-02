@@ -3189,5 +3189,125 @@
     "_legal": {
       "ER_STD": 10
     }
+  },
+  "er-0110": {
+    "id": "er-0110",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mana Drought"
+        },
+        "type": "Spell",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/108.webp"
+      }
+    },
+    "name": "Mana Drought",
+    "type": "Spell",
+    "cost": 1,
+    "keywords": [
+      "Counterspell"
+    ],
+    "limited": false,
+    "level": 0,
+    "_legal": {
+      "ER_STD": true
+    }
+  },
+  "er-0111": {
+    "id": "er-0111",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mana Flood"
+        },
+        "type": "Spell",
+        "cost": 1,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/109.webp"
+      }
+    },
+    "name": "Mana Flood",
+    "type": "Spell",
+    "cost": 1,
+    "keywords": [
+      "Channeled"
+    ],
+    "limited": false,
+    "level": 0,
+    "_legal": {
+      "ER_STD": true
+    }
+  },
+  "er-0112": {
+    "id": "er-0112",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Curse of Sword"
+        },
+        "type": "Enchantment",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/110.webp"
+      }
+    },
+    "name": "Curse of Sword",
+    "type": "Enchantment",
+    "cost": 2,
+    "keywords": [
+      "Curse"
+    ],
+    "limited": false,
+    "level": 3,
+    "_legal": {
+      "ER_STD": true
+    }
+  },
+  "er-0113": {
+    "id": "er-0113",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Curse of Shield"
+        },
+        "type": "Enchantment",
+        "cost": 2,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/111.webp"
+      }
+    },
+    "name": "Curse of Shield",
+    "type": "Enchantment",
+    "cost": 2,
+    "keywords": [
+      "Curse"
+    ],
+    "limited": false,
+    "level": 3,
+    "_legal": {
+      "ER_STD": true
+    }
+  },
+  "er-0114": {
+    "id": "er-0114",
+    "face": {
+      "front": {
+        "name": {
+          "name": "Mana Disruption Zone"
+        },
+        "type": "Spell",
+        "cost": 5,
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/112.webp"
+      }
+    },
+    "name": "Mana Disruption Zone",
+    "type": "Spell",
+    "cost": 5,
+    "keywords": [
+      "Channeled"
+    ],
+    "limited": true,
+    "level": 4,
+    "_legal": {
+      "ER_STD": 1
+    }
   }
 }
