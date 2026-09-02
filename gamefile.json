@@ -131,15 +131,81 @@
                   },
                   "content": [
                     {
-                      "section": "ActiveUnitZone",
+                      "direction": "row",
                       "style": {
-                        "width": "72vh",
+                        "width": "100%",
                         "height": "16vh",
-                        "boxSizing": "border-box",
-                        "backgroundImage": "repeating-linear-gradient(to right, rgba(255,255,255,0.10) 0, rgba(255,255,255,0.10) 1px, transparent 1px, transparent 16.6667%)",
-                        "border": "1px solid rgba(255,255,255,0.18)",
-                        "borderRadius": "0.4vh"
-                      }
+                        "gap": "0.55vw",
+                        "boxSizing": "border-box"
+                      },
+                      "content": [
+                        {
+                          "section": "ActiveUnitZone",
+                          "style": {
+                            "flex": "1 1 0",
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "16vh",
+                            "border": "1px solid rgba(255,255,255,0.22)",
+                            "borderRadius": "0.4vh"
+                          }
+                        },
+                        {
+                          "section": "ActiveUnit2",
+                          "style": {
+                            "flex": "1 1 0",
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "16vh",
+                            "border": "1px solid rgba(255,255,255,0.22)",
+                            "borderRadius": "0.4vh"
+                          }
+                        },
+                        {
+                          "section": "ActiveUnit3",
+                          "style": {
+                            "flex": "1 1 0",
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "16vh",
+                            "border": "1px solid rgba(255,255,255,0.22)",
+                            "borderRadius": "0.4vh"
+                          }
+                        },
+                        {
+                          "section": "ActiveUnit4",
+                          "style": {
+                            "flex": "1 1 0",
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "16vh",
+                            "border": "1px solid rgba(255,255,255,0.22)",
+                            "borderRadius": "0.4vh"
+                          }
+                        },
+                        {
+                          "section": "ActiveUnit5",
+                          "style": {
+                            "flex": "1 1 0",
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "16vh",
+                            "border": "1px solid rgba(255,255,255,0.22)",
+                            "borderRadius": "0.4vh"
+                          }
+                        },
+                        {
+                          "section": "ActiveUnit6",
+                          "style": {
+                            "flex": "1 1 0",
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "16vh",
+                            "border": "1px solid rgba(255,255,255,0.22)",
+                            "borderRadius": "0.4vh"
+                          }
+                        }
+                      ]
                     },
                     {
                       "section": "Mana",
@@ -234,12 +300,12 @@
             "isHidden": "no",
             "height": "16",
             "alignment": "CENTER",
-            "displayedTitle": "Active Unit Zone — 6 Slots",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
             "keepTappedNewTurn": false,
-            "isGroupForbidden": true
+            "isGroupForbidden": true,
+            "displayedTitle": "Unit 1"
           },
           "Banishment": {
             "isHidden": "no",
@@ -309,7 +375,7 @@
             "events": {
               "onPlayersMulligan": "await setupAfterMulligan()",
               "onNewTurn": "await handleNewTurn()",
-              "onPlayersDeckPicked": "await validateEssenceDeck()"
+              "onCardsUpdate": "await arrangeUnitSlots()"
             }
           },
           "Mana": {
@@ -333,8 +399,77 @@
             "enterTapped": false,
             "keepTappedNewTurn": false,
             "isGroupForbidden": false
+          },
+          "ActiveUnit2": {
+            "isHidden": "no",
+            "height": "16",
+            "alignment": "CENTER",
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": true,
+            "displayedTitle": "Unit 2"
+          },
+          "ActiveUnit3": {
+            "isHidden": "no",
+            "height": "16",
+            "alignment": "CENTER",
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": true,
+            "displayedTitle": "Unit 3"
+          },
+          "ActiveUnit4": {
+            "isHidden": "no",
+            "height": "16",
+            "alignment": "CENTER",
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": true,
+            "displayedTitle": "Unit 4"
+          },
+          "ActiveUnit5": {
+            "isHidden": "no",
+            "height": "16",
+            "alignment": "CENTER",
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": true,
+            "displayedTitle": "Unit 5"
+          },
+          "ActiveUnit6": {
+            "isHidden": "no",
+            "height": "16",
+            "alignment": "CENTER",
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": true,
+            "displayedTitle": "Unit 6"
           }
         }
+      },
+      "beforeGameStart": {
+        "initialBoardSetup": [
+          {
+            "drawFromTop": "ManaRune",
+            "count": 8,
+            "destination": "ManaStorage"
+          },
+          {
+            "drawFromTop": "ManaRune",
+            "count": 2,
+            "destination": "Mana"
+          }
+        ]
       }
     }
   },
