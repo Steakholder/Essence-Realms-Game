@@ -8,7 +8,7 @@
         },
         "type": "LV0Leader",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/00.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/000.webp"
       }
     },
     "name": "Mara, the Sinister Cherub",
@@ -40,7 +40,7 @@
         },
         "type": "Leader",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/01.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/001.webp"
       }
     },
     "name": "Mara, the Cult Figure",
@@ -72,7 +72,7 @@
         },
         "type": "Leader",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/02.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/002.webp"
       }
     },
     "name": "Mara, the Shining Charlatan",
@@ -104,7 +104,7 @@
         },
         "type": "Leader",
         "cost": 9,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/03.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/003.webp"
       }
     },
     "name": "Mara, the Twilight Priest",
@@ -136,7 +136,7 @@
         },
         "type": "Leader",
         "cost": 13,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/04.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/004.webp"
       }
     },
     "name": "Mara, the False Prophet",
@@ -168,7 +168,7 @@
         },
         "type": "Leader",
         "cost": 18,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/05.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/005.webp"
       }
     },
     "name": "Mara, the Divine Impersonator",
@@ -201,7 +201,7 @@
         },
         "type": "Spell",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/06.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/006.webp"
       }
     },
     "name": "Devilish Bounty",
@@ -225,7 +225,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/07.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/007.webp"
       }
     },
     "name": "Shadow Baby",
@@ -254,7 +254,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/08.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/008.webp"
       }
     },
     "name": "Sprouting Seedling",
@@ -283,7 +283,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/09.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/009.webp"
       }
     },
     "name": "Shine Cluster",
@@ -312,7 +312,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/10.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/010.webp"
       }
     },
     "name": "Roe Clump",
@@ -341,7 +341,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/11.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/011.webp"
       }
     },
     "name": "Blown Dandelion",
@@ -370,7 +370,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/12.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/012.webp"
       }
     },
     "name": "Torchbearer",
@@ -399,7 +399,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/13.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/013.webp"
       }
     },
     "name": "Fungal Spore",
@@ -428,7 +428,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/14.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/014.webp"
       }
     },
     "name": "Bacteria X",
@@ -457,7 +457,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/15.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/015.webp"
       }
     },
     "name": "Twin Worm",
@@ -486,7 +486,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/16.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/016.webp"
       }
     },
     "name": "Mimic Coin",
@@ -515,7 +515,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/17.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/017.webp"
       }
     },
     "name": "Imaginary Fiend",
@@ -544,7 +544,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/18.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/018.webp"
       }
     },
     "name": "The Abominable Snowball",
@@ -573,7 +573,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/19.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/019.webp"
       }
     },
     "name": "Static Puff",
@@ -602,7 +602,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/20.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/020.webp"
       }
     },
     "name": "Will o’ Wisp",
@@ -631,7 +631,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/21.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/021.webp"
       }
     },
     "name": "Mana Sprite",
@@ -660,7 +660,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/22.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/022.webp"
       }
     },
     "name": "Shade Slime",
@@ -689,7 +689,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/23.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/023.webp"
       }
     },
     "name": "Algae Slime",
@@ -718,7 +718,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/24.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/024.webp"
       }
     },
     "name": "Bright Slime",
@@ -747,7 +747,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/25.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/025.webp"
       }
     },
     "name": "Fishbowl Slime",
@@ -776,7 +776,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/26.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/026.webp"
       }
     },
     "name": "Float Slime",
@@ -805,7 +805,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/27.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/027.webp"
       }
     },
     "name": "Magma Slime",
@@ -834,7 +834,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/28.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/028.webp"
       }
     },
     "name": "Skull Slime",
@@ -863,7 +863,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/29.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/029.webp"
       }
     },
     "name": "Smog Slime",
@@ -892,7 +892,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/30.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/030.webp"
       }
     },
     "name": "Tar Slime",
@@ -921,7 +921,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/31.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/031.webp"
       }
     },
     "name": "Mercury Slime",
@@ -950,7 +950,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/32.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/032.webp"
       }
     },
     "name": "Brain Slime",
@@ -979,7 +979,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/33.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/033.webp"
       }
     },
     "name": "Snowball Slime",
@@ -1008,7 +1008,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/34.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/034.webp"
       }
     },
     "name": "Shock Slime",
@@ -1037,7 +1037,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/35.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/035.webp"
       }
     },
     "name": "Spectral Slime",
@@ -1066,7 +1066,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/36.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/036.webp"
       }
     },
     "name": "Mana Slime",
@@ -1095,7 +1095,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/37.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/037.webp"
       }
     },
     "name": "Froggy Ninpo",
@@ -1125,7 +1125,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/38.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/038.webp"
       }
     },
     "name": "Froggy Ficus",
@@ -1155,7 +1155,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/39.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/039.webp"
       }
     },
     "name": "Froggy Photon",
@@ -1186,7 +1186,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/40.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/040.webp"
       }
     },
     "name": "Froggy Frog",
@@ -1215,7 +1215,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/41.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/041.webp"
       }
     },
     "name": "Froggy Flutter",
@@ -1246,7 +1246,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/42.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/042.webp"
       }
     },
     "name": "Froggy Flare",
@@ -1276,7 +1276,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/43.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/043.webp"
       }
     },
     "name": "Froggy Vampire",
@@ -1308,7 +1308,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/44.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/044.webp"
       }
     },
     "name": "Froggy C-4rog",
@@ -1338,7 +1338,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/45.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/045.webp"
       }
     },
     "name": "Froggy Mudskipper",
@@ -1368,7 +1368,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/46.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/046.webp"
       }
     },
     "name": "Froggy Gizmo",
@@ -1398,7 +1398,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/47.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/047.webp"
       }
     },
     "name": "Froggy Medium",
@@ -1428,7 +1428,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/48.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/048.webp"
       }
     },
     "name": "Froggy Freeze",
@@ -1458,7 +1458,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/49.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/049.webp"
       }
     },
     "name": "Froggy Thunder",
@@ -1489,7 +1489,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/50.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/050.webp"
       }
     },
     "name": "Froggy Phantom",
@@ -1520,7 +1520,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/51.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/051.webp"
       }
     },
     "name": "Froggy Familiar",
@@ -1551,7 +1551,7 @@
         },
         "type": "Enchantment",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/52.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/052.webp"
       }
     },
     "name": "Risks and Rewards",
@@ -1575,7 +1575,7 @@
         },
         "type": "Spell",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/53.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/053.webp"
       }
     },
     "name": "Binding Spell",
@@ -1599,7 +1599,7 @@
         },
         "type": "Enchantment",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/54.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/054.webp"
       }
     },
     "name": "Monsterous Rush",
@@ -1623,7 +1623,7 @@
         },
         "type": "Enchantment",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/55.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/055.webp"
       }
     },
     "name": "Deadly Hex",
@@ -1647,7 +1647,7 @@
         },
         "type": "Enchantment",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/56.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/056.webp"
       }
     },
     "name": "Double Tap",
@@ -1671,7 +1671,7 @@
         },
         "type": "Spell",
         "cost": 6,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/57.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/057.webp"
       }
     },
     "name": "Energy Surge",
@@ -1695,7 +1695,7 @@
         },
         "type": "Spell",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/58.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/058.webp"
       }
     },
     "name": "Frenzy Wave",
@@ -1719,7 +1719,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/59.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/059.webp"
       }
     },
     "name": "Planted Plant",
@@ -1750,7 +1750,7 @@
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/60.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/060.webp"
       }
     },
     "name": "Evilslayer Magician",
@@ -1782,7 +1782,7 @@
         },
         "type": "Unit",
         "cost": 6,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/61.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/061.webp"
       }
     },
     "name": "Shimmer Wing",
@@ -1812,7 +1812,7 @@
         },
         "type": "Unit",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/62.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/062.webp"
       }
     },
     "name": "Leaf Glider",
@@ -1843,7 +1843,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/63.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/063.webp"
       }
     },
     "name": "Beleaver",
@@ -1873,7 +1873,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/64.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/064.webp"
       }
     },
     "name": "Hunting Foxtail",
@@ -1903,7 +1903,7 @@
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/65.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/065.webp"
       }
     },
     "name": "Bristle Boar",
@@ -1932,7 +1932,7 @@
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/66.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/066.webp"
       }
     },
     "name": "Beleaver Dam",
@@ -1962,7 +1962,7 @@
         },
         "type": "Unit",
         "cost": 6,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/67.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/067.webp"
       }
     },
     "name": "Tree Rutter",
@@ -1991,7 +1991,7 @@
         },
         "type": "Unit",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/68.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/068.webp"
       }
     },
     "name": "Deki, the Imp",
@@ -2020,7 +2020,7 @@
         },
         "type": "Unit",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/69.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/069.webp"
       }
     },
     "name": "Deki, the Fiendish Soldier",
@@ -2049,7 +2049,7 @@
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/70.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/070.webp"
       }
     },
     "name": "Deki, the Fiendish Archduke",
@@ -2078,7 +2078,7 @@
         },
         "type": "Unit",
         "cost": 6,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/71.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/071.webp"
       }
     },
     "name": "Deki, the Fiend Lord",
@@ -2107,7 +2107,7 @@
         },
         "type": "Unit",
         "cost": 8,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/72.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/072.webp"
       }
     },
     "name": "Deki, the True Majin",
@@ -2136,7 +2136,7 @@
         },
         "type": "Unit",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/73.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/073.webp"
       }
     },
     "name": "Shine Bird",
@@ -2166,7 +2166,7 @@
         },
         "type": "Unit",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/74.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/074.webp"
       }
     },
     "name": "Glare Hawk",
@@ -2196,7 +2196,7 @@
         },
         "type": "Enchantment",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/75.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/075.webp"
       }
     },
     "name": "Adaptive Changeling",
@@ -2220,7 +2220,7 @@
         },
         "type": "LV0Leader",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/76.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/076.webp"
       }
     },
     "name": "Froggy Elementova",
@@ -2251,7 +2251,7 @@
         },
         "type": "Leader",
         "cost": 1,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/77.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/077.webp"
       }
     },
     "name": "Froggy Elementadpole",
@@ -2282,7 +2282,7 @@
         },
         "type": "Leader",
         "cost": 3,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/78.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/078.webp"
       }
     },
     "name": "Froggy Elementamoph",
@@ -2313,7 +2313,7 @@
         },
         "type": "Leader",
         "cost": 6,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/79.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/079.webp"
       }
     },
     "name": "Froggy Elementoad",
@@ -2344,7 +2344,7 @@
         },
         "type": "Leader",
         "cost": 10,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/80.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/080.webp"
       }
     },
     "name": "Froggy Eldelementoad",
@@ -2377,7 +2377,7 @@
         },
         "type": "Leader",
         "cost": 15,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/81.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/081.webp"
       }
     },
     "name": "Froggy Eldomegelementoad",
@@ -2411,7 +2411,7 @@
         },
         "type": "LV0Leader",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/82.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/082.webp"
       }
     },
     "name": "Shigekira, the Nefarious Gift",
@@ -2442,7 +2442,7 @@
         },
         "type": "Leader",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/83.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/083.webp"
       }
     },
     "name": "Shigekira, the Test Subject",
@@ -2473,7 +2473,7 @@
         },
         "type": "Leader",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/84.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/084.webp"
       }
     },
     "name": "Shigekira, the Rampaging Patient",
@@ -2505,7 +2505,7 @@
         },
         "type": "Leader",
         "cost": 9,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/85.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/085.webp"
       }
     },
     "name": "Shigekira, the Growing Influence",
@@ -2537,7 +2537,7 @@
         },
         "type": "Leader",
         "cost": 14,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/86.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/086.webp"
       }
     },
     "name": "Shigekira, the Serpent Whispering",
@@ -2571,7 +2571,7 @@
         },
         "type": "Leader",
         "cost": 20,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/87.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/087.webp"
       }
     },
     "name": "Shigekira, the Oroborus Consumed",
@@ -2605,7 +2605,7 @@
         },
         "type": "LV0Leader",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/88.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/088.webp"
       }
     },
     "name": "Young Georgie, Before the Zomborgs",
@@ -2636,7 +2636,7 @@
         },
         "type": "Leader",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/89.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/089.webp"
       }
     },
     "name": "George the Infected, Edge of Zomborgs",
@@ -2668,7 +2668,7 @@
         },
         "type": "Leader",
         "cost": 5,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/90.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/090.webp"
       }
     },
     "name": "Dr. Romero, Zomborg Patient Zero",
@@ -2701,7 +2701,7 @@
         },
         "type": "Leader",
         "cost": 9,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/91.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/091.webp"
       }
     },
     "name": "Dr. Romero, the Zomborg Factory",
@@ -2734,7 +2734,7 @@
         },
         "type": "Leader",
         "cost": 14,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/92.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/092.webp"
       }
     },
     "name": "Dr. Romero, the Zomborg General",
@@ -2767,7 +2767,7 @@
         },
         "type": "Leader",
         "cost": 20,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/93.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/093.webp"
       }
     },
     "name": "Dr. Zomborg, the Era of Eternal Unlife",
@@ -2800,7 +2800,7 @@
         },
         "type": "LV0Leader",
         "cost": 0,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/94.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/094.webp"
       }
     },
     "name": "Ymir, Infant in Ginnungagap",
@@ -2831,7 +2831,7 @@
         },
         "type": "Leader",
         "cost": 2,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/95.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/095.webp"
       }
     },
     "name": "Ymir, by Audumla's Grace",
@@ -2862,7 +2862,7 @@
         },
         "type": "Leader",
         "cost": 4,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/96.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/096.webp"
       }
     },
     "name": "Ymir, the Mighty Old God",
@@ -2893,7 +2893,7 @@
         },
         "type": "Leader",
         "cost": 7,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/97.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/097.webp"
       }
     },
     "name": "Ymir, the Fallen",
@@ -2924,7 +2924,7 @@
         },
         "type": "Leader",
         "cost": 10,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/98.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/098.webp"
       }
     },
     "name": "Ymir, the Grave, the World",
@@ -2955,7 +2955,7 @@
         },
         "type": "Leader",
         "cost": 14,
-        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/99.webp"
+        "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/099.webp"
       }
     },
     "name": "Ymir, Birther of Jotunn",
