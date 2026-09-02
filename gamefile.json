@@ -116,7 +116,7 @@
                     {
                       "section": "ManaStorage",
                       "style": {
-                        "marginTop": "-1vh"
+                        "marginTop": "-1.5vh"
                       }
                     }
                   ]
@@ -135,74 +135,81 @@
                       "style": {
                         "width": "100%",
                         "height": "16vh",
-                        "gap": "0.55vw",
-                        "boxSizing": "border-box"
+                        "gap": "0.7vw",
+                        "boxSizing": "border-box",
+                        "justifyContent": "center"
                       },
                       "content": [
                         {
                           "section": "ActiveUnitZone",
                           "style": {
-                            "flex": "1 1 0",
+                            "flex": "0 0 13%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "16vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh"
+                            "borderRadius": "0.4vh",
+                            "width": "13%"
                           }
                         },
                         {
                           "section": "ActiveUnit2",
                           "style": {
-                            "flex": "1 1 0",
+                            "flex": "0 0 13%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "16vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh"
+                            "borderRadius": "0.4vh",
+                            "width": "13%"
                           }
                         },
                         {
                           "section": "ActiveUnit3",
                           "style": {
-                            "flex": "1 1 0",
+                            "flex": "0 0 13%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "16vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh"
+                            "borderRadius": "0.4vh",
+                            "width": "13%"
                           }
                         },
                         {
                           "section": "ActiveUnit4",
                           "style": {
-                            "flex": "1 1 0",
+                            "flex": "0 0 13%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "16vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh"
+                            "borderRadius": "0.4vh",
+                            "width": "13%"
                           }
                         },
                         {
                           "section": "ActiveUnit5",
                           "style": {
-                            "flex": "1 1 0",
+                            "flex": "0 0 13%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "16vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh"
+                            "borderRadius": "0.4vh",
+                            "width": "13%"
                           }
                         },
                         {
                           "section": "ActiveUnit6",
                           "style": {
-                            "flex": "1 1 0",
+                            "flex": "0 0 13%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "16vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh"
+                            "borderRadius": "0.4vh",
+                            "width": "13%"
                           }
                         }
                       ]
@@ -210,7 +217,7 @@
                     {
                       "section": "Mana",
                       "style": {
-                        "marginTop": "-4vh"
+                        "marginTop": "-5.5vh"
                       }
                     }
                   ]
@@ -229,7 +236,7 @@
                     {
                       "section": "Discard",
                       "style": {
-                        "marginTop": "-6vh"
+                        "marginTop": "-8vh"
                       }
                     }
                   ]
@@ -489,14 +496,16 @@
                   "flexDirection": "column",
                   "alignItems": "center",
                   "justifyContent": "center",
-                  "gap": "0.45vh",
-                  "padding": "0.35vh 0.8vw",
+                  "gap": "0.25vh",
+                  "padding": "0.2vh 0.8vw",
                   "background": "rgba(0,0,0,0.72)",
                   "border": "1px solid rgba(255,255,255,0.28)",
                   "borderRadius": "0.55vh",
                   "boxSizing": "border-box",
                   "width": "min(52vw, 820px)",
-                  "minHeight": "6vh"
+                  "minHeight": "0",
+                  "height": "6.4vh",
+                  "maxHeight": "6.4vh"
                 }
               },
               "children": [
@@ -508,7 +517,7 @@
                       "alignItems": "center",
                       "gap": "0.7vw",
                       "fontWeight": "bold",
-                      "fontSize": "0.95em"
+                      "fontSize": "0.9em"
                     }
                   },
                   "children": [
@@ -527,7 +536,7 @@
                   "props": {
                     "style": {
                       "display": "flex",
-                      "gap": "0.3vw",
+                      "gap": "0.25vw",
                       "justifyContent": "center",
                       "alignItems": "center",
                       "flexWrap": "wrap"
@@ -565,7 +574,7 @@
                   "type": "div",
                   "props": {
                     "style": {
-                      "fontSize": "0.75em",
+                      "fontSize": "0.68em",
                       "opacity": "0.82"
                     }
                   },
@@ -578,7 +587,7 @@
                       "display": "{{ !game.turn.isMyTurn && game.data.PhaseController.pendingPhase !== null ? \"flex\" : \"none\" }}",
                       "alignItems": "center",
                       "gap": "0.55vw",
-                      "padding": "0.45vh 0.7vw",
+                      "padding": "0.25vh 0.6vw",
                       "background": "rgba(0,0,0,0.8)",
                       "border": "1px solid rgba(255,255,255,0.35)",
                       "borderRadius": "0.4vh"
@@ -606,7 +615,7 @@
           }
         },
         "sharedZone": {
-          "height": 7,
+          "height": 7.2,
           "layout": {
             "direction": "row",
             "style": {
