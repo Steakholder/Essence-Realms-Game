@@ -332,5 +332,6 @@
   "translationsUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/translations.json",
   "scriptsUrls": [
     "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/essence-realms-gameplay.js"
-  ]
+  ],
+  "customHelp": "Essence Realms uses a 66-card Main Deck, 1 Starting Leader, 5 Leaders, and 10 Mana cards."
 }
