@@ -249,6 +249,19 @@
                 "pointerEvents": "none",
                 "opacity": "0"
               }
+            },
+            {
+              "section": "PhaseController",
+              "style": {
+                "position": "absolute",
+                "top": "1.5vh",
+                "left": "50%",
+                "transform": "translateX(-50%)",
+                "width": "46vw",
+                "minWidth": "520px",
+                "zIndex": "100",
+                "pointerEvents": "auto"
+              }
             }
           ]
         },
@@ -366,7 +379,9 @@
             "defaultValue": {
               "startupSetupDone": false,
               "firstTurnCompleted": false,
-              "startingManaSetupDone": false
+              "startingManaSetupDone": false,
+              "unitSlotsBusy": false,
+              "phaseEffectEpoch": -1
             },
             "blueprint": {
               "type": "div",
@@ -379,9 +394,9 @@
             },
             "events": {
               "onPlayersMulligan": "await setupAfterMulligan()",
+              "onPlayersReady": "await setupStartingMana()",
               "onNewTurn": "await handleNewTurn()",
-              "onCardsUpdate": "await arrangeUnitSlots()",
-              "onPlayersReady": "await setupStartingMana()"
+              "onCardsUpdate": "await arrangeUnitSlots()"
             }
           },
           "Mana": {
@@ -460,6 +475,124 @@
             "keepTappedNewTurn": false,
             "isGroupForbidden": true,
             "displayedTitle": "Unit 6"
+          },
+          "PhaseController": {
+            "type": "custom",
+            "isShared": true,
+            "defaultValue": {
+              "currentPhase": "UNTAP",
+              "pendingPhase": null,
+              "transitionId": 0,
+              "approvalId": 0,
+              "turnCount": 0,
+              "initialized": false,
+              "effectEpoch": 0,
+              "status": ""
+            },
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "alignItems": "center",
+                  "gap": "0.7vh",
+                  "padding": "0.8vh 1vw",
+                  "background": "rgba(0,0,0,0.82)",
+                  "border": "1px solid rgba(255,255,255,0.3)",
+                  "borderRadius": "0.6vh",
+                  "boxSizing": "border-box"
+                }
+              },
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontWeight": "bold",
+                      "fontSize": "1.25em"
+                    }
+                  },
+                  "children": "{{ game.data.PhaseController.currentPhase === 'UNTAP' ? 'Untap Phase' : game.data.PhaseController.currentPhase === 'DRAW' ? 'Draw Phase' : game.data.PhaseController.currentPhase === 'SUMMON' ? 'Summon Phase' : game.data.PhaseController.currentPhase === 'COMBAT' ? 'Combat Phase' : 'End Phase' }}"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.9em",
+                      "opacity": "0.85"
+                    }
+                  },
+                  "children": "{{ game.data.PhaseController.status }}"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "display": "flex",
+                      "gap": "0.35vw",
+                      "justifyContent": "center",
+                      "flexWrap": "wrap"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "children": "Untap",
+                      "props": {
+                        "disabled": "{{ !game.turn.isMyTurn || game.data.PhaseController.currentPhase !== 'UNTAP' || game.data.PhaseController.pendingPhase !== null }}"
+                      },
+                      "onClick": "await requestNextPhase()"
+                    },
+                    {
+                      "type": "button",
+                      "children": "Draw",
+                      "props": {
+                        "disabled": "{{ !game.turn.isMyTurn || game.data.PhaseController.currentPhase !== 'DRAW' || game.data.PhaseController.pendingPhase !== null }}"
+                      },
+                      "onClick": "await requestNextPhase()"
+                    },
+                    {
+                      "type": "button",
+                      "children": "Summon",
+                      "props": {
+                        "disabled": "{{ !game.turn.isMyTurn || game.data.PhaseController.currentPhase !== 'SUMMON' || game.data.PhaseController.pendingPhase !== null }}"
+                      },
+                      "onClick": "await requestNextPhase()"
+                    },
+                    {
+                      "type": "button",
+                      "children": "Combat",
+                      "props": {
+                        "disabled": "{{ !game.turn.isMyTurn || game.data.PhaseController.currentPhase !== 'COMBAT' || game.data.PhaseController.pendingPhase !== null }}"
+                      },
+                      "onClick": "await requestNextPhase()"
+                    },
+                    {
+                      "type": "button",
+                      "children": "End",
+                      "props": {
+                        "disabled": "{{ !game.turn.isMyTurn || game.data.PhaseController.currentPhase !== 'END' || game.data.PhaseController.pendingPhase !== null }}"
+                      },
+                      "onClick": "await requestNextPhase()"
+                    },
+                    {
+                      "type": "button",
+                      "children": "Approve",
+                      "props": {
+                        "disabled": "{{ game.turn.isMyTurn || game.data.PhaseController.pendingPhase === null || game.data.PhaseController.approvalId === game.data.PhaseController.transitionId }}"
+                      },
+                      "onClick": "await approvePhase()"
+                    }
+                  ]
+                }
+              ]
+            },
+            "events": {
+              "onStart": "await initializePhaseSystem()",
+              "onNewTurn": "await resetPhaseForNewTurn()",
+              "onUpdate": "await processPhaseUpdate()"
+            }
           }
         }
       },
