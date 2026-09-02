@@ -131,7 +131,15 @@
                   },
                   "content": [
                     {
-                      "section": "ActiveUnitZone"
+                      "section": "ActiveUnitZone",
+                      "style": {
+                        "width": "72vh",
+                        "height": "16vh",
+                        "boxSizing": "border-box",
+                        "backgroundImage": "repeating-linear-gradient(to right, rgba(255,255,255,0.10) 0, rgba(255,255,255,0.10) 1px, transparent 1px, transparent 16.6667%)",
+                        "border": "1px solid rgba(255,255,255,0.18)",
+                        "borderRadius": "0.4vh"
+                      }
                     },
                     {
                       "section": "Mana",
@@ -226,11 +234,12 @@
             "isHidden": "no",
             "height": "16",
             "alignment": "CENTER",
-            "displayedTitle": "Active Unit Zone",
+            "displayedTitle": "Active Unit Zone — 6 Slots",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
-            "keepTappedNewTurn": false
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": true
           },
           "Banishment": {
             "isHidden": "no",
@@ -333,5 +342,5 @@
   "scriptsUrls": [
     "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/essence-realms-gameplay.js"
   ],
-  "customHelp": "Essence Realms uses a 66-card Main Deck, 1 Starting Leader, 5 Leaders, and 10 Mana cards."
+  "customHelp": "Essence Realms uses a 66-card Main Deck, 1 Starting Leader, 5 Leaders, and 10 Mana cards.\nActive Unit Zone: You can control a maximum of 6 Units. The board displays six visual slots in a single row."
 }
