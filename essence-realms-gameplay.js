@@ -4,14 +4,16 @@
  * Phase system:
  *   Untap -> Draw -> Summon -> Combat -> End
  *
- * The phase controller is a shared custom section. The active player requests
- * the next phase and the opponent approves it. Each player's client then
- * performs the local card operations that belong to that phase. This is
- * necessary because TCGA scripting only permits a player to modify their own
- * cards.
+ * PhaseController is a SHARED custom section rendered in TCGA's sharedZone,
+ * so it appears once in the space between the two player boards instead of
+ * being duplicated over each player's play area.
  *
- * IMPORTANT: The Untap phase therefore runs untapOwnCards() on BOTH clients,
- * which collectively untaps every tapped card belonging to both players.
+ * Only the turn player can request the next phase. The non-turn player sees
+ * an approval control only while a transition is pending.
+ *
+ * IMPORTANT: TCGA scripts can only modify the current player's cards. During
+ * the Untap Phase, each client therefore untaps its own cards. Together this
+ * untaps every tapped card belonging to BOTH players.
  */
 
 const UNIT_SLOTS = [
@@ -151,8 +153,8 @@ async function initializePhaseSystem() {
     phase.turnCount = game.turn.count;
     phase.effectEpoch = 0;
     phase.status = game.turn.isMyTurn
-        ? "You are the turn player. Request the Draw Phase when ready."
-        : "Waiting for the turn player to request the Draw Phase.";
+        ? "Turn player: choose the next phase when ready."
+        : "Waiting for the turn player to request the next phase.";
     phase.initialized = true;
 }
 
@@ -160,14 +162,10 @@ async function resetPhaseForNewTurn() {
     const phase = game.data.PhaseController;
     const state = game.data.GameLogic;
 
-    // Entering Untap Phase happens automatically when a new turn begins.
-    // Every player runs this locally, so ALL tapped cards belonging to BOTH
-    // players are untapped without one player trying to modify the opponent's
-    // cards (which TCGA does not permit).
+    // The new turn begins in Untap Phase. Each client untaps its own cards,
+    // which collectively untaps every tapped card for both players.
     await untapOwnCards();
 
-    // Only the active player writes the shared phase state. This prevents both
-    // clients from racing to reset the same shared object.
     if (!game.turn.isMyTurn) return;
 
     phase.currentPhase = "UNTAP";
@@ -177,7 +175,7 @@ async function resetPhaseForNewTurn() {
     phase.turnCount = game.turn.count;
     phase.effectEpoch += 1;
     state.phaseEffectEpoch = phase.effectEpoch;
-    phase.status = "You are the turn player. Request the Draw Phase when ready.";
+    phase.status = "Turn player: choose the next phase when ready.";
 }
 
 async function requestNextPhase() {
@@ -198,6 +196,7 @@ async function approvePhase() {
     const phase = game.data.PhaseController;
     if (game.turn.isMyTurn) return;
     if (phase.pendingPhase === null) return;
+    if (phase.approvalId === phase.transitionId) return;
 
     phase.approvalId = phase.transitionId;
     phase.status = `Approved ${phaseLabel(phase.pendingPhase)}.`;
@@ -205,24 +204,23 @@ async function approvePhase() {
 
 async function processPhaseUpdate() {
     const phase = game.data.PhaseController;
-
     if (!phase.initialized) return;
-    if (phase.pendingPhase === null) return;
-    if (phase.approvalId !== phase.transitionId) return;
 
-    // Only the turn player resolves the approved shared transition. The shared
-    // state change is then observed by both clients.
-    if (!game.turn.isMyTurn) return;
+    // The turn player is the sole authority that resolves the shared
+    // transition after the opponent approves it.
+    if (phase.pendingPhase !== null && phase.approvalId === phase.transitionId && game.turn.isMyTurn) {
+        const next = phase.pendingPhase;
+        phase.currentPhase = next;
+        phase.pendingPhase = null;
+        phase.approvalId = 0;
+        phase.effectEpoch += 1;
+        phase.status = next === "END"
+            ? "End Phase reached. End your turn when ready."
+            : `Entered ${phaseLabel(next)}. Choose the next phase when ready.`;
+    }
 
-    const next = phase.pendingPhase;
-    phase.currentPhase = next;
-    phase.pendingPhase = null;
-    phase.approvalId = 0;
-    phase.effectEpoch += 1;
-    phase.status = next === "END"
-        ? "End Phase reached. Finish the turn using the normal End Turn control."
-        : `Entered ${phaseLabel(next)}. Request the next phase when ready.`;
-
+    // Every client watches the resulting effectEpoch and performs the phase's
+    // local card operation. This is what makes Untap global across both boards.
     await processLocalPhaseEffect();
 }
 
@@ -234,20 +232,17 @@ async function processLocalPhaseEffect() {
     state.phaseEffectEpoch = phase.effectEpoch;
 
     if (phase.currentPhase === "UNTAP") {
-        // This runs independently on each player's client. Together, the two
-        // executions untap ALL tapped cards for BOTH players.
         await untapOwnCards();
         return;
     }
 
     if (phase.currentPhase === "DRAW" && game.turn.isMyTurn) {
-        // First turn gets no draw/channel. Later turns get exactly one each.
+        // Turn 1 has no draw or channel. Later turns get exactly one of each.
         if (game.turn.count <= 1) return;
         await drawAndChannel();
     }
 }
 
 async function handleNewTurn() {
-    // Native turn-change effects are intentionally empty now. Untap, Draw,
-    // and Channel are performed by phase transitions instead.
+    // New-turn draw/untap/channel are controlled by the phase system now.
 }
