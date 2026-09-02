@@ -292,8 +292,8 @@
             "enterTapped": false,
             "keepTappedNewTurn": false,
             "isGroupForbidden": false,
-            "autoPlayFromHand": {
-              "_default": "ManaPool"
+            "drawDestinations": {
+              "ManaRune": "Mana"
             }
           },
           "ActiveUnitZone": {
@@ -361,7 +361,8 @@
           "GameLogic": {
             "type": "custom",
             "defaultValue": {
-              "startupSetupDone": false
+              "startupSetupDone": false,
+              "firstTurnCompleted": false
             },
             "blueprint": {
               "type": "div",

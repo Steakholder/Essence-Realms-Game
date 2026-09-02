@@ -17,7 +17,29 @@ const UNIT_SLOTS = [
 async function setupAfterMulligan() {
     const state = game.data.GameLogic;
     if (state.startupSetupDone) return;
+
+    // Six cards from the main deck become the Life Zone.
     await functions.draw(6, false, "LifeZone");
+
+    // Mana Rune is a deck category that should begin with exactly 8 cards in
+    // Mana Storage and 2 cards in the Mana Pool. TCGA normally performs the
+    // initial split through initialBoardSetup. If any Mana Runes nevertheless
+    // reached the opening hand, move only enough of them to Storage to bring
+    // Storage up to 8. This prevents the opening hand from stealing Storage
+    // cards while never taking the two starting Mana Pool cards.
+    const storageCount = (cards?.ManaStorage ?? []).length;
+    const needed = Math.max(0, 8 - storageCount);
+
+    if (needed > 0) {
+        const handMana = (cards?.Hand ?? []).filter(card =>
+            functions.getCardData(card)?.type === "ManaRune"
+        );
+
+        for (let i = 0; i < Math.min(needed, handMana.length); i++) {
+            await functions.moveCard(handMana[i], "ManaStorage", { noLogs: true });
+        }
+    }
+
     state.startupSetupDone = true;
 }
 
@@ -90,8 +112,17 @@ async function untapMyCards() {
 
 async function handleNewTurn() {
     await untapMyCards();
-    if (game.turn.count <= 1) return;
     if (!game.turn.isMyTurn) return;
+
+    const state = game.data.GameLogic;
+
+    // game.turn.count is global across players, so it cannot reliably be used
+    // to identify a player's first turn. Track that locally instead. Each
+    // player skips the Mana Pool transfer and draw on their own first turn.
+    if (!state.firstTurnCompleted) {
+        state.firstTurnCompleted = true;
+        return;
+    }
 
     await functions.draw(1);
 
