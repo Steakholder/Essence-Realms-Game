@@ -3176,13 +3176,13 @@
         "name": {
           "name": "Mana Rune"
         },
-        "type": "Mana",
+        "type": "ManaRune",
         "cost": 0,
         "image": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/mana.png"
       }
     },
     "name": "Mana Rune",
-    "type": "Mana",
+    "type": "ManaRune",
     "cost": 0,
     "limited": false,
     "manaValue": 0,

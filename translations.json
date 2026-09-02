@@ -4,7 +4,8 @@
     "Card types": {
       "Leader": "Leaders",
       "LV0Leader": "Starting Leader",
-      "Level_0_Leader": "Starting Leader"
+      "Level_0_Leader": "Starting Leader",
+      "ManaRune": "Mana Rune"
     },
     "UI text": {
       "Type": "Card Type",

@@ -5,7 +5,7 @@
     "dataUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/cards.json",
     "cardBack": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/0_back.png",
     "extraCardBacks": {
-      "Mana": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/mana.png"
+      "ManaRune": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Cards/main/mana.png"
     }
   },
   "deckBuilding": {
@@ -43,7 +43,7 @@
             "maxPerCard": 3
           },
           {
-            "category": "Mana",
+            "category": "ManaRune",
             "min": 10,
             "max": 10,
             "maxPerCard": 10
@@ -134,7 +134,7 @@
                       "section": "ActiveUnitZone"
                     },
                     {
-                      "section": "ManaPool",
+                      "section": "Mana",
                       "style": {}
                     }
                   ]
@@ -181,7 +181,7 @@
         "categoriesAlreadyOnBoard": [
           "LV0Leader",
           "Leader",
-          "Mana"
+          "ManaRune"
         ],
         "autoPlayFromHand": {
           "Unit": "ActiveUnitZone",
@@ -189,7 +189,7 @@
           "Leader": "ActiveUnitZone",
           "Spell": "Stack",
           "Enchantment": "Stack",
-          "Mana": "Mana"
+          "ManaRune": "ManaRune"
         },
         "autoPlayFromStack": {
           "Spell": "Grave",
@@ -227,16 +227,6 @@
             "height": "16",
             "alignment": "CENTER",
             "displayedTitle": "Active Unit Zone",
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false,
-            "keepTappedNewTurn": false
-          },
-          "ManaPool": {
-            "isHidden": "yes",
-            "height": "10",
-            "alignment": "CENTER",
-            "displayedTitle": "Mana Pool",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
@@ -315,9 +305,19 @@
           },
           "Mana": {
             "isHidden": "yes",
+            "height": "10",
+            "alignment": "CENTER",
+            "displayedTitle": "Mana Pool",
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": true,
+            "enterTapped": false,
+            "keepTappedNewTurn": false
+          },
+          "ManaRune": {
+            "isHidden": "yes",
             "height": "SMALL",
             "alignment": "DECK",
-            "displayedTitle": "Mana Deck",
+            "displayedTitle": "Mana Rune Deck",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
