@@ -343,7 +343,7 @@
           },
           "Mana": {
             "isHidden": "yes",
-            "height": "10",
+            "height": "2.5",
             "alignment": "CENTER",
             "displayedTitle": "Mana Pool",
             "noAutoPayTo": true,
