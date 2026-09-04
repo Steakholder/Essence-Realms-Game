@@ -45,7 +45,6 @@ function nextPhaseName(phase) {
 async function setupAfterMulligan() {
     const state = game.data.GameLogic;
     if (state.startupSetupDone) return;
-    await functions.draw(6, false, "LifeZone");
     state.startupSetupDone = true;
 }
 
@@ -111,7 +110,7 @@ async function arrangeUnitSlots() {
 function allOwnBoardSections() {
     return [
         "Hand", "LV0Leader", "Leader", "ManaStorage", ...UNIT_SLOTS,
-        "Mana", "Banishment", "Discard", "LifeZone", "Stack"
+        "Mana", "Discard", "Stack"
     ];
 }
 

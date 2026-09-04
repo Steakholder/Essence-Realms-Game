@@ -229,27 +229,9 @@
                     "gap": "0.6vh",
                     "boxSizing": "border-box"
                   },
-                  "content": [
-                    {
-                      "section": "Remove"
-                    },
-                    {
-                      "section": "Discard",
-                      "style": {
-                        "marginTop": "-8vh"
-                      }
-                    }
-                  ]
+                  "content": []
                 }
               ]
-            },
-            {
-              "section": "LifeZone",
-              "style": {
-                "width": "8%",
-                "flexShrink": "0",
-                "boxSizing": "border-box"
-              }
             },
             {
               "section": "GameLogic",
@@ -266,7 +248,8 @@
         },
         "categoriesAlreadyOnBoard": [
           "LV0Leader",
-          "Leader"
+          "Leader",
+          "ManaRune"
         ],
         "autoPlayFromHand": {
           "Unit": "ActiveUnitZone",
@@ -274,7 +257,7 @@
           "Leader": "ActiveUnitZone",
           "Spell": "Stack",
           "Enchantment": "Stack",
-          "ManaRune": "ManaStorage"
+          "ManaRune": "ManaRune"
         },
         "autoPlayFromStack": {
           "Spell": "Discard",
@@ -320,21 +303,6 @@
             "keepTappedNewTurn": false,
             "isGroupForbidden": true,
             "displayedTitle": "Unit 1"
-          },
-          "LifeZone": {
-            "isHidden": "yes",
-            "height": "22",
-            "alignment": "DECK",
-            "displayedTitle": "Life Zone",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false,
-            "autoPlayFromHand": {
-              "_default": "Stack"
-            }
           },
           "Leader": {
             "isHidden": "yes",
@@ -382,6 +350,18 @@
             "isHorizontalAllowed": true,
             "enterTapped": false,
             "keepTappedNewTurn": false
+          },
+          "ManaRune": {
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "displayedTitle": "Mana Rune Deck",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": false
           },
           "ActiveUnit2": {
             "isHidden": "no",
@@ -665,18 +645,6 @@
             "isHidden": "yes",
             "height": "SMALL",
             "alignment": "DECK",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
-          },
-          "Remove": {
-            "isHidden": "no",
-            "height": "14",
-            "alignment": "CENTER",
-            "displayedTitle": "Banishment",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
