@@ -231,7 +231,7 @@
                   },
                   "content": [
                     {
-                      "section": "Banishment"
+                      "section": "Remove"
                     },
                     {
                       "section": "Discard",
@@ -266,8 +266,7 @@
         },
         "categoriesAlreadyOnBoard": [
           "LV0Leader",
-          "Leader",
-          "ManaRune"
+          "Leader"
         ],
         "autoPlayFromHand": {
           "Unit": "ActiveUnitZone",
@@ -275,11 +274,11 @@
           "Leader": "ActiveUnitZone",
           "Spell": "Stack",
           "Enchantment": "Stack",
-          "ManaRune": "ManaRune"
+          "ManaRune": "ManaStorage"
         },
         "autoPlayFromStack": {
-          "Spell": "Grave",
-          "Enchantment": "Grave"
+          "Spell": "Discard",
+          "Enchantment": "Discard"
         },
         "sectionsDict": {
           "LV0Leader": {
@@ -322,18 +321,6 @@
             "isGroupForbidden": true,
             "displayedTitle": "Unit 1"
           },
-          "Banishment": {
-            "isHidden": "no",
-            "height": "14",
-            "alignment": "DECK",
-            "displayedTitle": "Banishment",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
-          },
           "LifeZone": {
             "isHidden": "yes",
             "height": "22",
@@ -354,18 +341,6 @@
             "height": "10",
             "alignment": "DECK",
             "displayedTitle": "Leader Deck",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
-          },
-          "Discard": {
-            "isHidden": "no",
-            "height": "10",
-            "alignment": "DECK",
-            "displayedTitle": "Grave",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
@@ -407,18 +382,6 @@
             "isHorizontalAllowed": true,
             "enterTapped": false,
             "keepTappedNewTurn": false
-          },
-          "ManaRune": {
-            "isHidden": "yes",
-            "height": "SMALL",
-            "alignment": "DECK",
-            "displayedTitle": "Mana Rune Deck",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
           },
           "ActiveUnit2": {
             "isHidden": "no",
@@ -475,6 +438,96 @@
             "isGroupForbidden": true,
             "displayedTitle": "Unit 6"
           },
+          "HandLimitController": {
+            "type": "custom",
+            "defaultValue": {
+              "visible": false,
+              "required": 0,
+              "selectedIds": [],
+              "handCards": [],
+              "processing": false
+            },
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "{{ game.data.HandLimitController.visible ? \"flex\" : \"none\" }}",
+                  "flexDirection": "column",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "gap": "0.35vh",
+                  "padding": "0.4vh 0.7vw",
+                  "background": "rgba(0,0,0,0.82)",
+                  "border": "1px solid rgba(255,255,255,0.38)",
+                  "borderRadius": "0.5vh",
+                  "boxSizing": "border-box",
+                  "width": "min(58vw, 900px)",
+                  "minHeight": "0"
+                }
+              },
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "fontWeight": "bold",
+                      "fontSize": "0.78em"
+                    }
+                  },
+                  "children": "{{ \"Hand Limit: Select \" + game.data.HandLimitController.required + \" card\" + (game.data.HandLimitController.required === 1 ? \"\" : \"s\") + \" to place on the bottom of your Main Deck.\" }}"
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "display": "flex",
+                      "flexWrap": "wrap",
+                      "justifyContent": "center",
+                      "gap": "0.25vw",
+                      "maxWidth": "100%"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "loop",
+                      "iterable": "{{ game.data.HandLimitController.handCards }}",
+                      "template": {
+                        "type": "button",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
+                        "onClick": "await toggleHandLimitCard(item.id)"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "display": "flex",
+                      "alignItems": "center",
+                      "gap": "0.5vw",
+                      "fontSize": "0.68em",
+                      "opacity": "0.9"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "span",
+                      "children": "{{ game.data.HandLimitController.selectedIds.length + \" / \" + game.data.HandLimitController.required + \" selected\" }}"
+                    },
+                    {
+                      "type": "button",
+                      "children": "Return Selected",
+                      "onClick": "await confirmHandLimit()"
+                    }
+                  ]
+                }
+              ]
+            },
+            "events": {
+              "onCardsUpdate": "await refreshHandLimit()"
+            }
+          },
           "PhaseController": {
             "type": "custom",
             "isShared": true,
@@ -485,8 +538,8 @@
               "approvalId": 0,
               "turnCount": 0,
               "initialized": false,
-              "effectEpoch": 0,
-              "status": ""
+              "effectEpoch": 1,
+              "status": "Untap Phase (automatic)."
             },
             "blueprint": {
               "type": "div",
@@ -504,8 +557,8 @@
                   "boxSizing": "border-box",
                   "width": "min(52vw, 820px)",
                   "minHeight": "0",
-                  "height": "8vh",
-                  "maxHeight": "8vh"
+                  "height": "7vh",
+                  "maxHeight": "7vh"
                 }
               },
               "children": [
@@ -543,11 +596,6 @@
                     }
                   },
                   "children": [
-                    {
-                      "type": "button",
-                      "children": "Untap",
-                      "onClick": "await requestPhase(\"UNTAP\")"
-                    },
                     {
                       "type": "button",
                       "children": "Draw",
@@ -612,10 +660,33 @@
               "onNewTurn": "await resetPhaseForNewTurn()",
               "onUpdate": "await processPhaseUpdate()"
             }
+          },
+          "HandLimitDeckBuffer": {
+            "isHidden": "yes",
+            "height": "SMALL",
+            "alignment": "DECK",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": false
+          },
+          "Remove": {
+            "isHidden": "no",
+            "height": "14",
+            "alignment": "CENTER",
+            "displayedTitle": "Banishment",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": false
           }
         },
         "sharedZone": {
-          "height": 10,
+          "height": 11,
           "layout": {
             "direction": "row",
             "style": {
@@ -628,6 +699,9 @@
             "content": [
               {
                 "section": "PhaseController"
+              },
+              {
+                "section": "HandLimitController"
               }
             ]
           }

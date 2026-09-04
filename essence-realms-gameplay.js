@@ -3,13 +3,13 @@
  * Phase system: Untap -> Draw -> Summon -> Combat -> End
  *
  * PhaseController is a shared custom section in sections.sharedZone.
- * The turn player requests the next phase; the non-turn player approves.
+ * Untap Phase begins automatically at the start of each turn.
+ * The turn player requests Draw/Summon/Combat/End; the non-turn player approves.
  * The phase may only advance one step at a time and never moves backward.
  *
- * Untap is global in effect: TCGA scripts may only modify the current
- * player's cards, so each client untaps its own cards when Untap is entered.
- * Both clients therefore untap their own board, resulting in both boards
- * being untapped.
+ * HandLimitController is intentionally NOT shared. It displays the turn
+ * player's private hand-selection UI without exposing hand contents to the
+ * opponent. The selected cards are returned to the bottom of the Main Deck.
  */
 
 const UNIT_SLOTS = [
@@ -22,9 +22,11 @@ const UNIT_SLOTS = [
 ];
 
 const PHASES = ["UNTAP", "DRAW", "SUMMON", "COMBAT", "END"];
+const HAND_LIMIT = 7;
 
 function phaseLabel(phase) {
     switch (phase) {
+        case "START": return "Start";
         case "UNTAP": return "Untap Phase";
         case "DRAW": return "Draw Phase";
         case "SUMMON": return "Summon Phase";
@@ -35,6 +37,7 @@ function phaseLabel(phase) {
 }
 
 function nextPhaseName(phase) {
+    if (phase === "START") return "UNTAP";
     const index = PHASES.indexOf(phase);
     return index >= 0 && index < PHASES.length - 1 ? PHASES[index + 1] : null;
 }
@@ -140,20 +143,16 @@ async function initializePhaseSystem() {
     phase.pendingPhase = null;
     phase.transitionId = 0;
     phase.turnCount = game.turn.count;
-    phase.effectEpoch = 0;
+    phase.effectEpoch = 1;
     phase.initialized = true;
-    phase.status = game.turn.isMyTurn
-        ? "Turn player: request Draw Phase when ready."
-        : "Waiting for the turn player to request Draw Phase.";
+    phase.status = "Untap Phase (automatic).";
 }
 
 async function resetPhaseForNewTurn() {
     const phase = game.data.PhaseController;
+    const hand = game.data.HandLimitController;
 
-    // Reset the shared phase state only on the active player's client.
-    // Every client independently untaps its own cards.
-    await untapOwnCards();
-
+    // Do NOT untap here. Untapping is deliberately tied to entering Untap Phase.
     if (!game.turn.isMyTurn) return;
 
     phase.currentPhase = "UNTAP";
@@ -161,18 +160,24 @@ async function resetPhaseForNewTurn() {
     phase.transitionId += 1;
     phase.turnCount = game.turn.count;
     phase.effectEpoch += 1;
-    phase.status = "Turn player: request Draw Phase when ready.";
+    phase.status = "Untap Phase (automatic).";
+
+    hand.visible = false;
+    hand.required = 0;
+    hand.selectedIds = [];
+    hand.handCards = [];
+    hand.processing = false;
 }
 
-// Called directly by the phase buttons. There is intentionally no disabled
-// attribute on the buttons; legality is enforced here instead.
+// Called directly by the phase buttons. Legality is enforced here rather than
+// by a disabled HTML attribute, so the UI remains selectable and predictable.
 async function requestPhase(targetPhase) {
     const phase = game.data.PhaseController;
     if (!game.turn.isMyTurn) return;
     if (phase.pendingPhase !== null) return;
 
     const expected = nextPhaseName(phase.currentPhase);
-    if (targetPhase !== expected) return;
+    if (targetPhase !== expected || targetPhase === "UNTAP") return;
 
     phase.pendingPhase = targetPhase;
     phase.transitionId += 1;
@@ -184,7 +189,6 @@ async function approvePhase() {
     if (game.turn.isMyTurn) return;
     if (phase.pendingPhase === null) return;
 
-    // Approval is the only action the non-turn player can take.
     const target = phase.pendingPhase;
     if (target !== nextPhaseName(phase.currentPhase)) return;
 
@@ -193,7 +197,7 @@ async function approvePhase() {
     phase.transitionId += 1;
     phase.effectEpoch += 1;
     phase.status = target === "END"
-        ? "End Phase. Turn player may end the turn when ready."
+        ? "End Phase. Turn player must resolve their hand limit before ending the turn."
         : `Entered ${phaseLabel(target)}.`;
 }
 
@@ -201,6 +205,9 @@ async function processPhaseUpdate() {
     const phase = game.data.PhaseController;
     if (!phase.initialized) return;
     await processLocalPhaseEffect();
+    if (phase.currentPhase === "END" && game.turn.isMyTurn) {
+        await refreshHandLimit();
+    }
 }
 
 async function processLocalPhaseEffect() {
@@ -219,6 +226,110 @@ async function processLocalPhaseEffect() {
         // Turn 1 has no draw/channel. Later turns get one draw and one channel.
         if (game.turn.count <= 1) return;
         await drawAndChannel();
+    }
+}
+
+async function refreshHandLimit() {
+    const controller = game.data.HandLimitController;
+    if (!controller || controller.processing) return;
+    if (!game.turn.isMyTurn || game.data.PhaseController.currentPhase !== "END") {
+        if (controller.visible) {
+            controller.visible = false;
+            controller.required = 0;
+            controller.selectedIds = [];
+            controller.handCards = [];
+        }
+        return;
+    }
+
+    const hand = cards?.Hand ?? [];
+    const required = Math.max(0, hand.length - HAND_LIMIT);
+
+    if (required === 0) {
+        controller.visible = false;
+        controller.required = 0;
+        controller.selectedIds = [];
+        controller.handCards = [];
+        controller.processing = false;
+        return;
+    }
+
+    const handCards = hand.map(card => {
+        const data = functions.getCardData(card);
+        return {
+            id: card.id,
+            label: data?.name ?? "Card"
+        };
+    });
+
+    const currentIds = controller.handCards.map(card => card.id);
+    const newIds = handCards.map(card => card.id);
+    const idsChanged = currentIds.length !== newIds.length || currentIds.some((id, i) => id !== newIds[i]);
+
+    controller.visible = true;
+    controller.required = required;
+    if (idsChanged) {
+        controller.handCards = handCards;
+        controller.selectedIds = controller.selectedIds.filter(id => newIds.includes(id));
+    }
+}
+
+async function toggleHandLimitCard(cardId) {
+    const controller = game.data.HandLimitController;
+    if (!game.turn.isMyTurn || game.data.PhaseController.currentPhase !== "END") return;
+    if (!controller.visible || controller.processing) return;
+
+    const handIds = (cards?.Hand ?? []).map(card => card.id);
+    if (!handIds.includes(cardId)) return;
+
+    const index = controller.selectedIds.indexOf(cardId);
+    if (index >= 0) {
+        controller.selectedIds.splice(index, 1);
+        return;
+    }
+
+    if (controller.selectedIds.length >= controller.required) return;
+    controller.selectedIds.push(cardId);
+}
+
+async function returnCardsToBottom(selectedCards) {
+    const deck = [...(cards?.Deck ?? [])];
+    const selectedIds = selectedCards.map(card => card.id);
+
+    // The temporary hidden buffer lets us reconstruct the deck so the chosen
+    // cards are inserted before the existing deck order, i.e. at its bottom.
+    // We move the selected cards into Deck first, then restore the previous
+    // deck order above them.
+    for (const card of deck) {
+        await functions.moveCard(card, "HandLimitDeckBuffer", { noLogs: true });
+    }
+
+    await functions.moveCards(selectedCards, "Deck", { noLogs: true });
+
+    for (const card of deck) {
+        await functions.moveCard(card, "Deck", { noLogs: true });
+    }
+}
+
+async function confirmHandLimit() {
+    const controller = game.data.HandLimitController;
+    if (!game.turn.isMyTurn || game.data.PhaseController.currentPhase !== "END") return;
+    if (!controller.visible || controller.processing) return;
+    if (controller.selectedIds.length !== controller.required) return;
+
+    const selected = (cards?.Hand ?? []).filter(card => controller.selectedIds.includes(card.id));
+    if (selected.length !== controller.required) return;
+
+    controller.processing = true;
+    try {
+        await returnCardsToBottom(selected);
+        controller.visible = false;
+        controller.required = 0;
+        controller.selectedIds = [];
+        controller.handCards = [];
+        game.data.PhaseController.status = "Hand limit resolved. Turn player may end the turn when ready.";
+    } finally {
+        controller.processing = false;
     }
 }
 
