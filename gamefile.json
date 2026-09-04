@@ -217,7 +217,16 @@
                     {
                       "section": "Mana",
                       "style": {
-                        "marginTop": "-5.5vh"
+                        "marginTop": "-5.5vh",
+                        "width": "5%",
+                        "maxWidth": "5%",
+                        "minWidth": "0",
+                        "height": "0.5vh",
+                        "maxHeight": "0.5vh",
+                        "minHeight": "0",
+                        "boxSizing": "border-box",
+                        "marginLeft": "auto",
+                        "marginRight": "auto"
                       }
                     }
                   ]
