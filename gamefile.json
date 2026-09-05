@@ -81,6 +81,12 @@
       "countersStartingValues": [],
       "sections": {
         "sectionsDict": {
+          "Remove": {
+            "isHidden": "no",
+            "height": "14",
+            "alignment": "CENTER",
+            "displayedTitle": "Remove"
+          },
           "PhaseController": {
             "type": "custom",
             "isShared": true,
@@ -233,6 +239,18 @@
               }
             ]
           }
+        },
+        "layout": {
+          "direction": "column",
+          "content": [
+            {
+              "section": "Remove",
+              "style": {
+                "height": "14vh",
+                "minHeight": "14vh"
+              }
+            }
+          ]
         }
       }
     }
