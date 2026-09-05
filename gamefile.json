@@ -327,7 +327,8 @@
             "isGroupForbidden": false,
             "autoPlayFromHand": {
               "_default": "Stack"
-            }
+            },
+            "opponentAlignment": "END"
           },
           "Leader": {
             "isHidden": "yes",
@@ -486,7 +487,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
