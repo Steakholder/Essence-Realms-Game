@@ -145,73 +145,73 @@
                         {
                           "section": "ActiveUnitZone",
                           "style": {
-                            "flex": "0 0 13%",
+                            "flex": "0 0 14.5%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "16vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
                             "borderRadius": "0.4vh",
-                            "width": "13%"
+                            "width": "14.5%"
                           }
                         },
                         {
                           "section": "ActiveUnit2",
                           "style": {
-                            "flex": "0 0 13%",
+                            "flex": "0 0 14.5%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "16vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
                             "borderRadius": "0.4vh",
-                            "width": "13%"
+                            "width": "14.5%"
                           }
                         },
                         {
                           "section": "ActiveUnit3",
                           "style": {
-                            "flex": "0 0 13%",
+                            "flex": "0 0 14.5%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "16vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
                             "borderRadius": "0.4vh",
-                            "width": "13%"
+                            "width": "14.5%"
                           }
                         },
                         {
                           "section": "ActiveUnit4",
                           "style": {
-                            "flex": "0 0 13%",
+                            "flex": "0 0 14.5%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "16vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
                             "borderRadius": "0.4vh",
-                            "width": "13%"
+                            "width": "14.5%"
                           }
                         },
                         {
                           "section": "ActiveUnit5",
                           "style": {
-                            "flex": "0 0 13%",
+                            "flex": "0 0 14.5%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "16vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
                             "borderRadius": "0.4vh",
-                            "width": "13%"
+                            "width": "14.5%"
                           }
                         },
                         {
                           "section": "ActiveUnit6",
                           "style": {
-                            "flex": "0 0 13%",
+                            "flex": "0 0 14.5%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "16vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
                             "borderRadius": "0.4vh",
-                            "width": "13%"
+                            "width": "14.5%"
                           }
                         }
                       ]
@@ -219,7 +219,7 @@
                     {
                       "section": "Mana",
                       "style": {
-                        "marginTop": "-7vh"
+                        "marginTop": "-9vh"
                       }
                     }
                   ]
@@ -227,7 +227,7 @@
                 {
                   "direction": "column",
                   "style": {
-                    "width": "10%",
+                    "width": "7%",
                     "flexShrink": "0",
                     "boxSizing": "border-box"
                   },
