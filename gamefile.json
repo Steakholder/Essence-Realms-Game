@@ -229,7 +229,11 @@
                     "gap": "0.6vh",
                     "boxSizing": "border-box"
                   },
-                  "content": []
+                  "content": [
+                    {
+                      "section": "Banishment"
+                    }
+                  ]
                 }
               ]
             },
@@ -481,7 +485,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
@@ -674,6 +678,18 @@
             "autoPlayFromHand": {
               "_default": "Stack"
             }
+          },
+          "Banishment": {
+            "isHidden": "no",
+            "height": "14",
+            "alignment": "DECK",
+            "displayedTitle": "Banishment",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": false
           }
         },
         "sharedZone": {
