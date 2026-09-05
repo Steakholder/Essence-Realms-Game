@@ -223,6 +223,15 @@
                       }
                     }
                   ]
+                },
+                {
+                  "direction": "column",
+                  "style": {
+                    "width": "10%",
+                    "flexShrink": "0",
+                    "boxSizing": "border-box"
+                  },
+                  "content": []
                 }
               ]
             },
