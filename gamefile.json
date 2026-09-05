@@ -306,7 +306,7 @@
           "LifeZone": {
             "isHidden": "yes",
             "height": "22",
-            "alignment": "DECK",
+            "alignment": "START",
             "displayedTitle": "Life Zone",
             "noQuickActions": true,
             "noAutoPayTo": true,
