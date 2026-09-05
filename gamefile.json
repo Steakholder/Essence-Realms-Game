@@ -92,10 +92,10 @@
             {
               "direction": "row",
               "style": {
-                "flex": "1 1 0",
                 "minWidth": "0",
                 "gap": "0.8vw",
-                "boxSizing": "border-box"
+                "boxSizing": "border-box",
+                "width": "100%"
               },
               "isSymmetricalForOpponents": true,
               "content": [
@@ -232,16 +232,16 @@
                     "boxSizing": "border-box"
                   },
                   "content": []
+                },
+                {
+                  "section": "LifeZone",
+                  "style": {
+                    "width": "7%",
+                    "flexShrink": "0",
+                    "boxSizing": "border-box"
+                  }
                 }
               ]
-            },
-            {
-              "section": "LifeZone",
-              "style": {
-                "width": "7%",
-                "flexShrink": "0",
-                "boxSizing": "border-box"
-              }
             },
             {
               "section": "GameLogic",
