@@ -218,11 +218,11 @@
                         {
                           "section": "LifeZone",
                           "style": {
-                            "flex": "0 0 2%",
+                            "flex": "0 0 1.25%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
                             "height": "15vh",
-                            "width": "2%"
+                            "width": "1.25%"
                           }
                         }
                       ]
@@ -248,15 +248,15 @@
                             "flex": "0 0 7%",
                             "height": "10vh",
                             "boxSizing": "border-box",
-                            "right": "100%",
+                            "right": "calc(50% + (39% + 1.75vw))",
                             "marginRight": "0"
                           }
                         },
                         {
                           "section": "Mana",
                           "style": {
-                            "width": "100%",
-                            "flex": "0 0 100%",
+                            "width": "calc(78% + 3.5vw)",
+                            "flex": "0 0 calc(78% + 3.5vw)",
                             "height": "10vh",
                             "boxSizing": "border-box",
                             "marginLeft": "0",
@@ -512,7 +512,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
