@@ -112,12 +112,6 @@
                     },
                     {
                       "section": "Leader"
-                    },
-                    {
-                      "section": "ManaStorage",
-                      "style": {
-                        "marginTop": "-1.5vh"
-                      }
                     }
                   ]
                 },
@@ -213,34 +207,51 @@
                             "borderRadius": "0.4vh",
                             "width": "14.5%"
                           }
+                        },
+                        {
+                          "section": "LifeZone",
+                          "style": {
+                            "flex": "0 0 3%",
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "16vh"
+                          }
                         }
                       ]
                     },
                     {
-                      "section": "Mana",
+                      "direction": "row",
                       "style": {
+                        "width": "100%",
+                        "height": "10vh",
+                        "gap": "0.7vw",
+                        "boxSizing": "border-box",
+                        "alignItems": "center",
+                        "justifyContent": "center",
                         "marginTop": "-11vh"
-                      }
+                      },
+                      "content": [
+                        {
+                          "section": "ManaStorage",
+                          "style": {
+                            "flex": "0 0 7%",
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "10vh"
+                          }
+                        },
+                        {
+                          "section": "Mana",
+                          "style": {
+                            "flex": "1 1 0",
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "10vh"
+                          }
+                        }
+                      ]
                     }
                   ]
-                },
-                {
-                  "direction": "column",
-                  "style": {
-                    "width": "3%",
-                    "flexShrink": "0",
-                    "boxSizing": "border-box"
-                  },
-                  "content": []
-                },
-                {
-                  "section": "LifeZone",
-                  "style": {
-                    "width": "3%",
-                    "flexShrink": "0",
-                    "boxSizing": "border-box",
-                    "marginLeft": "-7vw"
-                  }
                 }
               ]
             },
