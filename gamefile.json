@@ -102,7 +102,7 @@
                 {
                   "direction": "column",
                   "style": {
-                    "width": "5%",
+                    "width": "10%",
                     "gap": "0.6vh",
                     "boxSizing": "border-box"
                   },
@@ -127,7 +127,9 @@
                     "flex": "1 1 0",
                     "minWidth": "0",
                     "gap": "0.55vh",
-                    "boxSizing": "border-box"
+                    "boxSizing": "border-box",
+                    "paddingLeft": "4vw",
+                    "paddingRight": "4vw"
                   },
                   "content": [
                     {
@@ -217,7 +219,7 @@
                     {
                       "section": "Mana",
                       "style": {
-                        "marginTop": "-5.5vh"
+                        "marginTop": "-7vh"
                       }
                     }
                   ]
@@ -227,7 +229,7 @@
             {
               "section": "LifeZone",
               "style": {
-                "width": "8%",
+                "width": "7%",
                 "flexShrink": "0",
                 "boxSizing": "border-box"
               }
@@ -256,7 +258,7 @@
           "Leader": "ActiveUnitZone",
           "Spell": "Stack",
           "Enchantment": "Stack",
-          "ManaRune": "ManaRune"
+          "ManaRune": "ManaStorage"
         },
         "autoPlayFromStack": {
           "Spell": "Discard",
@@ -278,7 +280,7 @@
             "isHidden": "yes",
             "height": "7",
             "alignment": "DECK",
-            "displayedTitle": "Mana Storage",
+            "displayedTitle": "Mana Deck",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
@@ -305,8 +307,8 @@
           },
           "LifeZone": {
             "isHidden": "yes",
-            "height": "22",
-            "alignment": "START",
+            "height": "20",
+            "alignment": "DECK",
             "displayedTitle": "Life Zone",
             "noQuickActions": true,
             "noAutoPayTo": true,
@@ -364,18 +366,6 @@
             "isHorizontalAllowed": true,
             "enterTapped": false,
             "keepTappedNewTurn": false
-          },
-          "ManaRune": {
-            "isHidden": "yes",
-            "height": "SMALL",
-            "alignment": "DECK",
-            "displayedTitle": "Mana Rune Deck",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
           },
           "ActiveUnit2": {
             "isHidden": "no",
