@@ -232,6 +232,12 @@
                   "content": [
                     {
                       "section": "Banishment"
+                    },
+                    {
+                      "section": "Discard",
+                      "style": {
+                        "marginTop": "-8vh"
+                      }
                     }
                   ]
                 }
@@ -272,8 +278,8 @@
           "ManaRune": "ManaRune"
         },
         "autoPlayFromStack": {
-          "Spell": "Discard",
-          "Enchantment": "Discard"
+          "Spell": "Grave",
+          "Enchantment": "Grave"
         },
         "sectionsDict": {
           "LV0Leader": {
@@ -316,11 +322,50 @@
             "isGroupForbidden": true,
             "displayedTitle": "Unit 1"
           },
+          "Banishment": {
+            "isHidden": "no",
+            "height": "14",
+            "alignment": "DECK",
+            "displayedTitle": "Banishment",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": false
+          },
+          "LifeZone": {
+            "isHidden": "yes",
+            "height": "22",
+            "alignment": "DECK",
+            "displayedTitle": "Life Zone",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": false,
+            "autoPlayFromHand": {
+              "_default": "Stack"
+            }
+          },
           "Leader": {
             "isHidden": "yes",
             "height": "10",
             "alignment": "DECK",
             "displayedTitle": "Leader Deck",
+            "noQuickActions": true,
+            "noAutoPayTo": true,
+            "isHorizontalAllowed": false,
+            "enterTapped": false,
+            "keepTappedNewTurn": false,
+            "isGroupForbidden": false
+          },
+          "Discard": {
+            "isHidden": "no",
+            "height": "10",
+            "alignment": "DECK",
+            "displayedTitle": "Grave",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
@@ -485,7 +530,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
@@ -657,33 +702,6 @@
             "isHidden": "yes",
             "height": "SMALL",
             "alignment": "DECK",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
-          },
-          "LifeZone": {
-            "isHidden": "yes",
-            "height": "22",
-            "alignment": "DECK",
-            "displayedTitle": "Life Zone",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false,
-            "autoPlayFromHand": {
-              "_default": "Stack"
-            }
-          },
-          "Banishment": {
-            "isHidden": "no",
-            "height": "14",
-            "alignment": "DECK",
-            "displayedTitle": "Banishment",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
