@@ -130,7 +130,7 @@
                       "direction": "row",
                       "style": {
                         "width": "100%",
-                        "height": "16vh",
+                        "height": "15vh",
                         "gap": "0.7vw",
                         "boxSizing": "border-box",
                         "justifyContent": "center"
@@ -139,73 +139,73 @@
                         {
                           "section": "ActiveUnitZone",
                           "style": {
-                            "flex": "0 0 14.5%",
+                            "flex": "0 0 13%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
-                            "height": "16vh",
+                            "height": "15vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
                             "borderRadius": "0.4vh",
-                            "width": "14.5%"
+                            "width": "13%"
                           }
                         },
                         {
                           "section": "ActiveUnit2",
                           "style": {
-                            "flex": "0 0 14.5%",
+                            "flex": "0 0 13%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
-                            "height": "16vh",
+                            "height": "15vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
                             "borderRadius": "0.4vh",
-                            "width": "14.5%"
+                            "width": "13%"
                           }
                         },
                         {
                           "section": "ActiveUnit3",
                           "style": {
-                            "flex": "0 0 14.5%",
+                            "flex": "0 0 13%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
-                            "height": "16vh",
+                            "height": "15vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
                             "borderRadius": "0.4vh",
-                            "width": "14.5%"
+                            "width": "13%"
                           }
                         },
                         {
                           "section": "ActiveUnit4",
                           "style": {
-                            "flex": "0 0 14.5%",
+                            "flex": "0 0 13%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
-                            "height": "16vh",
+                            "height": "15vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
                             "borderRadius": "0.4vh",
-                            "width": "14.5%"
+                            "width": "13%"
                           }
                         },
                         {
                           "section": "ActiveUnit5",
                           "style": {
-                            "flex": "0 0 14.5%",
+                            "flex": "0 0 13%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
-                            "height": "16vh",
+                            "height": "15vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
                             "borderRadius": "0.4vh",
-                            "width": "14.5%"
+                            "width": "13%"
                           }
                         },
                         {
                           "section": "ActiveUnit6",
                           "style": {
-                            "flex": "0 0 14.5%",
+                            "flex": "0 0 13%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
-                            "height": "16vh",
+                            "height": "15vh",
                             "border": "1px solid rgba(255,255,255,0.22)",
                             "borderRadius": "0.4vh",
-                            "width": "14.5%"
+                            "width": "13%"
                           }
                         },
                         {
@@ -214,7 +214,7 @@
                             "flex": "0 0 3%",
                             "minWidth": "0",
                             "boxSizing": "border-box",
-                            "height": "16vh"
+                            "height": "15vh"
                           }
                         }
                       ]
@@ -228,25 +228,30 @@
                         "boxSizing": "border-box",
                         "alignItems": "center",
                         "justifyContent": "center",
-                        "marginTop": "-11vh"
+                        "marginTop": "0.8vh",
+                        "position": "relative"
                       },
                       "content": [
                         {
                           "section": "ManaStorage",
                           "style": {
+                            "position": "absolute",
+                            "width": "7%",
                             "flex": "0 0 7%",
-                            "minWidth": "0",
+                            "height": "10vh",
                             "boxSizing": "border-box",
-                            "height": "10vh"
+                            "right": "78%"
                           }
                         },
                         {
                           "section": "Mana",
                           "style": {
-                            "flex": "1 1 0",
-                            "minWidth": "0",
+                            "width": "70%",
+                            "flex": "0 0 70%",
+                            "height": "10vh",
                             "boxSizing": "border-box",
-                            "height": "10vh"
+                            "marginLeft": "auto",
+                            "marginRight": "auto"
                           }
                         }
                       ]
