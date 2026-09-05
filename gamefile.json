@@ -219,7 +219,7 @@
                     {
                       "section": "Mana",
                       "style": {
-                        "marginTop": "-9vh"
+                        "marginTop": "-11vh"
                       }
                     }
                   ]
@@ -227,7 +227,7 @@
                 {
                   "direction": "column",
                   "style": {
-                    "width": "7%",
+                    "width": "3%",
                     "flexShrink": "0",
                     "boxSizing": "border-box"
                   },
@@ -236,7 +236,7 @@
                 {
                   "section": "LifeZone",
                   "style": {
-                    "width": "7%",
+                    "width": "3%",
                     "flexShrink": "0",
                     "boxSizing": "border-box"
                   }
