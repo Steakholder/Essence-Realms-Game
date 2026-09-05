@@ -503,7 +503,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
@@ -704,8 +704,8 @@
                   "props": {
                     "style": {
                       "position": "absolute",
-                      "left": "calc(0% + 0.0vw)",
-                      "top": "15.25vh",
+                      "left": "calc(10.5% - 1.75vw)",
+                      "top": "18.15vh",
                       "width": "13%",
                       "height": "2.5vh",
                       "display": "flex",
@@ -769,8 +769,8 @@
                   "props": {
                     "style": {
                       "position": "absolute",
-                      "left": "calc(13% + 0.7vw)",
-                      "top": "15.25vh",
+                      "left": "calc(23.5% - 1.05vw)",
+                      "top": "18.15vh",
                       "width": "13%",
                       "height": "2.5vh",
                       "display": "flex",
@@ -834,8 +834,8 @@
                   "props": {
                     "style": {
                       "position": "absolute",
-                      "left": "calc(26% + 1.4vw)",
-                      "top": "15.25vh",
+                      "left": "calc(36.5% - 0.35vw)",
+                      "top": "18.15vh",
                       "width": "13%",
                       "height": "2.5vh",
                       "display": "flex",
@@ -899,8 +899,8 @@
                   "props": {
                     "style": {
                       "position": "absolute",
-                      "left": "calc(39% + 2.0999999999999996vw)",
-                      "top": "15.25vh",
+                      "left": "calc(49.5% + 0.35vw)",
+                      "top": "18.15vh",
                       "width": "13%",
                       "height": "2.5vh",
                       "display": "flex",
@@ -964,8 +964,8 @@
                   "props": {
                     "style": {
                       "position": "absolute",
-                      "left": "calc(52% + 2.8vw)",
-                      "top": "15.25vh",
+                      "left": "calc(62.5% + 1.05vw)",
+                      "top": "18.15vh",
                       "width": "13%",
                       "height": "2.5vh",
                       "display": "flex",
@@ -1029,8 +1029,8 @@
                   "props": {
                     "style": {
                       "position": "absolute",
-                      "left": "calc(65% + 3.5vw)",
-                      "top": "15.25vh",
+                      "left": "calc(75.5% + 1.75vw)",
+                      "top": "18.15vh",
                       "width": "13%",
                       "height": "2.5vh",
                       "display": "flex",
