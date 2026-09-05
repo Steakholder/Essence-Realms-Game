@@ -219,24 +219,13 @@
                 {
                   "direction": "column",
                   "style": {
-                    "width": "7%",
+                    "width": "5%",
                     "gap": "0.6vh",
                     "boxSizing": "border-box"
                   },
                   "content": [
                     {
-                      "section": "Remove",
-                      "style": {
-                        "width": "100%",
-                        "boxSizing": "border-box"
-                      }
-                    },
-                    {
-                      "section": "Deck",
-                      "style": {
-                        "width": "100%",
-                        "boxSizing": "border-box"
-                      }
+                      "section": "Remove"
                     }
                   ]
                 }
@@ -656,18 +645,6 @@
             "height": "10",
             "alignment": "DECK",
             "displayedTitle": "Removal",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
-          },
-          "Deck": {
-            "isHidden": "yes",
-            "height": "10",
-            "alignment": "DECK",
-            "displayedTitle": "Main Deck",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
