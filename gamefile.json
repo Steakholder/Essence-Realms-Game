@@ -243,7 +243,7 @@
                       },
                       "content": [
                         {
-                          "section": "ManaStorage",
+                          "section": "ManaDeck",
                           "style": {
                             "position": "absolute",
                             "width": "8%",
@@ -296,7 +296,7 @@
           "Leader": "ActiveUnitZone",
           "Spell": "Stack",
           "Enchantment": "Stack",
-          "ManaRune": "ManaStorage"
+          "ManaRune": "ManaDeck"
         },
         "autoPlayFromStack": {
           "Spell": "Discard",
@@ -314,7 +314,7 @@
             "enterTapped": false,
             "keepTappedNewTurn": false
           },
-          "ManaStorage": {
+          "ManaDeck": {
             "isHidden": "yes",
             "height": "7",
             "alignment": "DECK",
@@ -326,7 +326,8 @@
             "keepTappedNewTurn": false,
             "isGroupForbidden": false,
             "drawDestinations": {
-              "ManaRune": "Mana"
+              "ManaRune": "Mana",
+              "_default": "Mana"
             },
             "autoPlayFromHand": {
               "_default": "Mana"
@@ -515,7 +516,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
@@ -692,7 +693,8 @@
             "isHorizontalAllowed": false,
             "enterTapped": false,
             "keepTappedNewTurn": false,
-            "isGroupForbidden": false
+            "isGroupForbidden": false,
+            "displayedTitle": "Hand Limit Buffer"
           }
         },
         "sharedZone": {
@@ -722,7 +724,7 @@
           {
             "drawFromTop": "ManaRune",
             "count": 10,
-            "destination": "ManaStorage"
+            "destination": "ManaDeck"
           }
         ]
       }

@@ -60,10 +60,10 @@ async function setupStartingMana() {
         return;
     }
 
-    const storage = cards?.ManaStorage ?? [];
+    const storage = cards?.ManaDeck ?? [];
     if (storage.length < manaNeeded) return;
 
-    await functions.moveCards(storage.slice(-manaNeeded), "Mana");
+    await functions.drawFromExtraDeck("ManaDeck", manaNeeded, false, "Mana");
     state.startingManaSetupDone = true;
 }
 
@@ -110,7 +110,7 @@ async function arrangeUnitSlots() {
 
 function allOwnBoardSections() {
     return [
-        "Hand", "LV0Leader", "Leader", "ManaStorage", ...UNIT_SLOTS,
+        "Hand", "LV0Leader", "Leader", "ManaDeck", ...UNIT_SLOTS,
         "Mana", "Banishment", "Discard", "LifeZone", "Stack"
     ];
 }
@@ -130,8 +130,8 @@ async function untapOwnCards() {
 
 async function drawAndChannel() {
     await functions.draw(1);
-    if ((cards?.ManaStorage ?? []).length > 0) {
-        await functions.drawFromExtraDeck("ManaStorage", 1, false, "Mana");
+    if ((cards?.ManaDeck ?? []).length > 0) {
+        await functions.drawFromExtraDeck("ManaDeck", 1, false, "Mana");
     }
 }
 
