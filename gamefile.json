@@ -123,7 +123,8 @@
                     "gap": "0.55vh",
                     "boxSizing": "border-box",
                     "paddingLeft": "4vw",
-                    "paddingRight": "4vw"
+                    "paddingRight": "4vw",
+                    "position": "relative"
                   },
                   "content": [
                     {
@@ -138,196 +139,58 @@
                       },
                       "content": [
                         {
-                          "direction": "column",
+                          "section": "ActiveUnitZone",
                           "style": {
-                            "flex": "0 0 13%",
-                            "minWidth": "0",
+                            "height": "15vh",
                             "width": "13%",
-                            "boxSizing": "border-box",
-                            "height": "18vh",
-                            "gap": "0.25vh",
-                            "alignItems": "stretch"
-                          },
-                          "content": [
-                            {
-                              "section": "ActiveUnitZone",
-                              "style": {
-                                "height": "15vh",
-                                "width": "100%",
-                                "flex": "0 0 15vh",
-                                "boxSizing": "border-box"
-                              }
-                            },
-                            {
-                              "section": "Unit1Actions",
-                              "style": {
-                                "height": "2.5vh",
-                                "width": "100%",
-                                "flex": "0 0 2.5vh",
-                                "boxSizing": "border-box"
-                              }
-                            }
-                          ]
+                            "flex": "0 0 13%",
+                            "boxSizing": "border-box"
+                          }
                         },
                         {
-                          "direction": "column",
+                          "section": "ActiveUnit2",
                           "style": {
-                            "flex": "0 0 13%",
-                            "minWidth": "0",
+                            "height": "15vh",
                             "width": "13%",
-                            "boxSizing": "border-box",
-                            "height": "18vh",
-                            "gap": "0.25vh",
-                            "alignItems": "stretch"
-                          },
-                          "content": [
-                            {
-                              "section": "ActiveUnit2",
-                              "style": {
-                                "height": "15vh",
-                                "width": "100%",
-                                "flex": "0 0 15vh",
-                                "boxSizing": "border-box"
-                              }
-                            },
-                            {
-                              "section": "Unit2Actions",
-                              "style": {
-                                "height": "2.5vh",
-                                "width": "100%",
-                                "flex": "0 0 2.5vh",
-                                "boxSizing": "border-box"
-                              }
-                            }
-                          ]
+                            "flex": "0 0 13%",
+                            "boxSizing": "border-box"
+                          }
                         },
                         {
-                          "direction": "column",
+                          "section": "ActiveUnit3",
                           "style": {
-                            "flex": "0 0 13%",
-                            "minWidth": "0",
+                            "height": "15vh",
                             "width": "13%",
-                            "boxSizing": "border-box",
-                            "height": "18vh",
-                            "gap": "0.25vh",
-                            "alignItems": "stretch"
-                          },
-                          "content": [
-                            {
-                              "section": "ActiveUnit3",
-                              "style": {
-                                "height": "15vh",
-                                "width": "100%",
-                                "flex": "0 0 15vh",
-                                "boxSizing": "border-box"
-                              }
-                            },
-                            {
-                              "section": "Unit3Actions",
-                              "style": {
-                                "height": "2.5vh",
-                                "width": "100%",
-                                "flex": "0 0 2.5vh",
-                                "boxSizing": "border-box"
-                              }
-                            }
-                          ]
+                            "flex": "0 0 13%",
+                            "boxSizing": "border-box"
+                          }
                         },
                         {
-                          "direction": "column",
+                          "section": "ActiveUnit4",
                           "style": {
-                            "flex": "0 0 13%",
-                            "minWidth": "0",
+                            "height": "15vh",
                             "width": "13%",
-                            "boxSizing": "border-box",
-                            "height": "18vh",
-                            "gap": "0.25vh",
-                            "alignItems": "stretch"
-                          },
-                          "content": [
-                            {
-                              "section": "ActiveUnit4",
-                              "style": {
-                                "height": "15vh",
-                                "width": "100%",
-                                "flex": "0 0 15vh",
-                                "boxSizing": "border-box"
-                              }
-                            },
-                            {
-                              "section": "Unit4Actions",
-                              "style": {
-                                "height": "2.5vh",
-                                "width": "100%",
-                                "flex": "0 0 2.5vh",
-                                "boxSizing": "border-box"
-                              }
-                            }
-                          ]
+                            "flex": "0 0 13%",
+                            "boxSizing": "border-box"
+                          }
                         },
                         {
-                          "direction": "column",
+                          "section": "ActiveUnit5",
                           "style": {
-                            "flex": "0 0 13%",
-                            "minWidth": "0",
+                            "height": "15vh",
                             "width": "13%",
-                            "boxSizing": "border-box",
-                            "height": "18vh",
-                            "gap": "0.25vh",
-                            "alignItems": "stretch"
-                          },
-                          "content": [
-                            {
-                              "section": "ActiveUnit5",
-                              "style": {
-                                "height": "15vh",
-                                "width": "100%",
-                                "flex": "0 0 15vh",
-                                "boxSizing": "border-box"
-                              }
-                            },
-                            {
-                              "section": "Unit5Actions",
-                              "style": {
-                                "height": "2.5vh",
-                                "width": "100%",
-                                "flex": "0 0 2.5vh",
-                                "boxSizing": "border-box"
-                              }
-                            }
-                          ]
+                            "flex": "0 0 13%",
+                            "boxSizing": "border-box"
+                          }
                         },
                         {
-                          "direction": "column",
+                          "section": "ActiveUnit6",
                           "style": {
-                            "flex": "0 0 13%",
-                            "minWidth": "0",
+                            "height": "15vh",
                             "width": "13%",
-                            "boxSizing": "border-box",
-                            "height": "18vh",
-                            "gap": "0.25vh",
-                            "alignItems": "stretch"
-                          },
-                          "content": [
-                            {
-                              "section": "ActiveUnit6",
-                              "style": {
-                                "height": "15vh",
-                                "width": "100%",
-                                "flex": "0 0 15vh",
-                                "boxSizing": "border-box"
-                              }
-                            },
-                            {
-                              "section": "Unit6Actions",
-                              "style": {
-                                "height": "2.5vh",
-                                "width": "100%",
-                                "flex": "0 0 2.5vh",
-                                "boxSizing": "border-box"
-                              }
-                            }
-                          ]
+                            "flex": "0 0 13%",
+                            "boxSizing": "border-box"
+                          }
                         },
                         {
                           "section": "LifeZone",
@@ -381,6 +244,17 @@
                           }
                         }
                       ]
+                    },
+                    {
+                      "section": "UnitActionUI",
+                      "style": {
+                        "position": "absolute",
+                        "left": "0",
+                        "top": "0",
+                        "width": "100%",
+                        "height": "100%",
+                        "pointerEvents": "none"
+                      }
                     }
                   ]
                 }
@@ -629,7 +503,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
@@ -808,6 +682,415 @@
             "keepTappedNewTurn": false,
             "isGroupForbidden": false,
             "displayedTitle": "Hand Limit Buffer"
+          },
+          "UnitActionUI": {
+            "type": "custom",
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "position": "absolute",
+                  "left": "0",
+                  "top": "0",
+                  "width": "100%",
+                  "height": "100%",
+                  "pointerEvents": "none",
+                  "zIndex": "20"
+                }
+              },
+              "children": [
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "position": "absolute",
+                      "left": "calc(0% + 0.0vw)",
+                      "top": "15.25vh",
+                      "width": "13%",
+                      "height": "2.5vh",
+                      "display": "flex",
+                      "gap": "0.12vw",
+                      "justifyContent": "center",
+                      "alignItems": "stretch",
+                      "pointerEvents": "none",
+                      "boxSizing": "border-box"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "children": "Evolve",
+                      "onClick": "await unitActionButton(\"Evolve\", \"ActiveUnitZone\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "children": "Equip",
+                      "onClick": "await unitActionButton(\"Equip\", \"ActiveUnitZone\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "children": "Overlay",
+                      "onClick": "await unitActionButton(\"Overlay\", \"ActiveUnitZone\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "position": "absolute",
+                      "left": "calc(13% + 0.7vw)",
+                      "top": "15.25vh",
+                      "width": "13%",
+                      "height": "2.5vh",
+                      "display": "flex",
+                      "gap": "0.12vw",
+                      "justifyContent": "center",
+                      "alignItems": "stretch",
+                      "pointerEvents": "none",
+                      "boxSizing": "border-box"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "children": "Evolve",
+                      "onClick": "await unitActionButton(\"Evolve\", \"ActiveUnit2\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "children": "Equip",
+                      "onClick": "await unitActionButton(\"Equip\", \"ActiveUnit2\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "children": "Overlay",
+                      "onClick": "await unitActionButton(\"Overlay\", \"ActiveUnit2\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "position": "absolute",
+                      "left": "calc(26% + 1.4vw)",
+                      "top": "15.25vh",
+                      "width": "13%",
+                      "height": "2.5vh",
+                      "display": "flex",
+                      "gap": "0.12vw",
+                      "justifyContent": "center",
+                      "alignItems": "stretch",
+                      "pointerEvents": "none",
+                      "boxSizing": "border-box"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "children": "Evolve",
+                      "onClick": "await unitActionButton(\"Evolve\", \"ActiveUnit3\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "children": "Equip",
+                      "onClick": "await unitActionButton(\"Equip\", \"ActiveUnit3\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "children": "Overlay",
+                      "onClick": "await unitActionButton(\"Overlay\", \"ActiveUnit3\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "position": "absolute",
+                      "left": "calc(39% + 2.0999999999999996vw)",
+                      "top": "15.25vh",
+                      "width": "13%",
+                      "height": "2.5vh",
+                      "display": "flex",
+                      "gap": "0.12vw",
+                      "justifyContent": "center",
+                      "alignItems": "stretch",
+                      "pointerEvents": "none",
+                      "boxSizing": "border-box"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "children": "Evolve",
+                      "onClick": "await unitActionButton(\"Evolve\", \"ActiveUnit4\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "children": "Equip",
+                      "onClick": "await unitActionButton(\"Equip\", \"ActiveUnit4\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "children": "Overlay",
+                      "onClick": "await unitActionButton(\"Overlay\", \"ActiveUnit4\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "position": "absolute",
+                      "left": "calc(52% + 2.8vw)",
+                      "top": "15.25vh",
+                      "width": "13%",
+                      "height": "2.5vh",
+                      "display": "flex",
+                      "gap": "0.12vw",
+                      "justifyContent": "center",
+                      "alignItems": "stretch",
+                      "pointerEvents": "none",
+                      "boxSizing": "border-box"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "children": "Evolve",
+                      "onClick": "await unitActionButton(\"Evolve\", \"ActiveUnit5\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "children": "Equip",
+                      "onClick": "await unitActionButton(\"Equip\", \"ActiveUnit5\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "children": "Overlay",
+                      "onClick": "await unitActionButton(\"Overlay\", \"ActiveUnit5\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "div",
+                  "props": {
+                    "style": {
+                      "position": "absolute",
+                      "left": "calc(65% + 3.5vw)",
+                      "top": "15.25vh",
+                      "width": "13%",
+                      "height": "2.5vh",
+                      "display": "flex",
+                      "gap": "0.12vw",
+                      "justifyContent": "center",
+                      "alignItems": "stretch",
+                      "pointerEvents": "none",
+                      "boxSizing": "border-box"
+                    }
+                  },
+                  "children": [
+                    {
+                      "type": "button",
+                      "children": "Evolve",
+                      "onClick": "await unitActionButton(\"Evolve\", \"ActiveUnit6\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "children": "Equip",
+                      "onClick": "await unitActionButton(\"Equip\", \"ActiveUnit6\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "children": "Overlay",
+                      "onClick": "await unitActionButton(\"Overlay\", \"ActiveUnit6\")",
+                      "props": {
+                        "style": {
+                          "fontSize": "0.55em",
+                          "padding": "0 0.25vw",
+                          "minWidth": "0",
+                          "flex": "1",
+                          "pointerEvents": "auto",
+                          "boxSizing": "border-box"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
           }
         },
         "sharedZone": {
