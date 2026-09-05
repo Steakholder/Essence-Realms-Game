@@ -231,9 +231,6 @@
                   },
                   "content": [
                     {
-                      "section": "Banishment"
-                    },
-                    {
                       "section": "Discard",
                       "style": {
                         "marginTop": "-8vh"
@@ -321,18 +318,6 @@
             "keepTappedNewTurn": false,
             "isGroupForbidden": true,
             "displayedTitle": "Unit 1"
-          },
-          "Banishment": {
-            "isHidden": "no",
-            "height": "14",
-            "alignment": "DECK",
-            "displayedTitle": "Banishment",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
           },
           "LifeZone": {
             "isHidden": "yes",
