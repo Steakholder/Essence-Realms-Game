@@ -506,8 +506,7 @@
             "events": {
               "onPlayersMulligan": "await setupAfterMulligan()",
               "onPlayersReady": "await setupStartingMana()",
-              "onNewTurn": "await handleNewTurn()",
-              "onCardsUpdate": "await arrangeUnitSlots()"
+              "onNewTurn": "await handleNewTurn()"
             }
           },
           "Mana": {
