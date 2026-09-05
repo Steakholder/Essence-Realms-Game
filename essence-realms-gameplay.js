@@ -179,6 +179,15 @@ async function requestPhase(targetPhase) {
     const expected = nextPhaseName(phase.currentPhase);
     if (targetPhase !== expected || targetPhase === "UNTAP") return;
 
+    // The approval click happens on the non-turn player's client, so relying
+    // on the shared PhaseController onUpdate event to perform the turn
+    // player's draw/channel would fail the ownership rule: scripts can only
+    // modify their own cards. Apply the Draw Phase actions while the turn
+    // player is requesting Draw, before handing the transition to the opponent.
+    if (targetPhase === "DRAW" && game.turn.count > 1) {
+        await drawAndChannel();
+    }
+
     phase.pendingPhase = targetPhase;
     phase.transitionId += 1;
     phase.status = `Waiting for opponent approval to enter ${phaseLabel(targetPhase)}.`;
@@ -222,11 +231,8 @@ async function processLocalPhaseEffect() {
         return;
     }
 
-    if (phase.currentPhase === "DRAW" && game.turn.isMyTurn) {
-        // Turn 1 has no draw/channel. Later turns get one draw and one channel.
-        if (game.turn.count <= 1) return;
-        await drawAndChannel();
-    }
+    // Draw Phase actions are performed in requestPhase() by the turn player,
+    // before opponent approval, so the turn player owns the card changes.
 }
 
 async function refreshHandLimit() {
