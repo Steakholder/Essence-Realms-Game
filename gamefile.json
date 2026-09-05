@@ -240,14 +240,14 @@
                             "flex": "0 0 7%",
                             "height": "10vh",
                             "boxSizing": "border-box",
-                            "right": "78%"
+                            "right": "56.5%"
                           }
                         },
                         {
                           "section": "Mana",
                           "style": {
-                            "width": "70%",
-                            "flex": "0 0 70%",
+                            "width": "13%",
+                            "flex": "0 0 13%",
                             "height": "10vh",
                             "boxSizing": "border-box",
                             "marginLeft": "auto",
