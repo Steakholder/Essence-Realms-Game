@@ -243,7 +243,7 @@
                       },
                       "content": [
                         {
-                          "section": "ManaDeck",
+                          "section": "ManaRune",
                           "style": {
                             "position": "absolute",
                             "width": "8%",
@@ -296,7 +296,7 @@
           "Leader": "ActiveUnitZone",
           "Spell": "Stack",
           "Enchantment": "Stack",
-          "ManaRune": "ManaDeck"
+          "ManaRune": "ManaRune"
         },
         "autoPlayFromStack": {
           "Spell": "Discard",
@@ -314,7 +314,7 @@
             "enterTapped": false,
             "keepTappedNewTurn": false
           },
-          "ManaDeck": {
+          "ManaRune": {
             "isHidden": "yes",
             "height": "7",
             "alignment": "DECK",
@@ -516,7 +516,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
@@ -719,15 +719,7 @@
           }
         }
       },
-      "beforeGameStart": {
-        "initialBoardSetup": [
-          {
-            "drawFromTop": "ManaRune",
-            "count": 10,
-            "destination": "ManaDeck"
-          }
-        ]
-      }
+      "beforeGameStart": {}
     }
   },
   "translationsUrl": "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/translations.json",
