@@ -221,19 +221,6 @@
                       }
                     }
                   ]
-                },
-                {
-                  "direction": "column",
-                  "style": {
-                    "width": "5%",
-                    "gap": "0.6vh",
-                    "boxSizing": "border-box"
-                  },
-                  "content": [
-                    {
-                      "section": "Discard"
-                    }
-                  ]
                 }
               ]
             },
@@ -272,8 +259,8 @@
           "ManaRune": "ManaRune"
         },
         "autoPlayFromStack": {
-          "Spell": "Grave",
-          "Enchantment": "Grave"
+          "Spell": "Discard",
+          "Enchantment": "Discard"
         },
         "sectionsDict": {
           "LV0Leader": {
@@ -336,18 +323,6 @@
             "height": "10",
             "alignment": "DECK",
             "displayedTitle": "Leader Deck",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
-          },
-          "Discard": {
-            "isHidden": "no",
-            "height": "10",
-            "alignment": "DECK",
-            "displayedTitle": "Grave",
             "noQuickActions": true,
             "noAutoPayTo": true,
             "isHorizontalAllowed": false,
@@ -512,7 +487,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
