@@ -339,6 +339,17 @@ async function confirmHandLimit() {
     }
 }
 
+async function unitActionButton(action, unitSection) {
+    if (!game.turn.isMyTurn) return;
+    const unitCards = cards?.[unitSection] ?? [];
+    const unit = unitCards.find(card => functions.getCardData(card)?.type === "Unit");
+    if (!unit) {
+        functions.chatLog(action + ": no Unit is currently in " + unitSection + ".");
+        return;
+    }
+    functions.chatLog(action + " selected for " + unitSection + ".");
+}
+
 async function handleNewTurn() {
     // Native new-turn draw is disabled. Phase actions are handled by the
     // PhaseController instead.

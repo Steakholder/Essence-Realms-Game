@@ -130,7 +130,7 @@
                       "direction": "row",
                       "style": {
                         "width": "100%",
-                        "height": "15vh",
+                        "height": "18vh",
                         "gap": "0.7vw",
                         "boxSizing": "border-box",
                         "justifyContent": "center",
@@ -138,82 +138,196 @@
                       },
                       "content": [
                         {
-                          "section": "ActiveUnitZone",
+                          "direction": "column",
                           "style": {
                             "flex": "0 0 13%",
                             "minWidth": "0",
-                            "boxSizing": "border-box",
-                            "height": "15vh",
-                            "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh",
                             "width": "13%",
-                            "alignSelf": "stretch"
-                          }
+                            "boxSizing": "border-box",
+                            "height": "18vh",
+                            "gap": "0.25vh",
+                            "alignItems": "stretch"
+                          },
+                          "content": [
+                            {
+                              "section": "ActiveUnitZone",
+                              "style": {
+                                "height": "15vh",
+                                "width": "100%",
+                                "flex": "0 0 15vh",
+                                "boxSizing": "border-box"
+                              }
+                            },
+                            {
+                              "section": "Unit1Actions",
+                              "style": {
+                                "height": "2.5vh",
+                                "width": "100%",
+                                "flex": "0 0 2.5vh",
+                                "boxSizing": "border-box"
+                              }
+                            }
+                          ]
                         },
                         {
-                          "section": "ActiveUnit2",
+                          "direction": "column",
                           "style": {
                             "flex": "0 0 13%",
                             "minWidth": "0",
-                            "boxSizing": "border-box",
-                            "height": "15vh",
-                            "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh",
                             "width": "13%",
-                            "alignSelf": "stretch"
-                          }
+                            "boxSizing": "border-box",
+                            "height": "18vh",
+                            "gap": "0.25vh",
+                            "alignItems": "stretch"
+                          },
+                          "content": [
+                            {
+                              "section": "ActiveUnit2",
+                              "style": {
+                                "height": "15vh",
+                                "width": "100%",
+                                "flex": "0 0 15vh",
+                                "boxSizing": "border-box"
+                              }
+                            },
+                            {
+                              "section": "Unit2Actions",
+                              "style": {
+                                "height": "2.5vh",
+                                "width": "100%",
+                                "flex": "0 0 2.5vh",
+                                "boxSizing": "border-box"
+                              }
+                            }
+                          ]
                         },
                         {
-                          "section": "ActiveUnit3",
+                          "direction": "column",
                           "style": {
                             "flex": "0 0 13%",
                             "minWidth": "0",
-                            "boxSizing": "border-box",
-                            "height": "15vh",
-                            "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh",
                             "width": "13%",
-                            "alignSelf": "stretch"
-                          }
+                            "boxSizing": "border-box",
+                            "height": "18vh",
+                            "gap": "0.25vh",
+                            "alignItems": "stretch"
+                          },
+                          "content": [
+                            {
+                              "section": "ActiveUnit3",
+                              "style": {
+                                "height": "15vh",
+                                "width": "100%",
+                                "flex": "0 0 15vh",
+                                "boxSizing": "border-box"
+                              }
+                            },
+                            {
+                              "section": "Unit3Actions",
+                              "style": {
+                                "height": "2.5vh",
+                                "width": "100%",
+                                "flex": "0 0 2.5vh",
+                                "boxSizing": "border-box"
+                              }
+                            }
+                          ]
                         },
                         {
-                          "section": "ActiveUnit4",
+                          "direction": "column",
                           "style": {
                             "flex": "0 0 13%",
                             "minWidth": "0",
-                            "boxSizing": "border-box",
-                            "height": "15vh",
-                            "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh",
                             "width": "13%",
-                            "alignSelf": "stretch"
-                          }
+                            "boxSizing": "border-box",
+                            "height": "18vh",
+                            "gap": "0.25vh",
+                            "alignItems": "stretch"
+                          },
+                          "content": [
+                            {
+                              "section": "ActiveUnit4",
+                              "style": {
+                                "height": "15vh",
+                                "width": "100%",
+                                "flex": "0 0 15vh",
+                                "boxSizing": "border-box"
+                              }
+                            },
+                            {
+                              "section": "Unit4Actions",
+                              "style": {
+                                "height": "2.5vh",
+                                "width": "100%",
+                                "flex": "0 0 2.5vh",
+                                "boxSizing": "border-box"
+                              }
+                            }
+                          ]
                         },
                         {
-                          "section": "ActiveUnit5",
+                          "direction": "column",
                           "style": {
                             "flex": "0 0 13%",
                             "minWidth": "0",
-                            "boxSizing": "border-box",
-                            "height": "15vh",
-                            "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh",
                             "width": "13%",
-                            "alignSelf": "stretch"
-                          }
+                            "boxSizing": "border-box",
+                            "height": "18vh",
+                            "gap": "0.25vh",
+                            "alignItems": "stretch"
+                          },
+                          "content": [
+                            {
+                              "section": "ActiveUnit5",
+                              "style": {
+                                "height": "15vh",
+                                "width": "100%",
+                                "flex": "0 0 15vh",
+                                "boxSizing": "border-box"
+                              }
+                            },
+                            {
+                              "section": "Unit5Actions",
+                              "style": {
+                                "height": "2.5vh",
+                                "width": "100%",
+                                "flex": "0 0 2.5vh",
+                                "boxSizing": "border-box"
+                              }
+                            }
+                          ]
                         },
                         {
-                          "section": "ActiveUnit6",
+                          "direction": "column",
                           "style": {
                             "flex": "0 0 13%",
                             "minWidth": "0",
-                            "boxSizing": "border-box",
-                            "height": "15vh",
-                            "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh",
                             "width": "13%",
-                            "alignSelf": "stretch"
-                          }
+                            "boxSizing": "border-box",
+                            "height": "18vh",
+                            "gap": "0.25vh",
+                            "alignItems": "stretch"
+                          },
+                          "content": [
+                            {
+                              "section": "ActiveUnit6",
+                              "style": {
+                                "height": "15vh",
+                                "width": "100%",
+                                "flex": "0 0 15vh",
+                                "boxSizing": "border-box"
+                              }
+                            },
+                            {
+                              "section": "Unit6Actions",
+                              "style": {
+                                "height": "2.5vh",
+                                "width": "100%",
+                                "flex": "0 0 2.5vh",
+                                "boxSizing": "border-box"
+                              }
+                            }
+                          ]
                         },
                         {
                           "section": "LifeZone",
@@ -516,7 +630,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
@@ -695,6 +809,366 @@
             "keepTappedNewTurn": false,
             "isGroupForbidden": false,
             "displayedTitle": "Hand Limit Buffer"
+          },
+          "Unit1Actions": {
+            "type": "custom",
+            "defaultValue": {},
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "gap": "0.18vw",
+                  "width": "100%",
+                  "height": "100%",
+                  "boxSizing": "border-box"
+                }
+              },
+              "children": [
+                {
+                  "type": "button",
+                  "children": "Evolve",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Evolve','ActiveUnitZone')"
+                },
+                {
+                  "type": "button",
+                  "children": "Equip",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Equip','ActiveUnitZone')"
+                },
+                {
+                  "type": "button",
+                  "children": "Overlay",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Overlay','ActiveUnitZone')"
+                }
+              ]
+            }
+          },
+          "Unit2Actions": {
+            "type": "custom",
+            "defaultValue": {},
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "gap": "0.18vw",
+                  "width": "100%",
+                  "height": "100%",
+                  "boxSizing": "border-box"
+                }
+              },
+              "children": [
+                {
+                  "type": "button",
+                  "children": "Evolve",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Evolve','ActiveUnit2')"
+                },
+                {
+                  "type": "button",
+                  "children": "Equip",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Equip','ActiveUnit2')"
+                },
+                {
+                  "type": "button",
+                  "children": "Overlay",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Overlay','ActiveUnit2')"
+                }
+              ]
+            }
+          },
+          "Unit3Actions": {
+            "type": "custom",
+            "defaultValue": {},
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "gap": "0.18vw",
+                  "width": "100%",
+                  "height": "100%",
+                  "boxSizing": "border-box"
+                }
+              },
+              "children": [
+                {
+                  "type": "button",
+                  "children": "Evolve",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Evolve','ActiveUnit3')"
+                },
+                {
+                  "type": "button",
+                  "children": "Equip",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Equip','ActiveUnit3')"
+                },
+                {
+                  "type": "button",
+                  "children": "Overlay",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Overlay','ActiveUnit3')"
+                }
+              ]
+            }
+          },
+          "Unit4Actions": {
+            "type": "custom",
+            "defaultValue": {},
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "gap": "0.18vw",
+                  "width": "100%",
+                  "height": "100%",
+                  "boxSizing": "border-box"
+                }
+              },
+              "children": [
+                {
+                  "type": "button",
+                  "children": "Evolve",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Evolve','ActiveUnit4')"
+                },
+                {
+                  "type": "button",
+                  "children": "Equip",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Equip','ActiveUnit4')"
+                },
+                {
+                  "type": "button",
+                  "children": "Overlay",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Overlay','ActiveUnit4')"
+                }
+              ]
+            }
+          },
+          "Unit5Actions": {
+            "type": "custom",
+            "defaultValue": {},
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "gap": "0.18vw",
+                  "width": "100%",
+                  "height": "100%",
+                  "boxSizing": "border-box"
+                }
+              },
+              "children": [
+                {
+                  "type": "button",
+                  "children": "Evolve",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Evolve','ActiveUnit5')"
+                },
+                {
+                  "type": "button",
+                  "children": "Equip",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Equip','ActiveUnit5')"
+                },
+                {
+                  "type": "button",
+                  "children": "Overlay",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Overlay','ActiveUnit5')"
+                }
+              ]
+            }
+          },
+          "Unit6Actions": {
+            "type": "custom",
+            "defaultValue": {},
+            "blueprint": {
+              "type": "div",
+              "props": {
+                "style": {
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "alignItems": "center",
+                  "justifyContent": "center",
+                  "gap": "0.18vw",
+                  "width": "100%",
+                  "height": "100%",
+                  "boxSizing": "border-box"
+                }
+              },
+              "children": [
+                {
+                  "type": "button",
+                  "children": "Evolve",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Evolve','ActiveUnit6')"
+                },
+                {
+                  "type": "button",
+                  "children": "Equip",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Equip','ActiveUnit6')"
+                },
+                {
+                  "type": "button",
+                  "children": "Overlay",
+                  "props": {
+                    "style": {
+                      "fontSize": "0.52em",
+                      "padding": "0.15vh 0.35vw",
+                      "lineHeight": "1",
+                      "whiteSpace": "nowrap"
+                    }
+                  },
+                  "onClick": "await unitActionButton('Overlay','ActiveUnit6')"
+                }
+              ]
+            }
           }
         },
         "sharedZone": {
