@@ -84,417 +84,75 @@
           "direction": "row",
           "style": {
             "width": "100%",
-            "gap": "1.2vw",
+            "height": "100%",
+            "gap": "1vw",
             "alignItems": "flex-start",
+            "justifyContent": "center",
             "boxSizing": "border-box"
           },
           "content": [
             {
-              "direction": "row",
+              "section": "Deck",
               "style": {
-                "flex": "1 1 0",
+                "flex": "0 0 9%",
                 "minWidth": "0",
-                "gap": "0.8vw",
                 "boxSizing": "border-box"
-              },
-              "isSymmetricalForOpponents": true,
-              "content": [
-                {
-                  "direction": "column",
-                  "style": {
-                    "width": "5%",
-                    "gap": "0.6vh",
-                    "boxSizing": "border-box"
-                  },
-                  "content": [
-                    {
-                      "section": "LV0Leader"
-                    },
-                    {
-                      "section": "Leader"
-                    },
-                    {
-                      "section": "ManaStorage",
-                      "style": {
-                        "marginTop": "-1.5vh"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "direction": "column",
-                  "style": {
-                    "flex": "1 1 0",
-                    "minWidth": "0",
-                    "gap": "0.55vh",
-                    "boxSizing": "border-box"
-                  },
-                  "content": [
-                    {
-                      "direction": "row",
-                      "style": {
-                        "width": "100%",
-                        "height": "16vh",
-                        "gap": "0.7vw",
-                        "boxSizing": "border-box",
-                        "justifyContent": "center"
-                      },
-                      "content": [
-                        {
-                          "section": "ActiveUnitZone",
-                          "style": {
-                            "flex": "0 0 13%",
-                            "minWidth": "0",
-                            "boxSizing": "border-box",
-                            "height": "16vh",
-                            "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh",
-                            "width": "13%"
-                          }
-                        },
-                        {
-                          "section": "ActiveUnit2",
-                          "style": {
-                            "flex": "0 0 13%",
-                            "minWidth": "0",
-                            "boxSizing": "border-box",
-                            "height": "16vh",
-                            "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh",
-                            "width": "13%"
-                          }
-                        },
-                        {
-                          "section": "ActiveUnit3",
-                          "style": {
-                            "flex": "0 0 13%",
-                            "minWidth": "0",
-                            "boxSizing": "border-box",
-                            "height": "16vh",
-                            "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh",
-                            "width": "13%"
-                          }
-                        },
-                        {
-                          "section": "ActiveUnit4",
-                          "style": {
-                            "flex": "0 0 13%",
-                            "minWidth": "0",
-                            "boxSizing": "border-box",
-                            "height": "16vh",
-                            "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh",
-                            "width": "13%"
-                          }
-                        },
-                        {
-                          "section": "ActiveUnit5",
-                          "style": {
-                            "flex": "0 0 13%",
-                            "minWidth": "0",
-                            "boxSizing": "border-box",
-                            "height": "16vh",
-                            "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh",
-                            "width": "13%"
-                          }
-                        },
-                        {
-                          "section": "ActiveUnit6",
-                          "style": {
-                            "flex": "0 0 13%",
-                            "minWidth": "0",
-                            "boxSizing": "border-box",
-                            "height": "16vh",
-                            "border": "1px solid rgba(255,255,255,0.22)",
-                            "borderRadius": "0.4vh",
-                            "width": "13%"
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "direction": "column",
-                  "style": {
-                    "width": "5%",
-                    "gap": "0.6vh",
-                    "boxSizing": "border-box"
-                  },
-                  "content": [
-                    {
-                      "section": "Remove"
-                    }
-                  ]
-                }
-              ]
+              }
             },
             {
-              "section": "GameLogic",
+              "section": "Discard",
               "style": {
-                "position": "absolute",
-                "width": "0px",
-                "height": "0px",
-                "overflow": "hidden",
-                "pointerEvents": "none",
-                "opacity": "0"
+                "flex": "0 0 9%",
+                "minWidth": "0",
+                "boxSizing": "border-box"
+              }
+            },
+            {
+              "section": "Remove",
+              "style": {
+                "flex": "0 0 9%",
+                "minWidth": "0",
+                "boxSizing": "border-box"
+              }
+            },
+            {
+              "section": "Stack",
+              "style": {
+                "flex": "0 0 18%",
+                "minWidth": "0",
+                "boxSizing": "border-box"
               }
             }
           ]
         },
-        "categoriesAlreadyOnBoard": [
-          "LV0Leader",
-          "Leader",
-          "ManaRune"
-        ],
-        "autoPlayFromHand": {
-          "Unit": "ActiveUnitZone",
-          "LV0Leader": "LV0Leader",
-          "Leader": "ActiveUnitZone",
-          "Spell": "Stack",
-          "Enchantment": "Stack",
-          "ManaRune": "ManaRune"
-        },
-        "autoPlayFromStack": {
-          "Spell": "Discard",
-          "Enchantment": "Discard"
-        },
         "sectionsDict": {
-          "LV0Leader": {
-            "isHidden": "no",
-            "height": "14",
-            "alignment": "CENTER",
-            "displayedTitle": "Active Leader",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false,
-            "keepTappedNewTurn": false
-          },
-          "ManaStorage": {
+          "Deck": {
             "isHidden": "yes",
-            "height": "7",
+            "height": "16",
             "alignment": "DECK",
-            "displayedTitle": "Mana Storage",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
             "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false,
-            "drawDestinations": {
-              "ManaRune": "Mana"
-            },
-            "autoPlayFromHand": {
-              "_default": "Mana"
-            }
+            "noQuickActions": true
           },
-          "ActiveUnitZone": {
+          "Discard": {
             "isHidden": "no",
             "height": "16",
-            "alignment": "CENTER",
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": true,
-            "displayedTitle": "Unit 1"
-          },
-          "Leader": {
-            "isHidden": "yes",
-            "height": "10",
             "alignment": "DECK",
-            "displayedTitle": "Leader Deck",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
             "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
+            "noQuickActions": true
           },
-          "GameLogic": {
-            "type": "custom",
-            "defaultValue": {
-              "startupSetupDone": false,
-              "firstTurnCompleted": false,
-              "startingManaSetupDone": false,
-              "unitSlotsBusy": false,
-              "phaseEffectEpoch": -1
-            },
-            "blueprint": {
-              "type": "div",
-              "props": {
-                "style": {
-                  "display": "none"
-                }
-              },
-              "children": []
-            },
-            "events": {
-              "onPlayersMulligan": "await setupAfterMulligan()",
-              "onPlayersReady": "await setupStartingMana()",
-              "onNewTurn": "await handleNewTurn()",
-              "onCardsUpdate": "await arrangeUnitSlots()"
-            }
-          },
-          "ManaRune": {
-            "isHidden": "yes",
-            "height": "SMALL",
+          "Remove": {
+            "isHidden": "no",
+            "height": "16",
             "alignment": "DECK",
-            "displayedTitle": "Mana Rune Deck",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
             "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
+            "noQuickActions": true
           },
-          "ActiveUnit2": {
+          "Stack": {
             "isHidden": "no",
             "height": "16",
             "alignment": "CENTER",
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": true,
-            "displayedTitle": "Unit 2"
-          },
-          "ActiveUnit3": {
-            "isHidden": "no",
-            "height": "16",
-            "alignment": "CENTER",
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": true,
-            "displayedTitle": "Unit 3"
-          },
-          "ActiveUnit4": {
-            "isHidden": "no",
-            "height": "16",
-            "alignment": "CENTER",
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": true,
-            "displayedTitle": "Unit 4"
-          },
-          "ActiveUnit5": {
-            "isHidden": "no",
-            "height": "16",
-            "alignment": "CENTER",
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": true,
-            "displayedTitle": "Unit 5"
-          },
-          "ActiveUnit6": {
-            "isHidden": "no",
-            "height": "16",
-            "alignment": "CENTER",
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": true,
-            "displayedTitle": "Unit 6"
-          },
-          "HandLimitController": {
-            "type": "custom",
-            "defaultValue": {
-              "visible": false,
-              "required": 0,
-              "selectedIds": [],
-              "handCards": [],
-              "processing": false
-            },
-            "blueprint": {
-              "type": "div",
-              "props": {
-                "style": {
-                  "display": "{{ game.data.HandLimitController.visible ? \"flex\" : \"none\" }}",
-                  "flexDirection": "column",
-                  "alignItems": "center",
-                  "justifyContent": "center",
-                  "gap": "0.35vh",
-                  "padding": "0.4vh 0.7vw",
-                  "background": "rgba(0,0,0,0.82)",
-                  "border": "1px solid rgba(255,255,255,0.38)",
-                  "borderRadius": "0.5vh",
-                  "boxSizing": "border-box",
-                  "width": "min(58vw, 900px)",
-                  "minHeight": "0"
-                }
-              },
-              "children": [
-                {
-                  "type": "div",
-                  "props": {
-                    "style": {
-                      "fontWeight": "bold",
-                      "fontSize": "0.78em"
-                    }
-                  },
-                  "children": "{{ \"Hand Limit: Select \" + game.data.HandLimitController.required + \" card\" + (game.data.HandLimitController.required === 1 ? \"\" : \"s\") + \" to place on the bottom of your Main Deck.\" }}"
-                },
-                {
-                  "type": "div",
-                  "props": {
-                    "style": {
-                      "display": "flex",
-                      "flexWrap": "wrap",
-                      "justifyContent": "center",
-                      "gap": "0.25vw",
-                      "maxWidth": "100%"
-                    }
-                  },
-                  "children": [
-                    {
-                      "type": "loop",
-                      "iterable": "{{ game.data.HandLimitController.handCards }}",
-                      "template": {
-                        "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
-                        "onClick": "await toggleHandLimitCard(item.id)"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "type": "div",
-                  "props": {
-                    "style": {
-                      "display": "flex",
-                      "alignItems": "center",
-                      "gap": "0.5vw",
-                      "fontSize": "0.68em",
-                      "opacity": "0.9"
-                    }
-                  },
-                  "children": [
-                    {
-                      "type": "span",
-                      "children": "{{ game.data.HandLimitController.selectedIds.length + \" / \" + game.data.HandLimitController.required + \" selected\" }}"
-                    },
-                    {
-                      "type": "button",
-                      "children": "Return Selected",
-                      "onClick": "await confirmHandLimit()"
-                    }
-                  ]
-                }
-              ]
-            },
-            "events": {
-              "onCardsUpdate": "await refreshHandLimit()"
-            }
+            "isHorizontalAllowed": false,
+            "isGroupForbidden": true
           },
           "PhaseController": {
             "type": "custom",
@@ -507,7 +165,8 @@
               "turnCount": 0,
               "initialized": false,
               "effectEpoch": 1,
-              "status": "Untap Phase (automatic)."
+              "status": "Untap Phase (automatic).",
+              "localEffectEpoch": -1
             },
             "blueprint": {
               "type": "div",
@@ -628,29 +287,6 @@
               "onNewTurn": "await resetPhaseForNewTurn()",
               "onUpdate": "await processPhaseUpdate()"
             }
-          },
-          "HandLimitDeckBuffer": {
-            "isHidden": "yes",
-            "height": "SMALL",
-            "alignment": "DECK",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
-          },
-          "Remove": {
-            "isHidden": "no",
-            "height": "10",
-            "alignment": "DECK",
-            "displayedTitle": "Removal",
-            "noQuickActions": true,
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": false,
-            "enterTapped": false,
-            "keepTappedNewTurn": false,
-            "isGroupForbidden": false
           }
         },
         "sharedZone": {
@@ -667,22 +303,10 @@
             "content": [
               {
                 "section": "PhaseController"
-              },
-              {
-                "section": "HandLimitController"
               }
             ]
           }
         }
-      },
-      "beforeGameStart": {
-        "initialBoardSetup": [
-          {
-            "drawFromTop": "ManaRune",
-            "count": 10,
-            "destination": "ManaStorage"
-          }
-        ]
       }
     }
   },
@@ -690,5 +314,5 @@
   "scriptsUrls": [
     "https://raw.githubusercontent.com/Steakholder/Essence-Realms-Game/main/essence-realms-gameplay.js"
   ],
-  "customHelp": "Essence Realms uses a 66-card Main Deck, 1 Starting Leader, 5 Leaders, and 10 Mana cards.\nActive Unit Zone: You can control a maximum of 6 Units. The board displays six visual slots in a single row."
+  "customHelp": "Essence Realms board test: uses TCGA native Deck, Discard, Remove, Stack, and Hand sections. The only custom section retained is the shared Phase Controller UI. Phases proceed Untap -> Draw -> Summon -> Combat -> End and require opponent approval for each transition."
 }
