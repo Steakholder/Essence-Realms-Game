@@ -213,21 +213,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "section": "Mana",
-                      "style": {
-                        "marginTop": "-5.5vh",
-                        "width": "5%",
-                        "maxWidth": "5%",
-                        "minWidth": "0",
-                        "height": "0.5vh",
-                        "maxHeight": "0.5vh",
-                        "minHeight": "0",
-                        "boxSizing": "border-box",
-                        "marginLeft": "auto",
-                        "marginRight": "auto"
-                      }
                     }
                   ]
                 },
@@ -349,16 +334,6 @@
               "onNewTurn": "await handleNewTurn()",
               "onCardsUpdate": "await arrangeUnitSlots()"
             }
-          },
-          "Mana": {
-            "isHidden": "yes",
-            "height": "0.5",
-            "alignment": "CENTER",
-            "displayedTitle": "Mana Pool",
-            "noAutoPayTo": true,
-            "isHorizontalAllowed": true,
-            "enterTapped": false,
-            "keepTappedNewTurn": false
           },
           "ManaRune": {
             "isHidden": "yes",
