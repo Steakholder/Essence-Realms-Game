@@ -86,7 +86,8 @@
             "width": "100%",
             "gap": "1.2vw",
             "alignItems": "flex-start",
-            "boxSizing": "border-box"
+            "boxSizing": "border-box",
+            "position": "relative"
           },
           "content": [
             {
@@ -269,6 +270,36 @@
                 "overflow": "hidden",
                 "pointerEvents": "none",
                 "opacity": "0"
+              }
+            },
+            {
+              "section": "PhaseController",
+              "style": {
+                "position": "absolute",
+                "top": "1vh",
+                "left": "50%",
+                "transform": "translateX(-50%)",
+                "zIndex": "100",
+                "pointerEvents": "auto",
+                "width": "min(52vw, 820px)",
+                "display": "flex",
+                "justifyContent": "center",
+                "boxSizing": "border-box"
+              }
+            },
+            {
+              "section": "HandLimitController",
+              "style": {
+                "position": "absolute",
+                "top": "10vh",
+                "left": "50%",
+                "transform": "translateX(-50%)",
+                "zIndex": "101",
+                "pointerEvents": "auto",
+                "width": "min(58vw, 900px)",
+                "display": "flex",
+                "justifyContent": "center",
+                "boxSizing": "border-box"
               }
             }
           ]
@@ -472,7 +503,10 @@
                   "borderRadius": "0.5vh",
                   "boxSizing": "border-box",
                   "width": "min(58vw, 900px)",
-                  "minHeight": "0"
+                  "minHeight": "0",
+                  "position": "relative",
+                  "zIndex": "101",
+                  "pointerEvents": "auto"
                 }
               },
               "children": [
@@ -568,7 +602,10 @@
                   "width": "min(52vw, 820px)",
                   "minHeight": "0",
                   "height": "7vh",
-                  "maxHeight": "7vh"
+                  "maxHeight": "7vh",
+                  "position": "relative",
+                  "zIndex": "100",
+                  "pointerEvents": "auto"
                 }
               },
               "children": [
@@ -1117,27 +1154,6 @@
                 }
               ]
             }
-          }
-        },
-        "sharedZone": {
-          "height": 11,
-          "layout": {
-            "direction": "row",
-            "style": {
-              "width": "100%",
-              "height": "100%",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "boxSizing": "border-box"
-            },
-            "content": [
-              {
-                "section": "PhaseController"
-              },
-              {
-                "section": "HandLimitController"
-              }
-            ]
           }
         }
       },
