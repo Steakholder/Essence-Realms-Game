@@ -337,15 +337,70 @@ async function confirmHandLimit() {
     }
 }
 
+function diagnosticCardLine(card, index) {
+    const data = functions.getCardData(card) ?? {};
+    return [
+        "[" + index + "]",
+        "id=" + (card.id ?? "?"),
+        "name=" + (data.name ?? "?"),
+        "type=" + (data.type ?? "?"),
+        "level=" + (data.level ?? "?"),
+        "cost=" + (data.cost ?? "?"),
+        "owner=" + (card.owner ?? "?")
+    ].join(" | ");
+}
+
 async function unitActionButton(action, unitSection) {
     if (!game.turn.isMyTurn) return;
-    const unitCards = cards?.[unitSection] ?? [];
-    const unit = unitCards.find(card => functions.getCardData(card)?.type === "Unit");
-    if (!unit) {
-        functions.chatLog(action + ": no Unit is currently in " + unitSection + ".");
+
+    const zoneCards = cards?.[unitSection] ?? [];
+
+    if (action === "Evolve") {
+        functions.chatLog("=== ORDER DIAGNOSTIC: " + unitSection + " ===");
+        if (zoneCards.length === 0) {
+            functions.chatLog("Zone is empty.");
+            return;
+        }
+        zoneCards.forEach((card, index) => functions.chatLog(diagnosticCardLine(card, index)));
+        functions.chatLog("Array last index = " + (zoneCards.length - 1) + ". This is the card we will treat as the logical newest candidate for testing.");
         return;
     }
-    functions.chatLog(action + " selected for " + unitSection + ".");
+
+    if (action === "Equip") {
+        functions.chatLog("=== OWNERSHIP DIAGNOSTIC: " + unitSection + " ===");
+        if (zoneCards.length === 0) {
+            functions.chatLog("Zone is empty.");
+            return;
+        }
+        zoneCards.forEach((card, index) => functions.chatLog(diagnosticCardLine(card, index)));
+        const attachments = zoneCards.filter(card => functions.getCardData(card)?.type !== "Unit");
+        if (attachments.length === 0) {
+            functions.chatLog("No non-Unit cards found in this zone.");
+        } else {
+            functions.chatLog("Non-Unit cards above are the attachment candidates. Record their owner values.");
+        }
+        return;
+    }
+
+    if (action === "Overlay") {
+        functions.chatLog("=== CROSS-OWNER DISCARD DIAGNOSTIC: " + unitSection + " ===");
+        const attachment = zoneCards.find(card => functions.getCardData(card)?.type !== "Unit");
+        if (!attachment) {
+            functions.chatLog("No non-Unit card found. Put an Enchantment in this zone before running this test.");
+            return;
+        }
+
+        const data = functions.getCardData(attachment) ?? {};
+        const ownerBefore = attachment.owner ?? "?";
+        functions.chatLog("Attempting to move attachment to native Discard: id=" + (attachment.id ?? "?") + ", name=" + (data.name ?? "?") + ", owner=" + ownerBefore);
+        try {
+            await functions.moveCard(attachment, "Discard", { noLogs: false });
+            functions.chatLog("MOVE CALL COMPLETED. Re-scan the zone and owner Discard to see where the card actually went.");
+        } catch (error) {
+            functions.chatLog("MOVE CALL FAILED: " + String(error));
+        }
+        return;
+    }
 }
 
 async function handleNewTurn() {
