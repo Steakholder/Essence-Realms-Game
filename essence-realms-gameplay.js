@@ -407,3 +407,71 @@ async function handleNewTurn() {
     // Native new-turn draw is disabled. Phase actions are handled by the
     // PhaseController instead.
 }
+/* === CARD ORDER DIAGNOSTIC === */
+async function cardOrderDiagnostic(order) {
+    const target = "ActiveUnitZone";
+    const handCards = [...(cards?.Hand ?? [])];
+
+    if (handCards.length < 2) {
+        functions.chatLog("CARD ORDER TEST: Need at least 2 cards in Hand.");
+        return;
+    }
+
+    const a = handCards[0];
+    const b = handCards[1];
+    const aData = functions.getCardData(a) ?? {};
+    const bData = functions.getCardData(b) ?? {};
+
+    functions.chatLog("=== CARD ORDER TEST: " + order + " ===");
+    functions.chatLog("Card A: " + (aData.name ?? aData.id ?? a.id));
+    functions.chatLog("Card B: " + (bData.name ?? bData.id ?? b.id));
+
+    if (order === "A_THEN_B") {
+        await functions.moveCard(a, target);
+        await functions.moveCard(b, target);
+    } else {
+        await functions.moveCard(b, target);
+        await functions.moveCard(a, target);
+    }
+
+    const result = cards?.[target] ?? [];
+    functions.chatLog("Resulting " + target + " order (" + result.length + " cards):");
+
+    result.forEach((card, index) => {
+        const data = functions.getCardData(card) ?? {};
+        functions.chatLog(
+            "[" + index + "] " +
+            (data.name ?? data.id ?? card.id) +
+            " | runtimeId=" + card.id
+        );
+    });
+
+    functions.chatLog(
+        "VISUAL TEST: Compare which card appears above the other in " + target + "."
+    );
+}
+
+async function cardOrderTestAThenB() {
+    await cardOrderDiagnostic("A_THEN_B");
+}
+
+async function cardOrderTestBThenA() {
+    await cardOrderDiagnostic("B_THEN_A");
+}
+
+async function clearCardOrderTest() {
+    const target = "ActiveUnitZone";
+    const zoneCards = [...(cards?.[target] ?? [])];
+
+    if (!zoneCards.length) {
+        functions.chatLog("CARD ORDER TEST: ActiveUnitZone is already empty.");
+        return;
+    }
+
+    for (const card of zoneCards) {
+        await functions.moveCard(card, "Grave");
+    }
+
+    functions.chatLog("CARD ORDER TEST: ActiveUnitZone cleared to Grave.");
+}
+

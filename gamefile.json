@@ -261,6 +261,9 @@
               ]
             },
             {
+              "section": "CardOrderTestUI"
+            },
+            {
               "section": "GameLogic",
               "style": {
                 "position": "absolute",
@@ -324,7 +327,7 @@
           "ActiveUnitZone": {
             "isHidden": "no",
             "height": "15",
-            "alignment": "START",
+            "alignment": "END",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
@@ -396,7 +399,7 @@
           "ActiveUnit2": {
             "isHidden": "no",
             "height": "15",
-            "alignment": "CENTER",
+            "alignment": "END",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
@@ -418,7 +421,7 @@
           "ActiveUnit4": {
             "isHidden": "no",
             "height": "15",
-            "alignment": "NONE",
+            "alignment": "END",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
@@ -429,7 +432,7 @@
           "ActiveUnit5": {
             "isHidden": "no",
             "height": "15",
-            "alignment": "DECK",
+            "alignment": "END",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
@@ -440,7 +443,7 @@
           "ActiveUnit6": {
             "isHidden": "no",
             "height": "15",
-            "alignment": "CENTER",
+            "alignment": "END",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
