@@ -324,7 +324,7 @@
           "ActiveUnitZone": {
             "isHidden": "no",
             "height": "15",
-            "alignment": "CENTER",
+            "alignment": "START",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
@@ -407,7 +407,7 @@
           "ActiveUnit3": {
             "isHidden": "no",
             "height": "15",
-            "alignment": "CENTER",
+            "alignment": "END",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
@@ -418,7 +418,7 @@
           "ActiveUnit4": {
             "isHidden": "no",
             "height": "15",
-            "alignment": "CENTER",
+            "alignment": "NONE",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
@@ -429,7 +429,7 @@
           "ActiveUnit5": {
             "isHidden": "no",
             "height": "15",
-            "alignment": "CENTER",
+            "alignment": "DECK",
             "noAutoPayTo": true,
             "isHorizontalAllowed": true,
             "enterTapped": false,
@@ -503,7 +503,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
