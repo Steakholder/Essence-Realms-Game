@@ -503,7 +503,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
@@ -707,13 +707,13 @@
                       "left": "4vw",
                       "top": "0",
                       "width": "calc(100% - 8vw)",
-                      "height": "18vh",
+                      "height": "2.5vh",
                       "display": "flex",
                       "gap": "0.7vw",
                       "justifyContent": "center",
                       "alignItems": "stretch",
                       "boxSizing": "border-box",
-                      "pointerEvents": "none"
+                      "pointerEvents": "auto"
                     }
                   },
                   "children": [
