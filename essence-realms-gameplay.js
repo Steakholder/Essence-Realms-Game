@@ -337,141 +337,18 @@ async function confirmHandLimit() {
     }
 }
 
-function diagnosticCardLine(card, index) {
-    const data = functions.getCardData(card) ?? {};
-    return [
-        "[" + index + "]",
-        "id=" + (card.id ?? "?"),
-        "name=" + (data.name ?? "?"),
-        "type=" + (data.type ?? "?"),
-        "level=" + (data.level ?? "?"),
-        "cost=" + (data.cost ?? "?"),
-        "owner=" + (card.owner ?? "?")
-    ].join(" | ");
-}
-
 async function unitActionButton(action, unitSection) {
     if (!game.turn.isMyTurn) return;
-
-    const zoneCards = cards?.[unitSection] ?? [];
-
-    if (action === "Evolve") {
-        functions.chatLog("=== ORDER DIAGNOSTIC: " + unitSection + " ===");
-        if (zoneCards.length === 0) {
-            functions.chatLog("Zone is empty.");
-            return;
-        }
-        zoneCards.forEach((card, index) => functions.chatLog(diagnosticCardLine(card, index)));
-        functions.chatLog("Array last index = " + (zoneCards.length - 1) + ". This is the card we will treat as the logical newest candidate for testing.");
+    const unitCards = cards?.[unitSection] ?? [];
+    const unit = unitCards.find(card => functions.getCardData(card)?.type === "Unit");
+    if (!unit) {
+        functions.chatLog(action + ": no Unit is currently in " + unitSection + ".");
         return;
     }
-
-    if (action === "Equip") {
-        functions.chatLog("=== OWNERSHIP DIAGNOSTIC: " + unitSection + " ===");
-        if (zoneCards.length === 0) {
-            functions.chatLog("Zone is empty.");
-            return;
-        }
-        zoneCards.forEach((card, index) => functions.chatLog(diagnosticCardLine(card, index)));
-        const attachments = zoneCards.filter(card => functions.getCardData(card)?.type !== "Unit");
-        if (attachments.length === 0) {
-            functions.chatLog("No non-Unit cards found in this zone.");
-        } else {
-            functions.chatLog("Non-Unit cards above are the attachment candidates. Record their owner values.");
-        }
-        return;
-    }
-
-    if (action === "Overlay") {
-        functions.chatLog("=== CROSS-OWNER DISCARD DIAGNOSTIC: " + unitSection + " ===");
-        const attachment = zoneCards.find(card => functions.getCardData(card)?.type !== "Unit");
-        if (!attachment) {
-            functions.chatLog("No non-Unit card found. Put an Enchantment in this zone before running this test.");
-            return;
-        }
-
-        const data = functions.getCardData(attachment) ?? {};
-        const ownerBefore = attachment.owner ?? "?";
-        functions.chatLog("Attempting to move attachment to native Discard: id=" + (attachment.id ?? "?") + ", name=" + (data.name ?? "?") + ", owner=" + ownerBefore);
-        try {
-            await functions.moveCard(attachment, "Discard", { noLogs: false });
-            functions.chatLog("MOVE CALL COMPLETED. Re-scan the zone and owner Discard to see where the card actually went.");
-        } catch (error) {
-            functions.chatLog("MOVE CALL FAILED: " + String(error));
-        }
-        return;
-    }
+    functions.chatLog(action + " selected for " + unitSection + ".");
 }
 
 async function handleNewTurn() {
     // Native new-turn draw is disabled. Phase actions are handled by the
     // PhaseController instead.
 }
-/* === CARD ORDER DIAGNOSTIC === */
-async function cardOrderDiagnostic(order) {
-    const target = "ActiveUnitZone";
-    const handCards = [...(cards?.Hand ?? [])];
-
-    if (handCards.length < 2) {
-        functions.chatLog("CARD ORDER TEST: Need at least 2 cards in Hand.");
-        return;
-    }
-
-    const a = handCards[0];
-    const b = handCards[1];
-    const aData = functions.getCardData(a) ?? {};
-    const bData = functions.getCardData(b) ?? {};
-
-    functions.chatLog("=== CARD ORDER TEST: " + order + " ===");
-    functions.chatLog("Card A: " + (aData.name ?? aData.id ?? a.id));
-    functions.chatLog("Card B: " + (bData.name ?? bData.id ?? b.id));
-
-    if (order === "A_THEN_B") {
-        await functions.moveCard(a, target);
-        await functions.moveCard(b, target);
-    } else {
-        await functions.moveCard(b, target);
-        await functions.moveCard(a, target);
-    }
-
-    const result = cards?.[target] ?? [];
-    functions.chatLog("Resulting " + target + " order (" + result.length + " cards):");
-
-    result.forEach((card, index) => {
-        const data = functions.getCardData(card) ?? {};
-        functions.chatLog(
-            "[" + index + "] " +
-            (data.name ?? data.id ?? card.id) +
-            " | runtimeId=" + card.id
-        );
-    });
-
-    functions.chatLog(
-        "VISUAL TEST: Compare which card appears above the other in " + target + "."
-    );
-}
-
-async function cardOrderTestAThenB() {
-    await cardOrderDiagnostic("A_THEN_B");
-}
-
-async function cardOrderTestBThenA() {
-    await cardOrderDiagnostic("B_THEN_A");
-}
-
-async function clearCardOrderTest() {
-    const target = "ActiveUnitZone";
-    const zoneCards = [...(cards?.[target] ?? [])];
-
-    if (!zoneCards.length) {
-        functions.chatLog("CARD ORDER TEST: ActiveUnitZone is already empty.");
-        return;
-    }
-
-    for (const card of zoneCards) {
-        await functions.moveCard(card, "Grave");
-    }
-
-    functions.chatLog("CARD ORDER TEST: ActiveUnitZone cleared to Grave.");
-}
-
