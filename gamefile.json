@@ -255,6 +255,9 @@
                         "height": "100%",
                         "pointerEvents": "none"
                       }
+                    },
+                    {
+                      "section": "DeckReturnDiagnosticUI"
                     }
                   ]
                 }
@@ -1114,6 +1117,30 @@
                       }
                     }
                   ]
+                }
+              ]
+            }
+          },
+          "DeckReturnDiagnosticUI": {
+            "type": "custom",
+            "height": "AUTO",
+            "alignment": "CENTER",
+            "blueprint": {
+              "type": "div",
+              "children": [
+                {
+                  "type": "div",
+                  "children": "HAND LIMIT DECK TEST"
+                },
+                {
+                  "type": "button",
+                  "children": "Return Hand Card → Deck + Shuffle",
+                  "onClick": "await testHandCardDirectToDeckAndShuffle()"
+                },
+                {
+                  "type": "button",
+                  "children": "Draw 1",
+                  "onClick": "await testDeckDrawAfterDirectReturn()"
                 }
               ]
             }

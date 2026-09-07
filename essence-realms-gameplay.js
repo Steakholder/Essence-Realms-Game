@@ -352,3 +352,74 @@ async function handleNewTurn() {
     // Native new-turn draw is disabled. Phase actions are handled by the
     // PhaseController instead.
 }
+
+/* === HAND LIMIT DECK RETURN DIAGNOSTIC === */
+async function testHandCardDirectToDeckAndShuffle() {
+    const hand = [...(cards?.Hand ?? [])];
+    const deckBefore = [...(cards?.Deck ?? [])];
+
+    if (!hand.length) {
+        functions.chatLog("DECK TEST: No cards in Hand.");
+        return;
+    }
+
+    const testCard = hand[hand.length - 1];
+    const data = functions.getCardData(testCard) ?? {};
+
+    functions.chatLog("=== DIRECT HAND → DECK + SHUFFLE TEST ===");
+    functions.chatLog(
+        "Test card: " + (data.name ?? data.id ?? testCard.id)
+    );
+    functions.chatLog(
+        "Deck before: " + deckBefore.length + " cards."
+    );
+
+    await functions.moveCard(testCard, "Deck", { noLogs: true });
+
+    const deckAfterMove = [...(cards?.Deck ?? [])];
+    const handAfterMove = [...(cards?.Hand ?? [])];
+
+    functions.chatLog(
+        "Deck immediately after move: " + deckAfterMove.length + " cards."
+    );
+    functions.chatLog(
+        "Hand immediately after move: " + handAfterMove.length + " cards."
+    );
+
+    const presentAfterMove = deckAfterMove.some(card => card.id === testCard.id);
+    functions.chatLog(
+        "Test card present in Deck after move: " + presentAfterMove
+    );
+
+    await functions.shuffleSection("Deck");
+
+    const deckAfterShuffle = [...(cards?.Deck ?? [])];
+    const presentAfterShuffle = deckAfterShuffle.some(card => card.id === testCard.id);
+
+    functions.chatLog(
+        "Deck after shuffle: " + deckAfterShuffle.length + " cards."
+    );
+    functions.chatLog(
+        "Test card present in Deck after shuffle: " + presentAfterShuffle
+    );
+    functions.chatLog(
+        "If the card is present here, it is in the real Deck section."
+    );
+    functions.chatLog(
+        "Next step: draw normally and verify that the card remains accessible."
+    );
+}
+
+async function testDeckDrawAfterDirectReturn() {
+    functions.chatLog("=== DRAW TEST ===");
+    const before = [...(cards?.Hand ?? [])].length;
+    await functions.draw(1);
+    const after = [...(cards?.Hand ?? [])].length;
+
+    functions.chatLog(
+        "Hand size before draw: " + before + " | after draw: " + after
+    );
+    functions.chatLog(
+        "Use this after the Direct Hand → Deck + Shuffle test to verify normal deck access."
+    );
+}
