@@ -123,15 +123,14 @@
                     "gap": "0.55vh",
                     "boxSizing": "border-box",
                     "paddingLeft": "4vw",
-                    "paddingRight": "4vw",
-                    "position": "relative"
+                    "paddingRight": "4vw"
                   },
                   "content": [
                     {
                       "direction": "row",
                       "style": {
                         "width": "100%",
-                        "height": "18vh",
+                        "height": "15vh",
                         "gap": "0.7vw",
                         "boxSizing": "border-box",
                         "justifyContent": "center",
@@ -141,55 +140,79 @@
                         {
                           "section": "ActiveUnitZone",
                           "style": {
-                            "height": "15vh",
-                            "width": "13%",
                             "flex": "0 0 13%",
-                            "boxSizing": "border-box"
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "15vh",
+                            "border": "1px solid rgba(255,255,255,0.22)",
+                            "borderRadius": "0.4vh",
+                            "width": "13%",
+                            "alignSelf": "stretch"
                           }
                         },
                         {
                           "section": "ActiveUnit2",
                           "style": {
-                            "height": "15vh",
-                            "width": "13%",
                             "flex": "0 0 13%",
-                            "boxSizing": "border-box"
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "15vh",
+                            "border": "1px solid rgba(255,255,255,0.22)",
+                            "borderRadius": "0.4vh",
+                            "width": "13%",
+                            "alignSelf": "stretch"
                           }
                         },
                         {
                           "section": "ActiveUnit3",
                           "style": {
-                            "height": "15vh",
-                            "width": "13%",
                             "flex": "0 0 13%",
-                            "boxSizing": "border-box"
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "15vh",
+                            "border": "1px solid rgba(255,255,255,0.22)",
+                            "borderRadius": "0.4vh",
+                            "width": "13%",
+                            "alignSelf": "stretch"
                           }
                         },
                         {
                           "section": "ActiveUnit4",
                           "style": {
-                            "height": "15vh",
-                            "width": "13%",
                             "flex": "0 0 13%",
-                            "boxSizing": "border-box"
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "15vh",
+                            "border": "1px solid rgba(255,255,255,0.22)",
+                            "borderRadius": "0.4vh",
+                            "width": "13%",
+                            "alignSelf": "stretch"
                           }
                         },
                         {
                           "section": "ActiveUnit5",
                           "style": {
-                            "height": "15vh",
-                            "width": "13%",
                             "flex": "0 0 13%",
-                            "boxSizing": "border-box"
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "15vh",
+                            "border": "1px solid rgba(255,255,255,0.22)",
+                            "borderRadius": "0.4vh",
+                            "width": "13%",
+                            "alignSelf": "stretch"
                           }
                         },
                         {
                           "section": "ActiveUnit6",
                           "style": {
-                            "height": "15vh",
-                            "width": "13%",
                             "flex": "0 0 13%",
-                            "boxSizing": "border-box"
+                            "minWidth": "0",
+                            "boxSizing": "border-box",
+                            "height": "15vh",
+                            "border": "1px solid rgba(255,255,255,0.22)",
+                            "borderRadius": "0.4vh",
+                            "width": "13%",
+                            "alignSelf": "stretch"
                           }
                         },
                         {
@@ -244,20 +267,6 @@
                           }
                         }
                       ]
-                    },
-                    {
-                      "section": "UnitActionUI",
-                      "style": {
-                        "position": "absolute",
-                        "left": "0",
-                        "top": "0",
-                        "width": "100%",
-                        "height": "100%",
-                        "pointerEvents": "none"
-                      }
-                    },
-                    {
-                      "section": "DeckReturnDiagnosticUI"
                     }
                   ]
                 }
@@ -383,7 +392,8 @@
             "events": {
               "onPlayersMulligan": "await setupAfterMulligan()",
               "onPlayersReady": "await setupStartingMana()",
-              "onNewTurn": "await handleNewTurn()"
+              "onNewTurn": "await handleNewTurn()",
+              "onCardsUpdate": "await arrangeUnitSlots()"
             }
           },
           "Mana": {
@@ -506,7 +516,7 @@
                       "iterable": "{{ game.data.HandLimitController.handCards }}",
                       "template": {
                         "type": "button",
-                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"✓ \" : \"\") + item.label }}",
+                        "children": "{{ (game.data.HandLimitController.selectedIds.indexOf(item.id) >= 0 ? \"\u2713 \" : \"\") + item.label }}",
                         "onClick": "await toggleHandLimitCard(item.id)"
                       }
                     }
@@ -685,465 +695,6 @@
             "keepTappedNewTurn": false,
             "isGroupForbidden": false,
             "displayedTitle": "Hand Limit Buffer"
-          },
-          "UnitActionUI": {
-            "type": "custom",
-            "blueprint": {
-              "type": "div",
-              "props": {
-                "style": {
-                  "position": "absolute",
-                  "left": "0",
-                  "top": "0",
-                  "width": "100%",
-                  "height": "100%",
-                  "pointerEvents": "none",
-                  "zIndex": "20"
-                }
-              },
-              "children": [
-                {
-                  "type": "div",
-                  "props": {
-                    "style": {
-                      "position": "absolute",
-                      "left": "4vw",
-                      "top": "0",
-                      "width": "calc(100% - 8vw)",
-                      "height": "18vh",
-                      "display": "flex",
-                      "gap": "0.7vw",
-                      "justifyContent": "center",
-                      "alignItems": "stretch",
-                      "boxSizing": "border-box",
-                      "pointerEvents": "none"
-                    }
-                  },
-                  "children": [
-                    {
-                      "type": "div",
-                      "props": {
-                        "style": {
-                          "height": "2.5vh",
-                          "width": "13%",
-                          "flex": "0 0 13%",
-                          "display": "flex",
-                          "gap": "0.12vw",
-                          "justifyContent": "center",
-                          "alignItems": "stretch",
-                          "pointerEvents": "none",
-                          "boxSizing": "border-box",
-                          "marginTop": "15vh"
-                        }
-                      },
-                      "children": [
-                        {
-                          "type": "button",
-                          "children": "Evolve",
-                          "onClick": "await unitActionButton(\"Evolve\", \"ActiveUnitZone\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        },
-                        {
-                          "type": "button",
-                          "children": "Equip",
-                          "onClick": "await unitActionButton(\"Equip\", \"ActiveUnitZone\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        },
-                        {
-                          "type": "button",
-                          "children": "Overlay",
-                          "onClick": "await unitActionButton(\"Overlay\", \"ActiveUnitZone\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "div",
-                      "props": {
-                        "style": {
-                          "height": "2.5vh",
-                          "width": "13%",
-                          "flex": "0 0 13%",
-                          "display": "flex",
-                          "gap": "0.12vw",
-                          "justifyContent": "center",
-                          "alignItems": "stretch",
-                          "pointerEvents": "none",
-                          "boxSizing": "border-box",
-                          "marginTop": "15vh"
-                        }
-                      },
-                      "children": [
-                        {
-                          "type": "button",
-                          "children": "Evolve",
-                          "onClick": "await unitActionButton(\"Evolve\", \"ActiveUnit2\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        },
-                        {
-                          "type": "button",
-                          "children": "Equip",
-                          "onClick": "await unitActionButton(\"Equip\", \"ActiveUnit2\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        },
-                        {
-                          "type": "button",
-                          "children": "Overlay",
-                          "onClick": "await unitActionButton(\"Overlay\", \"ActiveUnit2\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "div",
-                      "props": {
-                        "style": {
-                          "height": "2.5vh",
-                          "width": "13%",
-                          "flex": "0 0 13%",
-                          "display": "flex",
-                          "gap": "0.12vw",
-                          "justifyContent": "center",
-                          "alignItems": "stretch",
-                          "pointerEvents": "none",
-                          "boxSizing": "border-box",
-                          "marginTop": "15vh"
-                        }
-                      },
-                      "children": [
-                        {
-                          "type": "button",
-                          "children": "Evolve",
-                          "onClick": "await unitActionButton(\"Evolve\", \"ActiveUnit3\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        },
-                        {
-                          "type": "button",
-                          "children": "Equip",
-                          "onClick": "await unitActionButton(\"Equip\", \"ActiveUnit3\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        },
-                        {
-                          "type": "button",
-                          "children": "Overlay",
-                          "onClick": "await unitActionButton(\"Overlay\", \"ActiveUnit3\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "div",
-                      "props": {
-                        "style": {
-                          "height": "2.5vh",
-                          "width": "13%",
-                          "flex": "0 0 13%",
-                          "display": "flex",
-                          "gap": "0.12vw",
-                          "justifyContent": "center",
-                          "alignItems": "stretch",
-                          "pointerEvents": "none",
-                          "boxSizing": "border-box",
-                          "marginTop": "15vh"
-                        }
-                      },
-                      "children": [
-                        {
-                          "type": "button",
-                          "children": "Evolve",
-                          "onClick": "await unitActionButton(\"Evolve\", \"ActiveUnit4\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        },
-                        {
-                          "type": "button",
-                          "children": "Equip",
-                          "onClick": "await unitActionButton(\"Equip\", \"ActiveUnit4\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        },
-                        {
-                          "type": "button",
-                          "children": "Overlay",
-                          "onClick": "await unitActionButton(\"Overlay\", \"ActiveUnit4\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "div",
-                      "props": {
-                        "style": {
-                          "height": "2.5vh",
-                          "width": "13%",
-                          "flex": "0 0 13%",
-                          "display": "flex",
-                          "gap": "0.12vw",
-                          "justifyContent": "center",
-                          "alignItems": "stretch",
-                          "pointerEvents": "none",
-                          "boxSizing": "border-box",
-                          "marginTop": "15vh"
-                        }
-                      },
-                      "children": [
-                        {
-                          "type": "button",
-                          "children": "Evolve",
-                          "onClick": "await unitActionButton(\"Evolve\", \"ActiveUnit5\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        },
-                        {
-                          "type": "button",
-                          "children": "Equip",
-                          "onClick": "await unitActionButton(\"Equip\", \"ActiveUnit5\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        },
-                        {
-                          "type": "button",
-                          "children": "Overlay",
-                          "onClick": "await unitActionButton(\"Overlay\", \"ActiveUnit5\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "div",
-                      "props": {
-                        "style": {
-                          "height": "2.5vh",
-                          "width": "13%",
-                          "flex": "0 0 13%",
-                          "display": "flex",
-                          "gap": "0.12vw",
-                          "justifyContent": "center",
-                          "alignItems": "stretch",
-                          "pointerEvents": "none",
-                          "boxSizing": "border-box",
-                          "marginTop": "15vh"
-                        }
-                      },
-                      "children": [
-                        {
-                          "type": "button",
-                          "children": "Evolve",
-                          "onClick": "await unitActionButton(\"Evolve\", \"ActiveUnit6\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        },
-                        {
-                          "type": "button",
-                          "children": "Equip",
-                          "onClick": "await unitActionButton(\"Equip\", \"ActiveUnit6\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        },
-                        {
-                          "type": "button",
-                          "children": "Overlay",
-                          "onClick": "await unitActionButton(\"Overlay\", \"ActiveUnit6\")",
-                          "props": {
-                            "style": {
-                              "fontSize": "0.55em",
-                              "padding": "0 0.25vw",
-                              "minWidth": "0",
-                              "flex": "1",
-                              "pointerEvents": "auto",
-                              "boxSizing": "border-box"
-                            }
-                          }
-                        }
-                      ]
-                    },
-                    {
-                      "type": "div",
-                      "props": {
-                        "style": {
-                          "height": "19vh",
-                          "width": "1%",
-                          "flex": "0 0 1%",
-                          "pointerEvents": "none",
-                          "boxSizing": "border-box"
-                        }
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          },
-          "DeckReturnDiagnosticUI": {
-            "type": "custom",
-            "height": "AUTO",
-            "alignment": "CENTER",
-            "blueprint": {
-              "type": "div",
-              "children": [
-                {
-                  "type": "div",
-                  "children": "HAND LIMIT DECK TEST"
-                },
-                {
-                  "type": "button",
-                  "children": "Return Hand Card → Deck + Shuffle",
-                  "onClick": "await testHandCardDirectToDeckAndShuffle()"
-                },
-                {
-                  "type": "button",
-                  "children": "Draw 1",
-                  "onClick": "await testDeckDrawAfterDirectReturn()"
-                }
-              ]
-            }
           }
         },
         "sharedZone": {
